@@ -1,0 +1,21 @@
+{
+    "projects": [
+        {
+            "id": "PRJ-001",
+            "title": "ABC",
+            "duration": "",
+            "description": "",
+            "owner": "Sachin",
+            "status": "Active"
+        },
+        {
+            "id": "PRJ-002",
+            "title": "aaaaaaa",
+            "duration": "",
+            "description": "",
+            "owner": "",
+            "status": "Active"
+        }
+        
+    ]
+}
