@@ -58,6 +58,7 @@ def build_query(keyword: str, filters_csv: str, APPLY_ABSTRACT=True, APPLY_FREE=
     return " AND ".join(parts)
 
 def esearch_with_history(term: str, mindate=None, maxdate=None):
+    time.sleep(0.4)
     params = {
         "db": "pubmed",
         "term": term,

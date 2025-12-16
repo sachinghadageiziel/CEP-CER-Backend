@@ -4,7 +4,7 @@ import base64
 import pandas as pd
 
 from services.project_paths import ensure_project_folders
-from pubmed_runner import run_pubmed_pipeline
+from literature.pubmed_runner import run_pubmed_pipeline
 
 router = APIRouter(prefix="/api/literature", tags=["Literature Screening"])
 
