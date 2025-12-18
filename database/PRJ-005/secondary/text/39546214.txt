@@ -1,0 +1,811 @@
+ORIGINAL RESEARCH
+Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
+https://doi.org/10.1007/s10877-024-01239-x
+°C	
+degree Celsius
+CI 
+Confidence Interval
+HR 
+Heart Rate
+ST 
+ST segment
+MAP 
+Mean Arterial Pressure
+CVP 
+Central Venous Pressure
+BIS 
+Bispectral Index
+TOF 
+Train-of-Four ratio
+SpO2 
+Oxygen saturation
+RR 
+Respiratory Rate
+TV 
+Tidal Volume
+etCO2 
+expiratory Carbon Dioxide concentration
+T 
+body temperature
+OR 
+Odds Ratio
+IQR 
+Interquartile Range
+Abbreviations
+8m 
+8-meter viewing distance
+16m 
+16-meter viewing distance
+C 
+Conventional monitoring
+VPA 
+Visual Patient Avatar
+min− 1 
+per minute
+mV 
+millivolt
+mmHg 
+millimeter mercury
+ml 
+milliliter
+kPa 
+kilopascal
+	
+ David Werner Tscholl
+david.tscholl@usz.ch
+1 
+Institute of Anesthesiology, University and University 
+Hospital Zurich, Raemistrasse 100, Zurich 8091, Switzerland
+2 
+Epidemiology, Biostatistics and Prevention Institute, 
+University of Zurich, Zurich, Switzerland
+3 
+Clinic Hirslanden, Institute of Anesthesia and Intensive Care, 
+Zurich, Switzerland
+Abstract
+Patient monitoring in the perioperative setting can be challenging, especially when monitoring multiple patients simultane­
+ously or managing dynamic situations that require movement around the operating room. We aimed to evaluate whether 
+avatar-based patient monitoring, which presents vital signs in the form of changing colors, shapes and motion, improves 
+remote vital sign recognition compared to conventional monitoring. We conducted a prospective, single-center, computer-
+based simulation study to evaluate how anesthesia providers recognize vital signs when using the Philips Visual Patient 
+Avatar at different viewing distances (8 and 16 m) compared to conventional monitoring. The primary outcome was the 
+total number of correctly identified vital signs which were compared for the two distances and the two devices using mixed 
+Poisson regression. We analyzed data from 28 anesthesia providers who participated in 112 simulations. The correct recog­
+nition rate using the Visual Patient Avatar compared to conventional monitoring at 8 m was increased by 74% (rate ratio 
+1.74, 95% CI, 1.42 to 2.14, p < 0.001) and by 51% at 16-meter viewing distance (rate ratio 1.51, 95% CI, 1.23 to 1.87, 
+p < 0.001). We observed scenario-specific superior performance for six vital signs at 8 m. The results provide empirical 
+evidence that avatar-based monitoring can significantly improve the perception of vital signs when using distant vision.
+Keywords  Avatar-based monitoring · Distant vision · Patient monitoring · Situation awareness · Philips visual patient 
+avatar
+Received: 6 August 2024 / Accepted: 30 October 2024 / Published online: 15 November 2024
+© The Author(s) 2024
+Avatar-based versus conventional patient monitoring with distant 
+vision: a computer-based simulation study
+Petar Milovanovic1 · Julia Braun2 · Cynthia Alexandra Hunn3 · Justyna Lunkiewicz1 · David Werner Tscholl1 · 
+Greta Gasciauskaite1
+1 3
+Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
+1  Introduction
+Patient monitoring uses electronic devices to collect and 
+display vital signs [1]. This information allows for timely 
+intervention in dynamic situations and has become integral 
+to perioperative [2], emergency, and intensive care medi­
+cine [3, 4]. The World Health Organization considers patient 
+monitoring in the presence of a trained anesthesia provider 
+to be essential to the safety of surgical care [5]. Anesthesia 
+providers repeatedly assess the patient, the patient moni­
+toring system, and the surgical field. By integrating these 
+sensory inputs, they develop a mental model of the cur­
+rent situation and its projection into the near future. This 
+cognitive process creates situation awareness [6, 7], which 
+includes the ability to perceive environmental elements, 
+recognize their meaning, and project their future state [8]. 
+Studies have shown that lack of situation awareness causes 
+more than two-thirds of anesthesia-related complications, 
+with perceptual errors being the most common subtype [9, 
+10].
+The current design of patient monitoring systems does not 
+optimally support the care providers’ perception of impend­
+ing critical events [11]. Conventional monitoring relies on 
+a single-sensor-single-indicator principle, a technology-ori­
+ented form of information presentation in which individual 
+parameters are measured and displayed as discrete numbers 
+and waves [12, 13]. Care providers must process, integrate, 
+and interpret each vital sign separately before they can deci­
+pher its meaning [14]. Moreover, the numerical range of 
+some vital sign values overlaps (e.g., the number 95 may 
+correlate with a physiologic heart rate, oxygen saturation 
+or systolic blood pressure value) [15]. The spatial and color 
+layout of vital signs is adjustable, which can be an addi­
+tional distraction when reading their values sequentially 
+[16]. On the other hand, customization of vital sign layouts 
+allows for adaptation to individual or local preferences, 
+which can enhance the intuitiveness and interoperability of 
+patient monitoring systems [17]. All of this, combined with 
+the limited capacity of short-term memory, can make it dif­
+ficult to respond promptly to changes in vital signs and can 
+delay potential treatment [18, 19].
+The growing recognition of the limitations of conven­
+tional monitoring systems led to the developments resulting 
+in the Philips Visual Patient Avatar [20]. This technology 
+integrates principles of logic, cognitive engineering for 
+situation awareness, information architecture and user-
+centered interface design [21, 22]. The Visual Patient Ava­
+tar transforms numbers and waveforms into visual objects 
+and animations (Fig. 1). In addition to directly displaying 
+information, i.e., showing the information in a way that cor­
+responds to the phenomena expected in the real patient, it 
+categorizes vital sign data into safe and unsafe (and further 
+into low or high). It also offers simultaneous visualizations 
+for a single vital sign (e.g., respiratory rate corresponds to 
+the speed of the animation of the lungs breathing and the 
+avatar exhaling a cloud of carbon dioxide). For a detailed 
+description of the Philips Visual Patient Avatar please refer 
+to the Online Resource 2.
+Several computer-based and high-fidelity simulation 
+studies showed that the Visual Patient Avatar improves 
+vital sign recognition, diagnostic confidence and reduces 
+perceived workload compared to conventional monitoring 
+[23–25]. An eye-tracking study confirmed these findings for 
+peripheral vision. The authors attributed this success to the 
+vivid animations that facilitate vital sign recognition with 
+peripheral vision [15]. We suggest a new concept - patient 
+monitoring with distant vision. The purpose of this study 
+was to test the hypothesis that the Visual Patient Avatar 
+improves vital sign recognition with distant vision com­
+pared to conventional patient monitoring technology.
+2  Methods
+2.1  Approval and consent
+The Cantonal Ethics Committee of Zurich in Switzerland 
+reviewed the study protocol and issued a declaration of non-
+jurisdiction, specifying that the research project does not 
+fall within the scope of the Human Research Act (Business 
+Management System for Ethics Committees Req-2023-
+00580). All participants signed written informed consent 
+to use their data for research purposes. Participation in the 
+study was voluntary and without financial compensation.
+2.2  Study design
+We conducted a researcher-initiated, prospective, single-
+center, computer-based, within-subject simulation study. 
+We aimed to investigate how anesthesia providers recog­
+nize vital signs using distant vision (viewing distances of 8 
+and 16 m) with the Visual Patient Avatar compared to con­
+ventional monitoring. Data collection occurred over three 
+consecutive weeks in May and June 2023 at the Institute 
+of Anesthesiology, University Hospital Zurich, Switzerland. 
+The study center is the first institution where the Visual 
+Patient Avatar has been implemented in clinical practice 
+(March 2023). During the initial phase of the technology 
+implementation, lectures were held to explain the concept 
+of the technology and training sessions were organized to 
+provide information on its use. An educational video and a 
+short user guide were made available on the study center’s 
+intranet (Online Resources 1 and 2).
+1 3
+1066
+Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
+2.3  Data collection and simulation settings
+We initially derived two sets of scenarios (i.e., Scenarios 
+1 and 2) of eleven vital sign values reflecting two possible 
+patient states under general anesthesia. We deliberately 
+chose vital sign values that were either safe or unsafe regard­
+ing their respective thresholds. We then randomly assigned 
+these values to each scenario to avoid pattern recognition 
+(i.e., blind estimation based on correlation with other vital 
+sign values). The vital sign sets for both scenarios are listed 
+in Online Resource 3.
+We incorporated the scenarios into the respective simu­
+lation videos using two display modalities: a conventional 
+modality, in which we presented only the conventional 
+patient monitoring, and a split-screen modality, in which 
+we presented both technologies (conventional monitoring 
+and Visual Patient Avatar) simultaneously side by side, as 
+shown in Fig. 2.
+Before the simulation session began, participants com­
+pleted a non-identifying survey that included questions 
+about age, gender, eyesight, role (nurse, resident, consul­
+tant), and years of work experience in anesthesia. The ses­
+sions were performed in a quiet hallway, free of distraction 
+from the clinical areas of the hospital. We used a measuring 
+tape to determine the participant’s position according to the 
+viewing distance (8 and 16 m). Figures 2 and 3 illustrates 
+the study setup.
+During each simulation video playback we asked the 
+participants to simultaneously recognize vital sign values. 
+The available nominal scale level measurement options 
+for seven vital sign values (e.g., pulse rate, central venous 
+pressure) were ‘too low,’ ‘safe,’ ‘too high,’ or ‘no recog­
+nition.’ For others (e.g., oxygen saturation, brain activity), 
+the options were either ‘safe,’ ‘unsafe,’ or ‘no recogni­
+tion.’ We limited the duration of each simulation video to 
+two minutes, after which it ended and the participant had 
+to recall the remaining values without seeing the videos. 
+Only a few participants were unable to complete the task 
+Fig. 1  Philips Visual Patient Avatar. Vital signs and their respective visualizations
+ 
+1 3
+1067
+Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
+2.4  Outcomes
+We defined the sum of correctly recognized vital signs as 
+the primary outcome. A secondary outcome was the binary 
+variable “correct identification” for each vital parameter and 
+situation.
+2.5  Experimental setup and equipment 
+configuration
+We used Microsoft PowerPoint (Microsoft Corporation, 
+Redmond, WA, USA) to create digital mockup templates 
+for each technology. The layout of the vital signs closely 
+resembled the Philips IntelliVue MX750 patient monitor 
+(Koninklijke Philips NV, Amsterdam, The Netherlands) 
+routinely used in our study center. We generated the Visual 
+Patient Avatar animations using an internally developed 
+simulator software.
+within the given time. Although this task may appear to be 
+partly a test of short-term memory, in this case it is simply 
+an unavoidable part of the simulation study when complet­
+ing the questionnaire.
+Each scenario appeared twice, once for each monitor­
+ing technology. To keep participants blind to this fact, we 
+arranged the resulting four simulation videos sequentially 
+so that the scenarios alternated. We additionally alternated 
+the viewing distance between each video, thereby creating 
+four distinct simulation session sequences. Therefore each 
+technology-viewing distance pairing (e.g. Philips Visual 
+Patient Avatar at 8 m) for a given scenario (e.g. Scenario 1) 
+was evaluated by a total of 14 participants (e.g. 1 through 7 
+and 15 through 21). Figure 4 provides a flowchart detailing 
+this procedure.
+Fig. 3  Study setup. Photographs taken from the participants’ perspec­
+tive, standing at 8- (A) and 16- meter (B) viewing distance from the 
+computer monitor used to display the simulation videos. The superim­
+posed gray arrows correspond to the viewing distance. Abbreviations: 
+8 m: 8-meter viewing distance; 16 m: 16-meter viewing distance
+ 
+Fig. 2  Display modalities. Screenshots taken of the simulation videos for scenario 1, including the conventional modality (A) and the split-screen 
+modality (B)
+ 
+1 3
+1068
+Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
+Fig. 4  Simulation session sequences flowchart. Each participant evalu­
+ated four simulation videos sequentially, thereby alternating the sce­
+nario and viewing distance at every turn. By changing the starting 
+technology and viewing distance we created four different simulation 
+session sequences (can be read from top to bottom in the flowchart) 
+and divided the participants accordingly. Each simulation video in the 
+flowchart is described with its corresponding scenario (on the right), 
+technology (red for Philips Visual Patient Avatar and blue for con­
+ventional monitoring), and viewing distance (larger pictogram size 
+for 8-meter viewing distance and smaller pictogram size for 16-meter 
+viewing distance). Abbreviations: 8  m: 8-meter viewing distance; 
+16 m: 16-meter viewing distance; C: conventional monitoring; VPA: 
+Philips Visual Patient Avatar
+ 
+1 3
+1069
+Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
+We used Microsoft Excel spreadsheets (Microsoft Cor­
+poration, Redmond, WA, USA), Prism 9 (GraphPad Soft­
+ware Inc., San Diego, CA, USA) and R version 4.0.5 (R 
+Foundation for Statistical Computing, Vienna, Austria) to 
+manage and analyze our data. We generated the participant 
+flowchart using draw.io (JGraph Ltd., Northampton, UK). 
+We used a Nikon D90 D-SLR camera (Nikon Corporation, 
+Minato, Tokyo, Japan) to acquire photographic material, 
+which we then edited using GIMP (GNU Image Manipula­
+tion Program, GNU General Public License).
+3  Results
+3.1  Study and participant characteristics
+We enrolled 30 anesthesia providers who completed 120 
+simulations. However, due to technical issues with the data 
+storage software, questionnaire data from two participants 
+were not available for analysis. Consequently, we analyzed 
+data from 28 participants, representing 112 simulations. 
+Table 1 shows the characteristics of the participants.
+3.2  Primary outcome
+Using the Visual Patient Avatar, the number of correctly 
+recognized vital signs was higher from an 8-meter viewing 
+distance. The mixed Poisson model shows a 74% increase in 
+recognized vital signs at 8 m (rate ratio 1.74, 95% CI, 1.42 
+to 2.14, p < 0.001) when using the Visual Patient Avatar 
+compared to conventional monitoring. Figure 5 illustrates 
+the results for each scenario per participant.
+Of all 56 descriptive intra-participant comparisons of the 
+performance using the conventional or the Visual Patient 
+Avatar, the participants performed better using the latter in 
+all but three cases. In scenario 1, from an 8-meter viewing 
+distance, the median number of correctly recognized vital 
+signs using the Visual Patient Avatar was five vital signs 
+higher, rising from a median [IQR] of 4 [3, 7] with conven­
+tional monitoring to 9 [8, 10] with the Visual Patient Avatar. 
+Similarly, in scenario 2, at a viewing distance of 8 m, it was 
+higher by four vital signs, increasing from 5.5 [4, 6] with 
+conventional monitoring to 9.5 [8.25,11] with the Visual 
+Patient Avatar. The differences between the two technolo­
+gies were even more prominent when assessed from 16 m. 
+In scenario 1, the median number of correct recognitions 
+with the Visual Patient Avatar was higher by eight vital 
+signs, from 1 [0,1.75] with conventional monitoring to 9 
+[7.25,9.75] with the Visual Patient Avatar. In scenario 2, it 
+was higher by five vital signs, increasing from 1.5 [0,2] with 
+conventional monitoring to 6.5 [5, 8] with the Visual Patient 
+Avatar. In the mixed Poisson regression model, the correct 
+All simulation videos were performed on a Swift3 14-inch 
+laptop computer (ACER, Inc. Taipei, Taiwan). To emulate 
+the size of the Philips Intellivue MX750 monitor, we mir­
+rored the laptop screen onto an external Samsung S24E450 
+computer monitor (Samsung Electronics Co., Ltd., Seoul, 
+South Korea) in full high resolution (1920 × 1080 pixels) at 
+60 frames per second, without audio.
+Participants assessed vital signs simultaneously with each 
+video using the iSurvey questionnaire application (Harvest 
+Your Data, Wellington, New Zealand) on an iPad- (Apple 
+Inc., Cupertino, CA, USA).
+2.6  Data analysis
+For descriptive statistics, we provide means and standard 
+deviations, medians with interquartile ranges for continuous 
+data, and numbers with percentages for categorical data.
+We used a mixed Poisson regression model to compare 
+the difference in correctly recognized vital signs depend­
+ing on the categorical variables of monitoring technology 
+and viewing distance. The inclusion of an interaction term 
+allowed us to assess the effect of each combination of vari­
+ables (Visual Patient Avatar from an 8 m viewing distance, 
+conventional monitoring from a 16  m viewing distance 
+and Visual Patient Avatar from a 16 m viewing distance) 
+relative to the reference category (defined as conventional 
+monitoring from an 8  m viewing distance). Notably, this 
+model accounted for repeated measurements obtained from 
+the same participant by including a random intercept per 
+participant. Furthermore, we implemented a second model 
+adjusted for the respective scenario to examine the influence 
+of scenarios as an additional variable on the outcome.
+We conducted a pilot study before recruiting participants. 
+To determine the required sample size, we took the result­
+ing rate ratio of 1.35 to calculate 1000 simulated data sets. 
+A sample size of 20 participants per data set could demon­
+strate a statistical power of over 90%.
+Table 1  Participant characteristics
+Participants included in data analysis, n
+28
+Male, n (%)
+17 (60.7)
+Female, n (%)
+11 (39.3)
+Age of participants (years), median (IQR)
+33 (29–35)
+Work experience (years), median (IQR)
+4 (1.5-7.0)
+Professional group
+Interns, n (%)
+3 (10.7)
+Nurse anesthetists, n (%)
+9 (32.2)
+Resident physicians, n (%)
+13 (46.4)
+Consultant physicians, n (%)
+3 (10.7)
+Self-reported eyesight
+Normal, n (%)
+17 (60.7)
+Near-sighted, n (%)
+10 (35.7)
+Far-sighted, n (%)
+1 (3.6)
+IQR: interquartile range
+1 3
+1070
+Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
+recognition rate compared to the reference category (con­
+ventional monitoring from an 8-meter viewing distance) 
+was 74% higher from an 8-meter viewing distance and 51% 
+higher from a 16-meter viewing distance. Table 2 presents 
+these results. After including the respective scenario as an 
+influential variable in the second model, we obtained con­
+sistent results, negating the effect of either scenario on the 
+primary outcome.
+Table 2  Primary outcome results of the mixed Poisson regression 
+model
+rate ratio
+95% confidence interval
+p-value
+VPA + 8 m
+1.74
+from 1.42 to 2.14
+< 0.001
+C + 16 m
+0.30
+from 0.21 to 0.42
+< 0.001
+VPA + 16 m
+1.51
+from 1.23 to 1.87
+< 0.001
+VPA: Visual Patient Avatar; C: conventional monitoring; 8  m: 
+8-meter viewing distance; 16 m: 16-meter viewing distance; 95% CI: 
+95% confidence interval
+Fig. 5  Vital sign recognition per participant. Grouped column chart 
+showing the performance of participants in regard to scenario and 
+viewing distance. Each participant is marked appropriately with a con­
+secutive number (Patient ID 1–28; as shown in Fig. 4). The median 
+number of correct recognitions for each technology is shown with the 
+colored dotted line. Abbreviations: 8  m: 8-meter viewing distance; 
+16 m: 16-meter viewing distance
+ 
+1 3
+1071
+Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
+significantly better at an 8-meter viewing distance. Scenario 
+2 also had five vital signs with strong evidence for superior 
+performance, four differed from scenario 1. Apart from the 
+central venous pressure and the ST segment, all vital signs 
+supported improved performance at the 16-meter view­
+ing distance. In both scenarios we saw significantly better 
+results in eight out of the eleven vital signs.
+4  Discussion
+4.1  Principal findings
+The current study demonstrated an advantage for the Visual 
+Patient Avatar with distant vision. The validation of these 
+findings in both scenarios ensures the consistent and reliable 
+applicability of the Visual Patient Avatar with distant vision.
+Conventional and avatar-based patient monitoring tech­
+nologies can be understood in neurocognitive terms as a 
+comparison between visual symbols (Arabic numerals) and 
+visual objects (vital sign visualizations of the Visual Patient 
+3.3  Secondary outcome
+When looking at the different vital signs separately, there 
+was no case where the conventional monitoring showed a 
+better performance than the Visual Patient Avatar. We fur­
+thermore provided evidence for better performance of the 
+Visual Patient Avatar when assessing train-of-four ratio in 
+both scenarios and both viewing distances. Figure 6 shows 
+the results for each vital sign per scenario and viewing dis­
+tance. Dot plot presents the number of participants who 
+correctly identified individual vital signs. The difference in 
+the number of participants using both technologies is repre­
+sented by the dotted line. Odds ratios are missing where they 
+could not be calculated due to a value of zero in the underly­
+ing Table (0 participants who had an incorrect response with 
+Visual Patient Avatar but a correct response with conven­
+tional technology). Similarly, we did not include p-values 
+where they could not be calculated because the matrix on 
+which the test was based had only one non-zero entry.
+In scenario 1, there was strong evidence for two and 
+moderate evidence for further two vital signs performing 
+Fig. 6  Vital sign recognition per scenario. Abbreviations: HR: heart 
+rate; ST: ST segment; MAP: mean arterial pressure; CVP: central 
+venous pressure; BIS: bispectral index; TOF: train-of-four ratio; 
+SpO2: oxygen saturation; RR: respiratory rate; TV: tidal volume; 
+etCO2: expiratory carbon dioxide concentration; T: body temperature; 
+8 m: 8-meter viewing distance; 16 m: 16-meter viewing distance; OR: 
+odds ratio; p: p-value
+ 
+1 3
+1072
+Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
+and color [30]. The individual visualizations of the Visual 
+Patient Avatar do not move, but some perform a frequency-
+dependent pulsating animation. The speed of the animation 
+is perceived through another, less understood process called 
+visual temporal processing [37].
+4.2  Implications and applications
+Research indicates that anesthesia providers only directly 
+observe the monitoring device approximately 5% of the 
+time [38, 39]. One of the reasons for this is that anesthe­
+sia providers must spend a lot of time on critical tasks that 
+require physical movement around the operating room, for 
+instance, equipment checks, inspecting blood levels in sur­
+gical suction canisters and assessing the surgical field from 
+different angles. The patient monitoring technology must 
+support the anesthesia providers in adequately performing 
+patient care by enabling an effective information transfer 
+from the monitoring device to the provider. The current 
+study showed that Visual Patient Avatar allows anesthesia 
+providers to assess the patient`s vital signs without being 
+close to the monitoring device.
+Moreover, distant vision monitoring may be essential for 
+supervising multiple patients simultaneously. When going 
+past the operating theatre or resuscitation room, care pro­
+viders can swiftly evaluate the patient from a distance and 
+assess the need for intervention. This idea can expand to 
+recovery rooms. Such a comprehensive overview enhances 
+patient safety and optimizes healthcare resources, ensuring 
+timely interventions and personalized care delivery.
+4.3  Limitations
+There are several limitations to this study. First, while com­
+puter-based laboratory studies allow for controlled experi­
+ments, they may only partially capture the dynamic nature 
+of clinical practice. This simulation did not include audio 
+alarms or color highlighting of unsafe vital signs, features 
+of any state-of-the-art conventional monitoring device. We 
+deliberately chose to exclude these alarm features and focus 
+solely on the visual perception of a given set of vital signs. 
+Given Roche et al. demonstrated that standard state-of-
+the-art auditory alarms achieved only 20% alarm detection 
+accuracy [40], we suggest that the inclusion of additional 
+current-day standard auditory cues in this study would not 
+result in significantly different findings beyond the 20% 
+maximum theoretical change. Additionally, in environments 
+such as recovery rooms or intensive care units, where mul­
+tiple heart rate and oxygen saturation sounds may overlap, 
+simultaneous playback could create confusion rather than 
+enhance clarity, limiting the practicality of such cues in 
+these settings.
+Avatar) [26]. Numbers are arbitrary symbols that are cul­
+turally acquired in early childhood, enabling literate adults 
+to recognize them instantly [27, 28]. In the context of our 
+study, this implies that remote vital sign recognition using 
+conventional monitoring relies solely on visual sharpness, 
+i.e. visual acuity [29]. On the other hand, visual object rec­
+ognition depends on visual acuity and the visual processing 
+of its shape, color, and motion [30].
+Visual acuity is the relationship between the size of a 
+stimulus and its detection [31]. Increasing distance reduces 
+the relative size of the stimulus, leading to a progressive loss 
+of detail. There are three types of visual acuity: minimum 
+visible, minimum resolvable and minimum discriminable 
+[29]. Minimum visible refers to detecting the presence of a 
+visual stimulus. Minimum resolvable visual acuity regards 
+distinguishing details, such as the visual stimulus’s form, 
+shape and pattern (such as in numerals). Minimal discrim­
+inable acuity finally relates to detecting a discontinuity of 
+alignment, i.e., the relative location of more than one object 
+[29, 32, 33] (Online Resource 4). Both minimum visible and 
+minimum discriminable visual acuity have lower thresholds 
+than minimum resolvable visual acuity [29]. Therefore, at a 
+given viewing distance, a person is more likely to notice a 
+visual stimulus of a certain size, or the relative shift in posi­
+tion of an object by the same size increment, than to accu­
+rately recognize the exact shape of a visual stimulus (such 
+as a letter or numeral) when its details are also of that size. 
+Using these principles, we applied the type of visual acuity 
+to each vital sign visualization of the Visual Patient Avatar 
+(Online Resource 5). Only the train-of-four ratio falls under 
+the minimum resolvable type. Six vital signs are of the mini­
+mum visible and four of the minimum discriminable type. 
+The low threshold associated with these visual acuity types 
+validates the better performance of the Visual Patient Avatar 
+within the primary outcome.
+To investigate and further differentiate the effect of dis­
+tance monitoring, we analyzed the number of participants 
+with correct vital sign recognition per individual vital 
+sign. Notably, the vital sign of the minimally resolvable 
+type (train-of-four ratio) is the only one that consistently 
+improves across scenarios and viewing distances. We 
+explain this finding according to the traditional, primar­
+ily shape-driven theory of visual object recognition [34]. 
+Recent research, however, extends the role of color from 
+a “useful cue” towards significantly facilitating recognition 
+especially with extensive experience within a specific cat­
+egory domain (e.g., bird watching) [35, 36]. This argument 
+is reflected in the fact that oxygen saturation and body tem­
+perature, using bold colors, had significantly better results 
+in three out of four scenario-distance pairings. Motion is 
+the third component of visual object recognition and can be 
+added or subtracted to an object without affecting its shape 
+1 3
+1073
+Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
+All participants signed written informed consent for the collected data 
+in anonymized form. Study participation was voluntary and without 
+financial compensation.
+Consent for publication  We obtained written informed consent from 
+all participants for the use of their data.
+Competing interests  DWT is first named an inventor of Visual Patient 
+and Visual Patient Predictive technologies, for which the University of 
+Zurich and Koninklijke Philips N.V. hold patents, patent applications, 
+design protections, and trademarks. Joint-development and licensing 
+agreements exist with Philips Medizin Systeme Böblingen GmbH, Bö­
+blingen, Germany; Koninklijke Philips N.V., Amsterdam, The Nether­
+lands; Philips Research/Philips Electronics Nederland BV, Eindhoven, 
+The Netherlands; and Philips USA, Cambridge, MA, USA. Within 
+the framework of these agreements, DWT receives research funding, 
+travel support, lecturing and consulting honoraria, and royalties in ac­
+cordance with University of Zurich standard procedure. DWT partici­
+pates in the Philips Patient Safety Advisory Board. DWT is an inventor 
+of Visual Clot and Visual Blood technologies, with patent applications, 
+design protections, and trademarks held by the University of Zurich. 
+DWT is an inventor of Visual Hemofilter technology, for which the 
+University of Zurich holds patent applications and design protections. 
+In case of successful commercialization, DWT may receive royalties. 
+DWT received travel support, lecturing, and consulting honoraria from 
+Instrumentation Laboratory – Werfen, Bedford, MA, USA, the Swiss 
+Foundation for Anaesthesia Research in Zurich, Switzerland, and the 
+International Symposium on Intensive Care and Emergency Medicine 
+in Brussels, Belgium.
+Open Access   This article is licensed under a Creative Commons 
+Attribution 4.0 International License, which permits use, sharing, 
+adaptation, distribution and reproduction in any medium or format, 
+as long as you give appropriate credit to the original author(s) and the 
+source, provide a link to the Creative Commons licence, and indicate 
+if changes were made. The images or other third party material in this 
+article are included in the article’s Creative Commons licence, unless 
+indicated otherwise in a credit line to the material. If material is not 
+included in the article’s Creative Commons licence and your intended 
+use is not permitted by statutory regulation or exceeds the permitted 
+use, you will need to obtain permission directly from the copyright 
+holder. To view a copy of this licence, visit ​h​t​t​p​:​/​/​c​r​e​a​t​i​v​e​c​o​m​m​o​n​s​.​o​
+r​g​/​l​i​c​e​n​s​e​s​/​b​y​/​4​.​0​/​.​
+References
+1. 
+Gardner RM, Shabot MM. Patient-monitoring systems. Medical 
+Informatics: computer applications in Health Care and Biomedi­
+cine. New York: New York, NY: Springer; 2001. pp. 443–84. E.H. 
+Shortliffe and L.E. Perreault, Editors.
+2. 
+Gelb AW, et al. World Health Organization-World Federation 
+of Societies of Anaesthesiologists (WHO-WFSA) International 
+standards for a safe practice of Anesthesia. Volume 126. Anesthe­
+sia & Analgesia; 2018. 6.
+3. 
+Kipnis E, et al. Monitoring in the Intensive Care. Crit Care Res 
+Pract. 2012;2012:p473507.
+4. 
+Nolan JP, et al. European Resuscitation Council and European 
+Society of Intensive Care Medicine guidelines 2021: post-resus­
+citation care. Intensive Care Med. 2021;47(4):369–421.
+5. 
+Organization WH. WHO guidelines for safe surgery 2009: safe 
+surgery saves lives. World Health Organization: Geneva, Switzer­
+land; 2009.
+Moreover, there are no established guidelines or reference 
+materials regarding viewing distances for clinical monitors. 
+To our knowledge, there are no industry or government stan­
+dards that define the maximum viewing distance for medical 
+monitors, nor did we find any previous studies that address 
+this issue. Anesthesiologists typically work within 1–2 m of 
+the anesthesia workstation, while in our hospital’s recovery 
+room, the central desk is located approximately 15 m from 
+the farthest bed in a 20–30 m room. Therefore, the view­
+ing distances we selected in our study were based on these 
+routine clinical observations rather than experimental data.
+Furthermore, although we have demonstrated significant 
+performance improvements in all vital parameters, further 
+research is needed to make these results more consistent and 
+independent of viewing distance and scenario.
+5  Conclusion
+This study introduces the concept of distant vision monitor­
+ing. Our findings strongly support that avatar-based patient 
+monitoring technology such as the Philips Visual Patient 
+Avatar can significantly improve remote vital sign recogni­
+tion. Further research is needed to translate these findings 
+into everyday clinical practice, assess their impact on anes­
+thesia performance, and evaluate their influence on patient 
+outcomes.
+Supplementary 
+Information  The 
+online 
+version 
+contains 
+supplementary material available at ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​0​7​/​s​1​0​8​7​7​-​0​
+2​4​-​0​1​2​3​9​-​x​.​
+Acknowledgements  The authors are thankful to the study participants 
+for their time and effort.
+Author contributions  Conceptualization: PM, JL, DWT, GG; Data 
+Analysis: PM, JB; Writing – Original Draft Preparation: PM, GG; Re­
+view and Editing: JB, CAH, JL, DWT, GG; Visualization: PM; Super­
+vision: CAH, DWT, GG; Project Administration: DWT. All authors 
+read and approved the final manuscript.
+Funding  The Institute of Anesthesiology of the University Hospital 
+of Zurich, Zurich, Switzerland and the University of Zurich, Zurich, 
+Switzerland funded this project.
+Open access funding provided by University of Zurich
+Data availability  The datasets used and/or analyzed during the cur­
+rent study are available from the corresponding author on reasonable 
+request.
+Declarations
+Ethics approval and consent to participate  The Cantonal Ethics Com­
+mittee of Zurich in Switzerland approved the study protocol. They 
+issued a declaration of non-jurisdiction specifying that the research 
+project did not fall into the scope of the Human Research Act (Busi­
+ness Management System for Ethics Committees Req-2023-00580). 
+1 3
+1074
+Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
+multicenter computer-based laboratory study. BMC Med Inf 
+Decis Mak. 2020;20(1):26.
+24. Pfarr J, et al. Effects of a standardized distraction on caregiv­
+ers’ perceptive performance with avatar-based and conventional 
+patient monitoring: a multicenter comparative study. J Clin Monit 
+Comput. 2020;34(6):1369–78.
+25. Tscholl DW, et al. The mechanisms responsible for Improved 
+Information transfer in Avatar-based patient monitoring: Mul­
+ticenter Comparative Eye-Tracking Study. J Med Internet Res. 
+2020;22(3):e15070.
+26. Pollack C, Price GR. Neurocognitive mechanisms of digit pro­
+cessing and their relationship with mathematics competence. 
+NeuroImage. 2019;185:245–54.
+27. Lochy A, Schiltz C. Lateralized neural responses to letters and 
+digits in First Graders. Child Dev. 2019;90(6):1866–74.
+28. Park J, et al. Experience-dependent Hemispheric specialization of 
+letters and numbers is revealed in early visual Processing. J Cogn 
+Neurosci. 2014;26(10):2239–49.
+29. McCluskey P. Visual acuity. Ocular and visual physiology. 
+Springer; 2016. pp. 273–83. S. Skalicky, Editor.
+30. Viviani P, Aymoz C. Colour, form, and movement are not per­
+ceived simultaneously. Vision Res. 2001;41(22):2909–18.
+31. Kniestedt C, Stamper R. Visual acuity and its measurement. Oph­
+thalmol Clin North Am. 2003;16:155–70.
+32. Hecht S, Mintz EU. The visibility of single lines at various illu­
+minations and the retinal basis of visual resolution. J Gen Physiol. 
+1939;22(5):593–612.
+33. Hirsch J, Curcio CA. The spatial resolution capacity of human 
+foveal retina. Vision Res. 1989;29(9):1095–101.
+34. Nicholson KG, Humphrey GK. The Effect of Colour Congru­
+ency on shape discriminations of novel objects. Perception. 
+2004;33(3):339–53.
+35. Biederman I, Ju G. Surface versus edge-based determinants of 
+visual recognition. Cogn Psychol. 1988;20(1):38–64.
+36. Hagen S, et al. The role of color in expert object recognition. J 
+Vis. 2014;14(9):9–9.
+37. Poggel DA et al. A matter of time: improvement of visual tempo­
+ral processing during training-induced restoration of light detec­
+tion performance. Front Psychol, 2015. 6.
+38. Ford S, et al. At-a-Glance Monitoring: Covert observations of 
+anesthesiologists in the operating room. Volume 111. Anesthesia 
+& Analgesia; 2010. 3.
+39. Loeb RG. Monitor surveillance and vigilance of Anesthesia resi­
+dents. Anesthesiology. 1994;80(3):527–33.
+40. Roche TR, et al. Voice alerting as a medical alarm modality for 
+next-generation patient monitoring: a randomised international 
+multicentre trial. Br J Anaesth. 2021;127(5):769–77.
+Publisher’s note  Springer Nature remains neutral with regard to juris­
+dictional claims in published maps and institutional affiliations.
+6. 
+Endsley M, Bolte B, Jones D. Designing for Situation Awareness: 
+An Approach to user-centered design. Boca Raton (FL) CRC; 
+2003.
+7. 
+Schulz CM, et al. Situation Awareness in Anesthesia: Concept 
+and Research. Anesthesiology. 2013;118(3):729–42.
+8. 
+Lee J et al. The Oxford Handbook of Cognitive Engineering. 
+2013.
+9. 
+Schulz CM, et al. Frequency and type of situational awareness 
+errors contributing to death and brain damage: a closed claims 
+Analysis. Anesthesiology. 2017;127(2):326–37.
+10. Schulz CM, et al. Situation awareness errors in anesthesia and 
+critical care in 200 cases of a critical incident reporting system. 
+BMC Anesthesiol. 2016;16(1):4.
+11. Drews FA, Westenskow DR. The right picture is Worth a 
+Thousand numbers: data displays in Anesthesia. Hum Factors. 
+2006;48(1):59–71.
+12. Drews FA. Patient monitors in critical care: lessons for Improve­
+ment. Advances in Patient Safety: new directions and alternative 
+approaches. Agency for Healthcare Research and Quality (US): 
+Rockville (MD); 2008. K.B. Henriksen, James B.; Keyes, Marga­
+ret A.; Grady, Mary L Editor.
+13. Tscholl DW et al. Situation Awareness-oriented patient monitor­
+ing with visual patient technology: a qualitative review of the pri­
+mary research. Sens (Basel), 2020(1424–8220 (Electronic)).
+14. Rayner K. Eye movements in reading and information process­
+ing: 20 years of research. Psychol Bull. 1998;124(3):372–422.
+15. Pfarr J, et al. Avatar-based patient monitoring with Peripheral 
+Vision: a Multicenter Comparative Eye-Tracking Study. J Med 
+Internet Res. 2019;21(7):e13041.
+16. Tscholl DW, et al. It’s not you, it’s the design - common prob­
+lems with patient monitoring reported by anesthesiologists: a 
+mixed qualitative and quantitative study. BMC Anesthesiol. 
+2019;19(1):87.
+17. Poncette AS, et al. Clinical requirements of future patient moni­
+toring in the Intensive Care Unit: qualitative study. JMIR Med 
+Inf. 2019;7(2):e13064.
+18. Fraser KL, Ayres P, Sweller J. Cognitive load theory for the 
+design of medical simulations. Simul Healthc. 2015;10(5)
+19. Miller GA. The magical number seven, plus or minus two: some 
+limits on our capacity for processing information. Psychol Rev. 
+1956;63(2):81–97.
+20. Philips. Visual Patient Avatar. 2023 [cited 2023 October 11, 
+2023]; ​h​t​t​p​s​:​/​/​w​w​w​.​p​h​i​l​i​p​s​.​c​o​.​u​k​/​h​e​a​l​t​h​c​a​r​e​/​t​e​c​h​n​o​l​o​g​y​/​v​i​s​u​a​l​-​p​
+a​t​i​e​n​t​-​a​v​a​t​a​r​
+21. Degani A et al. On organization of information: approach and 
+early work. 2009, NASA Ames Research Center: Moffett Field, 
+CA, USA.
+22. Wittgenstein L. Tractatus logico-philosophicus. London, United 
+Kingdom: Routledge & Kegan Paul; 1922.
+23. Garot O, et al. Avatar-based versus conventional vital sign dis­
+play in a central monitor for monitoring multiple patients: a 
+1 3
+1075
