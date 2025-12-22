@@ -42,44 +42,75 @@ async def pdf_download(
     return {"status": "success", "excelFile": encoded}
 
 
-# ---------------- MODULE 1.1: LIST DOWNLOADED PDFs ----------------
-@router.get("/pdf-list")
-def list_downloaded_pdfs(project_id: str):
-    pdf_folder = os.path.join("database", project_id, "secondary", "pdf")
+# ---------------- MODULE 1.1: GET EXISTING PDF DOWNLOAD ----------------
+@router.get("/pdf-download/existing")
+def get_existing_pdf_download(project_id: str):
+    """
+    Check if PDF download screening Excel already exists.
+    Returns parsed Excel + base64 file.
+    """
 
-    if not os.path.exists(pdf_folder):
-        return {"pdfs": []}
+    output_path = f"database/{project_id}/secondary/output/pdf_download_status.xlsx"
 
-    pdfs = []
-    for file in os.listdir(pdf_folder):
-        if file.lower().endswith(".pdf"):
-            pdfs.append({
-                "filename": file,
-                "pmid": os.path.splitext(file)[0]
-            })
+    if not os.path.exists(output_path):
+        return {"exists": False}
 
-    return {"pdfs": pdfs}
+    import pandas as pd
+
+    df = pd.read_excel(output_path).fillna("")
+
+    # Ensure required columns only
+    required_cols = ["PMID", "PMCID", "PDF_Link", "Status"]
+    df = df[[c for c in required_cols if c in df.columns]]
+
+    with open(output_path, "rb") as f:
+        excel_bytes = f.read()
+
+    return {
+        "exists": True,
+        "screening": df.to_dict(orient="records"),
+        "excelFile": base64.b64encode(excel_bytes).decode(),
+    }
 
 
-# ---------------- MODULE 1.2: OPEN PDF ----------------
-@router.get("/open-pdf")
-def open_pdf(project_id: str, filename: str):
-    pdf_path = os.path.join(
-        "database",
-        project_id,
-        "secondary",
-        "pdf",
-        filename
-    )
+# ---------------- MODULE 1.2: LIST DOWNLOADED PDFs ----------------
+# @router.get("/pdf-list")
+# def list_downloaded_pdfs(project_id: str):
+#     pdf_folder = os.path.join("database", project_id, "secondary", "pdf")
 
-    if not os.path.exists(pdf_path):
-        return {"error": "PDF not found"}
+#     if not os.path.exists(pdf_folder):
+#         return {"pdfs": []}
 
-    return FileResponse(
-        pdf_path,
-        media_type="application/pdf",
-        filename=filename
-    )
+#     pdfs = []
+#     for file in os.listdir(pdf_folder):
+#         if file.lower().endswith(".pdf"):
+#             pdfs.append({
+#                 "filename": file,
+#                 "pmid": os.path.splitext(file)[0]
+#             })
+
+#     return {"pdfs": pdfs}
+
+
+# ---------------- MODULE 1.3: OPEN PDF ----------------
+# @router.get("/open-pdf")
+# def open_pdf(project_id: str, filename: str):
+#     pdf_path = os.path.join(
+#         "database",
+#         project_id,
+#         "secondary",
+#         "pdf",
+#         filename
+#     )
+
+#     if not os.path.exists(pdf_path):
+#         return {"error": "PDF not found"}
+
+#     return FileResponse(
+#         pdf_path,
+#         media_type="application/pdf",
+#         filename=filename
+#     )
 
 
 # ---------------- MODULE 2: PDF → TEXT ----------------
@@ -130,6 +161,8 @@ async def secondary_runner(
         encoded = base64.b64encode(f.read()).decode()
 
     return {"status": "success", "excelFile": encoded}
+
+
 # ---------------- MODULE 3.1: GET EXISTING SECONDARY ----------------
 @router.get("/existing")
 def get_existing_secondary(project_id: str):
@@ -143,7 +176,6 @@ def get_existing_secondary(project_id: str):
         return {"exists": False}
 
     import pandas as pd
-    import base64
 
     df = pd.read_excel(output_path).fillna("")
 
