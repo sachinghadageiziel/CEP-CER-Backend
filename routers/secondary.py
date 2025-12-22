@@ -1,4 +1,5 @@
 from fastapi import APIRouter, UploadFile, File, Form
+from fastapi.responses import FileResponse
 import os
 import base64
 import shutil
@@ -10,7 +11,7 @@ from secondary.secondary_runner import run_secondary_screening
 router = APIRouter(prefix="/api/secondary", tags=["Secondary Screening"])
 
 
-# ---------------- MODULE 1 ----------------
+# ---------------- MODULE 1: PDF DOWNLOAD ----------------
 @router.post("/pdf-download")
 async def pdf_download(
     project_id: str = Form(...),
@@ -41,7 +42,47 @@ async def pdf_download(
     return {"status": "success", "excelFile": encoded}
 
 
-# ---------------- MODULE 2 ----------------
+# ---------------- MODULE 1.1: LIST DOWNLOADED PDFs ----------------
+@router.get("/pdf-list")
+def list_downloaded_pdfs(project_id: str):
+    pdf_folder = os.path.join("database", project_id, "secondary", "pdf")
+
+    if not os.path.exists(pdf_folder):
+        return {"pdfs": []}
+
+    pdfs = []
+    for file in os.listdir(pdf_folder):
+        if file.lower().endswith(".pdf"):
+            pdfs.append({
+                "filename": file,
+                "pmid": os.path.splitext(file)[0]
+            })
+
+    return {"pdfs": pdfs}
+
+
+# ---------------- MODULE 1.2: OPEN PDF ----------------
+@router.get("/open-pdf")
+def open_pdf(project_id: str, filename: str):
+    pdf_path = os.path.join(
+        "database",
+        project_id,
+        "secondary",
+        "pdf",
+        filename
+    )
+
+    if not os.path.exists(pdf_path):
+        return {"error": "PDF not found"}
+
+    return FileResponse(
+        pdf_path,
+        media_type="application/pdf",
+        filename=filename
+    )
+
+
+# ---------------- MODULE 2: PDF → TEXT ----------------
 @router.post("/pdf-to-text")
 async def pdf_to_text(project_id: str = Form(...)):
     project_folder = os.path.join("database", project_id, "secondary")
@@ -54,7 +95,7 @@ async def pdf_to_text(project_id: str = Form(...)):
     return run_pdf_to_text(pdf_dir=pdf_folder, text_dir=text_folder)
 
 
-# ---------------- MODULE 3 ----------------
+# ---------------- MODULE 3: SECONDARY RUNNER ----------------
 @router.post("/secondary-runner")
 async def secondary_runner(
     project_id: str = Form(...),
@@ -70,17 +111,14 @@ async def secondary_runner(
     os.makedirs(text_folder, exist_ok=True)
     os.makedirs(output_folder, exist_ok=True)
 
-    # ✅ FIXED: Save IFU PDF (binary safe)
     ifu_path = os.path.join(input_folder, "ifu.pdf")
     with open(ifu_path, "wb") as buffer:
         shutil.copyfileobj(ifu_pdf.file, buffer)
 
-    # ✅ FIXED: Save Primary Excel (binary safe)
     primary_path = os.path.join(input_folder, "primary_screening.xlsx")
     with open(primary_path, "wb") as buffer:
         shutil.copyfileobj(primary_excel.file, buffer)
 
-    # ✅ Correct argument order
     output_excel = run_secondary_screening(
         primary_excel_path=primary_path,
         ifu_pdf_path=ifu_path,
@@ -92,3 +130,28 @@ async def secondary_runner(
         encoded = base64.b64encode(f.read()).decode()
 
     return {"status": "success", "excelFile": encoded}
+# ---------------- MODULE 3.1: GET EXISTING SECONDARY ----------------
+@router.get("/existing")
+def get_existing_secondary(project_id: str):
+    """
+    Check if secondary screening result already exists.
+    Returns parsed Excel + base64 file.
+    """
+    output_path = f"database/{project_id}/secondary/output/secondary_results.xlsx"
+
+    if not os.path.exists(output_path):
+        return {"exists": False}
+
+    import pandas as pd
+    import base64
+
+    df = pd.read_excel(output_path).fillna("")
+
+    with open(output_path, "rb") as f:
+        excel_bytes = f.read()
+
+    return {
+        "exists": True,
+        "masterSheet": df.to_dict(orient="records"),
+        "excelFile": base64.b64encode(excel_bytes).decode(),
+    }
