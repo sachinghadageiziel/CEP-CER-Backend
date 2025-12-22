@@ -58,7 +58,7 @@ def call_langflow(ifu_text: str, article_text: str):
         "output_type": "chat",
         "input_value": "",
         "tweaks": {
-            "Prompt-QH9TX": {
+            "Prompt-81K11": {
                 "ifu_context": ifu_text,
                 "article_text": article_text
             }
