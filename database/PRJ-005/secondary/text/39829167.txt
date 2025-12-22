@@ -92,6 +92,8 @@ ensure that gases are administered within safe limits and
 help healthcare facilities maintain regulatory compliance and 
 effective risk management protocols for patient care and 
 environmental safety.8 Medical gas sensors also play a critical 
+
+
 MEDICAL GAS RESEARCH｜Vol 15｜No.2｜June 2025｜319
 MEDICAL GAS RESEARCH
 www.medgasres.com
@@ -210,6 +212,8 @@ High selectivity through functionalization
 Both metal oxides and carbon–based nanomaterials can 
 be functionalized to improve selectivity, which is critical 
 for distinguishing between similar gases. Functionalization 
+
+
 320  ｜MEDICAL GAS RESEARCH｜Vol 15｜No.2｜June 2025
 MEDICAL GAS RESEARCH
 www.medgasres.com
@@ -347,6 +351,8 @@ fraud detection, and medical diagnosis, helping systems adapt
 and evolve in response to new data.22 Figure 2 illustrates a 
 structured process for data generation, processing, model 
 training, evaluation, and system control, divided into three 
+
+
 MEDICAL GAS RESEARCH｜Vol 15｜No.2｜June 2025｜321
 MEDICAL GAS RESEARCH
 www.medgasres.com
@@ -429,6 +435,8 @@ and the output layer. The input layer receives multiple input signals
 based functions in the hidden layer (blue nodes). The output layer 
 (red node) combines the outputs of the hidden layer using another 
 set of weights, known as linear weights, to produce a final output.
+
+
 322  ｜MEDICAL GAS RESEARCH｜Vol 15｜No.2｜June 2025
 MEDICAL GAS RESEARCH
 www.medgasres.com
@@ -543,6 +551,8 @@ specific conductivity changes.38,39
 Chemical reactivity: AI evaluates gas-specific reactions with 
 sensor coatings or catalysts, producing distinct chemical 
 byproducts or signals for identification.40
+
+
 MEDICAL GAS RESEARCH｜Vol 15｜No.2｜June 2025｜323
 MEDICAL GAS RESEARCH
 www.medgasres.com
@@ -662,6 +672,8 @@ services connect the Analytics database to user devices over
 4G/5G/Wi-Fi, allowing remote access and real-time updates 
 via the internet protocol network, thus enabling continuous 
 monitoring and decision-making.
+
+
 324  ｜MEDICAL GAS RESEARCH｜Vol 15｜No.2｜June 2025
 MEDICAL GAS RESEARCH
 www.medgasres.com
@@ -732,6 +744,8 @@ Figure 4 ｜Real-time machine learning system for medical gas sensing.
 It integrates with various hardware interfaces, such as controllers, communicators, and screens on tablets or PCs, allowing user interaction 
 and monitoring. A detailed description is mentioned in the previous paragraph. AI: Artificial intelligence; IoT: Internet of Things; IP: internet 
 protocol; ML: machine learning; PC: personal computers; PCB: printed circuit board.
+
+
 MEDICAL GAS RESEARCH｜Vol 15｜No.2｜June 2025｜325
 MEDICAL GAS RESEARCH
 www.medgasres.com
@@ -849,6 +863,8 @@ References
 Zhang J, Xie D, Zou Y, et al. Key characteristics of nitrous oxide-induced 
 neurological disorders and differences between populations. Front 
 Neurol. 2021;12:627183.
+
+
 326  ｜MEDICAL GAS RESEARCH｜Vol 15｜No.2｜June 2025
 MEDICAL GAS RESEARCH
 www.medgasres.com

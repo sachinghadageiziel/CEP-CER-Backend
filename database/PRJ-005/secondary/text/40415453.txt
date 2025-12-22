@@ -1,0 +1,869 @@
+Pediatric Pulmonology
+ORIGINAL ARTICLE
+End‐Tidal Carbon Dioxide Monitoring in Neonates
+Receiving Therapeutic Hypothermia for
+Hypoxic‐Ischemic Encephalopathy
+Mate Detar1 | Barbara Szasz1 | Hajnalka Barta1 | Miklos Szabo1 | Agnes Jermendy1 | Eniko Szakmar1,2
+1Division of Neonatology, Pediatric Center, Semmelweis University, Budapest, Hungary | 2Division of Neonatology, Department of Pediatrics, BC Women's
+Hospital and University of British Columbia, Vancouver, BC, Canada
+Correspondence: Eniko Szakmar (szakmar.eniko@semmelweis.hu)
+Received: 20 January 2025 | Revised: 23 April 2025 | Accepted: 18 May 2025
+Funding: Hajnalka Barta, Agnes Jermendy, Miklos Szabo and Eniko Szakmar were supported through project no. RRF‐2.3.1‐21‐2022‐00011, titled National
+Laboratory of Translational Neuroscience, implemented with the support provided by the Recovery and Resilience Facility of the European Union within the
+framework of Program Széchenyi Plan Plus. Agnes Jermendy was also supported by Hungarian Scientific Research Fund (OTKA 135222 and TKP2021‐EGA25).
+Eniko Szakmar was supported by ESPR Young Investigator START‐UP Awards 2019.
+Keywords: end‐tidal carbon dioxide | hypoxic‐ischemic encephalopathy | therapeutic hypothermia
+ABSTRACT
+Introduction: Primary aim was to assess the agreement between end‐tidal carbon dioxide (etCO2) monitoring and arterial,
+capillary and venous PCO2 values in mechanically ventilated patients receiving therapeutic hypothermia (TH) for hypoxic‐
+ischemic encephalopathy (HIE). Secondary, to assess the percentage of time spent in predefined PCO2 ranges based on
+continuous etCO2 monitoring.
+Methods: In this prospective observational single center trial, infants with moderate‐to‐severe HIE receiving conventional
+ventilation with sidestream capnography were enrolled. Blood gas measurements were performed based on clinical indication.
+The mean of 12,000 etCO2 values obtained over 10 min before each corresponding blood gas was used for analysis. The
+agreement between mean etCO2 and temperature corrected and uncorrected PCO2 at 37◦C were analyzed using Bland‐Altman
+(BA) plots.
+Results: A total of 262 paired PCO2 and etCO2 values were analyzed from 35 patients. The bias between temperature corrected
+arterial PCO2 and etCO2 (n = 116) was 1.87 mmHg (SD 5.54) with −8.99 and 12.73 limits of agreement; whereas the bias
+between capillary PCO2 and etCO2 (n = 132) was 7.22 mmHg (SD 6.08). EtCO2 underestimated PCO2 of any source at 37°C.
+Excluding patients with lung diseases from BA analysis did not show improvement in the agreement. Infants spent median
+23.9% [IQR 8.5; 36.7] of monitoring time in etCO2 range < 35 mmHg and median 75.0% [IQR 61.1; 87.7] in etCO2 range of
+35‐55 mmHg.
+Conclusions: EtCO2 monitoring may be a valuable addition to neurocritical care of infants with HIE as it showed a strong level
+of agreement with temperature corrected arterial PCO2.
+1
+|
+Introduction
+To date only therapeutic hypothermia (TH) has been proven to
+reduce the risk of death and unfavorable neurological outcomes
+in infants with moderate‐severe hypoxic‐ischemic encephalo-
+pathy (HIE), which is one of the leading causes of neonatal
+morbidity and mortality, affecting approximately 1–4 cases in
+1000 live births in high‐resource settings [1, 2].
+This is an open access article under the terms of the Creative Commons Attribution‐NonCommercial License, which permits use, distribution and reproduction in any medium, provided the original
+work is properly cited and is not used for commercial purposes.
+© 2025 The Author(s). Pediatric Pulmonology published by Wiley Periodicals LLC.
+1 of 8
+Pediatric Pulmonology, 2025; 60:e71144
+https://doi.org/10.1002/ppul.71144
+
+
+Despite the effective treatment, nearly 30‐50% of the infants
+with moderate‐to‐severe HIE either die, or suffer from long‐
+term motor and/or cognitive disabilities [3, 4] Over the last
+decades several pharmacological agents such as melatonin or
+erythropoietin have been tested but failed to show additional
+neuroprotective effects when combined with TH for the treat-
+ment of HIE [4]. Therefore, the optimization of intensive care
+including respiratory support can play a defining role to
+improve the long‐term neurological outcomes [5, 6].
+Secondary analysis of the CoolCap and NICHD (National
+Institute of Child Health and Human Development) random-
+ized controlled trials for TH [7, 8] and multiple retrospective
+cohort studies [9–13] demonstrated the association between
+ventilation and oxygenation and neurodevelopmental outcomes
+in infants with HIE. Both hyperoxia and hypocapnia have been
+shown to be detrimental to the already injured brain [8–12].
+Even a brief period of hyperoxia can trigger oxidative stress
+leading to secondary injury after hypoxia‐ischemia [14]. Hypo-
+capnia may worsen brain injury via multiple mechanisms
+including hypoperfusion via cerebral vasoconstriction, pro‐
+inflammatory response, and increased neuronal excitability
+that may trigger seizure activity further increasing oxygen
+demand [15–17].
+Since there has been a consistent association between hypo-
+capnia and adverse long‐term neurodevelopmental outcome,
+close monitoring of CO2 levels should be encouraged. The gold
+standard arterial blood gas sampling (PaCO2) does not allow
+continuous monitoring of PCO2 and may result in unnecessary
+blood loss [18]. Transcutaneous carbon dioxide (tcPCO2) mon-
+itoring during therapeutic hypothermia was tested in small‐
+scale retrospective studies demonstrating from modest to poor
+agreement between PaCO2 and tcPCO2 [19, 20]. Prospective
+evaluation of the feasibility of tcPCO2 under TH is currently
+underway (NCT04603547). End‐tidal CO2 (etCO2) monitoring
+with microstream sampling technique resulting in minimal
+instrumental dead space is a feasible option to continuously
+monitor CO2 exchange.
+A good agreement was demonstrated between PaCO2 and
+etCO2 in mechanically ventilated infants from a heterogeneous
+population, including both term and preterm infants, using
+both side, ‐ and mainstream capnography [18, 21, 22]. A recent
+retrospective chart review of 58 mechanically ventilated pa-
+tients under TH showed a reliable correlation between tem-
+perature corrected PaCO2 and etCO2 [23]. Notably, this
+retrospective study is the only one to date that has evaluated the
+agreement between etCO2 and PCO2 specifically in HIE
+patients.
+The primary aim of this prospective observational study was to
+evaluate the agreement between etCO2 and arterial, capillary
+and venous PCO2 values in mechanically ventilated patients
+with HIE receiving TH. Secondary aim was to assess the per-
+centage of time spent in predefined PCO2 ranges based on the
+continuous etCO2 monitoring. We hypothesized that etCO2
+would have a clinically acceptable agreement with the gold‐
+standard arterial PCO2. Additionally, we expected that contin-
+uous etCO2 monitoring would reveal that patients spend a
+substantial proportion of time outside the predefined optimal
+PCO2 ranges, highlighting the potential value of real‐time CO2
+monitoring.
+2
+|
+Methods
+2.1
+|
+Patient Selection
+In this prospective observational single center trial, we enrolled
+infants born between 2020 December and 2022 March, treated
+with therapeutic hypothermia for moderate‐to‐severe HIE ac-
+cording to the criteria of the international TOBY trial (Total
+Body Hypothermia for Neonatal Encephalopathy Trial) [24] at
+the Division of Neonatology, Pediatric Center, Semmelweis
+University. Ethical permission for data collection and analysis
+was obtained from the Scientific and Medical Research Council
+Ethics Committee of Hungary (IV/6161‐1/2020/EKU). Consent
+was waived as the study involved no additional interventions
+beyond standard care and relied on deidentified data.
+From this patient pool, we included all infants receiving con-
+ventional mechanical ventilation with sidestream capnography
+monitoring. Continuous etCO2 data was linked to time‐
+corresponding blood gas PCO2 levels. Exclusion criteria were
+(a) major birth defects, (b) patients on palliative care, (c) res-
+piratory morbidities treated with high‐frequency oscillatory
+ventilation (HFOV) and/or inhaled nitric‐oxide therapy as an
+indicator of severe persistent pulmonary hypertension.
+Thompson encephalopathy score was utilized to assess the
+severity of HIE. Systematic evaluation of brain magnetic reso-
+nance images (MRI) was carried out using the scoring system
+published by Weeke et al. [25] Bayley Scales of Infant Devel-
+opment 2nd and 3rd Editions (Bayley‐2 and Bayley‐3, respec-
+tively) was performed at 18–22 months of age by trained
+examiners to evaluate neurodevelopmental outcome [26, 27].
+Adverse neurodevelopmental outcome was defined as a score of
+< 70 on either the Mental Development Index (MDI) or the
+Psychomotor Development Index (PDI) in case of application of
+the Bayley‐2 test, and < 85 on the Cognitive Language Com-
+posite scale (CLC) or the Motor Composite scale (MC) of
+Bayley‐3 test. Neurodevelopmental impairment cutoff values
+were defined based on the recommendations of Jary et al. [28].
+2.2
+|
+End Tidal CO2 Data Retrieval and Blood Gas
+PCO2 Measurements
+Neonates receiving TH were sedated (10 μg/kg/h continuous
+morphine infusion) and mechanically ventilated as per local
+protocol during the observational trial period. The etCO2 level
+was monitored via Capnostream 35 portable respiratory moni-
+tor (Medtronic Plc, Minneapolis, MN, USA), using sidestream
+end
+tidal
+capnography
+with
+microstream
+sampling
+line
+(FilterLine® H Set CO2 Sampling Line, Covidien, Medtronic)
+during hypothermia and rewarming. EtCO2 monitoring was
+recommended if available during TH as per unit policy. EtCO2
+were registered and downloaded at a 20/s sampling rate.
+Blood gas PCO2 levels were measured from arterial, capillary
+and venous blood samples collected as part of routine care,
+2 of 8
+Pediatric Pulmonology, 2025
+
+
+based on decisions of the attending physicians. Physicians were
+not blinded for the etCO2 measurements. Blood gas measure-
+ments were done on a GEM Premier 3500 (Werfen, Barcelona,
+Spain) point of care blood gas system. PCO2 levels were cor-
+rected for rectal temperature measured at the time of sample
+collection. The blood gas system generates both temperature‐
+corrected PCO2 values based on the entered rectal temperature,
+and uncorrected PCO2 values, standardized to 37°C.
+For every blood gas measurement, a corresponding time‐
+matched etCO2 values were linked using the following method:
+to create a representative etCO2 value, we calculated the mean
+of 12,000 etCO2 readings obtained over a 10 min period, starting
+12 min before and ending 2 min before each blood gas mea-
+surement. We omitted the last 2 min before the gas analysis
+because the blood had already been collected and placed in the
+analyzer during this period. This approach was based on pre-
+viously published data from Belteki et al. [29] Data points of
+etCO2 were omitted before analysis if were < 20 mmHg or
+> 100 mmHg due to limited accuracy in extreme ranges.
+2.3
+|
+Outcomes
+Primary outcome was the agreement between etCO2 and tem-
+perature corrected and uncorrected PCO2 at 37 ◦C from arterial,
+capillary and venous blood gas samples in infants with HIE
+during TH. In a subgroup analysis, infants with respiratory
+morbidities were excluded to assess the level of agreement in
+infants without lung pathology. Respiratory morbidities were
+defined
+as
+the
+following:
+meconium‐aspiration
+syndrome
+(MAS) or respiratory distress syndrome (RDS) confirmed by
+chest X‐ray and requiring surfactant replacement therapy or
+pneumothorax (PTX) requiring chest tube insertion.
+Secondary outcome was the time spent in predefined etCO2
+ranges, namely hypocapnia (etCO2 < 35 mmHg), normocapnia
+(35‐55 mmHg) and hypercapnia ( > 55 mmHg) in each patient.
+2.4
+|
+Statistical Analysis
+Categorical variables are reported as absolute numbers and
+percentages, while continuous variables as median and 25th to
+75th percentiles representing interquartile range [IQR].
+Time stamped capnography measurements were downloaded
+from the respiratory monitor as comma separated value (.csv)
+text files. Blood gas measurements were entered manually into
+a research database (iSORT, Semmelweis University). The
+agreement between etCO2 and temperature corrected and
+uncorrected PCO2 at 37◦C from arterial, capillary and venous
+sources were analyzed. To assess agreement between the two
+measurement methods, a Bland‐Altman (BA) analysis was
+planned. Previously published data [23] indicated that a median
+difference between arterial and end‐tidal PaCO2 was 3 units
+with an interquartile range of 0 to 7, thus the standard deviation
+of the differences was estimated at approximately 5.2. Assuming
+a desired 95% confidence interval width of ±3 units for the
+limits of agreement, the required minimum sample size was
+calculated to be 35 subjects. We included multiple measure-
+ments from each subject to account for possible within‐subject
+variability. Average difference (bias), standard deviation (SD) of
+the bias and 95% of limits of agreement were calculated.
+The percentage of time spent in the predefined etCO2 ranges
+was calculated by dividing the time spent within each range by
+the total duration of monitoring. The ranges were defined
+as
+follows:
+hypocapnia
+(etCO2 < 35 mmHg),
+normocapnia
+(35‐55 mmHg) and hypercapnia ( > 55 mmHg). The Friedman
+test was used to compare the differences in the percentage of
+time spent in the three CO2 ranges (hypocapnia, normocapnia,
+and hypercapnia). Dunn's test was then performed for pairwise
+multiple comparisons of the ranked data. Data were analyzed
+using IBM SPSS Statistics software version 23.0.0.0 (IBM Cor-
+poration, Armonk, NY, USA), GraphPad Prism version 9 for
+macOS (Boston, MA, USA), as well as R Statistical software
+4.0.5. (R Core Team, Vienna, Austria).
+3
+|
+Results
+Sixty‐seven patients received TH over the 15 months study
+period. Out of the 67 patients 7 were ventilated with HFOV, 2
+received inhaled nitric oxide treatment on conventional venti-
+lation for severe pulmonary hypertension, 1 died within 12 h of
+life due to severe HIE associated with multi organ failure, the
+remaining 22 cases did not have prospectively recorded etCO2
+data. Altogether 35 patients on conventional ventilation with
+available etCO2 recordings and corresponding blood gases were
+included in the analysis. Patients demographics, clinical and
+outcome data including MRI and Bayley test results are sum-
+marized in Table 1.
+A total of 262 paired etCO2 and PCO2 values corrected for the
+rectal temperature and also analyzed at standard 37°C were
+evaluated including 116 arterial samples from 18 patients, 132
+capillary samples from 29 patients, and 14 venous samples from
+8 patients.
+The etCO2 monitoring started at median 10.9 [6.8; 20.6] hours
+of age and the length of observation was median 71.0 [62.5;
+78.4] hours corresponding to the time of hypothermia and re-
+warming. No etCO2 readings exceeded 100 mmHg, and only
+0.9% of all etCO2 data points (66,531 out of 7,367,926) were
+below 20 mmHg; these low values were excluded before
+analysis.
+3.1
+|
+Agreement Between PCO2 and etCO2 Values
+The average difference (bias) between the temperature cor-
+rected arterial PaCO2 and etCO2 was 1.87 mmHg (SD 5.54) with
+−8.99 and 12.73 limits of agreement on 116 corresponding data
+points. The bias between the capillary PCO2 and etCO2 was
+7.22 mmHg (SD 6.08) with −4.70 and 19.14 limits of agreement
+on 132 corresponding data points. Similarly, the bias between
+venous PCO2 and etCO2 was 8.07 mmHg with −2.53 and 18.67
+limits of agreement, however the number of corresponding data
+points were low (n = 14) (Table 2). Figure 1 represents BA plots
+3 of 8
+
+
+of temperature corrected arterial and capillary PCO2 and etCO2
+values. Visual inspection of the BA plots could not identify a
+difference in precision in lower versus higher PCO2 ranges,
+suggesting that the etCO2 ‐ PCO2 agreement is similar in both
+hypocapnia and hypercapnia.
+Compared to the temperature corrected blood gas values poor
+agreement found between uncorrected PCO2 values analyzed at
+37◦C and corresponding etCO2 measurements. Agreement
+between uncorrected blood gas values and etCO2 data is sum-
+marized in Table 2.
+Out of 35 infants, 4 (11.4%) presented with RDS, another 4
+(11.4%) had MAS, all of them received surfactant replacement
+therapy. One patient had pneumothorax requiring chest tube
+insertion. Nine patients with significant pulmonary morbidities
+were excluded from BA analysis.
+Excluding patients with respiratory morbidities from the Bland‐
+Altman analysis did not improve the agreement between PaCO2
+and etCO2 (n = 96, bias (SD): 1.37 (5.79); 95% limits of agree-
+ment: −9.99; 12.72) and capillary PCO2 and etCO2 (n = 81, bias
+(SD): 7.84 (6.53); 95% limits of agreement: −4.95; 20.63)
+(Table 2). Venous samples due to low number of data points
+(n = 3) were insufficient for analysis.
+3.2
+|
+Time Spent in Hypocapnia, Normocapnia
+and Hypercapnia Based on etCO2 Monitoring
+Infants spent median 23.9% [IQR 8.5; 36.7] of monitoring time
+in hypocapnia (etCO2 range < 35 mmHg). Percentage of time
+spent in normocapnia (35–55 mmHg) was median 75.0% [IQR
+61.1; 87.7]. Infants spent less then 1% [IQR 0.0; 0.1] in hyper-
+capnia based on continuous etCO2 measurements. Friedman
+test revealed that patients spent significantly less time in
+hypercapnia then in normocapnia or hypocapnia (p< 0.0001).
+Significant difference was found also in time spent in normo-
+capnia and hypocapnia (p = 0.0257) (Figure 2).
+4
+|
+Discussion
+We found a strong level of agreement between temperature
+corrected arterial PCO2, the gold standard measurement, and
+10‐min averaged high‐frequency etCO2 values in patients with
+HIE treated with TH. The agreement was modest between the
+temperature corrected capillary and venous PCO2 and etCO2
+data. End‐tidal CO2 consistently underestimated PCO2 from any
+source at 37°C but the level of bias was clinically unacceptable
+for venous and capillary samples. Excluding infants with pul-
+monary morbidities did not improve the level of agreement.
+Several studies have assessed the accuracy of etCO2 monitoring,
+primarily in preterm neonates, yielding controversial results
+and emphasizing the impact of underlying lung diseases [22,
+30–32]. However, Kugelman et al. proved in a randomized,
+controlled multicenter study that continuous distal etCO2
+monitoring reduced the rate of intraventricular hemorrhage
+and periventricular leukomalacia in a group of patients where
+TABLE 1
+|
+Baseline characteristics, clinical and outcome data.
+Variable
+Study cohort
+n = 35
+Gestational age (week)
+39 [37; 40]
+Birth weight (g)
+3060 [2490; 3500]
+Apgar 1 min
+2 [1; 3]
+Apgar 5 min
+5 [3; 6]
+Apgar 10 min
+6 [5; 7]
+First postnatal pH
+7.0 [6.9; 7.2]
+First postnatal PCO2 (mmHg)
+44 [31; 70]
+First postnatal base deficit (mmol/L)
+4.7 [7.1; 2.1]
+First postnatal lactate (mmol/L)
+13 [11; 15]
+Age at onset of hypothermia treatment (h)
+2.5 [1.2; 3.6]
+Thompson encephalopathy scorea
+7 [5; 12]
+Length of invasive ventilation (days)
+5 [4; 6]
+Respiratory morbiditiesb
+Respiratory distress syndrome, n (%)
+4 (11.4%)
+Meconium aspiration syndrome, n (%)
+4 (11.4%)
+Pneumothorax, n (%)
+1 (2.9%)
+Surfactant administration, n (%)
+8 (22.9%)
+Short‐ and long‐term outcomes
+Length of NICU stay (days)
+10.8 [8.7; 9.7]
+MRI assessmentc
+Age at MRI (day of life)
+4.7 [3.5; 6.2]
+Any brain injury, n (%)
+30 (85.7%)
+Grey matter injury, n (%)
+16 (45.7%)
+White matter injury, n (%)
+30 (85.7%)
+Cerebellum injury, n (%)
+7 (20.0%)
+IVH, n (%)
+4 (11.4%)
+SDH, n (%)
+17 (48.6%)
+Total score including MRS abnormalities
+4 [1; 18]
+Neurodevelopmental outcomes
+Lost to follow up, n (%)
+3/35 (8.6%)
+Severe neurodevelopmental delayd, n (%)
+7/35 (20.0%)
+Death during hospital stayd, n (%)
+1/35 (2.8%)
+Bayley test availablee, n (%)
+24/35 (68.6%)
+Age at Bayley test (months)
+19 [18; 25]
+Adverse outcome on Bayleye, n (%)
+0/24 (0%)
+Note: Data are reported as median [IQR] for continuous variables and counts
+(percentages) for categorical variables.
+Abbreviations: IVH, intraventricular hemorrhage; MRI, magnetic resonance
+imaging; MRS, magnetic resonance spectroscopy; NICU, neonatal intensive
+care unit; SDH, subdural hematoma.
+aThompson score was available in 20 (56%) infants.
+bMeconium‐aspiration syndrome (MAS) and respiratory distress syndrome (RDS)
+confirmed by chest X‐ray and received surfactant replacement therapy.
+Pneumothorax (PTX) requiring chest tube insertion.
+cMRIs were assessed using scoring system of Weeke et al.
+dEight parents and/or health care providers of the infant were contacted via
+phone; seven of them reported severe neurodevelopmental delay requiring
+extensive neurodevelopmental treatment, one of them with severe HIE died
+subsequently in another hospital.
+eBayley test was available in 24 (68.6%) infants. Three infants were assessed by Bayley
+III test, otherwise Bayley II test was used. Adverse neurodevelopmental outcome
+defined as a score of < 70 on either the Mental Development Index or the Psychomotor
+Development Index in case of application of the Bayley‐2 test, and < 85 on the
+Cognitive Language Composite scale or the Motor Composite scale of Bayley‐3 test.
+4 of 8
+Pediatric Pulmonology, 2025
+
+
+etCO2 monitor was not masked and available for patient care
+comparing to a masked group [33]. A similar randomized
+controlled study is still awaited in infants with HIE with respect
+to long term outcomes.
+To date, this is the second study—and the only prospective
+one—aimed at assessing the accuracy of etCO2 measurement in
+infants undergoing therapeutic hypothermia. Similarly, to the
+present study Afzal et al. reported marginally lower etCO2
+compared to PaCO2 (median difference of 3 mmHg; IQR, 0–7)
+based on 857 arterial samples from 58 patients. However,
+the method of processing etCO2 data and whether side or
+mainstream capnography was used remained unclear in their
+paper [23].
+We propose that the computationally analyzed and averaged
+etCO2
+measurements,
+recorded
+10 min
+before
+blood
+gas
+sampling are more representative than any cross‐sectional,
+single etCO2 value, yielding a more reliable data agreement
+analysis.
+It is well known that ventilation‐perfusion mismatch, high
+respiratory rate, and the ratio of physiological dead space to
+tidal volume secondary lung disease negatively influence
+the correlation between etCO2 and PCO2 [18, 22, 31, 34].
+Two research groups showed that etCO2 correlated better
+with PaCO2 in infants with less severe lung disease defined
+as the ratio of physiological dead space to tidal volume.
+Physiological dead space includes anatomical and alveolar
+dead space which increases with the disease severity
+[22, 31]. Of note, etCO2 tends to underestimate PaCO2 even
+in healthy lungs due to the contribution of physiological
+dead space, where alveolar CO2 is diluted by CO2‐free gas
+from the dead space [18].
+TABLE 2
+|
+Agreement between temperature corrected and uncorrected arterial, capillary and venous PCO2 and etCO2 values in full cohort and
+in infants without pulmonary morbidities.
+Total patient population (n = 35)
+Agreement between temperature corrected PCO2 and etCO2 values
+All
+Arterial
+Capillary
+Venous
+♯of corresponding values
+262
+116
+132
+14
+Bias
+4.90
+1.87
+7.22
+8.07
+SD of bias
+6.39
+5.54
+6.08
+5.41
+95% Limits of Agreement
+From
+−7.63
+−8.99
+−4.70
+−2.53
+To
+17.43
+12.73
+19.14
+18.67
+Agreement between PCO2 at 37°C and etCO2 values
+Bias
+12.18
+8.64
+14.88
+16.04
+SD of bias
+7.59
+6.48
+7.39
+5.61
+95% Limits of Agreement
+From
+−2.69
+−4.07
+0.40
+5.05
+To
+27.04
+21.35
+29.35
+27.03
+Infants without pulmonary morbidities (n = 26)
+Agreement between temperature corrected PCO2 and etCO2 values
+♯of corresponding values
+180
+96
+81
+3
+Bias
+4.31
+1.37
+7.84
+n/a
+SD of bias
+6.91
+5.79
+6.53
+n/a
+95% Limits of Agreement
+From
+−9.23
+−9.99
+−4.95
+n/a
+To
+17.85
+12.72
+20.63
+n/a
+Agreement between PCO2 at 37°C and etCO2 values
+Bias
+11.53
+8.03
+15.70
+n/a
+SD of bias
+8.26
+6.80
+7.97
+n/a
+95% Limits of Agreement
+From
+−4.65
+−5.30
+0.08
+n/a
+To
+27.72
+21.37
+31.33
+n/a
+Note: The agreement between etCO2 and temperature corrected and uncorrected at 37◦C arterial, capillary and venous PCO2 values were analyzed, using Bland‐Altman
+(BA) plots. Average difference (bias), standard deviation (SD) of the bias and 95% of limits of agreement were defined.
+5 of 8
+
+
+We need to highlight that the correlation coefficient improved sig-
+nificantly more in very low birth weight infants (VLBW) comparing
+to non‐VLBW infants utilizing the above detailed approach for
+defining lung disease [31]. In the present study excluding infants
+with lung disease did not result in any improvement in the level of
+agreement. Of note, we did not use objective measures to define the
+severity of lung injury. Furthermore, the effect of physiological dead
+space may be more profound in preterm infants [31].
+FIGURE 1
+|
+Bland‐Altman plots to assess the agreement between end‐ tidal CO2 and arterial and capillary PCO2. For every blood gas mea-
+surement, the mean of 12,000 etCO2 readings obtained over a 10 min period, starting 12 min before and ending 2 min before each blood gas
+measurement was calculated. To assess agreement between the two measurement methods, a Bland‐Altman analysis was performed. See Table 2 for
+details.
+FIGURE 2
+|
+Box plots of time spent in hypocapnia, normocapnia and hypercapnia based on etCO2 monitoring. The ranges were defined as
+hypocapnia (etCO2 < 35 mmHg), normocapnia (35–55 mmHg) and hypercapnia (> 55 mmHg). The Friedman test was used to compare the differ-
+ences in the percentage of time spent in the three CO2 ranges (hypocapnia, normocapnia, and hypercapnia). Dunn's test was then performed for
+pairwise multiple comparisons of the ranked data. See text for details.
+6 of 8
+Pediatric Pulmonology, 2025
+
+
+The partial pressures of gases and blood pH are temperature‐
+dependent. At lower temperatures, gas solubility in plasma
+increases, leading to lower measured PO2 and PCO2, and a
+higher pH.
+To address this problem during intensive care, two acid–base
+management strategies, alpha‐stat and pH‐stat are available.
+Currently, it is unclear if alpha‐stat or pH‐stat management
+strategies should be preferred in neonates under hypothermia
+treatment. In pH‐stat method PCO2, PO2 and pH are corrected
+for the actual body temperature representing the true acid–base
+status of the patients; whereas alpha‐stat management can
+overestimate PCO2 and PO2 and underestimate pH if partial
+tension of gases is analyzed at 37°C [35, 36]. Although further
+investigation is needed to answer which management is supe-
+rior over the other, pediatric data and recommendation from
+CoolCap and NICHD hypothermia trial suggested to use tem-
+perature correction (pH‐stat) [35, 37]. Based on our findings,
+etCO2 estimates temperature corrected PCO2 values consider-
+ably better than uncorrected PCO2 values; further supporting
+the pH‐stat management approach.
+The secondary aim of our study was to determine the time spent
+in predefined PCO2 ranges based on continuous etCO2 mea-
+surements. It is well established that hypocapnia is common in
+the early hours of life, often resulting from compensatory
+hyperventilation due to metabolic acidosis and impaired cere-
+bral energy metabolism. Additionally, therapeutic hypothermia
+further reduces metabolic rate, thereby decreasing CO2 pro-
+duction and the amount of CO2 available for exhalation [6].
+Previous studies showed that hypocapnia occurred at least once
+in 57‐89% of infants with HIE within the first few hours of life
+[7, 10, 38]. Furthermore, infants spent a median 15% of their
+first 24 h in hypocapnia defined as a PCO2 level of ≤35 mmHg
+based on linear interpolation between blood gas sampling times
+[10]. Currently, we showed that patients spent median 24% of
+etCO2 monitoring time in hypocapnia (< 35 mmHg) and
+median 75% of their time between 35 and 55 mmHg. It remains
+to be established whether continuously monitored etCO2 values
+have any predictive value with respect to neurodevelopmental
+outcome. However, it may be inferred from our present data,
+that etCO2 correlates more closely to actual arterial PCO2 than
+capillary samples, thus the severity and duration of hypocapnia
+may be underestimated notoriously based on capillary blood gas
+sampling.
+Some limitations of the study should be acknowledged. First,
+lung diseases were classified based on clinical diagnosis, without
+objective measures to assess severity. Second, the predefined
+normocapnia range of 35‐55 mmHg is broader than the physio-
+logical standard of 35‐45 mmHg. However, Wong et al. reported
+that PCO2 levels between 5 and 7 kPa (37.5–52.5 mmHg) may be
+safe for neonates receiving ventilatory support [39]. Additionally,
+the percentage of leak around the uncuffed endotracheal tube
+was not recorded for analysis.
+One key strength of our analysis is the high‐frequency sampling
+rate of the etCO2 monitor, allowing us to analyze 12,000 data
+points, rather than relying on a single reading of a dynamically
+changing value. Furthermore, arterial, capillary, and venous
+data were analyzed, recognizing that not all infants with HIE
+have indwelling arterial catheters for blood draws. In addition,
+we suggest that the noninvasive method of PCO2 monitoring
+may reduce blood loss in critically ill infants and lower the risk
+of infections.
+5
+|
+Conclusion
+There was a strong agreement between temperature‐corrected
+arterial PaCO2 and etCO2 values in infants with moderate‐to‐
+severe HIE. Given that nearly 50% of patients undergoing
+therapeutic hypothermia require mechanical ventilation, etCO2
+monitoring may be a valuable addition to respiratory and
+neurocritical care in this population [10, 40, 41]. Further studies
+are needed to evaluate whether end‐tidal etCO2 monitoring can
+mitigate extreme CO2 levels and thereby improve neurodeve-
+lopmental outcomes in HIE.
+Author Contributions
+Mate Detar: writing – original draft, project administration, data
+curation, investigation. Barbara Szasz: writing – original draft,
+writing – review and editing, data curation, visualization. Hajnalka
+Barta: writing – original draft, writing – review and editing, project
+administration. Miklos Szabo: supervision, writing – review and edit-
+ing, resources. Agnes Jermendy: writing – review and editing,
+supervision, resources. Eniko Szakmar: writing – original draft, writ-
+ing – review and editing, data curation, supervision, resources, visual-
+ization, methodology, conceptualization.
+Conflicts of Interest
+The authors declare no conflicts of interest.
+Data Availability Statement
+The data that support the findings of this study are available from the
+corresponding author upon reasonable request.
+References
+1. J. J. Kurinczuk, M. White‐Koning, and N. Badawi, “Epidemiology of
+Neonatal Encephalopathy and Hypoxic‐Ischaemic Encephalopathy,”
+Early Human Development 86, no. 6 (2010): 329–338.
+2. A. D. Edwards, P. Brocklehurst, A. J. Gunn, et al., “Neurological
+Outcomes At 18 Months of Age After Moderate Hypothermia for
+Perinatal Hypoxic Ischaemic Encephalopathy: Synthesis and Meta‐
+Analysis of Trial Data,” BMJ 340 (2010): c363.
+3. S. E. Jacobs, et al., “Cooling for Newborns With Hypoxic Ischaemic
+Encephalopathy,” Cochrane Database of Systematic Reviews 2013, no. 1
+(2013): Cd003311.
+4. E. J. Molloy, M. El‐Dib, S. E. Juul, et al., “Neuroprotective Therapies in
+the NICU in Term Infants: Present and Future,” Pediatric Research 93,
+no. 7 (2023): 1819–1827.
+5. G. Natarajan, A. Laptook, and S. Shankaran, “Therapeutic Hypo-
+thermia,” Clinics in Perinatology 45, no. 2 (2018): 241–255.
+6. M. El‐Dib, E. Szakmar, E. Chakkarapani, and H. Aly, “Challenges In
+Respiratory Management During Therapeutic Hypothermia for Neo-
+natal Encephalopathy,” Seminars in Fetal and Neonatal Medicine 26,
+no. 4 (2021): 101263.
+7. A. Pappas, S. Shankaran, A. R. Laptook, et al., “Hypocarbia and
+Adverse Outcome In Neonatal Hypoxic‐Ischemic Encephalopathy,”
+Journal of Pediatrics 158, no. 5 (2011): 752–758.e1.
+7 of 8
+
+
+8. K. Lingappan, J. R. Kaiser, C. Srinivasan, and A. J. Gunn, “Rela-
+tionship Between PCO2 and Unfavorable Outcome in Infants With
+Moderate‐To‐Severe
+Hypoxic
+Ischemic
+Encephalopathy,”
+Pediatric
+Research 80, no. 2 (2016): 204–208.
+9. M. A. Lopez Laporte, et al., “Association Between Hypocapnia and
+Ventilation During the First Days of Life and Brain Injury In Asphyxiated
+Newborns Treated With Hypothermia,” Journal of Maternal‐Fetal &
+Neonatal Medicine : The Official Journal of the European Association of
+Perinatal Medicine, the Federation of Asia and Oceania Perinatal Societies, the
+International Society of Perinatal Obstetricians 32 (2017): 1312–1320.
+10. E. Szakmar, C. Munster, H. El‐Shibiny, A. Jermendy, T. Inder, and
+M. El‐Dib, “Hypocapnia in Early Hours of Life Is Associated With Brain
+Injury in Moderate to Severe Neonatal Encephalopathy,” Journal of
+Perinatology 42, no. 7 (2022): 892–897.
+11. G. Klinger, et al., “Do Hyperoxaemia and Hypocapnia Add to the
+Risk of Brain Injury After Intrapartum Asphyxia?,” Archives of Disease
+in Childhood ‐ Fetal and Neonatal Edition 90, no. 1 (2005): F49–F52.
+12. H. Sabir, S. Jary, J. Tooley, X. Liu, and M. Thoresen, “Increased
+Inspired Oxygen In the First Hours of Life Is Associated With Adverse
+Outcome In Newborns Treated for Perinatal Asphyxia With Thera-
+peutic Hypothermia,” Journal of Pediatrics 161, no. 3 (2012): 409–416.
+13. G. Hansen, N. Al Shafouri, M. Narvey, J. K. Vallance, and
+G. Srinivasan, “High Blood Carbon Dioxide Variability and Adverse
+Outcomes in Neonatal Hypoxic Ischemic Encephalopathy,” Journal of
+Maternal‐Fetal & Neonatal Medicine 29, no. 4 (2016): 680–683.
+14. J. D. Koch, D. K. Miles, J. A. Gilley, C. P. Yang, and S. G. Kernie, “Brief
+Exposure to Hyperoxia Depletes the Glial Progenitor Pool and Impairs
+Functional Recovery After Hypoxic‐Ischemic Brain Injury,” Journal of
+Cerebral Blood Flow & Metabolism 28, no. 7 (2008): 1294–1306.
+15. J. G. Laffey and B. P. Kavanagh, “Hypocapnia,” New England
+Journal of Medicine 347, no. 1 (2002): 43–53.
+16. E. J. Molloy and E. P. Cummins, “Carbon Dioxide as a Drug In
+Neonatology,” Pediatric Research 89, no. 5 (2021): 1049–1050.
+17. G. Greisen, “Autoregulation of Cerebral Blood Flow In Newborn
+Babies,” Early Human Development 81, no. 5 (2005): 423–428.
+18. D. Sankaran, L. Zeinali, S. Iqbal, P. Chandrasekharan, and
+S. Lakshminrusimha, “Non‐Invasive Carbon Dioxide Monitoring In
+Neonates: Methods, Benefits, and Pitfalls,” Journal of Perinatology 41,
+no. 11 (2021): 2580–2589.
+19. N. H. Gangaram‐Panday, T. van Essen, W. van Weteringen, et al.,
+“Transcutaneous Carbon Dioxide Monitoring During Therapeutic
+Hypothermia for Neonatal Encephalopathy,” Pediatric Research 92,
+no. 6 (2022): 1724–1730.
+20. P. Garlapati, P. Vali, S. Lakshminrusimha, B. J. Smith, and
+G. S. Zavorsky, “The Precision Between Transcutaneous Carbon Diox-
+ide Versus P(aCO(2)) in Infants Undergoing Therapeutic Hypother-
+mia,” Respiratory Care 69, no. 3 (2024): 339–344.
+21. C. H. Wu, H. C. Chou, W. S. Hsieh, W. K. Chen, P. Y. Huang, and
+P. N. Tsao, “Good Estimation of Arterial Carbon Dioxide by End‐Tidal
+Carbon Dioxide Monitoring in the Neonatal Intensive Care Unit,”
+Pediatric Pulmonology 35, no. 4 (2003): 292–295.
+22. E. Williams, T. Dassios, and A. Greenough, “Assessment of Side-
+stream End‐Tidal Capnography In Ventilated Infants on the Neonatal
+Unit,” Pediatric Pulmonology 55, no. 6 (2020): 1468–1473.
+23. B.
+Afzal,
+P.
+Chandrasekharan,
+D.
+J.
+Tancredi,
+J.
+Russell,
+R. H. Steinhorn, and S. Lakshminrusimha, “Monitoring Gas Exchange
+During Hypothermia for Hypoxic‐Ischemic Encephalopathy,” Pediatric
+Critical Care Medicine 20, no. 2 (2019): 166–171.
+24. D. Azzopardi, P. Brocklehurst, D. Edwards, et al., “The Toby Study.
+Whole Body Hypothermia for the Treatment of Perinatal Asphyxial
+Encephalopathy: A Randomised Controlled Trial,” BMC Pediatrics 8
+(2008): 17.
+25. L. C. Weeke, F. Groenendaal, K. Mudigonda, et al., “A Novel
+Magnetic Resonance Imaging Score Predicts Neurodevelopmental
+Outcome After Perinatal Asphyxia and Therapeutic Hypothermia,”
+Journal of Pediatrics 192 (2018): 33–40.e2.
+26. N. Bayley, Bayley Scale of Infants Development‐Second Edition
+(Psychological Corporation, 1993).
+27. L. F. Chalak, T. L. DuPont, P. J. Sánchez, et al., “Neurodevelop-
+mental Outcomes After Hypothermia Therapy in the Era of Bayley‐III,”
+Journal of Perinatology 34, no. 8 (2014): 629–633.
+28. S. Jary, A. Whitelaw, L. Walløe, and M. Thoresen, “Comparison
+of Bayley‐2 and Bayley‐3 Scores At 18 Months in Term Infants Fol-
+lowing Neonatal Encephalopathy and Therapeutic Hypothermia,”
+Developmental Medicine & Child Neurology 55, no. 11 (2013): 1053–1059.
+29. G. Belteki, B. Lin, and C. J. Morley, “Weight‐Correction of Carbon
+Dioxide Diffusion Coefficient (DCO(2)) Reduces Its Inter‐Individual
+Variability and Improves Its Correlation With Blood Carbon Dioxide
+Levels in Neonates Receiving High‐Frequency Oscillatory Ventilation,”
+Pediatric Pulmonology 52, no. 10 (2017): 1316–1322.
+30. L. L. Aliwalas, L. Noble, K. Nesbitt, S. Fallah, V. Shah, and
+P. S. Shah, “Agreement of Carbon Dioxide Levels Measured by Arterial,
+Transcutaneous and End Tidal Methods in Preterm Infants ≪
+or = 28 Weeks Gestation,” Journal of Perinatology: Official Journal of the
+California Perinatal Association 25, no. 1 (2005): 26–29.
+31. B. S. Singh, U. Gilbert, S. Singh, and B. Govindaswami, “Sidestream
+Microstream End Tidal Carbon Dioxide Measurements and Blood Gas
+Correlations in Neonatal Intensive Care Unit,” Pediatric Pulmonology
+48, no. 3 (2013): 250–256.
+32. D. G. Tingay, “Monitoring of End Tidal Carbon Dioxide and Trans-
+cutaneous Carbon Dioxide During Neonatal Transport,” Archives of Disease
+in Childhood ‐ Fetal and Neonatal Edition 90, no. 6 (2005): F523–F526.
+33. A. Kugelman, A. Golan, A. Riskin, et al., “Impact of Continuous
+Capnography in Ventilated Neonates: A Randomized, Multicenter
+Study,” Journal of Pediatrics 168 (2016): 56–61e2.
+34. S. Nangia, A. Saili, and A. K. Dutta, “End Tidal Carbon Dioxide
+Monitoring‐‐Its Reliability in Neonates,” Indian Journal of Pediatrics 64,
+no. 3 (1997): 389–394.
+35. F. Groenendaal, K. M. K. De Vooght, and F. van Bel, “Blood Gas
+Values During Hypothermia in Asphyxiated Term Neonates,” Pediatrics
+123, no. 1 (2009): 170–172.
+36. E. Szakmar, A. Jermendy, and M. El‐Dib, “Respiratory Management
+During Therapeutic Hypothermia for Hypoxic‐Ischemic Encephalo-
+pathy,” Journal of Perinatology 39 (2019): 763–773.
+37. D. C. Bellinger, D. Wypij, A. J. du Plessis, et al., “Developmental and
+Neurologic Effects of Alpha‐Stat Versus pH‐Stat Strategies for Deep
+Hypothermic Cardiopulmonary Bypass In Infants,” Journal of Thoracic
+and Cardiovascular Surgery 121, no. 2 (2001): 374–383.
+38. M. Nadeem, D. Murray, G. Boylan, E. Dempsey, and C. A. Ryan,
+“Blood Carbon Dioxide Levels and Adverse Outcome in Neonatal
+Hypoxic‐Ischemic Encephalopathy,” American Journal of Perinatology
+27, no. 5 (2010): 361–365.
+39. S. K. Wong, M. Chim, J. Allen, et al., “Carbon Dioxide Levels in
+Neonates: What Are Safe Parameters?,” Pediatric Research 91, no. 5
+(2022): 1049–1056.
+40. R. H. Pfister, P. Bingham, E. M. Edwards, et al., “The Vermont
+Oxford Neonatal Encephalopathy Registry: Rationale, Methods, and
+Initial Results,” BMC Pediatrics 12 (2012): 84.
+41. I. R. Goswami, H. Whyte, P. Wintermark, et al., “Characteristics and
+Short‐Term Outcomes of Neonates With Mild Hypoxic‐Ischemic En-
+cephalopathy Treated With Hypothermia,” Journal of Perinatology 40,
+no. 2 (2020): 275–283
+8 of 8
+Pediatric Pulmonology, 2025

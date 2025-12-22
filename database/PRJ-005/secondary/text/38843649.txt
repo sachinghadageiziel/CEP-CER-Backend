@@ -1,0 +1,538 @@
+O R I G I N A L  R E S E A R C H
+Desflurane Safety Revisited: A Pharmacovigilance 
+Study Detecting Potential Safety Signals from 
+FAERS Data
+Wei Wei1,*, Liang Chen2,*, Xiaomei Ying3
+1Department of Anesthesiology and Pain Research Center, The Affiliated Hospital of Jiaxing University, Jiaxing, Zhejiang, People’s Republic of China; 
+2Department of Hepatobiliary and Pancreatic Surgery, Conversion Therapy Center for Hepatobiliary and Pancreatic Tumors, The Affiliated Hospital 
+of Jiaxing University, Jiaxing, Zhejiang, People’s Republic of China; 3Thyroid and Breast Department, Suzhou Hospital of Anhui Medical University, 
+Suzhou, Anhui, People’s Republic of China
+*These authors contributed equally to this work 
+Correspondence: Xiaomei Ying, Thyroid and Breast Department, Suzhou Hospital of Anhui Medical University, Suzhou, Anhui, People’s Republic of 
+China, Email m18156236886@163.com
+Purpose: Desflurane is a widely used volatile anesthetic with multiple clinical advantages, but comprehensive pharmacovigilance analyses 
+are needed to optimize its safety profile. This study aimed to analyze and classify adverse events(AEs) associated with desflurane in the Food 
+and Drug Administration Adverse Event Reporting System(FAERS) database and evaluate potential safety signals.
+Patients and Methods: We analyzed FAERS reports from 2004Q1 to 2025Q1 where desflurane was the primary suspect(PS) drug. Cases 
+were classified using Medical Dictionary for Regulatory Activities (MedDRA27.1) terminology and processed following FDA- 
+recommended deduplication strategy. Four disproportionality analyses were conducted: Reporting Odds Ratio (ROR), Proportional 
+Reporting Ratio (PRR), Bayesian Confidence Propagation Neural Network (BCPNN), and Multi-item Gamma Poisson Shrinker (MGPS).
+Results: Among 1,191 cases, bradycardia was most frequent (n = 39; ROR = 38.72, 95% CI 28.14–53.28) with 79.4% classified as 
+serious. Notable findings included anaphylactic shock (n = 23; 69.6% serious), bronchospasm (n = 22), and malignant hyperthermia­
+(MH) (n = 20; 25% mortality). Acute respiratory distress syndrome (ARDS) (n = 2) and disseminated intravascular coagulation (DIC) 
+(n = 2) were documented - a previously unreported association with desflurane exposure.
+Conclusion: Our analysis reveals clinically significant safety signals associated with desflurane, including cardiovascular, anaphy­
+lactic, and respiratory complications that may require enhanced perioperative monitoring. The study underscores the critical 
+importance of sustained post-marketing surveillance for detecting rare but serious safety signals, not typically evident in pre- 
+approval clinical trials.
+Keywords: desflurane, nociception, pharmacovigilance, FAERS, anaphylactic shock, DIC
+Introduction
+As the cornerstone of modern surgical practice, general anesthesia enables safe and painless performance of complex 
+invasive procedures. Desflurane mediates its antinociceptive action primarily by inducing general anesthesia and 
+unconsciousness, thereby abolishing nociceptive awareness. Research demonstrates desflurane’s capacity to reduce 
+pain signal propagation via inhibition of spinal cord dorsal horn neurons.1
+Among volatile anesthetics, desflurane has emerged as particularly valuable in neurosurgical2,3 and cardiac 
+procedures,4 owing to its low blood-gas partition coefficient and stable hemodynamic profile - properties that facilitate 
+precise anesthetic depth control. However, its clinical application remains controversial due to its pungent odor and 
+airway irritability, which frequently induce coughing, breath holding, and laryngospasm5 during induction, particularly in 
+pediatric and non-intubated patients.6 Comparative studies have demonstrated a higher incidence of postoperative nausea 
+and vomiting (PONV) with desflurane than with propofol or sevoflurane.3,7 Like other volatile anesthetics, desflurane 
+Journal of Pain Research 2025:18 5069–5080                                                                
+5069
+© 2025 Wei et al. This work is published and licensed by Dove Medical Press Limited. The full terms of this license are available at https://www.dovepress.com/terms.php 
+and incorporate the Creative Commons Attribution – Non Commercial (unported, v4.0) License (http://creativecommons.org/licenses/by-nc/4.0/). By accessing the work 
+you hereby accept the Terms. Non-commercial uses of the work are permitted without any further permission from Dove Medical Press Limited, provided the work is properly attributed. For 
+permission for commercial use of this work, please see paragraphs 4.2 and 5 of our Terms (https://www.dovepress.com/terms.php).
+Journal of Pain Research                                                                   
+Open Access Full Text Article
+Received: 31 May 2025
+Accepted: 29 August 2025
+Published: 26 September 2025
+
+
+may trigger malignant hyperthermia in susceptible individuals,8 while preclinical investigations have raised concerns 
+about potential neurotoxic effects in the developing brain.9
+Despite these documented concerns, the existing literature is fragmented, based primarily on controlled trials with 
+limited sample sizes or isolated case reports. This highlights a significant gap in comprehensive evaluations of 
+desflurane’s safety profile in real-world clinical practice.
+FAERS is a critical pharmacovigilance resource that aggregates post-marketing adverse event reports submitted by 
+healthcare professionals, patients, and manufacturers. Prior studies have demonstrated its value in detecting potential 
+drug safety issues,10 such as the identification of laryngospasm, bronchospasm, and DIC as safety signals associated with 
+sugammadex,11 or the elevated risks of propofol administration in epileptic patients.12 These findings have provided 
+crucial guidance for perioperative medication decisions. It is important to acknowledge the inherent limitations of the 
+FAERS database, which lacks critical patient-specific details such as pharmacokinetic/pharmacodynamic variables 
+(genetic polymorphisms, organ function) and formulation characteristics (excipients). These factors may influence the 
+incidence and severity of reported adverse events. The value of this analysis lies in identifying potential safety signals for 
+further investigation once more detailed clinical information becomes available.
+Given substantial gaps in knowledge regarding desflurane’s safety profile, real-world evidence from pharmacovigi­
+lance databases offers essential insights by aggregating spontaneous adverse event reports across diverse populations. 
+Such data are particularly valuable for detecting rare complications that may not manifest in controlled trials.13
+This study leverages the FAERS database to systematically investigate three key aspects: (1) the population 
+distribution of desflurane-associated AEs; (2) the system organ class classification of these events; and (3) the demo­
+graphic characteristics of patients experiencing severe AEs. Our findings aim to inform evidence-based anesthetic 
+practice and enhance regulatory oversight.
+Graphical Abstract
+https://doi.org/10.2147/JPR.S544011                                                                                                                                                                                                                                                                                                                                          
+Journal of Pain Research 2025:18 
+5070
+Wei et al                                                                                                                                                                             
+Powered by TCPDF (www.tcpdf.org)
+
+
+Materials and Methods
+Data Collection
+We analyzed reports from the FAERS database spanning Q1 2004 to Q1 2025. The database contains seven structured 
+files, including demographic information (DEMO), drug exposure details (DRUG), reported adverse events (REAC), 
+indications for use (INDI), therapy dates (THER), patient outcomes (OUTC), and report sources (RPSR).
+Signal Detection and Processing
+Duplicate reports were removed using FDA-recommended deduplication based on CASE ID and FDA receipt date (FDA 
+DT), with exclusion of reports containing missing or inconsistent critical fields. Adverse events were coded using 
+MedDRA version 27.1 Preferred Terms, and desflurane cases were identified using both generic (“DESFLURANE”) and 
+brand (“SUPRANE”) names, retaining only primary suspect cases.
+Statistical Analysis
+Four disproportionality analysis methods were employed: ROR (threshold: ROR ≥3 with 95% CI lower limit >1), PRR 
+(thresholds: PRR ≥2, χ² ≥4, and ≥3 cases), BCPNN (thresholds: IC025 >0), and MGPS (thresholds: EBGM05 >2). 
+Detailed methodology is provided in Table 1.
+Statistical analyses examined demographic characteristics (age, sex, reporter type), clinical outcomes (hospitalization, 
+life-threatening events, death), AEs frequency by occurrence and System Organ Class(SOC), and signal concordance 
+through Venn diagram analysis of serious/rare AEs identified by all four methods. All analyses were conducted using 
+R software (v4.5.0).
+Results
+Data Processing Results
+A total of 22,775,812 DEMO records were extracted from the FAERS database. After applying FDA-recommended 
+deduplication criteria, 3,749,303 records were excluded, yielding 19,026,509 unique entries. Using MedDRA for AEs 
+mapping, 56,998,621 REAC records were obtained. By setting “DESFLURANE” and “SUPRANE” as preferred terms 
+(PS), 511 DRUG records and 1,191 REAC records were identified. The data screening and analysis flowchart is 
+illustrated in Figure 1.
+Table 1 Summary of Four Disproportionality Analysis Methods Employed for Pharmacovigilance 
+Signal Detection
+Method
+Formula
+Threshold
+ROR
+ROR = ad/bc
+a ≥ 3 and 95% CI (lower limit) > 1
+95% CI = eln(ROR)±1.96(1/a+1/b+1/c+1/d)^0.5
+PRR
+PRR = a (c + d)/c/(a+b)
+PRR≥2, χ2 ≥ 4, N ≥ 3
+χ2 = [(ad-bc)^2](a+b + c + d)/[(a+b) (c + d) (a+c) (b + d)]
+BCPNN
+IC = log2a (a+b + c + d) (a+c) (a+b)
+IC025 > 0
+95% CI = E (IC) ± 2V(IC)^0.5
+MGPS
+EBGM = a (a+b + c + d)/(a+c)/(a+b)
+EBGM05 > 2
+95% CI = eln(EBGM)±1.96(1/a+1/b+1/c+1/d)^0.5
+Notes: *a* denotes the number of reported cases of the target adverse event associated with the target drug; *b* represents the 
+number of reported cases of other adverse events associated with the target drug; *c* indicates the number of reported cases of 
+the target adverse event linked to non-target drugs; and *d* corresponds to the number of reported cases of other adverse events 
+associated with non-target drugs.
+Journal of Pain Research 2025:18                                                                                                     
+https://doi.org/10.2147/JPR.S544011                                                                  
+5071
+Wei et al
+Powered by TCPDF (www.tcpdf.org)
+
+
+Demographic Baseline Characteristics
+Among patients experiencing AEs associated with desflurane, 200 (39.2%) were female, 181 (35.5%) were male, and 129 
+(25.3%) had no gender specification in the FAERS database. Regarding weight distribution, 21 (4.1%) patients weighed 
+<50 kg, 9 (1.8%) weighed >100 kg, and 125 (24.5%) fell within the 50–100 kg range, while the majority (69.6%) lacked 
+weight documentation. Age-wise, adults aged 18–64.9 years (38.0%) exhibited the highest incidence of AEs, whereas elderly 
+patients (>85 years) accounted for only 1%. These findings suggest that caution remains warranted when administering this 
+inhalational anesthetic to adult populations. Serious AEs were reported in 303 cases (59.4%), including 18 fatalities (3.5%). 
+Among reporters, health professionals (27, 5.3%), pharmacists (28, 5.5%), and physicians (235, 46.1%) constituted the 
+primary sources, underscoring the reliability of these AE reports. Detailed demographic data are presented in Table 2.
+Distribution of Adverse Events
+Analysis of 1,191 AE reports revealed the most frequent AEs (Figure 2): bradycardia (n=39), post-procedural complica­
+tion (n=32), cardiac arrest (n=25), anaphylactic shock (n=23), hypotension (n=22), bronchospasm (n=22), malignant 
+hyperthermia (n=20), unwanted awareness during anesthesia (n=19), fetal exposure during pregnancy (n=19), and 
+tachycardia (n=16). Stratified by System Organ Class (SOC) (Figure 3), the highest AE frequencies were observed in: 
+Injury, poisoning and procedural complications (n=180), Respiratory, thoracic and mediastinal disorders (n=144), 
+Cardiac disorders (n=138), Investigations (n=114), Nervous system disorders (n=87), General disorders and administra­
+tion site conditions (n=81), Hepatobiliary disorders (n=62), Vascular disorders (n=58), Eye disorders (n=47), and 
+Immune system disorders (n=36).
+Figure 1 Flowchart of data screening and analytical process.
+https://doi.org/10.2147/JPR.S544011                                                                                                                                                                                                                                                                                                                                          
+Journal of Pain Research 2025:18 
+5072
+Wei et al                                                                                                                                                                             
+Powered by TCPDF (www.tcpdf.org)
+
+
+Signal Detection Analysis
+Using four disproportionality algorithms (ROR, PRR, BCPNN, MGPS), statistically significant safety signals were 
+identified as follows: ROR (n=94), PRR (n=95), BCPNN (n=96), and MGPS (n=119). Venn diagram analysis yielded 85 
+safety signals common to all four methods (Figure 4). These safety signals spanned multiple organ systems, including 
+Respiratory, thoracic and mediastinal disorders, Hepatobiliary disorders, Renal and urinary disorders, Nervous system 
+disorders, Cardiac disorders, and Vascular disorders, with critical involvement of Blood and lymphatic system disorders 
+and Immune system disorders(Supplementary Table 1).
+Respiratory, thoracic, and mediastinal disorders: Bronchospasm (n=22) and laryngospasm (n=10) were the most 
+prevalent safety signals, exhibiting high signal strengths with ROR (95% CI) of 80.23 (52.6–122.36) and 190.45 
+(102.08–355.32), respectively. These severe events may acutely impair pulmonary ventilation, leading to sustained 
+hypoxemia and, if unmanaged, respiratory failure.
+Table 2 Demographic Characteristics of Patients Experiencing 
+Desflurane-Associated Adverse Events
+Dimension
+Classification
+Numbers (%)
+Sex
+Female
+200 (39.2%)
+Male
+181 (35.5%)
+Unspecified
+129 (25.3%)
+Weight
+<50 kg
+21 (4.1%)
+>100 kg
+9 (1.8%)
+50~100 kg
+125 (24.5%)
+Unspecified
+355 (69.6%)
+Age
+<18 year
+60 (11.8%)
+>85 year
+5 (1.0%)
+18~64.9 year
+194 (38.0%)
+65~85 year
+93 (18.2%)
+Unspecified
+158 (31.0%)
+Outcome
+Death
+18 (3.5%)
+Disability
+3 (0.6%)
+Hospitalization
+44 (8.6%)
+Life-Threatening
+20 (3.9%)
+Other
+425 (83.3%)
+Serious Case(YES or NO)
+NO
+492 (96.5%)
+YES
+18 (3.5%)
+Reporter type
+Consumer
+17 (3.3%)
+Health Professional
+27 (5.3%)
+Pharmacist
+28 (5.5%)
+Physician
+235 (46.1%)
+Unspecified
+203 (39.8%)
+Journal of Pain Research 2025:18                                                                                                     
+https://doi.org/10.2147/JPR.S544011                                                                  
+5073
+Wei et al
+Powered by TCPDF (www.tcpdf.org)
+
+
+Figure 2 Top 20 most frequently reported adverse events (AEs).
+Figure 3 Frequency distribution of adverse events by System Organ Class (SOC).
+https://doi.org/10.2147/JPR.S544011                                                                                                                                                                                                                                                                                                                                          
+Journal of Pain Research 2025:18 
+5074
+Wei et al                                                                                                                                                                             
+Powered by TCPDF (www.tcpdf.org)
+
+
+Hepatobiliary and renal disorders: Hepatitis (n=11), hepatotoxicity (n=8), hepatic failure (n=6), anuria (n=3), and oliguria 
+(n=3) were flagged as significant signals, with ROR (95% CI) values of 22.59 (12.47–40.91), 19.28 (9.62–38.66), 10.29 
+(4.61–22.95), 17.66 (5.69–54.86), and 24.88 (8.01–77.27), respectively.
+Nervous system disorders (7.3% of total safety signals): Epilepsy (n=2), hypoxic-ischemic encephalopathy (n=3), 
+altered consciousness (n=3), brain edema (n=3), seizure-like phenomena (n=3), encephalopathy (n=3), intracranial 
+hypertension (n=3), and hepatic encephalopathy (n=3) were detected as signals.
+Cardiac and vascular disorders: Bradycardia (n=39), cardiac arrest (n=25), tachycardia (n=16), torsade de pointes 
+(n=6), hypotension (n=22), shock (n=5), circulatory collapse (n=3), and blood pressure fluctuations (n=3) were identified 
+as significant safety signals.
+Life-threatening safety signals: Disseminated intravascular coagulation (n=3), anaphylactic shock (n=23), and 
+anaphylactic reaction (n=8) also demonstrated strong signal associations.
+Mortality Cases Associated with Malignant Hyperthermia
+Among the five fatal cases attributed to malignant hyperthermia (Table 3), all patients were aged 18–65 years, with two 
+cases reporting body weights within the 50–100 kg range. The cohort comprised three females and two males. Regarding 
+administration, four cases explicitly documented inhalation as the route of delivery, with one specifying a concentration 
+of 5 VOL% and another reporting a flow rate of 1 L/min.
+Figure 4 Venn diagram of adverse events with positive signals across all four algorithms.
+Table 3 Clinical Characteristics of Fatal Cases Associated with Malignant Hyperthermia
+PT
+Primaryid
+AGE(Year)
+WT
+SEX
+GetData 
+Year(Year)
+ROUTE
+DOSE_VBM
+Reportertype
+Hyperthermia 
+malignant
+91011241
+18~64.9
+Missing
+Female
+2013
+INHALATION
+Physician
+93,513,681
+18~64.9
+50~100 kg
+Female
+2013
+INHALATION
+5 VOL%
+Physician
+118,642,251
+18~64.9
+Missing
+Male
+2015
+Respiratory (inhalation)
+Physician
+142,413,363
+18~64.9
+50~100 kg
+Female
+2017
+Respiratory (inhalation)
+FLOW RATE 1 L/MIN
+Physician
+149,217,561
+18~64.9
+Missing
+Male
+2018
+Unknown
+Physician
+Journal of Pain Research 2025:18                                                                                                     
+https://doi.org/10.2147/JPR.S544011                                                                  
+5075
+Wei et al
+Powered by TCPDF (www.tcpdf.org)
+
+
+Subgroup Analysis: Severe vs Non-Severe Cases
+To further delineate the clinical implications of reported safety signals, cases were stratified into severe and non-severe 
+subgroups (Figure 5). Notably, bradycardia (31 severe vs 8 non-severe cases, 79.4%), delayed recovery from anesthesia 
+(6 vs 2, 75%), and device-related issues (6 vs 1, 85.7%) exhibited a higher propensity for severe outcomes, corroborated 
+by elevated ROR values. These findings underscore the necessity of vigilant intraoperative heart rate monitoring to 
+mitigate bradycardia-related complications, as well as heightened postoperative vigilance for delayed emergence. 
+Additionally, preoperative equipment checks are imperative, given the potential for device failures to precipitate life- 
+threatening events. In contrast, fetal exposure during pregnancy (2 severe vs 7 non-severe cases, 22.2%) demonstrated 
+a lower association with severe outcomes; however, the limited sample size precludes definitive conclusions, warranting 
+further investigation into the safety of desflurane in obstetric anesthesia.
+Figure 5 Comparative analysis of severe versus non-severe adverse event subgroups.
+https://doi.org/10.2147/JPR.S544011                                                                                                                                                                                                                                                                                                                                          
+Journal of Pain Research 2025:18 
+5076
+Wei et al                                                                                                                                                                             
+Powered by TCPDF (www.tcpdf.org)
+
+
+Discussion
+The evolution of anesthetic agents has revolutionized surgical outcomes, significantly reducing mortality and morbidity 
+associated with intraoperative pain and stress responses.14 Desflurane is a widely used volatile anesthetic with several 
+pharmacological advantages, including rapid induction, low blood-gas solubility, and minimal metabolism, making it 
+particularly suitable for surgical procedures requiring precise anesthetic control.3,15 Its rapid washout renders it especially 
+useful in ambulatory and neurosurgical settings,16 where prompt postoperative extubation17 and efficient operating room 
+turnover18 are critical.
+However, despite these benefits, desflurane is associated with dose-dependent AEs. Feyzullah et al19 demonstrated 
+through acoustic voice analysis that desflurane anesthesia may cause clinically subtle vocal deterioration. Other reported 
+AEs include airway irritation, hemodynamic instability, and rare but life-threatening complications such as MH.20 Given 
+its widespread clinical use, systematic pharmacovigilance is essential to identify and mitigate these risks. FAERS 
+provides a valuable real-world dataset for evaluating desflurane’s safety profile beyond controlled clinical trials.
+Our analysis of FAERS reports from Q1 2004 to Q1 2025 identified significant AEs associated with desflurane, 
+including bradycardia, anaphylactic shock, bronchospasm, MH, and DIC. These findings underscore the need for 
+enhanced perioperative monitoring and updated safety protocols to minimize patient harm.
+Cardiovascular Adverse Events: Bradycardia as the Most Common Complication
+Our study revealed bradycardia as the most frequently reported AEs (n=39), with 79.4% of cases classified as severe, 
+potentially leading to life-threatening events or prolonged hospitalization. This aligns with prior research21 indicating that 
+desflurane induces transient sympathetic activation followed by parasympathetic dominance, resulting in sinus bradycardia. 
+Direct myocardial depression22 and baroreflex modulation may further contribute to this effect. Pediatric and elderly patients, 
+due to reduced autonomic reserve, are at higher risk.23 Continuous ECG monitoring is therefore imperative, particularly in 
+high-risk populations,24,25 and atropine should be readily available to manage severe bradycardia.
+Anaphylactic Shock: A Severe and Concerning Reaction
+FAERS documented 23 cases of anaphylactic shock, 69.6% of which were severe and required emergency intervention.26 This 
+rapid-onset, potentially fatal reaction is often misattributed to other intraoperative events. IgE-mediated hypersensitivity to 
+fluorinated anesthetics has been previously reported,27 warranting preoperative allergy screening in patients with a history of 
+drug reactions.28 Immediate administration of epinephrine and corticosteroids is critical if anaphylaxis is suspected.26,29
+Neurological Adverse Events: Rare but Clinically Significant
+Although neurological AEs were uncommon (7.3%), two cases of seizures were reported. A systematic review 
+(2003–2020)16 suggested minimal AEs when desflurane was used for anesthesia maintenance in supratentorial brain 
+tumor surgeries. However, Wang et al9 found that desflurane-based anesthesia comparably affected postoperative sleep 
+quality to propofol-based total intravenous anesthesia. Thus, caution is advised in epileptic patients, and intraoperative 
+stereotactic EEG (SEEG) or subdural EEG (SDE) monitoring may be beneficial.30
+Respiratory Complications: Bronchospasm and Laryngospasm
+Bronchospasm (n=22) and laryngospasm (n=10) were the most frequent respiratory AEs, consistent with desflurane’s 
+known airway-irritating properties. Notably, two cases of ARDS were identified—a complication not previously 
+documented in desflurane’s labeling. Direct tracheobronchial irritation may trigger reflexive bronchoconstriction, while 
+inflammatory cytokine release could contribute to ARDS. Further evaluation is needed for patients with asthma or 
+reactive airway disease.
+Life-Threatening Complications: Malignant Hyperthermia and DIC
+Twenty MH cases were reported, including five fatalities, aligning with label warnings. Dantrolene must be immediately 
+available when using desflurane, and vigilant temperature monitoring is essential for early intervention. Additionally, 
+Journal of Pain Research 2025:18                                                                                                     
+https://doi.org/10.2147/JPR.S544011                                                                  
+5077
+Wei et al
+Powered by TCPDF (www.tcpdf.org)
+
+
+DIC (n=3, two fatal) was identified as a previously unreported AE. Characterized by systemic thrombosis and bleeding 
+diathesis, DIC may progress to multi-organ dysfunction syndrome (MODS),31 shock, or death.32 Murine models using 
+KCG and LPS33 may aid in elucidating its pathogenesis. Unexplained intraoperative bleeding should prompt urgent 
+coagulation testing.
+Limitations
+Despite its utility in post-marketing surveillance, the FAERS database presents several limitations relevant to our 
+assessment of desflurane-associated adverse events: First, substantial underreporting and reporting bias exist, particularly 
+for common anesthetic complications (eg, postoperative nausea) compared to rare but dramatic events (eg, malignant 
+hyperthermia).34 Second, critical clinical details - including exact dosing regimens, temporal relationships, and complete 
+patient histories - are frequently missing from spontaneous reports.35 Third, the potential confounding effects of 
+concomitant anesthetic medications (eg, opioids, neuromuscular blocking agents) cannot be reliably assessed due to 
+the system’s passive surveillance nature.
+Conclusion
+Our analysis of FAERS data (2004–2025) identified significant desflurane-associated AEs, with bradycardia showing 
+a high propensity to progress to severe outcomes without prompt intervention. Statistically robust signals (eg, anaphy­
+lactic shock, bronchospasm, and malignant hyperthermia [MH]) underscore the need for enhanced intraoperative 
+monitoring. Rare but life-threatening events, including disseminated intravascular coagulation (DIC; n=3) - a finding 
+not currently reflected in the drug’s labeling - were identified. These findings warrant updates to anesthesia practice 
+guidelines and highlight the need for further research into the mechanisms underlying these safety signals.
+Abbreviations
+AEs, adverse events; FAERS, Food and Drug Administration Adverse Event Reporting System; PS, primary suspect; 
+MedDRA, Medical Dictionary for Regulatory Activities; ROR, Reporting Odds Ratio; PRR, Proportional Reporting 
+Ratio; BCPNN, Bayesian Confidence Propagation Neural Network, MGPS, Multi-item Gamma Poisson Shrinker; MH, 
+malignant hyperthermia; ARDS, Acute respiratory distress syndrome; DIC, disseminated intravascular coagulation; 
+PONV, postoperative nausea and vomiting; SOC, System Organ Class; PTs, preferred terms; ECG, Electrocardiogram; 
+MODS, multi-organ dysfunction syndrome.
+Data Sharing Statement
+The data analyzed are publicly available in the FAERS database (https://fis.fda.gov/sense/).
+Ethical Approval Statement
+This study utilized de-identified data from a publicly available, open-source database. In accordance with the’Ethical 
+Review Measures for Life Sciences and Medical Research Involving Humans’ (National Health Commission Order 
+No. 4, 2023, effective February 18, 2023), research involving anonymized public datasets is exempt from additional 
+ethical review when: (1) the data source is legally authorized for research use, and (2) individual privacy rights are fully 
+protected (Article 32, Paragraph 1). No Institutional Review Board (IRB) approval was required for this analysis.
+Acknowledgments
+We acknowledge the FAERS for data support and R software (v4.5.0) for data visualization.
+Author Contributions
+All authors made a significant contribution to the work reported, whether that is in the conception, study design, 
+execution, acquisition of data, analysis and interpretation, or in all these areas; took part in drafting, revising or critically 
+reviewing the article; gave final approval of the version to be published; have agreed on the journal to which the article 
+has been submitted; and agree to be accountable for all aspects of the work.
+https://doi.org/10.2147/JPR.S544011                                                                                                                                                                                                                                                                                                                                          
+Journal of Pain Research 2025:18 
+5078
+Wei et al                                                                                                                                                                             
+Powered by TCPDF (www.tcpdf.org)
+
+
+Funding
+This research was funded by the Health Commission of Suzhou Municipality (SZWJ2024a034) and the Jiaxing First 
+Hospital Qixingming Project (2022-QMX-024).
+Disclosure
+The authors declare no competing financial or non-financial interests in this work.
+References
+1. Inada Y, Funai Y, Yamasaki H, Mori T, Nishikawa K. Effects of sevoflurane and desflurane on the nociceptive responses of substantia gelatinosa 
+neurons in the rat spinal cord dorsal horn: an in vivo patch-clamp analysis. Molecular Pain. 2020;16:1744806920903149. doi:10.1177/ 
+1744806920903149
+2. Kim YS, Kim J, Park S, et al. Differential effects of sevoflurane and desflurane on frontal intraoperative electroencephalogram dynamics associated 
+with postoperative delirium. J Clin Anesthesia. 2024;93:111368. doi:10.1016/j.jclinane.2023.111368
+3. Jiang Z, Wu Y, Liang F, et al. Brain relaxation using desflurane anesthesia and total intravenous anesthesia in patients undergoing craniotomy for 
+supratentorial tumors: a randomized controlled study. BMC Anesthesiol. 2023;23(1):15. doi:10.1186/s12871-023-01970-z
+4. Taschner A, Fleischmann E, Kabon B, et al. Effect of desflurane, sevoflurane or propofol on the incidence of postoperative delirium in older adults 
+undergoing moderate- to high-risk major non-cardiac surgery: study protocol for a prospective, randomised, observer-blinded, clinical trial 
+(RAPID-II trial). BMJ Open. 2024;14(11):e092611. doi:10.1136/bmjopen-2024-092611
+5. Chen WS, Chiang MH, Hung KC, et al. Adverse respiratory events with sevoflurane compared with desflurane in ambulatory surgery: a systematic 
+review and meta-analysis. Eur J Anaesthesiol. 2020;37(12):1093–1104. doi:10.1097/EJA.0000000000001375
+6. Pin-On P, Leurcharusmee P, Tanasungnuchit S, Srivita K, Khunwittaya P. Desflurane is not inferior to sevoflurane in the occurrence of adverse 
+respiratory events during laryngeal mask airway anesthesia: a non-inferiority randomized double-blinded controlled study. Minerva anestesiologica. 
+2020;86(6):608–616. doi:10.23736/S0375-9393.20.14202-0
+7. Sethi N, Dutta A, Puri GD, et al. Evaluation of quality of recovery with quality of recovery-15 score after closed-loop anesthesia delivery 
+system-guided propofol versus desflurane general anesthesia in patients undergoing transabdominal robotic surgery: a randomized controlled study. 
+Anesthesia Analg. 2024;138(5):1052–1062. doi:10.1213/ANE.0000000000006849
+8. Heiderich S, Thoben C, Dennhardt N, et al. Preparation of Drager Atlan A350 and General Electric Healthcare Carestation 650 anesthesia 
+workstations for malignant hyperthermia susceptible patients. BMC Anesthesiol. 2021;21(1):315. doi:10.1186/s12871-021-01533-0
+9. Wang X, Xiong B, Wu T, et al. Effect of desflurane maintenance on postoperative sleep quality in patients undergoing elective breast surgery: a 
+non-inferiority randomized controlled trial. Sleep Med. 2024;121:287–294. doi:10.1016/j.sleep.2024.07.022
+10. Godfrey H, Leibovit-Reiben Z, Jedlowski P, Thiede R. Alopecia associated with the use of semaglutide and tirzepatide: a disproportionality analysis using the 
+FDA adverse event reporting system (FAERS) from 2022 to 2023. J Eur Acad Dermatol Venereol JEADV. 2025;39(2):e153–e154. doi:10.1111/jdv.20197
+11. Liu H, Yang Q, Li Z, Yan S, Ming S. Systematic analysis of sugammadex-related adverse drug reaction signals using FAERS database. Int J Surg. 
+2025;111(2):1988–1994. doi:10.1097/JS9.0000000000002194
+12. Zhang Y, Qian M, Zheng A, et al. The risk of propofol infusion syndrome on epilepsy patients: insights from FAERS data and published case 
+reports. Eur J Pharmacol. 2025;999:177429. doi:10.1016/j.ejphar.2025.177429
+13. Ellithi M, Elsallab M, Lunning MA, et al. Neurotoxicity and rare adverse events in BCMA-directed CAR T cell therapy: a comprehensive analysis 
+of real-world FAERS data. Transplantat Cell Ther. 2025;31(2):71e1–71e14. doi:10.1016/j.jtct.2024.12.002
+14. Ten Barge JA, Zwiers AJM, Vermeulen MJ, et al. Current anesthesia practice for preterm infants undergoing surgery for necrotizing enterocolitis: 
+a European survey. J Clin Anesthesia. 2024;97:111508. doi:10.1016/j.jclinane.2024.111508
+15. Dexter F, Epstein RH. Associations between fresh gas flow and duration of anesthetic on the maximum potential benefit of anesthetic gas capture in 
+operating rooms and in postanesthesia care units to capture waste anesthetic gas. Anesthesia Analg. 2023;137(5):1104–1109. doi:10.1213/ 
+ANE.0000000000006610
+16. Gkantinas G, Tataki E, Lykoudis PM, Lelekaki E, Kouki P. Clinical effects and adverse events associated with desflurane use in adult patients 
+undergoing supratentorial craniotomy: a systematic review. J Neurosurg Anesthesiol. 2024;36(1):20–28. doi:10.1097/ANA.0000000000000905
+17. Wachtel RE, Dexter F, Epstein RH, Ledolter J. Meta-analysis of desflurane and propofol average times and variability in times to extubation and 
+following commands. Canad J Anaesthes J Canad D’anesthesie. 2011;58(8):714–724. doi:10.1007/s12630-011-9519-1
+18. Schad S, Booke M, Thal SC, Bentley A, Booke H. Evaluation of the effectiveness of the separate anesthesia induction rooms on multidisciplinary 
+work flow in operating rooms. J Multidisciplinary Healthcare. 2023;16:899–903. doi:10.2147/JMDH.S402590
+19. Kolay F, Vahapoglu A, Guvenc A, Turkmen UA. The comparison between inhalation and total intravenous anesthesia effect on voice with 
+supraglottic airway devices for short-term anesthesia. J Voice. 2025;39(2):571e21–571e29. doi:10.1016/j.jvoice.2022.10.009
+20. Thoben C, Dennhardt N, Krauss T, et al. Preparation of anaesthesia workstation for trigger-free anaesthesia: an observational laboratory study. Eur 
+J Anaesthesiol. 2019;36(11):851–856. doi:10.1097/EJA.0000000000001086
+21. Joo Y, Shin BS, Cho EA, Kim DK. Comparison of desflurane and sevoflurane anaesthesia in relation to the risk of vagally mediated reflex 
+bradycardia during gastrectomy. J Int Med Res. 2012;40(4):1492–1498. doi:10.1177/147323001204000428
+22. Deng XQ, Yu H, Wang WJ, et al. Effect of volatile versus propofol anaesthesia on major complications and mortality after cardiac surgery: 
+a multicentre randomised trial. Br J Anaesth. 2024;133(2):296–304. doi:10.1016/j.bja.2024.05.008
+23. Liu W, Du M, Zhang M, et al. Impact of propofol versus desflurane anesthesia on postoperative hepatic and renal functions in infants with 
+living-related liver transplantation: a randomized controlled trial. BMC Med. 2024;22(1):397. doi:10.1186/s12916-024-03622-6
+24. Wade RC, Martinez FJ, Criner GJ, et al. ECG-based risk factors for adverse cardiopulmonary events and treatment outcomes in COPD. Europ Resp 
+J. 2025;65(2). doi:10.1183/13993003.00171-2024
+Journal of Pain Research 2025:18                                                                                                     
+https://doi.org/10.2147/JPR.S544011                                                                  
+5079
+Wei et al
+Powered by TCPDF (www.tcpdf.org)
+
+
+25. Lee H, Yang HL, Ryu HG, et al. Real-time machine learning model to predict in-hospital cardiac arrest using heart rate variability in ICU. Npj 
+Digital Med. 2023;6(1):215. doi:10.1038/s41746-023-00960-2
+26. Golden DBK, Wang J, Waserman S, et al. Anaphylaxis: a 2023 practice parameter update. Ann Allergy Asthma Immunol. 2024;132(2):124–176. 
+doi:10.1016/j.anai.2023.09.015
+27. Mencarelli A, Bist P, Choi HW, Khameneh HJ, Mortellaro A, Abraham SN. Anaphylactic degranulation by mast cells requires the mobilization of 
+inflammasome components. Nat Immunol. 2024;25(4):693–702. doi:10.1038/s41590-024-01788-y
+28. Santos AF, Riggioni C, Agache I, et al. EAACI guidelines on the management of IgE-mediated food allergy. Allergy. 2025;80(1):14–36. 
+doi:10.1111/all16345
+29. Dodd A, Turner PJ, Soar J, Savic L. Emergency treatment of peri-operative anaphylaxis: resuscitation council UK algorithm for anaesthetists. 
+Anaesthesia. 2024;79(5):535–541. doi:10.1111/anae.16206
+30. Jha R, Liu DD, Gerstl JVE, et al. Comparative effectiveness of stereotactic, subdural, or hybrid intracranial EEG monitoring in epilepsy surgery. 
+J Neurosurg. 2024;141(2):372–380. doi:10.3171/2024.1.JNS232560
+31. Wang G, Hao C, Yao S, et al. Exploring the mediating role of multiple organ dysfunction in sepsis-induced disseminated intravascular coagulation 
+and its impact on worsening prognosis. Clin Appl Thromb Hemost. 2024;30:10760296241271358. doi:10.1177/10760296241271358
+32. Matsuoka T, Yamakawa K, Iba T, Homma K, Sasaki J. Persistent and late-onset disseminated intravascular coagulation are closely related to poor 
+prognosis in patients with sepsis. Thrombosis Haemostasis. 2024;124(5):399–407. doi:10.1055/a-2196-3630
+33. Tang P, Huang B, Ou Q, et al. A mouse model of sepsis-associated DIC induced by Kappa-carrageenan and Lipopolysaccharides: establishment and 
+characteristics. J Adv Res. 2025. doi:10.1016/j.jare.2025.03.029
+34. Salah S, Kerob D, Pages Laurent C, Lacouture M, Sibaud V. Evaluation of anticancer therapy-related dermatologic adverse events: insights from 
+food and drug administration’s adverse event reporting system dataset. J Am Acad Dermatol. 2024;91(5):863–871. doi:10.1016/j.jaad.2024.07.1456
+35. Li J, Zhang F, Eisel UL. Adverse events associated with lecanemab: a disproportionality analysis of data from the FDA adverse event reporting 
+system. J Alzheimers dis. 2025;13872877251333084. doi:10.1177/13872877251333084
+Journal of Pain Research                                                                                                             
+Publish your work in this journal 
+The Journal of Pain Research is an international, peer reviewed, open access, online journal that welcomes laboratory and clinical findings in the 
+fields of pain research and the prevention and management of pain. Original research, reviews, symposium reports, hypothesis formation and 
+commentaries are all considered for publication. The manuscript management system is completely online and includes a very quick and fair 
+peer-review system, which is all easy to use. Visit http://www.dovepress.com/testimonials.php to read real quotes from published authors.  
+Submit your manuscript here: https://www.dovepress.com/journal-of-pain-research-journal
+Journal of Pain Research 2025:18 
+5080
+Wei et al                                                                                                                                                                             
+Powered by TCPDF (www.tcpdf.org)

@@ -1,0 +1,982 @@
+Received: August 26, 2024
+Revised: November 5, 2024 (1st); January 20, 
+2025 (2nd); March 5, 2025 (3rd); March 27, 
+2025 (4th)
+Accepted: March 27, 2025
+Corresponding author: 
+Won Uk Koh, M.D., Ph.D.
+Department of Anesthesiology and Pain 
+Medicine, Asan Medical Center, University of 
+Ulsan College of Medicine, 88 Olympic-ro 43-
+gil, Songpa-gu, Seoul 05505, Korea
+Tel: +82-2-3010-5606
+Fax: +82-2-3010-6790
+Email: wu.koh@amc.seoul.kr
+ORCID: https://orcid.org/0000-0003-4881-1884
+Effect of low-dose volatile anesthetics 
+on intraoperative neurophysiological 
+monitoring during anesthesia with 
+remimazolam
+Hee-Sun Park
+1, Wonho Choi
+1, Dong-Ho Lee
+2, Yong Seo Koo
+3, 
+Se Keun Oh
+3, Won Uk Koh
+1
+Departments of 
+1Anesthesiology and Pain Medicine, 
+2Orthopedic Surgery, 
+3Neurology, Asan 
+Medical Center, University of Ulsan College of Medicine, Seoul, Korea
+Korean J Anesthesiol 2025;78(4):341-350
+https://doi.org/10.4097/kja.24598
+pISSN 2005–6419 • eISSN 2005–7563
+Clinical Research Article
+Background: Remimazolam is a novel short-acting benzodiazepine. We investigated the 
+effects of low doses of volatile anesthetic agents on motor evoked potentials (MEPs) and 
+somatosensory evoked potentials (SSEPs) during remimazolam-remifentanil anesthesia.
+Methods: Thirty-nine patients undergoing cervical spine surgery were randomly assigned 
+to either the sevoflurane (n = 20) or desflurane (n = 19) groups. Volatile anesthetic agents 
+were administered at 0.3, 0.6, and 0.8 minimum alveolar concentrations (MACs) during 
+remimazolam-remifentanil anesthesia.  Significant changes were considered as more than 
+50% amplitude suppression and more than 10% latency increase from baseline values. The 
+primary outcome was MEP amplitude change. Secondary outcomes included MEP laten­
+cy, SSEP amplitude and latency, and group comparisons.
+Results: The MEP amplitudes were slightly reduced at 0.3 MAC; however, a suppression 
+of more than 50% from baseline values at 0.3 MAC, particularly in the upper limbs, was 
+observed in a notable proportion of participants; 30.0% and 47.4% in the sevoflurane and 
+desflurane groups, respectively. The corresponding percentages for the lower limbs were 
+15.0% and 15.8%, respectively. MEP amplitude suppression was more than 50% in the ma­
+jority of participants at 0.6 and 0.8 MAC. No significant difference was observed between 
+the groups. SSEPs exhibited no significant amplitude suppression or latency prolongation 
+across all MAC levels. 
+Conclusions: Notable MEP amplitude suppression was observed in many patients when 
+0.3 MAC volatile anesthetics were used as adjuncts. Therefore, even low doses of volatile 
+anesthetics must be added cautiously to remimazolam-based anesthesia to prevent con­
+founding. The SSEPs were relatively preserved, regardless of MAC.
+Keywords: Cervical vertebrae; Desflurane; Evoked potentials; Intraoperative neurophysio­
+logical monitoring; Remimazolam; Sevoflurane.
+Introduction
+Intraoperative neurophysiological monitoring (IONM) is conducted during neuro, spi­
+nal, and spinal cord surgery to preserve neurological function and prevent the incidence 
+of postoperative neurological deficits and iatrogenic damage [1]. The most commonly 
+used modalities in IONM include somatosensory evoked potentials (SSEPs), motor 
+evoked potentials (MEPs), and electromyography [2].
+General anesthetic agents that inhibit neurotransmission exert a significant effect on 
+the evoked potential (EP). Volatile anesthetic agents suppress EP in a dose-dependent 
+The Korean Society of Anesthesiologists, 2025
+This is an open-access article distributed under 
+the terms of the Creative Commons Attribution 
+Non-Commercial License (http://creativecommons. 
+org/licenses/by-nc/4.0/) which permits unrestricted 
+non-commercial use, distribution, and reproduc-
+tion in any medium, provided the original work is 
+properly cited.
+341
+Online access in http://ekja.org
+
+
+manner [3]. Low concentrations (0.5–1.0 minimum alveolar con­
+centration [MAC]) of volatile anesthetic agents have been used 
+successfully for monitoring SSEPs [3,4]. However, MEP monitor­
+ing is more sensitive to general anesthetic agents, and lower con­
+centrations (up to 0.5–0.6 MAC) of volatile anesthetic agents are 
+considered suitable for effective monitoring [5]. Thus, the use of 
+propofol-opioid infusion is preferred because its depressive effect 
+on IONM is less pronounced than that of volatile anesthetic 
+agents [5]. Nevertheless, concerns regarding hemodynamic insta­
+bility and the dose-dependent suppression of MEPs following 
+propofol infusion persist [6]. These limitations have led to in­
+creasing research on combining intravenous (IV) anesthetic 
+agents with volatile anesthetic agents [7–10] or other agents, such 
+as dexmedetomidine [11] and lidocaine [12], as anesthetic adju­
+vants. Anesthesiologists aim to mitigate undesirable effects and 
+achieve synergistic effects through such combinations.
+Remimazolam, a novel ultrashort-acting benzodiazepine, ex­
+hibits a high clearance rate, a small volume of distribution, and 
+rapid recovery [13]. Furthermore, it provides greater hemody­
+namic stability, thereby facilitating its use as an alternative to 
+propofol for the induction and maintenance of general anesthesia 
+[13,14]. Remimazolam has been reported to allow adequate mon­
+itoring of both SSEPs and MEPs [15–17]. A recent prospective 
+study compared the effects of total IV anesthesia using remima­
+zolam and propofol on IONM [18], finding results comparable to 
+those with propofol. However, data on the interaction between 
+IONM and the combination of remimazolam with volatile anes­
+thetic agents are scarce.
+Commonly used volatile anesthetic agents, such as sevoflurane 
+and desflurane, suppress MEP amplitude in a dose-dependent 
+manner; however, discrepancies between these agents have been 
+reported [9,10]. Therefore, we aimed to evaluate the effects of the 
+addition of volatile anesthetic agents during remimazol­
+am-remifentanil anesthesia under concurrent MEP-SSEP moni­
+toring. The changes in MEP amplitude with the increase in the 
+dose of volatile anesthetic agents were assessed. Furthermore, we 
+compared IONM responses between sevoflurane and desflurane.
+Materials and Methods
+This double-blinded, parallel-group, randomized controlled 
+trial was conducted at a tertiary educational hospital in South Ko­
+rea between January 2023 and December 2023. The study proto­
+col was approved by the Asan Medical Center Institutional Re­
+view Board (Approval number: 2022-0725) and was registered at 
+the Clinical Research Information Service (https://cris.nih.go.kr/: 
+KCT0007534) in South Korea before patient enrollment. The 
+study protocol adhered to the Consolidated Standards of Report­
+ing Trials (CONSORT) guidelines and the principles of the Decla­
+ration of Helsinki of 2013. Written informed consent was ob­
+tained from all patients before inclusion.
+Study population and design
+Patients aged 20–79 years with an American Society of Anes­
+thesiologists physical status of grade I–III who underwent elective 
+cervical spine surgery at our institution and received IONM were 
+eligible for inclusion in the study. The exclusion criteria were as 
+follows: tolerance or hypersensitivity to benzodiazepines, depen­
+dence or addiction to psychotropic drugs or alcohol, history of 
+brain-related neurosurgery, presence of an intracranial device or 
+pacemaker, pregnant and lactating women, history of acute nar­
+row-angle glaucoma, moderate hypersensitivity to dextran 40, 
+history or susceptibility to malignant hyperthermia, and history 
+of hypersensitivity to halogenated inhalational agents.
+An internet-based randomization program (sealedenvelope.
+com) was used to create a randomization list with an un-stratified 
+block size of four. Patients were assigned to the desflurane (n = 
+20) and sevoflurane (n = 20) groups at a 1:1 ratio. Data collection 
+and interventions were performed by the first investigator (W.K.). 
+The first investigator received the enrollment data and a random 
+number from the second investigator (H.S.P.) on the day of the 
+surgery. The neurologist, trained technologists, and all patients 
+were blinded to the type of volatile anesthetic agents and the in­
+spiratory concentration used during data collection and analysis.
+The baseline values were obtained before commencing the ad­
+ministration of each inhalational agent (Baseline, Fig. 1) after 
+completing the main procedure with IV anesthesia using remim­
+azolam and remifentanil. Age-adjusted MAC was applied in the 
+present study. The first concentration (0.3 MAC) of the volatile 
+anesthetic agent was introduced and the MAC was increased from 
+0.6 to 0.8 in an incremental manner. A five-minute steady-state 
+was maintained at each time point before the IONM data were 
+obtained. After each recording, each volatile anesthetic was 
+washed out using a fresh gas flow over 8 L/min. Washout was 
+considered in this study when the end-tidal concentration of the 
+volatile anesthetic approached 0.0%. Final MEPs and SSEPs data 
+were then obtained (End).
+Anesthesia protocol
+Monitoring, including a noninvasive blood pressure monitor, 
+pulse oximeter, three-lead electrocardiogram, and a SedLine® 
+EEG-sensor (Masimo Corp.), was commenced on entering the 
+https://doi.org/10.4097/kja.24598
+342
+Park et al. · IONM under remimazolam
+
+
+operating room. The core body temperature was measured and 
+maintained at 35.5°–37.0°C. Remimazolam (Byfavo Inj, Hana 
+Pharm Co., Ltd.) was infused continuously at a rate of 6 mg/kg/h 
+until the patient lost consciousness to induce general anesthesia. 
+Remimazolam was infused continuously at a rate of 0.9–1.5 mg/
+kg/h at the discretion of the attending anesthesiologists and with­
+in the range of the approved maintenance dose [13]. Remifentan­
+il was administered via target effect-site concentration-controlled 
+infusion [19] and maintained at an effect-site concentration of 
+3–5 ng/ml. A bolus dose of rocuronium (0.6 mg/kg) was admin­
+istered to facilitate endotracheal intubation. An arterial line cath­
+eter was inserted following intubation to monitor invasive arteri­
+al pressure. In addition, a bite block was inserted to protect the 
+teeth and tongue during IONM. Additional doses of rocuronium 
+were not administered during surgery. The administration of 
+sugammadex at a dose of 2–4 mg/kg is permitted when the train-
+of-four (TOF) ratio is maintained at less than 0.8 after vertebral 
+body exposure to achieve adequate electrical stimulation intensi­
+ty for MEPs. Notably, this intervention was not required in any 
+case in the present study. The study intervention was initiated 
+when the surgeons started to close the surgical field after con­
+firming the final IONM results (Fig. 1). A single IV bolus dose of 
+flumazenil (0.2 mg) was administered after the surgery to reverse 
+the effects of remimazolam.
+IONM
+Trained neurophysiological monitoring technologists at our in­
+stitution performed IONM, under the supervision of neurologists. 
+The IONM data were analyzed by a neurologist and the second in­
+vestigator (H.S.P.). Neuromaster MEE-1000, MEE-2000 (Nihon 
+Kohden), and CADWELL cascade (Cadwell Laboratories) were 
+used to perform neurophysiological monitoring. Transcranial elec­
+trodes were used as stimulation electrodes at stimulation sites C3 
+(cathode) and C4 (anode) in accordance with the International 10–
+20 system [20]. The stimulus waveform was a constant current with 
+a rectangular pulse of electrical stimulus intensity (100–500 V). 
+The first EP stimulation was performed after the completion of 
+general anesthesia induction and electrode placement to examine 
+the electrode positions and assess the signal while under the influ­
+ence of neuromuscular blocking agents. The stimulation was grad­
+ually increased upon exposure of the vertebral body and attaining a 
+TOF of more than 0.8 until a reproducible MEP was elicited. Fol­
+lowing determination, the individual stimulation intensity was 
+maintained without alteration for the duration of the surgery. Tran­
+scranial MEPs were recorded from the abductor pollicis brevis 
+(APB) and abductor hallucis longus (AHL) for the upper and lower 
+limbs, respectively. All sites were monitored bilaterally. The param­
+eters for MEP electrical stimulation were as follows: stimulus dura­
+tion, 0.05–0.075 ms; interstimulus interval, 2.0 ms; trains of three 
+to six stimuli; bandpass filter, 10–30 Hz and 2 000–3 000 Hz; and 
+recording time, 100 ms. The MEPs were manually monitored at in­
+tervals of 5–15 min; in addition, monitoring was performed inter­
+mittently to prevent unwanted patient movement during surgery.
+Cortical SSEP stimulations were elicited at the bilateral median 
+nerve of the wrist and posterior tibial nerve of the internal malle­
+olus. A single-pulse stimulation with a pulse duration of 0.1–0.5 
+ms, intensity of 10–30 mA, and frequency of 4.7 Hz was applied 
+to elicit SSEP. The bandpass filter setting was maintained at 
+20–1 000 Hz (high-cut, 2–3 kHz; low-cut, 10–30 Hz). SSEPs, 
+monitored continuously by a computer or at intervals of 1–2 min 
+throughout the procedures, were averages of 200–1 000 sweeps. 
+These stimulation conditions were maintained before and after 
+changing the anesthetic agents.
+Fig. 1. Flow diagram of the intervention. MAC: minimum alveolar concentration.
+Maintenance of remimazolam-remifentanil
+End of the main procedure
+Measurements 
+Baseline
+0.3 MAC
+0.6 MAC
+0.8 MAC
+End
+Main procedure
+Volatile anesthesia
+Washout
+0.8 MAC
+0.6 MAC
+0.3 MAC
+5 min
+5 min
+5 min
+End of volatile anesthesia
+343
+https://doi.org/10.4097/kja.24598
+Korean J Anesthesiol 2025;78(4):341-350
+
+
+The peak-to-peak amplitudes and onset latency were measured 
+during the study intervention. A decrease of more than 50% in 
+the amplitude or an increase of more than 10% in latency was de­
+fined as an alarm sign in this study [5,8].
+Outcome variables
+The primary outcome of this study was the change in MEP am­
+plitude in response to increasing concentrations of inhalational 
+agents during the background infusion of remimazolam-remifen­
+tanil. At each MAC, we calculated the percentage change in am­
+plitude relative to the baseline measurement obtained before the 
+administration of inhalational agents (Baseline). The secondary 
+outcome measures included the changes in the latency of MEPs 
+and the amplitude and latency of SSEPs, as well as comparison 
+between the sevoflurane and desflurane groups in terms of these 
+variables.
+Sample size and statistical analysis
+A previous study revealed that desflurane at a MAC of 0.5 
+achieved a MEP amplitude suppression of 1 039.22 μV to 607.4 
+μV, with a standard deviation of 701.0 μV [9]. Thus, assuming a 
+power of 0.8 and an alpha level of 0.1, at least 17 participants were 
+required to observe a statistically significant change in the ampli­
+tude from the baseline value. Twenty participants were evenly al­
+located between the two groups to account for a dropout rate of 
+20%, thereby facilitating exploratory intergroup comparisons.
+The Shapiro–Wilk test was used to assess the distribution of 
+continuous variables. Student’s t-test or the Mann–Whitney U test 
+was used as appropriate to compare continuous variables between 
+the groups. Chi-square test or Fisher’s exact test was used as ap­
+propriate to compare categorical variables between the groups. 
+Data are presented as mean ± standard deviation (MD), median 
+(Q1, Q3), or n (%). The effects of inhalational agents repeatedly 
+measured over time were analyzed using the linear mixed-effects 
+model as it accounts for repeated measures, missing data, and un­
+equal sample sizes (sevoflurane group = 20, desflurane group = 
+19). The patients were designated as random effects while model­
+ing the data to account for inter-individual differences. Unstruc­
+tured covariance was used to maintain flexibility in the relation­
+ships between repeated measurements. The concentration of the 
+inhalational agent (MAC) and anesthesia grouping (including the 
+interaction term) were defined as the fixed effects [21]. Quantita­
+tive analysis was performed to analyze the percentages of differ­
+ences in amplitude and latency values from the baseline values. 
+The compared data are presented as the least square means 
+(LSMs) ± standard error (SE). LSMs account for group and time 
+imbalances, as well as missing data; thus, it varies from raw 
+means. This approach facilitated valid intergroup comparisons of 
+the outcomes, as well as comparison between the outcomes at 
+specific time points (the concentration of the inhalational agent), 
+even with missing observational data. Pairwise comparisons of 
+the LSMs were conducted to assess the intra-group and inter­
+group differences at each time point (MAC). Statistical signifi­
+cance was set at P = 0.05 for all comparisons.
+Results
+Among the 40 participants enrolled, one participant withdrew 
+from the study. Thus, the final analysis included 39 participants 
+(Fig. 2). No significant differences were observed between the two 
+groups in terms of the baseline demographic or clinical character­
+istics (Table 1). IONM was completed without adverse events in 
+all cases. No postoperative neurological deficits were observed in 
+any of the participants.
+Changes in MEP amplitudes in response to increment 
+MAC
+The percentage change in the amplitude at 0.3 MAC revealed a 
+slight reduction in both groups (Fig. 3). The percentage change 
+observed in the upper limb in the desflurane group was higher 
+than that in the sevoflurane group (22.2% vs. 43.4%); however, 
+this difference between the inhalational groups was not significant 
+at 0.3 MAC (P = 0.147). The percentage change in amplitude was 
+more than 50% of the baseline value as the MAC increased to 0.8 
+(Fig. 3). However, the amplitude suppression did not recover to 
+levels close to the baseline at the end time-point. The remaining 
+amplitude changes were comparable between the two groups.
+The suppression rates (proportion of participants with signifi­
+cant amplitude changes) at 0.3 MAC were 6/20 (30.0%) for the 
+upper limbs in the sevoflurane group and 9/19 (47.4%) in the des­
+flurane group (Table 2). The corresponding rates for the lower 
+limbs were 3/20 (15.0%) in the sevoflurane group and 3/19 
+(15.8%) in the desflurane group. Differences between the groups 
+in terms of the suppression rates were not statistically significant 
+throughout the study. The MEP amplitude signal disappeared in 
+four of the 20 participants when the concentration of sevoflurane 
+increased from 0.3 MAC to 0.6 MAC (Table 2). On the other 
+hand, the MEP amplitude signal disappeared in one of the 19 par­
+ticipants in the desflurane group at 0.8 MAC. Signal reappearance 
+after the discontinuation of the administration of volatile anes­
+thetics (End) was observed in these participants. The LSM value 
+https://doi.org/10.4097/kja.24598
+344
+Park et al. · IONM under remimazolam
+
+
+Table 1. Demographic and Clinical Characteristics among the Study Groups
+Variable
+Sevoflurane group (n = 20)
+Desflurane group (n = 19)
+P value
+Age (yr)
+57.3 ± 12.8
+57.3 ± 13.3
+0.987
+Sex (M/F)
+14/6 (70.0/30.0)
+10/9 (52.6/47.4)
+0.432
+Height (m)
+1.66 ± 0.09
+1.62 ± 0.12
+0.262
+Weight (kg)
+70.6 ± 12.8
+67.7 ± 12.9
+0.478
+Body mass index (kg/m
+2)
+30.0 ± 3.3
+30.4 ± 3.4
+0.745
+Diabetes
+3 (15.0)
+0
+0.248
+Hypertension
+10 (50.0)
+5 (26.3)
+0.231
+Chronic kidney disease
+0
+0
+Liver disease
+0
+0
+Cerebrovascular disease
+1 (5.0)
+2 (10.5)
+0.963
+ASA-PS
+0.940
+  I or II
+17 (85.0)
+15 (79.0)
+  III
+3 (15.0)
+4 (21.1)
+Anesthesia time (min)
+167.4 ± 40.2
+163.3 ± 32.4
+0.730
+Remimazolam (mg)
+190.0 (168.5, 255.0)
+187.0 (177.5, 230.0)
+0.736
+Remifentanil (μg)
+2460.0 ± 994.8
+2360.5 ± 882.6
+0.744
+Values are presented as mean ± SD, median (Q1, Q3), or number (%). ASA-PS: American Society of Anesthesiologists physical status.
+of the amplitude decreased significantly as the MAC increased in 
+the upper and lower limbs in both groups (P < 0.001, Supple­
+mentary Table 1). No significant interaction was observed be­
+tween the inhalational groups and each time-point (P = 0.136 for 
+the upper limb, 0.065 for the lower limb).
+Fig. 2. CONSORT flow diagram illustrating the participant enrollment and allocation during the study period.
+Analyzed (n = 20)
+• Excluded from analysis (n = 0)
+Analyzed (n = 19)
+• Excluded from analysis (n = 0)
+Assessed for eligibility (n = 40)
+Enrollment
+Allocated to sevoflurane group (n = 20) 
+• Received allocated intervention (n = 20)
+• Did not receive allocated intervention (n = 0)
+Lost to follow-up (n = 0)
+Discontinued intervention (n = 0)
+Allocated to desflurane group (n = 20) 
+• Received allocated intervention (n = 19) 
+• Did not receive allocated intervention (n = 1) 
+- Withdrawal to informed consent (n = 1)
+Lost to follow-up (n = 0)
+Discontinued intervention (n = 0)
+Excluded (n = 0)
+• Not meeting inclusion criteria (n = 0)
+• Declined to participate (n = 0)
+• Other reasons (n = 0)
+Randomized (n = 40)
+Allocation
+Follow-up
+Analysis
+345
+https://doi.org/10.4097/kja.24598
+Korean J Anesthesiol 2025;78(4):341-350
+
+
+Fig. 3. Percentage change in amplitude from baseline of MEPs. The amplitudes were measured from the APB muscle and AHL muscle across 
+increasing MAC in the sevoflurane and desflurane groups. No significant intergroup differences were observed at any level. MEPs: motor evoked 
+potentials, APB: abductor pollicis brevis, AHL: abductor hallucis longus, MAC: minimum alveolar concentration.
+Table 2. Proportion of MEP Amplitude Suppression of ≥ 50% of the 
+Baseline or Total Suppression at Each MAC Level 
+Variable
+Sevoflurane 
+group
+(n = 20)
+Desflurane 
+group
+(n = 19)
+P value
+APB
+  0.3 MAC
+6 (30.0)
+9 (47.4)
+0.268
+  0.6 MAC
+16 (80.0)
+14 (73.7)
+0.828
+  0.8 MAC
+17 (85.0)
+16 (84.2)
+0.946
+  End
+14 (70.0)
+13 (68.4)
+0.994
+Total suppression of APB
+  0.3 MAC
+0
+0
+  0.6 MAC
+4 (20.0)
+0
+  0.8 MAC
+4 (20.0)
+1 (5.3)
+  End
+0
+0
+AHL
+  0.3 MAC
+3 (15.0)
+3 (15.8)
+0.946
+  0.6 MAC
+16 (80.0)
+10 (52.6)
+0.084
+  0.8 MAC
+18 (90.0)
+15 (78.9)
+0.303
+  END
+15 (75.0)
+8 (42.1)
+0.080
+Total suppression of AHL
+  0.3 MAC
+0
+0
+  0.6 MAC
+0
+0
+  0.8 MAC
+0
+0
+  End
+0
+0
+Values are presented as number (%). MEPs were measured at the APB 
+of the upper limbs and the AHL of the lower limbs in the sevoflurane 
+and desflurane groups. MEP: motor evoked potential, MAC: minimum 
+alveolar concentration, APB: abductor pollicis brevis, AHL: abductor 
+halluces longus, P value, group comparison.
+Changes in MEP latency, SSEP amplitudes, and SSEP 
+latency
+The LSM of the MEP latency was not significantly prolonged 
+and the percentage changes were less than 10% from the baseline 
+value in the upper and lower limbs as the MAC increased (Sup­
+plementary Table 1). The latency changes in the sevoflurane and 
+desflurane groups were comparable.
+The LSM of the SSEP amplitude in the lower limb decreased 
+significantly in a dose-dependent manner in the desflurane group 
+(P = 0.023, Supplementary Table 2). No changes were observed 
+in the upper limb; however, the percentage change in amplitude at 
+any time point was within 50% in the upper and lower limbs. In 
+the sevoflurane group, the LSM of the SSEP amplitude in both the 
+upper and lower limbs did not differ significantly (P = 0.396 for 
+the upper limb and P = 0.227 for the lower limb, Supplementary 
+Table 2). No significant interaction was observed between the 
+groups and each time point (P = 0.537 for the upper limb and P 
+= 0.060 for the lower limb).
+SSEP latency of the upper limbs increased significantly as the 
+MAC was increased in an incremental manner in both groups (P 
+< 0.001, Supplementary Table 2). However, the percentage change 
+was less than 10% of the baseline value. The latencies of the lower 
+limbs were not prolonged in either group (P = 0.594 and P = 
+0.103, respectively). A significant interaction between the groups 
+and each time-point was observed for the upper limb (P = 0.020); 
+however, no significant interaction was noted for the lower limb (P 
+= 0.330). The changes in the latency and amplitude of SSEP were 
+comparable between the two groups (Supplementary Table 2).
+100
+50
+0
+100
+50
+0
+Baseline
+Baseline
+0.3
+0.3
+0.6
+0.6
+MAC
+MAC
+Sevoflurane
+Desflurane
+Sevoflurane
+Desflurane
+0.8
+0.8
+End
+End
+Percentage change from baseline (%)
+Percentage change from baseline (%)
+MEP amplitude of APB of the upper limbs
+22.2
+71.2
+66.9
+43.4
+81.0
+79.7
+63.7
+60.2
+MEP amplitude of AHL of the lower limbs
+25.9
+59.0
+65.2
+71.2
+70.9
+40.7
+59.6
+27.7
+https://doi.org/10.4097/kja.24598
+346
+Park et al. · IONM under remimazolam
+
+
+Discussion
+The present study evaluated the effects of adding volatile anes­
+thetic agents to remimazolam on the intraoperative MEP and 
+SSEP monitoring during general anesthesia. To the best of our 
+knowledge, this is the first study to investigate the impact of this 
+combination on MEP responses during cervical spine surgery. Al­
+though the mean percent change was not statistically significant, a 
+considerable proportion of participants exhibited significant MEP 
+amplitude suppression–particularly in the upper limbs–even at a 
+low dose (0.3 MAC), with greater suppression observed at con­
+centrations more than 0.6 MAC. In some cases, no MEP repro­
+ducible signal was detected. In contrast, the SSEPs were minimally 
+affected throughout the study. No significant differences were ob­
+served between the sevoflurane and desflurane groups in terms of 
+MEPs and SSEPs. These findings suggest that caution is warranted 
+when using volatile anesthetic agents for MEP monitoring with a 
+background infusion of remimazolam.
+The findings of the present study are consistent with previous 
+studies indicating that sevoflurane and desflurane suppress MEP 
+amplitudes in a dose-dependent manner. However, in contrast to 
+these studies that suggested that a limited concentration (≤ 0.5 
+MAC) of volatile anesthetic agents enables the reliable monitoring 
+of transcranial MEPs when used in combination with remifentan­
+il or propofol [5,7–10,22,23], the present study could not confirm 
+this effect at such low concentrations of volatile anesthetic agents. 
+Both propofol and volatile anesthetic agents bind with the gam­
+ma-aminobutyric acid type A (GABAA) receptor; however, their 
+effects on EP response vary. Rather than inhibiting the excitability 
+of the motor neurons in the spinal cord, propofol predominantly 
+inhibits the supra-spinal motor pathways, resulting in gradual 
+suppression of the MEP amplitudes during prolonged infusion 
+[24]. Volatile anesthetic agents suppress SSEPs by acting on the 
+sensory neurons in the thalamus and sensory cortex, whereas they 
+affect the MEPs via the corticospinal tract through the alpha mo­
+tor neuron synapses [25]. Midazolam, a conventional benzodiaze­
+pine that acts on the benzodiazepine site on the GABAA receptor, 
+can be used for SSEP monitoring due to its minimal suppressive 
+effect [3,26,27]. Its mild to moderate suppressive effect on MEP 
+amplitude can be mitigated by adjusting the electrical stimulation 
+parameters [28–30]. Remimazolam may produce effects similar 
+to those of propofol or midazolam when combined with volatile 
+anesthetic agents. However, previous studies have not studied 
+such interactions. Thus, the findings of the present study provide 
+new insights into this area.
+The findings of the present study suggest that the suppression 
+of MEP amplitudes induced by the combination of remimazolam 
+and volatile anesthetic agents was more pronounced than that ob­
+served with the combination of propofol or opioids and volatile 
+anesthetic agents [8]. According to the alarm criteria for IONM 
+employed at our institution which generally define significant re­
+duction as an amplitude decrease of more than 50% of the base­
+line MEP values [5],  a notable proportion of participants exhibit­
+ed such suppression even at 0.3 MAC: 30%  in the sevoflurane 
+group and 47.4% in the desflurane groups, based on upper limb 
+monitoring. However, the alarm criteria and their interpretation 
+exhibit mild variations across different institutions [31], as they 
+are influenced by factors such as anesthetic parameters (e.g., tem­
+perature, depth of anesthesia, blood pressure, and the use of neu­
+romuscular blockade), pre-existing neurological deficits, and the 
+intensity of electrical stimulation [32,33]. Thus, these findings 
+suggest that a higher alarm threshold may be required when add­
+ing volatile anesthetics to remimazolam infusion. Future studies 
+to examine the neurological outcomes are warranted.
+The present study could not confirm whether remimazolam 
+exhibits ‘anesthetic fade’ with prolonged infusion [6] or dose-re­
+lated adverse effects. Notably, a loading dose of remimazolam 
+suppressed MEP amplitude in a case report [17]. A continuous 
+infusion rate of 2.0 mg/kg/h has been deemed reproducible for 
+MEP amplitude monitoring [16]. Differences in the plasma con­
+centration of remimazolam may have also contributed to variabil­
+ity in the MEP responses. However, the infusion rate and accu­
+mulated dose of remimazolam at the time of MEP measurements 
+were not recorded in the present study. Kim et al. [18] reported a 
+slight increase in the MEP amplitudes over time in the remima­
+zolam and propofol groups. However, this may be attributed to 
+the decreased effect of neuromuscular blocking agents. Thus, fur­
+ther studies must be conducted to determine the effects of the 
+plasma concentration of remimazolam on MEP response and ac­
+curately estimate its effect.
+Discrepancies were observed between the MEP responses of 
+the upper and lower limbs in the present study.  MEP amplitude 
+of the upper limbs was relatively lower than that of the lower 
+limbs, and the suppression rate of the APB muscle was higher 
+than that of the AHL muscle at 0.3 MAC for both volatile anes­
+thetics. These findings contradict the findings of previous studies 
+that reported that the lower limbs were generally more sensitive to 
+anesthetic-induced depression [34,35]. This discrepancy may be 
+attributed to the differences between the corticospinal tract re­
+sponse of the upper and lower limbs such as D wave refractory 
+periods and anatomical factors (e.g., the length of the electrode 
+needle and its distance from the target muscle) [34,35]. The pre­
+operative motor strength state may have contributed to the varia­
+tions in the MEP responses, as a motor strength of less than 3 is 
+347
+https://doi.org/10.4097/kja.24598
+Korean J Anesthesiol 2025;78(4):341-350
+
+
+associated with reduced MEP recordings [36]. This study did not 
+include participants with significant motor weakness (< 3–4); 
+however, cervical myelopathy in the participants may have con­
+tributed to the lower amplitude values in the upper extremities. A 
+previous study found that MEP monitorability tended to be lower 
+in cervical spine surgery compared to lumbar spine surgery, par­
+ticularly with the use of inhalational anesthetic agents [37].
+The SSEP amplitudes and latencies were minimally affected by 
+anesthesia. These findings are consistent with those of previous 
+studies that reported that the administration of low concentra­
+tions of up to 0.3–1.0 MAC is permitted for reliable SSEP moni­
+toring [4,7,8,10]. The latency of MEPs and SSEPs that are more 
+resistant to suppression by anesthesia also remained largely un­
+changed. This finding is also consistent with those of previous re­
+ports on midazolam [28] and volatile anesthetics [10].
+No significant differences were observed between the two inha­
+lational groups. Two previous studies comparing the effects of 
+sevoflurane and desflurane at 0.3 MAC revealed differing results 
+[9,10]; thus, which inhalational agent had a greater inhibitory ef­
+fect on EP was unclear. The findings of the present study indicate 
+that stronger suppression of MEP amplitudes was observed in the 
+desflurane group; however, this effect was limited to the upper 
+limbs. This variability between the agents may be attributed to in­
+ter-individual differences in terms of the response to volatile anes­
+thetics and differences in the degree of synaptic inhibitions they 
+induce [10].
+This study has several limitations. First, the sample size was cal­
+culated to detect the changes in MEP amplitudes in response to 
+volatile anesthetics. The sample size calculation did not specifical­
+ly account for the effect size required to detect intergroup differ­
+ences; consequently, this limitation primarily affects the second­
+ary outcome and does not compromise the validity of the primary 
+finding. Nevertheless, the adoption of the randomized controlled 
+trial design was necessary to address the secondary outcome that 
+aimed to compare the effects of two volatile anesthetics on IONM. 
+Second, this study measured the final IONM values (End) after 
+ceasing the administration of the volatile anesthetic agents. The 
+blood concentration of desflurane and sevoflurane are known to 
+decrease to clinically insignificant levels approximately 20 min af­
+ter discontinuation [38,39]. Although the exact washout duration 
+was not recorded in the present study, the End values were mea­
+sured approximately 10 min after stopping volatile anesthetic 
+agents, based on the end-tidal concentration. However, due to the 
+dilution effect in the lung, the end-tidal concentration of the anes­
+thetics tends to decrease earlier than the corresponding reduction 
+in the blood concentration. As a result, significant amplitude sup­
+pression was still observed at the End time-point (Fig. 3). Further­
+more, the persistence of substantial amplitude reduction suggests 
+that once suppression occurs, a sufficient recovery period is re­
+quired due to residual effects of volatile anesthetic agents. A previ­
+ous study compared MEP amplitudes measured 35 min after des­
+flurane cessation between a group receiving desflurane followed 
+by a propofol infusion and a standard propofol infusion group 
+[23]. The results showed that a mean MEP amplitude similar be­
+tween the two groups. Notably, the 95% CI was wider in the des­
+flurane group, leading the authors to suggest that this variability 
+was possibly due to the residual effects of desflurane. Third, the 
+addition of inhalational anesthetics to IV anesthesia may lead to 
+an abrupt decrease in the mean arterial pressure (MAP) that may 
+affect autoregulation [31]. Reduced autoregulation decreases the 
+blood flow to the neurons and produces IONM response variabil­
+ity [31,40]. A MAP of ≥ 65 mmHg was targeted during the study 
+period; however, some patients have higher lower limits of auto­
+regulation [33]. Furthermore, interventions such as reducing the 
+infusion rate of IV anesthetics or administering vasopressors (e.g., 
+phenylephrine or ephedrine) may have affected the MEP ampli­
+tude by elevating the excitability of motor neurons [41]. These 
+factors were not analyzed in the present study. Fourth, the remim­
+azolam-remifentanil dose was titrated based on the patient state 
+index from SedLine; however, PSI was not strictly maintained 
+within a refined range. Anesthetic depth is correlated with MEP 
+monitoring [42]; thus, equivalent anesthetic depth is critical for 
+evaluating the effects of different agents. Lastly, volatile anesthetic 
+agents provide immobility and amnesia even at low doses [7,43]; 
+however, the present study focused solely on assessing changes in 
+MEP and SSEP response, and did not comprehensively evaluate 
+the clinical outcomes of adding volatile anesthetic agents.
+In conclusion, the use of volatile anesthetic agents with a back­
+ground infusion of remimazolam resulted in MEP amplitude sup­
+pression even at 0.3 MAC. Thus, volatile anesthetic agents must 
+be used cautiously in conjunction with remimazolam during MEP 
+monitoring. Further dose-finding studies of volatile agents com­
+bined with remimazolam and remifentanil anesthesia must be 
+conducted to optimize MEPs during spinal surgery.
+Funding
+None.
+Conflicts of Interest
+No potential conflict of interest relevant to this article was re­
+ported.
+Data Availability
+The datasets generated during and/or analyzed during the cur­
+https://doi.org/10.4097/kja.24598
+348
+Park et al. · IONM under remimazolam
+
+
+rent study are available from the corresponding author on reason­
+able request.
+Author Contributions
+Hee-Sun Park (Data curation; Formal analysis; Methodology; Writing – 
+original draft; Writing – review & editing)
+Wonho Choi (Investigation; Methodology; Writing – review & editing)
+Dong-Ho Lee (Conceptualization; Data curation)
+Yong Seo Koo (Data curation; Formal analysis; Methodology)
+Se Keun Oh (Data curation; Formal analysis; Methodology)
+Won Uk Koh (Conceptualization; Methodology; Supervision; Writing – 
+review & editing)
+ORCID
+Hee-Sun Park, https://orcid.org/0000-0002-2424-9973
+Wonho Choi, https://orcid.org/0009-0002-2088-8329
+Dong-Ho Lee, https://orcid.org/0000-0003-3704-6355
+Yong Seo Koo, https://orcid.org/0000-0001-5418-2522
+Se Keun Oh, https://orcid.org/0000-0002-8763-1942
+Won Uk Koh, https://orcid.org/0000-0003-4881-1884
+Supplementary Materials
+Supplementary Table 1. Motor evoked potentials (MEPs). The amplitude 
+and latency were measured at the APB of the upper limbs and the AHL 
+muscle of the lower limbs in the sevoflurane and desflurane groups.
+Supplementary Table 2. Somatosensory evoked potentials (SSEPs). The 
+amplitude (μV) and latency (ms) were measured at the median nerve of 
+the upper limbs and posterior tibial nerve of the lower limbs in the sevo­
+flurane and desflurane group.
+References
+1.	Téllez MJ, Mirallave-Pescador A, Seidel K, Urriza J, Shoakazemi A, 
+Raabe A, et al. Neurophysiological monitoring of the laryngeal adductor 
+reflex during cerebellar-pontine angle and brainstem surgery. Clin Neu­
+rophysiol 2021; 132: 622-31. 
+2.	Tamaki T, Kubota S. History of the development of intraoperative spinal 
+cord monitoring. Eur Spine J 2007; 16 Suppl 2(Suppl 2): S140-6. 
+3.	Banoub M, Tetzlaff JE, Schubert A. Pharmacologic and physiologic in­
+fluences affecting sensory evoked potentials: implications for periopera­
+tive monitoring. Anesthesiology 2003; 99: 716-37. 
+4.	Boisseau N, Madany M, Staccini P, Armando G, Martin F, Grimaud D, 
+et al. Comparison of the effects of sevoflurane and propofol on cortical 
+somatosensory evoked potentials. Br J Anaesth 2002; 88: 785-9. 
+5.	Legatt AD, Emerson RG, Epstein CM, MacDonald DB, Deletis V, Bravo 
+RJ, et al. ACNS guideline: transcranial electrical stimulation motor 
+evoked potential monitoring. J Clin Neurophysiol 2016; 33: 42-50. 
+6.	Lyon R, Feiner J, Lieberman JA. Progressive suppression of motor 
+evoked potentials during general anesthesia: the phenomenon of "anes­
+thetic fade". J Neurosurg Anesthesiol 2005; 17: 13-9. 
+7.	Sloan TB, Toleikis JR, Toleikis SC, Koht A. Intraoperative neurophysio­
+logical monitoring during spine surgery with total intravenous anesthe­
+sia or balanced anesthesia with 3% desflurane. J Clin Monit Comput 
+2015; 29: 77-85. 
+8.	Hernández-Palazón J, Izura V, Fuentes-García D, Piqueras-Pérez C, 
+Doménech-Asensi P, Falcón-Araña L. Comparison of the effects of 
+propofol and sevoflurane combined with remifentanil on transcranial 
+electric motor-evoked and somatosensory-evoked potential monitoring 
+during brainstem surgery. J Neurosurg Anesthesiol 2015; 27: 282-8. 
+9.	Chong CT, Manninen P, Sivanaser V, Subramanyam R, Lu N, Venkatra­
+ghavan L. Direct comparison of the effect of desflurane and sevoflurane 
+on intraoperative motor-evoked potentials monitoring. J Neurosurg 
+Anesthesiol 2014; 26: 306-12. 
+10.	 Xiang B, Jiao S, Zhang Y, Wang L, Yao Y, Yuan F, et al. Effects of desflu­
+rane and sevoflurane on somatosensory-evoked and motor-evoked po­
+tential monitoring during neurosurgery: a randomized controlled trial. 
+BMC Anesthesiol 2021; 21: 240.
+11.	 Rozet I, Metzner J, Brown M, Treggiari MM, Slimp JC, Kinney G, et al. 
+Dexmedetomidine does not affect evoked potentials during spine sur­
+gery. Anesth Analg 2015; 121: 492-501. 
+12.	 Sloan TB, Mongan P, Lyda C, Koht A. Lidocaine infusion adjunct to to­
+tal intravenous anesthesia reduces the total dose of propofol during in­
+traoperative neurophysiological monitoring. J Clin Monit Comput 2014; 
+28: 139-47. 
+13.	 Doi M, Morita K, Takeda J, Sakamoto A, Yamakage M, Suzuki T. Effica­
+cy and safety of remimazolam versus propofol for general anesthesia: a 
+multicenter, single-blind, randomized, parallel-group, phase IIb/III trial. 
+J Anesth 2020; 34: 543-53. 
+14.	 Shi F, Chen Y, Li H, Zhang Y, Zhao T. Efficacy and safety of remimazol­
+am tosilate versus propofol for general anesthesia in cirrhotic patients 
+undergoing endoscopic variceal ligation. Int J Gen Med 2022; 15: 583-
+91. 
+15.	 Tanaka R, Sato A, Shinohara K, Shiratori T, Kiuchi C, Murakami T, et al. 
+Comparison of sensory evoked potentials during neurosurgery under 
+remimazolam anesthesia with those under propofol anesthesia. Miner­
+va Anestesiol 2022; 88: 81-2. 
+16.	 Kurita S, Furutani K, Mitsuma Y, Deguchi H, Kamoda T, Kamiya Y, et 
+al. Effect of remimazolam on transcranial electrical motor-evoked po­
+tential in spine surgery: a prospective, preliminary, dose-escalation 
+study. J Neurosurg Anesthesiol 2025; 37: 325-9. 
+17.	 Yamada S, Akiyama Y, Tachibana S, Hayamizu K, Kimura Y, Hashimoto 
+S, et al. The intraoperative motor-evoked potential when propofol was 
+changed to remimazolam during general anesthesia: a case series. J 
+Anesth 2023; 37: 154-9. 
+18.	 Kim MH, Park J, Park YG, Cho YE, Kim D, Lee DJ, et al. Comparison of 
+349
+https://doi.org/10.4097/kja.24598
+Korean J Anesthesiol 2025;78(4):341-350
+
+
+intraoperative neurophysiological monitoring between propofol and 
+remimazolam during total intravenous anesthesia in the cervical spine 
+surgery: a prospective, double-blind, randomized controlled trial. Kore­
+an J Anesthesiol 2025; 78: 16-29. 
+19.	 Minto CF, Schnider TW, Egan TD, Youngs E, Lemmens HJ, Gambus 
+PL, et al. Influence of age and gender on the pharmacokinetics and 
+pharmacodynamics of remifentanil. I. Model development. Anesthesi­
+ology 1997; 86: 10-23. 
+20.	 Acharya JN, Hani A, Cheek J, Thirumala P, Tsuchida TN. American 
+clinical neurophysiology society guideline 2: guidelines for standard 
+electrode position nomenclature. J Clin Neurophysiol 2016; 33: 308-11. 
+21.	 Schober P, Vetter TR. Repeated measures designs and analysis of longi­
+tudinal data: if at first you do not succeed-try, try again. Anesth Analg 
+2018; 127: 569-75. 
+22.	 Reinacher PC, Priebe HJ, Blumrich W, Zentner J, Scheufler KM. The ef­
+fects of stimulation pattern and sevoflurane concentration on intraoper­
+ative motor-evoked potentials. Anesth Analg 2006; 102: 888-95. 
+23.	 Malcharek MJ, Loeffler S, Schiefer D, Manceur MA, Sablotzki A, Gille J, 
+et al. Transcranial motor evoked potentials during anesthesia with des­
+flurane versus propofol--a prospective randomized trial. Clin Neuro­
+physiol 2015; 126: 1825-32. 
+24.	 Deguchi H, Furutani K, Mitsuma Y, Kamiya Y, Baba H. Propofol reduc­
+es the amplitude of transcranial electrical motor-evoked potential with­
+out affecting spinal motor neurons: a prospective, single-arm, interven­
+tional study. J Anesth 2021; 35: 434-41. 
+25.	 Bernard JM, Péréon Y, Fayet G, Guihéneuc P. Effects of isoflurane and 
+desflurane on neurogenic motor- and somatosensory-evoked potential 
+monitoring for scoliosis surgery. Anesthesiology 1996; 85: 1013-9. 
+26.	 Sloan TB, Fugina ML, Toleikis JR. Effects of midazolam on median 
+nerve somatosensory evoked potentials. Br J Anaesth 1990; 64: 590-3. 
+27.	 Laureau E, Marciniak B, Hébrard A, Herbaux B, Guieu JD. Comparative 
+study of propofol and midazolam effects on somatosensory evoked po­
+tentials during surgical treatment of scoliosis. Neurosurgery 1999; 45: 
+69-74. 
+28.	 Kalkman CJ, Drummond JC, Ribberink AA, Patel PM, Sano T, Bickford 
+RG. Effects of propofol, etomidate, midazolam, and fentanyl on motor 
+evoked responses to transcranial electrical or magnetic stimulation in 
+humans. Anesthesiology 1992; 76: 502-9. 
+29.	 Scheufler KM, Zentner J. Total intravenous anesthesia for intraoperative 
+monitoring of the motor pathways: an integral view combining clinical 
+and experimental data. J Neurosurg 2002; 96: 571-9. 
+30.	 Rabai F, Mohamed B, Seubert CN. Optimizing intraoperative neuro­
+monitoring: anesthetic considerations. Curr Anesthesiol Rep 2018; 8: 
+306-17. 
+31.	 Kawaguchi M, Iida H, Tanaka S, Fukuoka N, Hayashi H, Izumi S, et al. 
+A practical guide for anesthetic management during intraoperative mo­
+tor evoked potential monitoring. J Anesth 2020; 34: 5-28. 
+32.	 Kim SM, Kim SH, Seo DW, Lee KW. Intraoperative neurophysiologic 
+monitoring: basic principles and recent update. J Korean Med Sci 2013; 
+28: 1261-9. 
+33.	 MacDonald DB, Skinner S, Shils J, Yingling C; American Society of 
+Neurophysiological Monitoring. Intraoperative motor evoked potential 
+monitoring - a position statement by the American Society of Neuro­
+physiological Monitoring. Clin Neurophysiol 2013; 124: 2291-316. 
+34.	 Shida Y, Shida C, Hiratsuka N, Kaji K, Ogata J. High-frequency stimula­
+tion restored motor-evoked potentials to the baseline level in the upper 
+extremities but not in the lower extremities under sevoflurane anesthe­
+sia in spine surgery. J Neurosurg Anesthesiol 2012; 24: 113-20. 
+35.	 Parikh P, Cheongsiatmoy J, Shilian P, Gonzalez AA. Differences in the 
+transcranial motor evoked potentials between proximal and distal lower 
+extremity muscles. J Clin Neurophysiol 2018; 35: 155-8. 
+36.	 Guo L, Li Y, Han R, Gelb AW. The correlation between recordable MEPs 
+and motor function during spinal surgery for resection of thoracic spi­
+nal cord tumor. J Neurosurg Anesthesiol 2018; 30: 39-43. 
+37.	 Wilent WB, Tesdahl EA, Trott JT, Tassone S, Harrop JS, Klineberg EO, 
+et al. Impact of inhalational anesthetic agents on the baseline monitora­
+bility of motor evoked potentials during spine surgery: a review of 
+22,755 cervical and lumbar procedures. Spine J 2021; 21: 1839-46. 
+38.	 Lu CC, Tso-Chou L, Hsu CH, Tsai CS, Sheen MJ, Hu OY, et al. Pharma­
+cokinetics of sevoflurane elimination from respiratory gas and blood af­
+ter coronary artery bypass grafting surgery. J Anesth 2014; 28: 873-9. 
+39.	 Lu CC, Tsai CS, Hu OY, Chen RM, Chen TL, Ho ST, et al. Pharmacoki­
+netics of desflurane elimination from respiratory gas and blood during 
+the 20 minutes after cardiac surgery. J Formos Med Assoc 2013; 112: 
+185-92. 
+40.	 Florence G, Guerit JM, Gueguen B. Electroencephalography (EEG) and 
+somatosensory evoked potentials (SEP) to prevent cerebral ischaemia in 
+the operating room. Neurophysiol Clin 2004; 34: 17-32. 
+41.	 de Haan P, Kalkman CJ. Spinal cord monitoring: somatosensory- and 
+motor-evoked potentials. Anesthesiol Clin North Am 2001; 19: 923-45. 
+42.	 Ohtaki S, Akiyama Y, Kanno A, Noshiro S, Hayase T, Yamakage M, et al. 
+The influence of depth of anesthesia on motor evoked potential re­
+sponse during awake craniotomy. J Neurosurg 2017; 126: 260-5. 
+43.	 Sirois JE, Pancrazio JJ, Lynch C 3rd, Bayliss DA. Multiple ionic mecha­
+nisms mediate inhibition of rat motoneurones by inhalation anaesthet­
+ics. J Physiol 1998; 512: 851-62. 
+https://doi.org/10.4097/kja.24598
+350
+Park et al. · IONM under remimazolam

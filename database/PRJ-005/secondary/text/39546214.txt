@@ -84,6 +84,8 @@ vision: a computer-based simulation study
 Petar Milovanovic1 · Julia Braun2 · Cynthia Alexandra Hunn3 · Justyna Lunkiewicz1 · David Werner Tscholl1 · 
 Greta Gasciauskaite1
 1 3
+
+
 Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
 1  Introduction
 Patient monitoring uses electronic devices to collect and 
@@ -183,6 +185,8 @@ short user guide were made available on the study center’s
 intranet (Online Resources 1 and 2).
 1 3
 1066
+
+
 Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
 2.3  Data collection and simulation settings
 We initially derived two sets of scenarios (i.e., Scenarios 
@@ -225,6 +229,8 @@ Fig. 1  Philips Visual Patient Avatar. Vital signs and their respective visual
  
 1 3
 1067
+
+
 Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
 2.4  Outcomes
 We defined the sum of correctly recognized vital signs as 
@@ -267,6 +273,8 @@ modality (B)
  
 1 3
 1068
+
+
 Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
 Fig. 4  Simulation session sequences flowchart. Each participant evalu­
 ated four simulation videos sequentially, thereby alternating the sce­
@@ -284,6 +292,8 @@ Philips Visual Patient Avatar
  
 1 3
 1069
+
+
 Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
 We used Microsoft Excel spreadsheets (Microsoft Cor­
 poration, Redmond, WA, USA), Prism 9 (GraphPad Soft­
@@ -396,6 +406,8 @@ Far-sighted, n (%)
 IQR: interquartile range
 1 3
 1070
+
+
 Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
 recognition rate compared to the reference category (con­
 ventional monitoring from an 8-meter viewing distance) 
@@ -435,6 +447,8 @@ colored dotted line. Abbreviations: 8  m: 8-meter viewing distance;
  
 1 3
 1071
+
+
 Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
 significantly better at an 8-meter viewing distance. Scenario 
 2 also had five vital signs with strong evidence for superior 
@@ -483,6 +497,8 @@ odds ratio; p: p-value
  
 1 3
 1072
+
+
 Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
 and color [30]. The individual visualizations of the Visual 
 Patient Avatar do not move, but some perform a frequency-
@@ -586,6 +602,8 @@ the third component of visual object recognition and can be
 added or subtracted to an object without affecting its shape 
 1 3
 1073
+
+
 Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
 All participants signed written informed consent for the collected data 
 in anonymized form. Study participation was voluntary and without 
@@ -702,6 +720,8 @@ project did not fall into the scope of the Human Research Act (Busi­
 ness Management System for Ethics Committees Req-2023-00580). 
 1 3
 1074
+
+
 Journal of Clinical Monitoring and Computing (2025) 39:1065–1075
 multicenter computer-based laboratory study. BMC Med Inf 
 Decis Mak. 2020;20(1):26.

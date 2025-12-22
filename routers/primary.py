@@ -1,9 +1,12 @@
 from fastapi import APIRouter, UploadFile, File, Form
 import os
 import base64
+import pandas as pd
+
 from primary.primary_runner import run_primary_screening
 
 router = APIRouter(prefix="/api/primary", tags=["Primary Screening"])
+
 
 @router.post("/run")
 async def primary_screening(
@@ -33,4 +36,31 @@ async def primary_screening(
     with open(output_excel, "rb") as f:
         encoded = base64.b64encode(f.read()).decode()
 
-    return {"status": "success", "excelFile": encoded}
+    return {
+        "status": "success",
+        "excelFile": encoded
+    }
+
+
+@router.get("/existing")
+def get_existing_primary(project_id: str):
+    """
+    Check if primary screening result already exists.
+    Returns parsed Excel + base64 file.
+    """
+
+    output_path = f"database/{project_id}/primary/screening_results.xlsx"
+
+    if not os.path.exists(output_path):
+        return {"exists": False}
+
+    df = pd.read_excel(output_path).fillna("")
+
+    with open(output_path, "rb") as f:
+        excel_bytes = f.read()
+
+    return {
+        "exists": True,
+        "masterSheet": df.to_dict(orient="records"),
+        "excelFile": base64.b64encode(excel_bytes).decode(),
+    }

@@ -1,0 +1,951 @@
+Pediatric Anesthesia. 2025;35:47–56.	
+﻿
+ | 47
+wileyonlinelibrary.com/journal/pan
+Received: 21 March 2024 | Revised: 25 August 2024 | Accepted: 23 September 2024
+DOI: 10.1111/pan.15019  
+R E S E A R C H  R E P O R T
+Intravenous lidocaine infusion therapy and intraoperative 
+neurophysiological monitoring in adolescents undergoing 
+idiopathic scoliosis correction: A retrospective study
+Rachel Bates1,2 |   Fiona Cave3 |   Nicholas West1,2
+ |   Jeffrey N. Bone2 |   
+Bradley Hofmann4 |   Firoz Miyanji2,5,6 |   Gillian R. Lauder1,2,4
+1Department of Anesthesia, British 
+Columbia Children's Hospital, Vancouver, 
+British Columbia, Canada
+2Research Institute, British Columbia 
+Children's Hospital, Vancouver, British 
+Columbia, Canada
+3Department of Neurodiagnostics, 
+Kelowna General Hospital, Kelowna, 
+British Columbia, Canada
+4Department of Anesthesiology, 
+Pharmacology, and Therapeutics, 
+University of British Columbia, Vancouver, 
+British Columbia, Canada
+5Department of Orthopaedics, University 
+of British Columbia, Vancouver, British 
+Columbia, Canada
+6Department of Orthopaedics, British 
+Columbia Children's Hospital, Vancouver, 
+British Columbia, Canada
+Correspondence
+Gillian R. Lauder, British Columbia 
+Children's Hospital, 4480 Oak Street, 
+Vancouver, BC V6H 3V4, Canada.
+Email: glauder@cw.bc.ca
+Funding information
+Biotalent Canada; BC Children's Hospital 
+Research Institute
+Section Editor: Nada Sabourdin 
+Abstract
+Background: Posterior spinal instrumentation and fusion is an established surgical pro-
+cedure for the correction of adolescent idiopathic scoliosis. Intraoperative neurophysi-
+ological monitoring is standard practice for this procedure. Anesthetic agents can have 
+different, but significant, effects on neurophysiological monitoring outcomes.
+Aim: To determine if intravenous lidocaine infusion therapy has an impact on the in-
+traoperative neurophysiological monitoring during posterior spinal instrumentation 
+and fusion for adolescent idiopathic scoliosis.
+Methods: Following ethical approval, we conducted a retrospective review of charts and 
+the archived intraoperative neurophysiological data of adolescents undergoing poste-
+rior spinal instrumentation and fusion for adolescent idiopathic scoliosis. Intraoperative 
+neurophysiological monitoring data included the amplitude of motor evoked potentials 
+and the amplitude and latency of somatosensory evoked potentials. A cohort who re-
+ceived intraoperative lidocaine infusion were compared to those who did not.
+Results: Eighty-­one patients were included in this analysis, who had surgery between 
+February 4, 2016 and April 22, 2021: 39 had intraoperative intravenous lidocaine 
+infusion and 42 did not. Based on hourly snapshot data, there was no evidence that 
+lidocaine infusion had a detrimental effect on the measured change from baseline 
+for MEP amplitudes in either lower (mean difference 41.9; 95% confidence interval 
+−304.5 to 388.3; p = .182) or upper limbs (MD −279.0; 95% CI −562.5 to 4.4; p = .054). 
+There was also no evidence of any effect on the measured change from baseline for 
+SSEP amplitudes in either lower (MD 16.4; 95% CI −17.7 to 50.5; p = .345) or upper 
+limbs (MD −2.4; 95% CI −14.5 to 9.8; p = .701). Finally, there was no evidence of a dif-
+ference in time to first reportable neurophysiological event (hazard ratio 1.13; 95% CI 
+0.61 to 2.09; p = .680).
+Conclusions: Data from these two cohorts provide preliminary evidence that intrave-
+nous lidocaine infusion has no negative impact on intraoperative neurophysiological 
+monitoring during PSIF for adolescent idiopathic scoliosis.
+This is an open access article under the terms of the Creative Commons Attribution-NonCommercial-NoDerivs License, which permits use and distribution in 
+any medium, provided the original work is properly cited, the use is non-commercial and no modifications or adaptations are made.
+© 2024 The Author(s). Pediatric Anesthesia published by John Wiley & Sons Ltd.
+
+
+48 |   
+BATES et al.
+1  |  INTRODUCTION
+Posterior spinal instrumentation and fusion is a common surgi-
+cal procedure for correction of adolescent idiopathic scoliosis. It 
+is a major surgical insult that can be associated with significant 
+postoperative pain.1 Multimodal analgesia is utilized periopera-
+tively to help prevent and manage this pain. It is important to 
+minimize the requirements for any individual analgesic modality 
+to minimize their potential side effects.2,3 This is especially true 
+for opioids, which have a dose-­dependent side effect profile.4 
+Lidocaine has been used as a peri-­operative adjuvant to multi-
+modal analgesia to help improve postoperative pain and minimize 
+opioid requirements.5–7 Its efficacy and safety have been estab-
+lished in adults.8
+Intraoperative neurophysiological monitoring (IONPM) is stan-
+dard of care for PSIF procedures.9 It involves the integration of so-
+matosensory evoked potentials (SSEPs), transcranial motor evoked 
+potentials (MEPs), electroencephalogram (EEG), and electromyogra-
+phy (EMG). IONPM helps to ensure the integrity of the motor and 
+sensory spinal cord pathways and issues alerts in the event of po-
+tential spinal cord impairment, allowing for intervention to mitigate 
+injury progression or reversal of potential neurological sequelae. 
+Anesthetic agents can have significant effects on IONPM; for in-
+stance, inhalational agents adversely affect SSEPs and MEPs, and 
+muscle relaxants can impact MEPs and EMG.10,11
+While there is limited data on adolescents, adult studies have re-
+ported reduced amplitude and increased latency of SSEP responses 
+in patients receiving intraoperative lidocaine infusion when under-
+going abdominal or orthopedic surgery12 and absent or reduced 
+SSEP amplitudes following lidocaine administration in scoliosis 
+surgery.13
+The aim of this study was to investigate whether intraopera-
+tive intravenous lidocaine infusion therapy (I-­IVLT) has any impact 
+on the reliability of IONPM monitoring in adolescents undergoing 
+PSIF for idiopathic scoliosis, principally to support the continued 
+use of lidocaine infusion therapy as an adjunct to multimodal anal-
+gesia without compromising patient safety. Specifically, we aimed 
+to evaluate the evidence for any differences in hourly-­sampled 
+measurements of MEP amplitude, SSEP amplitude and SSEP la-
+tency, for both upper and lower limbs, in adolescent patients re-
+ceiving an intraoperative lidocaine infusion during PSIF surgery 
+compared with a similar cohort, who did not receive lidocaine. We 
+also aimed to evaluate any differences in the number of reportable 
+neurophysiological events, based on clinical alert criteria for ac-
+ceptable deviation of these measurements from baseline, or time 
+to first event.
+2  |  METHODS
+2.1  |  Study design
+We conducted a single-­centre retrospective review of PSIF 
+procedures for adolescent idiopathic scoliosis, comparing a cohort 
+of cases in which lidocaine was infused intraoperatively with a 
+similar cohort in which no lidocaine was given. Electronic records 
+were reviewed for relevant anesthetic and surgical information, 
+including which patients received I-­IVLT. IONPM data were retrieved 
+from archived data held within the neurophysiology department 
+for each patient. The study was approved by the University of 
+British Columbia/Children's and Women's Health Centre of British 
+Columbia Research Ethics Board (H20-­01875), including waiver of 
+the requirement for informed consent. This manuscript has been 
+prepared in accordance with the STROBE guidelines.14
+2.2  |  Setting and participants
+Patients were included if they underwent single-­stage PSIF with 
+or without traction for adolescent idiopathic scoliosis corrective 
+surgery at BC Children's Hospital, a tertiary care academic pediatric 
+facility. The study period spanned January 2012 to April 2021. 
+Eligibility criteria included American Society of Anaesthesiologists 
+(ASA) status I–III, ages 10–19. Cases were excluded if surgery 
+was more than a single-­stage procedure, if the surgical technique 
+comprised of an anterior, thorascopic, or tethering approach, or if 
+patients had a neuromuscular or congenital cause for scoliosis. All 
+included patients received standard IONPM.
+Charts were reviewed to distinguish cases with I-­IVLT admin-
+istration from those without. I-­IVLT was given as a 1 mg/kg bolus 
+followed by and infusion of 2 mg/kg/h. until the end of the surgical 
+procedure; this I-­IVLT regimen has been applied consistently across 
+the study period.
+2.3  |  IONPM procedures
+IONPM was performed using current practice standards and or-
+ganizational protocols, by experienced technologists certified in 
+Neurophysiological Intraoperative Monitoring (Appendix  A). The 
+monitoring device changed from the Cascade PRO, used 2012–2019, 
+to the Cascade IOMAX, used 2019–2021 (Cadwell Industries Inc., 
+Kennewick, WA), but there were no changes in the monitoring proto-
+col or the parameters used for event reporting during the study period.
+K E Y W O R D S
+adolescent idiopathic scoliosis, intraoperative neurophysiological monitoring, intravenous 
+lidocaine infusion, posterior spinal instrumentation and fusion
+
+
+    |  49
+BATES et al.
+2.4  |  Variables collected and data sources
+For all patients included in this analysis, recorded demographic data 
+included: ASA status, age, height, weight, sex, allergies, Lenke curve, 
+Cobb angle, details of the surgical procedure (number of vertebral 
+levels fused, number of vertebrectomies, presence of surgical 
+duration of traction traction), and confirmation of I-­IVLT or not.
+IONPM data included the amplitude and latency of the SSEP re-
+sponses bilaterally from both the ulnar and post tibia evoked poten-
+tials and the amplitudes of the MEPs, and were collected from the 
+neurophysiological records. Baseline values for these measurements 
+were taken after induction of anesthesia, and after commencement 
+of the I-­IVLT if given, but prior to the start of surgery. The entire case 
+was reviewed and neuromonitoring variables were sampled and re-
+corded at approximately one hourly intervals at which the required 
+data were available, and recorded as measured changes from these 
+baseline values. The completeness of clinical neurophysiological 
+data at other timepoints that were not required for the study was 
+not evaluated.
+For MEPs, bilateral adductor pollicis brevis and brachoradialis 
+muscles were aggregated into upper limbs; and bilateral adductor 
+hallucis and tibialis anterior muscles were aggregated into lower 
+limbs. SSEP measurements were also reported as upper limbs (bilat-
+eral ulnar nerves) and lower limbs (bilateral posterior tibial nerves). 
+Reported outcomes include: MEP amplitude for lower limbs and 
+upper limbs; SSEP amplitude for lower limbs and upper limbs; and 
+SSEP latency for upper and lower limbs (Figure 1).
+IONPM events were identified by reviewing neuromonitoring 
+data for any changes that reached clinical alert criteria of a re-
+duction in amplitude of ≥50% in MEPs or SSEPs, or an SSEP la-
+tency increase of ≥10%. Factors associated with IONPM, such as 
+mean arterial blood pressure (MAP), Bispectal index (BIS), tem-
+perature, and heart rate were documented when available in the 
+neurophysiological records, along with details of any additional 
+medication boluses.
+De-­identified data were recorded in a Research Education Data 
+Capture (REDCap) database.15
+2.5  |  Data analysis
+2.5.1  |  Sample size
+We had an available sample of 39 cases in which I-­IVLT had been 
+used as part of the anesthetic regimen. We selected an additional 
+sample of 42 cases, in which I-­IVLT had not been used by searching 
+the neurophysiology database for eligible cases managed by 
+anesthesiologists who do not incorporate I-­IVLT into their practice, 
+starting at the end-­date of our study period and working backwards 
+until we had an equal number of cases; we collected an additional 
+three cases in case of missing data. All cases were selected before 
+IONPM data were reviewed.
+2.5.2  |  Statistical analysis and quantitative variables
+Differences in age, sex, weight, Cobb angle, surgical duration, 
+and number of vertebral levels fused between the group that re-
+ceived I-­IVLT and the group that did not were evaluated based on 
+a standardized mean difference calculated using Cohen's h for the 
+binary variable (sex) and Cohen's d for the continuous variables. 
+For hourly snapshot data, we used a linear mixed effects model, in-
+cluding fixed effects for surgical time elapsed and administration of 
+intraoperative lidocaine or not, with participant as a random effect. 
+Data were compared between two groups: cases who received 
+I-­IVLT versus cases who received no lidocaine infusion; between 
+FI G U R E 1 Infographic showing 
+motor-­evoked potential (MEP) and 
+somatosensory evoked potential (SSEP) 
+anatomical measurement points and 
+resulting waveforms.
+
+
+50 |   
+BATES et al.
+group results are reported using mean difference (MD) and their 
+95% confidence interval (CI). Hourly snapshot data are displayed 
+in box plots. We also examined the effect of the elapsed surgical 
+duration on MEP and SSEP measurements in terms of stabilizing 
+or destabilizing effect (associated with a deviation from baseline 
+as procedure time increases). In other words, whether increasing 
+elapsed surgical time is associated with a deviation of or conformity 
+to baseline values.
+We compared the total number of reportable neurophysiological 
+events using Fishers exact test and used a Kaplan–Meier survival 
+curve and hazard ratios, estimated from a Cox proportional hazards 
+model, to represent time to first reportable event in each group. 
+Reportable events were operationalized in accordance with clinical 
+alert criteria as a 10% increase in SSEP latency or a 50% decrease in 
+SSEP or MEP amplitude.16
+Exploratory noninferiority testing was also completed on hourly 
+snapshot data using the above reportable event criteria of 10% 
+for SSEP latency and 50% for SSEP or MEP amplitude as a clinical 
+significance margin.17 All statistical analyses were conducted in R 
+v4.3.0.18
+3  |  RESULTS
+3.1  |  Participants
+Data were available from 81 cases conducted between 4 February 
+2016 and 22 April 2021: 39 cases in the group who received I-­
+IVLT and 42 cases in the group who received no lidocaine infusion; 
+differences in demographic and procedure characteristics between 
+groups were small (Table 1). All participants received propofol-­opioid 
+total intravenous anesthesia (TIVA). Baseline MAP was higher in the 
+I-­IVLT group compared to the no lidocaine group (MD 6, 95% CI 0 to 
+11; p = .044), but there were no differences between the groups in 
+baseline MEP, SSEP, BIS or body temperature measurements and no 
+differences between the groups in subsequent hourly intraoperative 
+measurements for BIS, MAP, or body temperature throughout the 
+surgery (Table 2).
+3.2  |  Hourly neurophysiological monitoring
+IONPM measurements of MEP amplitude and SSEP amplitude and 
+latency for both upper and lower limbs were available for all par-
+ticipants at baseline. We had a total of 385 hourly snapshot data 
+points across all participants, with a median (interquartile range) of 
+5.0 (4.0–5.5) hourly data points per participant in the I-­IVLT group 
+and 5.0 (4.0–5.8) in the no lidocaine group. For each snapshot data 
+point, we had full data for MEP (amplitude) and SSEP (amplitude and 
+latency) and each limb.
+Based on these hourly snapshot data, there was no clear evidence 
+of I-­IVLT having an effect on MEP amplitudes in lower limbs (MD 41.9, 
+95% CI −304.5 to 388.3; p = .182). In upper limbs, there was some 
+evidence for a large difference favoring the use of intraoperative lido-
+caine (MD −279.0, 95% CI −562.5 to 4.4; p = .054) (Figure 2).
+There was also no evidence of an effect of lidocaine on SSEP 
+amplitudes between the two groups. Specifically, the linear mixed-­
+effects model indicated no impact of I-­IVLT on SSEP amplitudes 
+in the lower limbs (MD 16.4, 95% CI [−17.7, 50.5]; p = .345) or in 
+the upper limbs (MD −2.4, 95% CI [−14.5, 9.8]; p = .701) (Figure 3). 
+Similarly, there was no evidence of a difference in SSEP latencies 
+between groups in either lower limbs (MD 1.21, 95% CI [−1.29, 3.70]; 
+p = .343) or upper limbs (MD 0.35, 95% CI [−1.82, 2.51]; p = .754) 
+(Figure 3).
+The amount of surgical time elapsed had an impact on the 
+change from baseline of some IONPM measures, which was modi-
+fied by the use of I-­IVLT. There was an interaction between surgical 
+time elapsed and I-­IVLT use in upper limb MEP amplitude on change 
+from baseline (p = .047). In those without lidocaine, increasing surgi-
+cal time led to an average decrease of −31.31 (95% CI [−62.15, 0.49]) 
+from baseline for each unit increase in time. In those with lidocaine 
+infusion therapy, there was a positive association between time 
+and a change from baseline of 8.82 (95% CI [−22.29, 39.91]), sug-
+gesting lidocaine may have a stabilizing effect on the MEP changes 
+from baseline as the surgery progresses compared to no lidocaine. 
+There was no evidence that surgical time elapsed had an effect on 
+lower limb MEP amplitudes (p = .980) or lower limb SSEP amplitude 
+(p = .249).
+Demographic
+Lidocaine group 
+(n = 39)
+No Lidocaine 
+group (n = 42)
+Standardized mean 
+difference
+Age (years)
+14.0 (12.2, 15.0)
+13.5 (11.2, 15.8)
+0.174
+Sex: Female
+30 (77%)
+30 (71%)
+0.175
+Weight (kg)
+54.0 (50.0, 60.0)
+53.5 (49.2, 65.5)
+0.034
+Cobb angle (°C)
+55.0 (48.0, 65.0)
+52.5 (45.5, 65.0)
+0.089
+Surgery duration 
+(hours)
+5.4 (4.7, 6.5)
+5.2 (4.2, 6.5)
+0.168
+Number of vertebral 
+levels fused
+10 (7, 12)
+10.5 (7, 12)
+−0.157
+Note: Data represented as median (interquartile range) for continuous measures or n (%) for counts; 
+standardized mean difference calculated using Cohen's h for the binary variable (sex) and Cohen's d 
+for the continuous variables.
+TA B LE 1 Demographic and procedure 
+data.
+
+
+    |  51
+BATES et al.
+There was also an interaction effect of I-­IVLT and surgical time 
+elapsed in upper SSEP amplitude (p < .001). In participants without I-­
+IVLT, a small decrease of −3.13 (95% CI [−4.81, −1.46]) from baseline 
+was associated with each unit increase in time. In those with I-­IVLT, a 
+similar decrease of −3.16 (95% CI [−4.85, −1.47]) was associated with 
+increasing surgical time elapsed.
+This interaction effect was mirrored in SSEP latency in both 
+lower (p < .001) and upper (p = .043) limbs. In lower limbs, a slightly 
+larger decrease from baseline of −0.907 (95% CI [−1.27, −0.556]) was 
+associated with a one unit increase in time in those without lido-
+caine, while those with lidocaine had a smaller decrease of −0.653 
+(95% CI [−1.01, −0.30]) per increasing unit of time.
+TA B LE 2 Baseline neurophysiological monitoring and hourly intraoperative vital signs data.
+Study hour
+Lidocaine group (N = 39)
+n
+No Lidocaine group (N = 42)
+n
+Baseline neurophysiological monitoring
+MEP amplitude (left AH)
+Baseline
+445 (200, 711)
+39
+582 (243, 922)
+42
+MEP amplitude (left TA)
+389 (204, 797)
+360 (143, 585)
+MEP amplitude (left APB)
+414 (83982)
+573 (154, 1333)
+MEP amplitude (left BR)
+117 (51, 411)
+237 (62, 421)
+MEP amplitude (right AH)
+570 (187, 1209)
+395 (183, 945)
+MEP amplitude (right TA)
+358 (141, 678)
+251 (113, 771)
+MEP amplitude (right APB)
+632 (246, 1190)
+696 (154, 1399)
+MEP amplitude (right BR)
+181 (64, 337)
+120 (73, 224)
+SSEP amplitude (post tib, Left)
+2.4 (1.6, 3.5)
+2.4 (1.5, 3.1)
+SSEP latency (post tib, left)
+38.5 (36.4, 39.2)
+38.1 (36.0, 40.1)
+SSEP amplitude (post tib, Right)
+1.8 (1.3, 3.1)
+2.0 (1.5, 3.1)
+SSEP Latency (post tib, Right)
+37.5 (36.4, 39.2)
+37.2 (36.2, 39.6)
+SSEP amplitude (ulnar, left)
+1.2 (0.9, 2.0)
+1.4 (1.1, 2.1)
+SSEP latency (ulnar, left)
+20.3 (19.4, 21.7)
+20.0 (19.4, 22.0)
+SSEP amplitude (ulnar, right)
+1.5 (1.0, 1.9)
+1.8 (1.2, 2.4)
+SSEP latency (ulnar, right)
+20.6 (19.6, 21.7)
+20.0 (19.2, 21.6)
+Hourly intraoperative vital signs data
+BIS monitoring
+Baseline
+32 (24.5, 39.5)
+31
+25.5 (21.0, 35.2)
+38
+1
+38.0 (30.0, 45.5)
+32.5 (22.8, 42.5)
+2
+42.0 (32.0, 46.8)
+34.0 (26.0, 40.5)
+3
+44.0 (41.5, 48.5)
+42.5 (28.5, 50.3)
+4
+41.0 (36.3, 48.5)
+46.0 (34.3, 54.8)
+5
+51.0 (42.0, 55.0)
+47.0 (34.5, 56.0)
+MAP
+Baseline
+72.0 (59.0, 79.0)
+39
+62.5 (56.2, 73.8)
+42
+1
+70.0 (62.0, 73.0)
+65.0 (60.0, 71.8)
+2
+67.0 (63.3, 73.8)
+68.0 (61.3, 72.0)
+3
+68.5 (61.0, 78.3)
+69.0 (60.3, 77.8)
+4
+68.0 (63.0, 72.5)
+68.0 (63.0, 73.0)
+5
+69.0 (61.0, 76.5)
+74.0 (63.0, 77.5)
+Body temperature
+Baseline
+36.2 (35.8, 36.4)
+39
+36.0 (35.7, 36.4)
+42
+1
+36.4 (35.9, 36.7)
+36.4 (36.2, 36.7)
+2
+36.6 (36.4, 37.1)
+36.6 (36.1, 36.8)
+3
+36.9 (36.7, 37.1)
+36.7 (36.5,37.0)
+4
+36.7 (36.6, 37.1)
+36.7 (36.5,36.9)
+5
+37.2 (37.0, 37.3)
+36.7 (36.6, 37.1)
+Note: Data represented as median (interquartile range).
+Abbreviations: AH, adductor hallucis; APB, adductor pollicis brevis; BIS, Bispectral Index; BR, brachoradialis; MAP, Mean Arterial Pressure; MEP, 
+Motor Evoked Potential; post tib, posterior tibial; SSEP, Somatosensory Evoked Potential; TA, tibialis anterior.
+
+
+52 |   
+BATES et al.
+3.3  |  Reportable neurophysiological events
+One or more reportable IONPM events occurred in 43/81 (53%) 
+participants. There was no difference between I-­IVLT versus no lido-
+caine cases in the number of cases with reportable events (27 events 
+occurred in 22/39 [56%] I-­IVLT cases versus 32 events in 21/42 [50%] 
+no lidocaine cases; RR = 0.87, 95% CI [0.55, 1.39], p = .66), or in the 
+time to first reportable event (hazard ratio = 1.13, 95% CI [0.61, 2.09]; 
+p = .68) (Figure 4). Median time to first event was 2.6 h (95% CI 2.2 to 
+4.0) for the I-­IVLT group and 2.5 h (95% CI 1.4 to 4.7) for the no lido-
+caine group. For each event, one or more actions were taken, which 
+included: repositioning of the arms (n = 6), adjusting anesthesia medi-
+cation with the aim of increased MAP or reduced depth of anesthe-
+sia (n = 27), taking traction off (n = 8), increasing stimulation current 
+(n = 23), using multiple stimulations (n = 10), and reversing surgical 
+manipulation (n = 4); recovery was spontaneous in 13 cases. The num-
+bers of times these actions were used were similar between I-­IVLT 
+and no lidocaine cases. Incomplete recovery of responses before end 
+of surgery was noted in two I-­IVLT cases and two no lidocaine cases.
+3.4  |  Exploratory noninferiority testing
+The noninferiority of lidocaine was demonstrated in SSEP latency in 
+both lower (MD 2.1, lower bound = 1.25; p < .001) and upper limbs 
+(MD −0.86, lower bound = −1.58; p < .001) using a non-­inferiority 
+margin of −10. Non-­inferiority was also demonstrated in SSEP ampli-
+tude in both lower (MD 9.77, 95% CI, lower bound = −3.98; p < .001) 
+and upper limbs (MD −0.59, lower bound = −5.83; p < .001) using a 
+non-­inferiority margin of −50. In MEP data, noninferiority was dem-
+onstrated using the same margin in lower limbs (MD 130.6, lower 
+bound =16.91; p = .005), but not in the upper limbs (MD 127.1, lower 
+bound = −195; p = .969).
+4  |  DISCUSSION
+In this single-­centre, retrospective study, we observed a minimal im-
+pact of I-­IVLT on IONPM during PSIF in adolescents with idiopathic 
+scoliosis. We found no evidence of any detrimental impact of I-­IVLT 
+on MEP amplitude, SSEP amplitudes, or SSEP latencies, using sam-
+ples of change from baseline in IONPM measurements collected at 
+hourly intervals from upper and lower limbs. Similarly, we found no 
+difference in the number of reportable neurophysiological events or 
+in the time to first event.
+The feasibility of I-­IVLT during PSIF procedures requires that it 
+has minimal impact on IONPM. The spine team depend on reliable 
+IONPM during surgery to monitor the integrity of the spinal cord and 
+make timely adjustments, if necessary. This contributes to improved 
+patient safety and promotes successful outcomes. Lidocaine, ad-
+ministered intravenously, acts at multiple receptors, with analgesic, 
+anti-­inflammatory, and antihyperalgesic properties.5,19 The analge-
+sic properties are partly attributed to blockade of sodium channel 
+nerve fibers and inhibition of the polysynaptic reflex induced by 
+C-­fibers and Aδ fibers.20 Two clinical trials have found that intraop-
+erative lidocaine infusion therapy has led to decreased hospital stay, 
+decreased rescue analgesia requirements, decreased cortisol levels, 
+and earlier return of bowel function following abdominal surgery21 
+and spinal surgery;7 similarly, reduced postoperative opioid require-
+ments were reported in a retrospective observational study of ado-
+lescent patients undergoing scoliosis correction surgery.6
+Our results extend the findings of an adult study of 129 spinal 
+correction cases, which demonstrated that propofol-­opioid TIVA 
+with intraoperative lidocaine at a rate of 1.5 mg/kg/h had no effect 
+on cortical SSEP or MEP amplitudes following median and poste-
+rior tibial nerve stimulation, nor any significant differences in MEP 
+stimulation voltages.22 A similar study in adults undergoing spinal 
+correction surgery found no significant within-­patient differences 
+FI G U R E 2 Box-­and-­Whisker plots representing the change in motor evoked potential (MEP) amplitude from baseline (%) in lower limbs 
+(left sub-­plot) and upper limbs (right sub-­plot) over surgical time elapsed (hours) for No Lidocaine (blue) versus Lidocaine (red) cases. The 
+center line denotes the median and boxes represent interquartile range with outliers denoted by black dots.
+−200
+−100
+0
+100
+200
+300
+400
+500
+600
+1
+2
+3
+4
+5
+6
+Time (Hrs)
+Change from Baseline (%)
+MEP Amplitude Lower Limbs
+−200
+−100
+0
+100
+200
+300
+400
+500
+600
+1
+2
+3
+4
+5
+6
+Time (Hrs)
+MEP Amplitude Upper Limbs
+Group
+No Lidocaine
+Lidocaine
+
+
+    |  53
+BATES et al.
+between MEP threshold voltages or SSEP amplitudes with intraop-
+erative lidocaine infusion at a rate of 1.0 mg/kg/h following a 10-­
+min bolus dose of 1.0 mg/kg.23 Propofol-­opioid TIVA was utilized 
+in both studies; however, both analyses used threshold-­voltage 
+methodology and did not report on variability or alert criteria. 
+Neuromonitoring methodology differences limit the possible com-
+parison to our patient cohort.
+A 40-­patient randomized controlled trial investigating the ef-
+fects of low-­dose lidocaine (1 mg/kg bolus followed by 1 mg/kg/h 
+infusion) in patients undergoing intracranial tumor resection with 
+propofol-­remifentanil anesthesia found no effect on MEP amplitude 
+or latency, but did report improved hemodynamic stability, reduced 
+propofol use, and decreased incidence of adverse events.24 We sim-
+ilarly observed a negative interaction effect of the administration 
+of lidocaine and surgical time elapsed in upper limb SSEP latency, 
+suggesting that lidocaine administration may stabilize or reduces the 
+negative impact of surgical time elapsed on the measured latency, 
+which could indicate an improvement in IONPM measurement 
+consistency. Further investigation is needed to establish robust evi-
+dence for this effect.
+On the other hand, our findings contrast those of Chaves-­Vischer 
+et al. who found that a similar dosing regimen of 1 mg/kg lidocaine 
+infusion decreased SSEP amplitude by 50% and increased latency 
+by 5% in a case report of two adolescents undergoing scoliosis sur-
+gery.13 The absence of precise dosing data in our analysis limits our 
+ability to compare these results and both of Chaves-­Vischer's pa-
+tients received a nitrous oxide-­fentanyl-­midazolam regimen, which 
+is not comparable with our TIVA approach. Our results also contrast 
+those of Schubert et al., where intraoperative lidocaine infusion in 
+16 adolescents undergoing abdominal surgery resulted in a reduc-
+tion in cortical SSEP amplitude by 25%–30% and a 5% increase in 
+latency.12 Again, comparison with our results is restricted by differ-
+ences in lidocaine dosing and anesthetic approach: Schubert et al., 
+employed a 3 mg/kg bolus of lidocaine followed by a 4 mg/kg/h. in-
+fusion, compared to our lower bolus dose of 1 mg/kg and 2 mg/kg/h. 
+infusion. Schubert et al. used a sufentanil-­nitrous oxide-­isoflurane 
+FI G U R E 3 Box-­and-­Whisker plots representing the change in somatosensory evoked potential (SSEP) amplitude (A) and latency (B) from 
+baseline (%) in lower limbs (left sub-­plot) and upper limbs (right sub-­plot) over surgical time elapsed (hours) for No Lidocaine (blue) and 
+Lidocaine (red) cases. The center line denotes the median and boxes represent interquartile range with outliers denoted by black dots.
+−80
+−60
+−40
+−20
+0
+20
+40
+60
+80
+1
+2
+3
+4
+5
+6
+Time (Hrs)
+Change from Baseline (%)
+SSEP Amplitude Lower Limbs
+−80
+−60
+−40
+−20
+0
+20
+40
+60
+80
+1
+2
+3
+4
+5
+6
+Time (Hrs)
+SSEP Amplitude Upper Limbs
+Group
+No Lidocaine
+Lidocaine
+(A)
+(B)
+−12
+−10
+−8
+−6
+−4
+−2
+0
+2
+4
+6
+8
+10
+1
+2
+3
+4
+5
+6
+Time (Hrs)
+Change from Baseline (%)
+SSEP Latency Lower Limbs
+−12
+−10
+−8
+−6
+−4
+−2
+0
+2
+4
+6
+8
+10
+1
+2
+3
+4
+5
+6
+Time (Hrs)
+SSEP Latency Upper Limbs
+Group
+No Lidocaine
+Lidocaine
+
+
+54 |   
+BATES et al.
+anesthetic. Future prospective study is needed to address these dis-
+crepancies to determine dose response effects of lidocaine infusion 
+therapy and its interaction with the chosen anesthetic regimen.
+We also observed a significant negative effect of surgical time 
+elapsed in both upper and lower limbs in MEP amplitude and SSEP 
+amplitude and latency. This finding is consistent with previous 
+studies indicating an increased likelihood of neurophysiological 
+events with increasing surgical time elapsed during spinal corrective 
+surgery.25
+4.1  |  Limitations
+We had relatively small numbers in each group for the power to de-
+tect differences, which is reflected in some of our wide CIs. While 
+we found no evidence that I-­IVLT had any detrimental effect on 
+IONPM outcomes, we must be cautious in generalizing these find-
+ings from this sample. Matching on patient risk factors such as sex, 
+age, Cobb angle, procedure details, surgical duration (±1 h), and sur-
+geon may have improved this precision but was not feasible in our 
+sample. Prospective study is required to establish the validity and 
+reliability of our finding.
+Clinical neurophysiological parameters' recording standards 
+have evolved over time, leading to variability among technologists 
+in the content of the IONPM files we analyzed. Some potentially 
+impactful data points were recorded inconsistently across cases. 
+Therefore, future investigations should incorporate a standardized 
+variable proforma for comprehensive data collection.
+Our study did not have a standardized anesthetic regime as this 
+was a retrospective study. Presently, our institution employs a TIVA 
+approach, typically comprising propofol and sufentanil, with or with-
+out adjunctive agents including ketamine or lidocaine. We did not 
+collect specific drug doses or exact timing of administration in this 
+retrospective study; these details should be available in a future pro-
+spective study. However, for the cases in which I-­IVLT was used, we 
+know that it was maintained at standardized doses (1 mg/kg bolus 
+followed by 2 mg/kg/h until end of surgery). This dose regime has 
+previously been shown to achieve clinically effective and safe blood 
+levels (<3 μg/mL) in healthy patients.26
+It is important to note that many of our statistical analyses had 
+wide CIs, illustrating a high degree of uncertainty in our data. While 
+we can draw tentative conclusions about the safety of I-­IVLT, this 
+motivates the need for a more robust, prospective trial.
+4.2  |  Conclusion
+Our findings suggest that intraoperative intravenous lidocaine in-
+fusion therapy has no detrimental effect on IONPM in adolescents 
+undergoing PSIF for adolescent idiopathic scoliosis. A future pro-
+spective randomized study is required to provide a more detailed 
+and reliable analysis by controlling for the limitations outlined in this 
+analysis.
+FUNDING INFORMATION
+Funded in part by a BC Children's Hospital Research Institute sum-
+mer studentship (B Hoffmann) and BioTalent Canada (R Bates).
+CONFLICT OF INTEREST STATEMENT
+The authors have no conflicts of interest.
+DATA AVAILABILITY STATEMENT
+The author elects to not share data.
+ETHICS STATEMENT
+The study was approved by the UBC Children's and Women's Health 
+Centre of BC Research Ethics Board (H20-­01875).
+ORCID
+Nicholas West 
+ https://orcid.org/0000-0001-8382-5136 
+REFERENCES
+	 1.	 Chidambaran V, Ding L, Moore DL, et al. Predicting the pain con-
+tinuum after adolescent idiopathic scoliosis surgery: a prospective 
+cohort study. Eur J Pain. 2017;21(7):1252-1265.
+	 2.	 Lee CS, Merchant S, Chidambaran V. Postoperative pain man-
+agement in pediatric spinal fusion surgery for idiopathic scoliosis. 
+Paediatr Drugs. 2020;22(6):575-601.
+	 3.	 Patel J, Snyder K, Brooks AK. Perioperative pain optimization in the age 
+of the opioid epidemic. Curr Opin Anaesthesiol. 2024;37(3):279-284.
+	 4.	 Shah SA, Guidry R, Kumar A, White T, King A, Heffernan MJ. Current 
+trends in pediatric spine deformity surgery: multimodal pain man-
+agement and rapid recovery. Glob Spine J. 2020;10(3):346-352.
+	 5.	 Lauder GR. A review of intravenous lidocaine infusion therapy for 
+Paediatric acute and chronic pain management. In: Maldonado 
+FI G U R E 4 Kaplan–Meier curve of median time to first event 
+(in surgical hours elapsed) for Lidocaine (gray) and No Lidocaine 
+(black) cases, with p-­value from the log-­rank test. The shaded area 
+represents the 95% confidence interval (CI) for the fitted curve.
+p = 0.68
+0.00
+0.25
+0.50
+0.75
+1.00
+0
+1
+2
+3
+4
+5
+6
+Surgical time (hrs)
+Freedom from an adverse neurophysiological event
+Lidocaine use
+Yes
+No
+
+
+    |  55
+BATES et al.
+C, ed. Pain Relief—From Analgesics to Alternative Therapies. InTech; 
+2017. Accessed March 20, 2024. 10.5772/66771.
+	 6.	 Lin R, Zhu K, Poznikoff AK, Görges M, Brown ZE. The effect of in-
+traoperative lidocaine infusion on postoperative opioid consump-
+tion in adolescents undergoing posterior spinal instrumentation 
+and fusion for idiopathic scoliosis. Spine J. 2021;21(7):1047-1048.
+	 7.	 Kim K-­T, Cho D-­C, Sung J-­K, et al. Intraoperative systemic infusion 
+of lidocaine reduces postoperative pain after lumbar surgery: a 
+double-­blinded, randomized, placebo-­controlled clinical trial. Spine 
+J. 2014;14(8):1559-1566.
+	 8.	 Kranke P, Jokinen J, Pace NL, et al. Continuous intravenous periop-
+erative lidocaine infusion for postoperative pain and recovery. 
+Cochrane Database Syst Rev. 2015;7:CD009642.
+	 9.	 Halsey MF, Myung KS, Ghag A, Vitale MG, Newton PO, de Kleuver 
+M. Neurophysiological monitoring of spinal cord function during 
+spinal deformity surgery: 2020 SRS neuromonitoring information 
+statement. Spine Deform. 2020;8(4):591-596.
+	10.	 Velayutham P, Cherian VT, Rajshekhar V, Babu KS. The effects of 
+propofol and isoflurane on intraoperative motor evoked potentials 
+during spinal cord tumour removal surgery—a prospective ran-
+domised trial. Indian J Anaesth. 2019;63(2):92-99.
+	11.	 Sloan T. Anesthesia and intraoperative neurophysiological monitor-
+ing in children. Childs Nerv Syst. 2010;26(2):227-235.
+	12.	 Schubert A, Licina MG, Glaze GM, Paranandi L. Systemic lidocaine 
+and human somatosensory-­evoked potentials during sufentanil-­
+isoflurane anaesthesia. Can J Anaesth. 1992;39(6):569-575.
+	13.	 Chaves-­Vischer V, Brustowicz R, Helmers SL. The effect of intrave-
+nous lidocaine on intraoperative somatosensory evoked potentials 
+during scoliosis surgery. Anesth Analg. 1996;83(5):1122-1125.
+	14.	 von Elm E, Altman DG, Egger M, et al. Strengthening the reporting of 
+observational studies in epidemiology (STROBE) statement: guidelines 
+for reporting observational studies. BMJ. 2007;335(7624):806-808.
+	15.	 Harris PA, Taylor R, Thielke R, Payne J, Gonzalez N, Conde JG. 
+Research electronic data capture (REDCap)—a metadata-­driven 
+methodology and workflow process for providing translational re-
+search informatics support. J Biomed Inform. 2009;42(2):377-381.
+	16.	 Hernández-­Palazón J, Izura V, Fuentes-­García D, Piqueras-­Pérez 
+C, Doménech-­Asensi P, Falcón-­Araña L. Comparison of the effects 
+of Propofol and Sevoflurane combined with remifentanil on tran-
+scranial electric motor-­evoked and somatosensory-­evoked poten-
+tial monitoring during brainstem surgery. J Neurosurg Anesthesiol. 
+2015;27(4):282-288.
+	17.	 Yue H, Zhou M, Chong Y, et al. Effects of lidocaine on motor-­evoked 
+potentials and somatosensory-­evoked potentials in patients under-
+going intraspinal tumour resection: study protocol for a prospec-
+tive randomized controlled trial. J Pain Res. 2022;15:287-297.
+	18.	 The R Foundation. The R Project for Statistical Computing [Internet]. 
+2024. [Accessed March 20, 2024]. https://​www.r-​proje​ct.​org/​
+	19.	 Kim Y-­C, Castañeda AM, Lee C-­S, Jin H-­S, Park KS, Moon JY. 
+Efficacy and safety of lidocaine infusion treatment for neuropathic 
+pain: a randomized, double-­blind, and placebo-­controlled study. 
+Reg Anesth Pain Med. 2018;43(4):415-424.
+	20.	 Wang Q, Ding X, Huai D, Zhao W, Wang J, Xie C. Effect of intrave-
+nous lidocaine infusion on postoperative early recovery quality in 
+upper airway surgery. Laryngoscope. 2021;131(1):E63-E69.
+	21.	 El-­Deeb A, El-­Morsy GZ, Ghanem AAA, Elsharkawy AA, Elmetwally 
+AS. The effects of intravenous lidocaine infusion on hospital stay 
+after major abdominal pediatric surgery. A randomized double-­
+blinded study. Egypt J Anaesth. 2013;29(3):225-230.
+	22.	 Sloan TB, Mongan P, Lyda C, Koht A. Lidocaine infusion adjunct 
+to total intravenous anesthesia reduces the total dose of propofol 
+during intraoperative neurophysiological monitoring. J Clin Monit 
+Comput. 2014;28(2):139-147.
+	23.	 Urban MK, Fields K, Donegan SW, et al. A randomized crossover 
+study of the effects of lidocaine on motor-­ and sensory-­evoked po-
+tentials during spinal surgery. Spine J. 2017;17(12):1889-1896.
+	24.	 Liu M, Wang N, Wang D, Liu J, Zhou X, Jin W. Effect of low-­dose 
+lidocaine on MEPs in patients undergoing intracranial tumor re-
+section with propofol anesthesia: a randomized controlled trial. 
+Medicine (Baltimore). 2022;101(32):e29965.
+	25.	 Ugawa R, Takigawa T, Shimomiya H, et al. An evaluation of anes-
+thetic fade in motor evoked potential monitoring in spinal defor-
+mity surgeries. J Orthop Surg Res. 2018;13(1):227.
+	26.	 Altermatt FR, Bugedo DA, Delfino AE, et al. Evaluation of the ef-
+fect of intravenous lidocaine on propofol requirements during 
+total intravenous anaesthesia as measured by bispectral index. Br J 
+Anaesth. 2012;108(6):979-983.
+	27.	 Park J-­H, Hyun S-­J. Intraoperative neurophysiological monitoring in 
+spinal surgery. World J Clin Cases. 2015;3(9):765-773.
+	28.	 de Klerk CCJM, Johnson MH, Southgate V. An EEG study on the 
+somatotopic organisation of sensorimotor cortex activation during 
+action execution and observation in infancy. Dev Cogn Neurosci. 
+2015;15:1-10.
+	29.	 MacDonald DB. Safety of intraoperative transcranial electrical 
+stimulation motor evoked potential monitoring. J Clin Neurophysiol. 
+2002;19(5):416-429.
+How to cite this article: Bates R, Cave F, West N, et al. 
+Intravenous lidocaine infusion therapy and intraoperative 
+neurophysiological monitoring in adolescents undergoing 
+idiopathic scoliosis correction: A retrospective study. Pediatr 
+Anesth. 2025;35:47-56. doi:10.1111/pan.15019
+APPENDIX A
+Intraoperative neurophysiological monitoring during posterior spinal 
+instrumentation and fusion surgery at BC Children's Hospital
+The somatosensory evoked potentials (SSEPs) and motor evoked po-
+tentials (MEPs) of the upper and lower limbs were monitored with the 
+Cadwell Cascade PRO (2012–2019) or Cascade IOMAX (2019–2021) 
+neurophysiological monitoring system (Cadwell Laboratories Inc, WA).
+Following anesthesia induction, monitoring and stimulation 
+electrodes were placed on the scalp in accordance with the in-
+ternational 10–20 system27,28 using subcutaneous corkscrew elec-
+trodes. Subcutaneous needle electrodes were used to monitor the 
+muscle potentials placed bilaterally in the adductor hallucis (AH), 
+tibialis anterior (TA), brachioradialis (BR), and adductor pollicis 
+brevis (APB), with stimulation electrodes in the M1-­M2, M3 and 
+M4 positions. Stimulation was delivered by constant current elec-
+trical stimulator using multiple pulses (1–6) with voltage starting at 
+150 V and gradually increasing at 50V intervals as needed with a 
+pulse duration of 50–75 μs, ranging from 150 to 800 V.
+Conductive gel electrodes, used to stimulate the SSEP responses 
+for the upper limbs, were placed on both wrists to stimulate the ulnar 
+nerves. Responses were recorded from electrodes C3′, C4′ (2 cm be-
+hind C3 and C4 respectively) and a reference electrode placed at FZ. 
+Stimulation electrodes for the lower limbs were placed on both an-
+kles to stimulate the posterior tibial nerve, with responses recorded 
+
+
+56 |   
+BATES et al.
+usually from Cz′. The derivations deemed the most stable was cho-
+sen for monitoring the case.29 The stimulation for the SSEP used a 
+frequency of 2.1-­4.7 Hz, with an intensity between 20 and 50 mA.
+During the operative procedure, reliable data for the measure-
+ment of spinal cord function was recorded in the form of amplitudes 
+and latencies of the SSEP and MEP. Initial recordings were taken 
+once the patient was on stable intravenous anesthesia. Stimulus in-
+tensities were altered in relation to the alert criteria set as a 50% 
+drop in amplitude of the MEP and a 50% drop in amplitude or a 10% 
+increase in latency in two or more derivations of the SSEP. There was 
+no exceeding the following stimulation: >50 mA for the SSEP and 
+800 single train and 500 V double train stimulation.

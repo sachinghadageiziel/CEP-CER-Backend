@@ -1,0 +1,1549 @@
+Systematic Review and Meta-Analysis
+1
+Medicine
+®
+Effects of sevoflurane inhalation anesthesia 
+versus propofol intravenous anesthesia on 
+postoperative cognitive function in patients 
+with malignant tumors
+A meta-analysis
+Yuhang Quan, MMa, Mingxiong Zhang, MMb
+, Mengqiu Zheng, MMc, Min Zhao, MMa, Zhiyong Lv, MMa, 
+Guangshun Liu, MMa,*
+Abstract 
+Background: Both propofol and sevoflurane, commonly used anesthetics, may cause brain oxygen metabolism abnormalities 
+potentially linked to postoperative cognitive dysfunction (POCD), though their precise relationship with POCD requires further study.
+Objective: To systematically evaluate sevoflurane inhalation versus propofol intravenous anesthesia effects on postoperative 
+cognitive function in cancer patients.
+Methods: We searched PubMed, EMbase, Cochrane Library, CBM, CNKI, Wanfang, VIP, and Chinese Biomedical Literature 
+databases (from January 10, 2023) using keywords including Anaesthesia, Anesthetic Agents, Neoplasm, Cancer, Cognition, and 
+Cognitive Function. Only human randomized controlled trials (RCTs) and prospective cohort studies were included; no language 
+restrictions applied.
+Results: 41 studies met criteria (40 RCTs, 1 cohort), involving 4342 patients (2171 sevoflurane, 2171 propofol). Meta-analysis: 
+Overall POCD incidence showed no significant difference between groups. Subgroup analysis revealed significantly increased 
+POCD with sevoflurane at unspecified postoperative times. No significant differences were found at 6 hours, 7 days, or 3 months. 
+Significantly decreased POCD with sevoflurane was observed at 1 and 3 days postoperatively. Preoperative Mini-Mental State 
+Examination (MMSE) scores showed no significant difference. Overall postoperative MMSE scores also showed no significant 
+difference. However, MMSE scores were significantly lower in the sevoflurane group at 1, 3, 6, and 12 hours postoperatively. No 
+significant differences were found at 1, 2, 3, 5, 7 days, or 1 month.
+Conclusion subsections: Sevoflurane and propofol anesthesia may exert differing short-term, but not long-term, negative 
+impacts on cognitive function in cancer patients. Overall, no significant difference exists in their effects on postoperative cognitive 
+function.
+Abbreviations: MMSE = Mini-Mental State Examination, POCD = postoperative cognitive dysfunction, RCT = randomized 
+controlled trial.
+Keywords: anesthesia, cognitive dysfunction, malignant tumor, meta-analysis, neuropsychological tests, postoperative cognitive 
+complications, propofol, sevoflurane
+1. Introduction
+As the main treatment of solid malignant tumor, surgery 
+is frequently adopted in clinic. Meanwhile, anesthesia, the 
+important part of surgery, not only determines whether the 
+operation can be performed smoothly, but also plays a crit­
+ical part in the therapeutic effect. Recently, clinical studies 
+find that patients may suffer from cognitive impairment 
+ 
+Yuhang Quan, Mingxiong Zhang, and Mengqiu Zheng contributed to this article equally.
+The authors have no funding and conflicts of interest to disclose.
+The datasets generated during and/or analyzed during the current study are 
+available from the corresponding author on reasonable request.
+The article does not cover ethical issues, so it does not require approval from the 
+ethics committee.
+INPLASY Registration number: INPLASY202350107.
+a Department of Anesthesiology, Yunnan Cancer Hospital, Kunming 650118, 
+Yunnan, China, b Department of Surgery of Stomach and Small Intestine, Yunnan 
+Cancer Hospital, Kunming 650118, Yunnan, China, c Department of Pediatrics, 
+Kunming Maternal and Child Health Centre, Kunming 65000, Yunnan, China.
+* Correspondence: Guangshun Liu, Department of Anesthesiology, Yunnan 
+Cancer Hospital, Kunming 650118, Yunnan, China (e-mail: 723505176@qq.com).
+Copyright © 2025 the Author(s). Published by Wolters Kluwer Health, Inc.
+This is an open-access article distributed under the terms of the Creative 
+Commons Attribution-Non Commercial License 4.0 (CCBY-NC), where it is 
+permissible to download, share, remix, transform, and buildup the work provided 
+it is properly cited. The work cannot be used commercially without permission 
+from the journal.
+How to cite this article: Quan Y, Zhang M, Zheng M, Zhao M, Lv Z, Liu G. Effects 
+of sevoflurane inhalation anesthesia versus propofol intravenous anesthesia on 
+postoperative cognitive function in patients with malignant tumors: A meta-
+analysis. Medicine 2025;104:35(e43342).
+Received: 25 April 2024 / Received in final form: 7 June 2025 / Accepted: 23 
+June 2025
+http://dx.doi.org/10.1097/MD.0000000000043342
+
+
+2
+Quan et al.  •  Medicine (2025) 104:35
+Medicine
+after anesthesia, and postoperative cognitive dysfunction 
+(POCD) may occur after anesthesia to a certain extent.[1,2] 
+As a common complication after anesthesia, cognitive dys­
+function often manifests as memory impairment, cognitive 
+decline, anxiety, personality change, and even dementia. The 
+POCD symptoms may last for several weeks or even months 
+postoperatively, which leads to a longer hospital stay, lower 
+patient life quality, heavier economic burdens on patients, 
+and greater demand for social support, and is also related to 
+higher morbidity and mortality rates.[3] At present, regardless 
+of the largely unclear and multifactorial pathogenic mecha­
+nism and etiology of POCD, anesthesia accounts for a key 
+factors affecting the POCD occurrence, while propofol and 
+sevoflurane, the commonly used anesthetics in clinic, can 
+cause abnormal cerebral oxygen metabolism, which in turn 
+leads to POCD. Recent studies by Modolo and Fang showed 
+that inflammatory response induced by surgery is significantly 
+involved in POCD pathogenesis, given that the preoperative 
+administration of corticosteroids ameliorates inflammatory 
+response prompted by surgery and thereby, reduced the sever­
+ity and incidence of POCD.[4,5]
+Sevoflurane is an inhalation anesthetic used to maintain 
+anesthesia, which has been recognized as the risk factor related 
+to cognitive impairment during brain aging, nonetheless, its 
+application remains a source of controversy.[6,7] As shown in 
+certain experimental studies,[8,9] sevoflurane inhalation can 
+cause pathological alterations within the hippocampus of rats 
+and lead to apoptosis, thus leading to the decline of neurocog­
+nitive function. Sevoflurane inhalation anesthesia can result in 
+emotional abnormality and cognitive dysfunction in elderly 
+rats undergoing abdominal surgery.[10] Another report[11] 
+points out that sevoflurane does not damage the learning and 
+memory functions of adult rats. Moreover, according to 1 
+prospective study,[4] sevoflurane general anesthesia is related 
+to cognitive dysfunction among elderly surgical patients suf­
+fering from mild cognitive impairment. Nonetheless, the early 
+POCD incidence following general anesthesia was not signifi­
+cantly different between sevoflurane and propofol anesthesia. 
+In 1 RCT, compared with propofol anesthesia, sevoflurane 
+anesthesia has a lower POCD incidence among elderly surgical 
+patients receiving propofol anesthesia 1 and 3 days postop­
+eratively, nevertheless, the RCT is limited since postoperative 
+delirium and POCD are not defined.[12] However, a RCT finds 
+that the POCD incidence is not significantly different between 
+sevoflurane anesthesia and propofol anesthesia 3 months after 
+operation.[13]
+Figure 1.  Study selection process.
+
+
+3
+Quan et al.  •  Medicine (2025) 104:35
+www.md-journal.com
+Table 1
+Baseline study features and quality assessment.
+Number
+Author
+Year
+Country
+Study
+Intervention measures
+Sample size
+Disease
+Jender
+Age
+Jadad score
+Outcome measures
+Observation
+Control
+Observation
+Control
+Observation
+Control
+Observation
+Control
+1
+Qiu S
+2016
+China
+RCT
+Sevoflurane
+Propofol
+30
+30
+Lung cancer
+20/10
+18/12
+71.4± ± 6.3
+70.5 ± 6.6
+4
+MMSE, POCD
+2
+Huang MH
+2021
+China
+RCT
+Sevoflurane
+Propofol
+50
+50
+Gastric carcinoma
+24/26
+23/27
+68.67 ± 3.45
+68.65 ± 3.48
+4
+MMSE
+3
+Yang XL
+2021
+China
+RCT
+Sevoflurane
+Propofol
+30
+30
+Prostate cancer
+NA
+NA
+72.5 ± 8.7
+71.0 ± 7.2
+4
+MMSE
+4
+Shang YW
+2020
+China
+RCT
+Sevoflurane
+Propofol
+34
+34
+Gastric carcinoma
+17/17
+18/16
+53.59 ± 5.84
+54.28 ± 5.23
+3
+MMSE
+5
+Zhang L
+2021
+China
+RCT
+Sevoflurane
+Propofol
+46
+47
+Gastric carcinoma
+24/22
+26/21
+58.79 ± 8.94
+59.03 ± 8.97
+4
+MMSE
+6
+Wang W
+2020
+China
+RCT
+Sevoflurane
+Propofol
+47
+48
+Gastric carcinoma
+21/26
+18/30
+74.38 ± 5.34
+73.25 ± 5.81
+4
+MMSE
+7
+Zhu TF
+2021
+China
+RCT
+Sevoflurane
+Propofol
+50
+50
+Esophagus cancer
+35/15
+36/14
+60.08 ± 4.92
+60.11 ± 4.91
+4
+MMSE
+8
+Jiang XY
+2019
+China
+RCT
+Sevoflurane
+Propofol
+50
+50
+Gastric carcinoma
+29/21
+27/23
+71.59 ± 10.34
+72.54 ± 10.19
+4
+MMSE
+9
+Chai H
+2021
+China
+RCT
+Sevoflurane
+Propofol
+40
+40
+Colorectal cancer
+21/19
+24/16
+66.30 ± 5.71
+65.05 ± 4.87
+3
+MMSE
+10
+Xiao YR
+2014
+China
+RCT
+Sevoflurane
+Propofol
+32
+32
+Lung cancer
+20/12
+18/14
+65.57 ± 4.51
+65.48 ± 4.59
+3
+MMSE
+11
+Tang CJ
+2014
+China
+RCT
+Sevoflurane
+Propofol
+35
+35
+Lung cancer
+20/15
+18/17
+69.2 ± 12.6
+70.5 ± 10.8
+4
+MMSE, POCD
+12
+Liu W
+2018
+China
+RCT
+Sevoflurane
+Propofol
+45
+45
+Gastric carcinoma
+23/22
+24/21
+69.1 ± 9.3
+68.4 ± 8.2
+4
+MMSE
+13
+Le SY
+2019
+China
+RCT
+Sevoflurane
+Propofol
+46
+46
+Gastric carcinoma
+27/19
+26/20
+65.5 ± 0.5)
+66.5 ± 0.5
+4
+MMSE
+14
+Ma GX
+2021
+China
+RCT
+Sevoflurane
+Propofol
+90
+90
+Lung cancer
+59/31
+48/42
+52.75 ± 9.21
+53.68 ± 10.23
+4
+MMSE
+15
+Li YA
+2017
+China
+RCT
+Sevoflurane
+Propofol
+45
+41
+Gastric carcinoma
+30/15
+28/16
+69.1 ± 1.3
+68.7 ± 1.5
+4
+MMSE
+16
+Wang W
+2020
+China
+RCT
+Sevoflurane
+Propofol
+32
+32
+Esophagus cancer
+17/15
+18/14
+66.25 ± 2.52
+65.47 ± 3.68
+5
+MMSE
+17
+Wang YH
+2015
+China
+RCT
+Sevoflurane
+Propofol
+30
+30
+Gastric carcinoma
+21/9
+22/8
+70.9 ± 2.9
+71.8 ± 3.1
+4
+MMSE
+18
+Zhang SL
+2016
+China
+RCT
+Sevoflurane
+Propofol
+49
+50
+Lung cancer
+27/22
+26/24
+66.89 ± 5.82
+67.03 ± 6.18
+3
+MMSE, POCD
+19
+Zhang SL
+2018
+China
+RCT
+Sevoflurane
+Propofol
+34
+34
+Gastric carcinoma
+21/13
+20/14
+60.4 ± 2.2
+59.2 ± 1.8
+4
+MMSE
+20
+Lu JH
+2017
+China
+RCT
+Sevoflurane
+Propofol
+77
+77
+Lung cancer
+52/25
+56/21
+66.01 ± 8.21
+64.78 ± 6.28
+4
+MMSE
+21
+Hou HJ
+2021
+China
+RCT
+Sevoflurane
+Propofol
+42
+41
+Lung cancer
+29/13
+26/15
+67.56 ± 3.29
+67.51 ± 3.31
+4
+MMSE
+22
+Su J
+2015
+China
+RCT
+Sevoflurane
+Propofol
+41
+41
+Lung cancer
+28/13
+30/11
+70.53 ± 4.19
+70.83 ± 4.11
+5
+MMSE
+23
+Zhang AC
+2015
+China
+RCT
+Sevoflurane
+Propofol
+53
+53
+Lung cancer
+37/16
+35/18
+63.7 ± 3.5
+63.8 ± 3.4
+4
+MMSE
+24
+Huang DH
+2015
+China
+RCT
+Sevoflurane
+Propofol
+45
+45
+Lung cancer
+25/20
+25/20
+67.99 ± 1.24
+68.59 ± 1.79
+4
+MMSE
+25
+Cao L
+2013
+China
+RCT
+Sevoflurane
+Propofol
+63
+63
+Colorectal cancer
+47/20
+45/22
+43.37 ± 13.38
+43.66 ± 12.53
+4
+MMSE
+26
+Luo D
+2015
+China
+RCT
+Sevoflurane
+Propofol
+107
+107
+Esophagus cancer
+70/37
+67/40
+64.7 ± 2.8
+65.0 ± 3.1
+4
+MMSE
+27
+Yu XC
+2012
+China
+RCT
+Sevoflurane
+Propofol
+40
+40
+Lung cancer
+22/18
+22/18
+68.53 ± 3.51
+69.00 ± 4.14
+4
+MMSE
+28
+Liao WN
+2018
+China
+RCT
+Sevoflurane
+Propofol
+45
+45
+Lung cancer
+37/8
+38/7
+69.9 ± 1.3
+70.0 ± 1.3
+4
+MMSE
+29
+Chen HM
+2018
+China
+RCT
+Sevoflurane
+Propofol
+62
+62
+Lung cancer
+39/23
+41/21
+69.64 ± 8.99
+71.02 ± 9.31
+4
+MMSE, POCD
+30
+Guo L
+2020
+China
+RCT
+Sevoflurane
+Propofol
+117
+117
+Cancer
+76/41
+71/46
+69.0 (66.0, 74.0)
+69.0 (66.0, 72.5)
+6
+MMSE, POCD
+31
+Qiao Y
+2015
+China
+RCT
+Sevoflurane
+Propofol
+30
+30
+Esophagus cancer
+22/8
+21/9
+68 ± 3
+68 ± 2
+6
+MMSE
+32
+Tang N
+2014
+China
+RCT
+Sevoflurane
+Propofol
+99
+101
+Rectal cancer
+32/67
+32/67
+70.0 ± 4.3
+70.0 ± 4.3
+5
+POCD
+33
+Egawa J
+2016
+Japan
+RCT
+Sevoflurane
+Propofol
+72
+72
+Lung cancer
+33/39
+23/48
+72 (63–72)
+69 (63–73)
+6
+MMSE, POCD
+34
+Ishii K
+2016
+Japan
+RCT
+Sevoflurane
+propofol
+30
+29
+Gastrointestinal cancer
+20/10
+20/9
+76.5 ± 4.5
+77.3 ± 4.6
+6
+POCD
+35
+Zhang Y
+2018
+China
+RCT
+Sevoflurane
+Propofol
+189
+190
+Cancer
+130/59
+128/62
+72.4 ± 5.6
+72.8 ± 5.5
+5
+MMSE, POCD
+36
+Yi D
+2018
+China
+RCT
+Sevoflurane
+Propofol
+55
+55
+Rectal cancer
+32/23
+29/26
+56.10 ± 11.35
+58.75 ± 12.98
+4
+MMSE
+37
+Gan Y
+2011
+China
+RCT
+Sevoflurane
+Propofol
+30
+30
+Gastric carcinoma
+40/20
+65.76 ± 5.82
+3
+MMSE, POCD
+38
+Han J
+2019
+China
+RCT
+Sevoflurane
+Propofol
+30
+30
+Gastric carcinoma
+16/14
+18/12
+69 ± 5
+69 ± 5
+4
+MMSE
+39
+Guo LL
+2016
+China
+RCT
+Sevoflurane
+Propofol
+45
+45
+Gastric carcinoma
+23/22
+24/21
+66.5 ± 2.3
+66.8 ± 3
+4
+MMSE
+40
+Li HJ
+2020
+China
+RCT
+Sevoflurane
+Propofol
+54
+54
+Cervical carcinoma
+NA
+NA
+45 ± 8.04
+49 ± 9.48
+4
+MMSE
+41
+Cai MS
+2015
+China
+RCT
+Sevoflurane
+Propofol
+30
+30
+Lung cancer
+NA
+NA
+69.43 ± 2.17
+4
+MMSE, POCD
+MMSE = Mini-Mental State Examination, POCD = postoperative cognitive dysfunction, RCT = randomized controlled trial.
+
+
+4
+Quan et al.  •  Medicine (2025) 104:35
+Medicine
+To sum up, the above data show that more investigations 
+are needed to explore the relationship between sevoflurane ver­
+sus propofol anesthesia and postoperative cognitive function. 
+Therefore, it is of positive significance to explore the efficacy of 
+propofol versus sevoflurane in postoperative cognitive function 
+of cancer patients. To this end, the present work conducted a 
+meta-analysis to offer some guiding significance for clinical practice.
+2. Data and methods
+2.1. Inclusion criteria
+Research type: clinical randomized controlled trials (RCTs). 
+Objects of study: cancer patients, with no restriction of cancer 
+type. Interventions: sevoflurane/ether was used in observation 
+group, whereas propofol was used in control group. Outcome 
+measures: Mini-mental State Examination (MMSE) score and 
+the POCD incidence.
+2.2. Exclusion criteria
+Studies satisfying at least one of criteria below were elimi­
+nated: studies with unclear research objects; unable to extract 
+data; studies not including research indicators; documents 
+with duplicate data; duplicate publications; summaries and 
+case reports; non-RCTs; documents with inconsistent interven­
+tion measures; and pet-name ruby basic experimental research.
+2.3. Literature retrieval
+RCTs or prospective cohort studies comparing the efficacy of 
+sevoflurane inhalation anesthesia versus propofol intrave­
+nous anesthesia in cancer patients were retrieved in PubMed, 
+EMbase, the Cochrane Library, CBM, CNKI, Wanfang Medical 
+Network, VIP, and Chinese Biomedical Literature network data­
+base to obtain relevant articles up to January 10, 2023 using the 
+keywords of Anaesthesia, Anesthetic Agents, Anesthetic Drugs, 
+Anesthetic, Neoplasm, Tumor, Neoplasia, Cancer, Malignant 
+Neoplasm, Malignancy, Malignancies, Malignant Neoplasms, 
+Malignant tumor, Cognition, and Cognitive Function. The 
+search was not restricted by language and Human and animal 
+studies are not included.
+2.4. Data extraction
+All the retrieved documents were screened by 2 indepen­
+dent researchers in the research group in strict accordance 
+Figure 2.  Incidence of POCD. POCD = postoperative cognitive dysfunction.
+
+
+5
+Quan et al.  •  Medicine (2025) 104:35
+www.md-journal.com
+with our predetermined eligibility criteria. Any disagree­
+ment between them was solved through discussion. The 
+basic information extracted mainly included author and 
+publication year, gender, age, sample size, intervention mea­
+sures, and treatment duration. Meanwhile, the main out­
+come measure data extracted were MMSE score and POCD 
+incidence.
+2.5. Evaluation of methodological quality in the 
+literature
+The Jadad quality scoring method was utilized for evaluat­
+ing the RCT methodological quality, and the evaluation items 
+included randomization, allocation concealment, blinding 
+method, and withdrawals and dropouts.[14] Studies of 4 to 7 
+points had high quality, while those of 1 to 3 points had low 
+quality.
+2.6. Statistical analysis
+Stata17.0 was employed for statistical analysis. Continuous data 
+were expressed by mean differences (MD) and 95% confidence 
+interval (CI), while dichotomous data were analyzed through 
+odds ratio (OR) and 95%CI.
+3. Results
+3.1. Study retrieval and screening
+This work identified altogether 1329 documents from pri­
+mary literature retrieval, and 779 of them were retained after 
+duplicates were removed. Titles and abstracts were read, as a 
+result, 67 documents were chosen in line with eligibility criteria. 
+Thereafter, full-texts were carefully read, and non-RCTs were 
+eliminated. Finally, 41 studies were included.[15–55] Figure 1 dis­
+plays the study selection process.
+Figure 3.  MMSE scores in preoperative patients. MMSE = Mini-Mental State Examination.
+
+
+6
+Quan et al.  •  Medicine (2025) 104:35
+Medicine
+3.2. Baseline study features and quality assessment
+Table 1 displays baseline study features. Besides, quality of those 
+enrolled articles was evaluated, which suggested that 5 RCTs had 
+the Jadad score of 3 points, and the others had the score of ≥ 4 
+points, demonstrating high quality of our enrolled studies.
+3.3. Meta-analysis results
+3.3.1. Incidence of POCD.  Due to the inconsistent time points 
+of detecting the incidence of POCD after anesthesia among 
+various studies, including postoperatively (unspecified time), 
+6 hours, 1, 3, 7 days, and 3 months postoperatively, subgroup 
+Figure 4.  MMSE scores of patients 1 h after operation. MMSE = Mini-Mental State Examination.
+Figure 5.  MMSE scores of patients 3 h after operation. MMSE = Mini-Mental State Examination.
+
+
+7
+Quan et al.  •  Medicine (2025) 104:35
+www.md-journal.com
+analysis was carried out according to the different time points 
+of POCD detection. In the subgroup after operation (unspecified 
+time), 2 studies[48,51] reported the incidence of POCD, and the 
+heterogeneity test (I2 = 0.0% and P > .10) showed the absence 
+of obvious heterogeneity across those enrolled articles, 
+therefore, a fixed-effect model was adopted for calculating 
+combined effect. As a result, the POCD incidence of sevoflurane 
+group increased relative to control group, with a significant 
+difference [RR = 2]. In the subgroup 6 hours after operation, 2 
+studies[25,43] mentioned the POCD incidence, and heterogeneity 
+test (I2 = 0.0% and P > .10) showed no obvious heterogeneity 
+across those enrolled articles; similarly, a fixed-effect model 
+was applied in analyzing combined effect, which demonstrated 
+that the POCD incidence was not significantly different 
+between 2 groups [RR = 0.87, 95% CI]. In the subgroup 1 day 
+postoperatively, 3 studies[25,32,43] reported the incidence of POCD, 
+and the heterogeneity test (I2 = 46.5% and P > .10) showed little 
+heterogeneity across those enrolled articles, so the fixed-effect 
+model was used for analyzing combined effect. It was found that 
+the POCD incidence of sevoflurane group decreased relative to 
+control group, with a significant difference [RR = 0.50]. Three 
+studies[25,32,43] mentioned the POCD incidence in the subgroup 
+3 days postoperatively, and the heterogeneity test (I2 = 0.0% 
+and P > .10) showed the absence of heterogeneity across those 
+enrolled articles, and the fixed-effect model was adopted to 
+examine combined effect. As discovered, the POCD incidence 
+of sevoflurane group decreased relative to control group, with 
+a significant difference [RR = 0.13]. Seven days after operation, 
+8 studies[15,25,32,43,44,46,49,55] mentioned the POCD incidence, 
+and heterogeneity test (I2 = 36.0% and P > .10) revealed little 
+heterogeneity across those enrolled articles, so combined effect 
+was analyzed by using the fixed-effect model. Our findings 
+revealed no significant difference between 2 groups of patients. 
+In the subgroup 3 months after operation, 2 studies[44,47] reported 
+the incidence of POCD, and the heterogeneity test (I2 = 0.0% 
+and P > .10) demonstrated no obvious heterogeneity across 
+those enrolled articles, so the fixed-effect model was utilized 
+to analyze combined effect. We discovered that the POCD 
+incidence was not significantly different between 2 groups 
+(RR = 1.30, 95% CI[0.74, 2.28], P > .05) (Fig. 2).
+3.3.2. MMSE scores.  Because of the different time points 
+of detecting MMSE scores after anesthesia in various studies, 
+including preoperatively (unspecific time), 1, 3, 6, 12 hours, 1, 2, 
+3, 5, 7 days and 3 months postoperatively, analyses were made 
+according to the different detection time points of detecting 
+MMSE scores.
+3.3.2.1. Meta-analysis of MMSE scores in preoperative 
+patients.  Thirty-seven studies reported the preoperative MMSE 
+scores of patients, including 1978 patients of sevoflurane group 
+whereas 1977 of propofol group. A large heterogeneity was 
+detected by heterogeneity test (I2 = 83.0% and P < .10) across 
+diverse enrolled articles, therefore, combined effect was analyzed 
+by using the random-effects model. As a result, MMSE scores 
+were not significantly different between 2 groups (standardized 
+Figure 6.  MMSE scores of patients 6 h after operation. MMSE = Mini-Mental State Examination.
+
+
+8
+Quan et al.  •  Medicine (2025) 104:35
+Medicine
+mean difference [SMD] = −0.11, 95% CI: [−0.26, 0.05], P > .05). 
+Moreover, given the high heterogeneity across enrolled articles, 
+sensitivity analysis was carried out by eliminating 1 article each 
+time. It was found that the study conducted by Yi Du[50] was 
+the main source leading to the increase in heterogeneity. After 
+eliminating this study, the results still showed no significant 
+difference in preoperative MMSE scores between 2 groups, so 
+these results were relatively stable and reliable (Fig. 3).
+3.3.2.2. Meta-analysis of MMSE scores of patients 1 hour after 
+operation.  Eight articles reported the MMSE scores of patients 
+1 hour postoperatively, including 529 cases of sevoflurane 
+group while 529 of propofol group. A large heterogeneity 
+was detected upon heterogeneity test (I2 = 98.0% and P < .10) 
+across those enrolled articles, so combined effect was quantified 
+by using the random-effects model. According to our findings, 
+MMSE score was not significantly different between 2 groups 
+1 hour postoperatively (SMD = −0.82, 95% CI: [−1.81, 0.16], 
+P > .05). Considering the high degree of heterogeneity across 
+those enrolled articles, we conducted sensitivity analysis 
+through eliminating 1 article each time, and found that the 
+study performed by Lu[34] accounted for the major source 
+of heterogeneity. When this study was excluded, the results 
+obtained still suggested that MMSE score in sevoflurane group 
+decreased relative to propofol group 1 hour postoperatively, 
+with a significant difference. Therefore, the result was unstable 
+and not reliable, which should be interpreted with caution 
+(Fig. 4).
+3.3.2.3. Meta-analysis of MMSE scores of patients 3 hours 
+after operation.  Five articles mentioned the MMSE scores 
+of patients 3 hours postoperatively, including 216 cases 
+from sevoflurane group while 212 from propofol group. As 
+suggested by heterogeneity test (I2 = 53.1% and P < .10), a great 
+heterogeneity was detected across those enrolled articles, and 
+combined effect was analyzed by the random-effects model. It 
+was discovered that, MMSE score of sevoflurane group decreased 
+relative to propofol group 3 hours postoperatively, with a 
+significant difference (SMD = −1.79, 95% CI: [−2.13, −1.46]). 
+Because of the large heterogeneity detected across those enrolled 
+articles, sensitivity analysis was performed through eliminating 
+1 article each time, but the major source of heterogeneity was 
+not detected. After excluding any literature, the results obtained 
+still demonstrated the decreased MMSE score in sevoflurane 
+group relative to propofol group 3 hours after operation, so the 
+results were relatively stable and reliable (Fig. 5).
+3.3.2.4. Meta-analysis of MMSE scores of patients 6 hours 
+after operation.  There were 21 articles reporting MMSE 
+scores of patients 6 hours postoperatively, including 1005 cases 
+from sevoflurane group while 1001 from propofol group. As 
+suggested by heterogeneity test (I2 = 98.1% and P < .10), a 
+large heterogeneity was detected across those enrolled articles, 
+so combined effect was analyzed using the random-effects 
+model. According to our findings, MMSE scores were not 
+significantly different between 2 groups 6 hours postoperatively 
+(SMD = −0.20, 95% CI: [−0.94, 0.54], P > .05). Because of the 
+large heterogeneity across those enrolled articles, sensitivity 
+analysis was conducted through excluding 1 study each 
+time, but the major source of heterogeneity was not detected. 
+After excluding any study, MMSE score in sevoflurane group 
+always decreased compared with propofol group 6 hours after 
+operation, so the results were relatively stable and reliable 
+(Fig. 6).
+3.3.2.5. Meta-analysis of MMSE scores in patients 12 hours 
+postoperatively.  Nine articles mentioned the MMSE scores 
+in patients 12 hours postoperatively, including 1978 cases 
+from sevoflurane group while 1977 from propofol group. 
+A large heterogeneity was detected upon heterogeneity test 
+(I2 = 97.4% and P < .10) across those enrolled articles, so the 
+combined effect was analyzed using the random-effects model. 
+Figure 7.  MMSE scores in patients 12 h postoperatively. MMSE = Mini-Mental State Examination.
+
+
+9
+Quan et al.  •  Medicine (2025) 104:35
+www.md-journal.com
+It was found that MMSE scores were not significantly different 
+between 2 groups 12 hours postoperatively (SMD = −0.38, 
+95% CI: [−1.33, 0.57], P > .05). Because of the high degree 
+of heterogeneity across our enrolled articles, we conducted 
+sensitivity analysis through excluding 1 article each time and 
+discovered that the study carried out by Lu[34] accounted for the 
+major source of heterogeneity. When this article was excluded, 
+our findings indicated the decreased MMSE score in sevoflurane 
+group relative to propofol group 12 hours after operation, with 
+a significant difference. Therefore, our result was unstable and 
+not reliable, which required careful interpretation (Fig. 7).
+3.3.2.6. Meta-analysis of MMSE scores in patients 1 day 
+after operation.  There were 31 articles mentioning the MMSE 
+scores in patients 1 day postoperatively, including 1066 cases 
+of sevoflurane group while 1064 of propofol group. A large 
+heterogeneity was detected across our enrolled articles through 
+heterogeneity test (I2 = 96.9% and P < .10), and combined effect 
+was analyzed using the random-effects model. Our findings 
+revealed that MMSE scores were not significantly different 
+between 2 groups 1 day postoperatively (SMD = −0.28, 95% 
+CI: [−0.73, 0.16], P > .05). Because of the large heterogeneity 
+across our chosen articles, sensitivity analysis was conducted 
+through eliminating 1 article each time, but the main source of 
+heterogeneity was not detected. After excluding any study, the 
+results still exhibited no significant difference in MMSE scores 
+between 2 groups 1 day postoperatively, so these results were 
+relatively stable and reliable (Fig. 8).
+3.3.2.7. Meta-analysis of MMSE scores in patients 2 days 
+after operation.  There were 5 studies reporting MMSE 
+scores in patients 2 days postoperatively, including 210 
+cases from sevoflurane group whereas 210 from propofol 
+group. Upon heterogeneity test (I2 = 96.2% and P < .10), a 
+large heterogeneity was detected across the selected articles, 
+so the combined effect was analyzed by the random-effects 
+model. As a result, MMSE scores were not significantly 
+different between 2 groups 2 days postoperatively 
+(SMD = −0.20, 95% CI: [−0.88, 1.28], P > .05). Because of 
+the large heterogeneity detected across our chosen articles, 
+we conducted sensitivity analysis through eliminating 
+1 article each time, but failed to find the main source of 
+Figure 8.  MMSE scores in patients 1 d after operation. MMSE = Mini-Mental State Examination.
+
+
+10
+Quan et al.  •  Medicine (2025) 104:35
+Medicine
+heterogeneity. After excluding any article, the results still 
+suggested no statistical difference in MMSE scores between 
+2 groups 2 days postoperatively, so these results were 
+relatively stable and reliable (Fig. 9).
+3.3.2.8. Meta-analysis of MMSE scores in patients 3 days 
+after operation.  There were 37 articles reporting the MMSE 
+scores of patients 3 days after operation, including 984 
+and 981 from sevoflurane and propofol groups separately. 
+Heterogeneity test (I2 = 91.1% and P < .10) detected a large 
+heterogeneity across those selected articles, so the combined 
+effects were analyzed with the random-effects model. 
+It was found that MMSE scores were not significantly 
+different between 2 groups 3 days postoperatively 
+(SMD = −0.25, 95% CI: [−0.06, 0.56], P > .05). Because 
+of the large heterogeneity across those enrolled articles, 
+sensitivity analysis was performed through eliminating 
+1 article each time, but the main source of heterogeneity 
+was not discovered. When any literature was excluded, 
+the results still demonstrated no significant difference in 
+MMSE scores between 2 groups 3 days postoperatively, 
+indicating the relative stability and reliability of our results 
+(Fig. 10).
+3.3.2.9. Meta-analysis of MMSE scores in patients 5 days after 
+operation.  There were 3 studies mentioning the MMSE scores 
+in patients 5 days postoperatively, including respective 156 from 
+sevoflurane and propofol groups. A large heterogeneity was 
+detected upon heterogeneity test (I2 = 95.1% and P < .10) across 
+those enrolled articles, so we utilized the random-effects model 
+to analyze combined effect. As a result, MMSE scores were not 
+significantly different between 2 groups 5 days postoperatively 
+(SMD = −0.77, 95% CI: [−0.35, 1.88], P > .05). Because of 
+the large heterogeneity detected in our enrolled articles, we 
+conducted sensitivity analysis through eliminating 1 study 
+each time, but could not find the main source of heterogeneity. 
+After excluding any literature, the results still revealed no 
+significant difference in MMSE scores between 2 groups 5 days 
+postoperatively, therefore, these results were relatively stable 
+and reliable (Fig. 11).
+3.3.2.10. Meta-analysis of MMSE scores in patients 7 
+days after operation.  There were 14 studies reporting the 
+postoperative MMSE scores of patients, including 763 and 764 
+from sevoflurane and propofol groups separately. Heterogeneity 
+test (I2 = 78.5% and P < .10) detected a large heterogeneity 
+across those enrolled articles, so we utilized the random-effects 
+model to analyze combined effect. It was discovered that MMSE 
+scores were not significantly different between 2 groups 7 days 
+postoperatively (SMD = −0.01, 95% CI: [−0.24, 0.22], P > .05). 
+Because of the large heterogeneity detected across diverse 
+articles, sensitivity analysis was carried out through eliminating 
+1 article each time, which did not find the main source of 
+heterogeneity. After excluding any literature, the results still 
+suggested no significant difference in MMSE scores between 
+2 groups 7 days postoperatively, demonstrating the relative 
+stability and reliability of these results (Fig. 12).
+3.3.2.11. Meta-analysis of MMSE scores in patients 3 months 
+after operation.  There were 2 studies mentioning MMSE scores 
+in patients 3 months postoperatively, involving 189 cases from 
+sevoflurane group while 189 from propofol group. Heterogeneity 
+test (I2 = 0.0% and P > .10) showed the absence of obvious 
+heterogeneity across those enrolled articles, therefore, combined 
+effect was analyzed using the fixed-effects model. Based on our 
+findings, MMSE scores were not significantly different between 
+2 groups 3 months postoperatively (SMD = −0.00, 95% CI: 
+[−0.20, 0.20]) (Fig. 13).
+3.3.3. Publication bias.  When 2 to 10 articles were enrolled 
+in outcome indicators, publication bias was assessed by Egger 
+test. As a result, publication bias was not detected in outcome 
+indicators such as the POCD incidence 1, 3 and 12 hours, as 
+well as 1, 2, 3, 5 and 7 days postoperatively.
+When over 10 articles were included in outcome indicators, 
+publication bias was assessed using the visual funnel diagram. 
+Figure 9.  MMSE scores in patients 2 d after operation. MMSE = Mini-Mental State Examination.
+
+
+11
+Quan et al.  •  Medicine (2025) 104:35
+www.md-journal.com
+Figure 14 exhibits the funnel diagram of outcome indicators 
+such as preoperative MMSE score, MMSE scores 6 hours, 1, 3 
+and 7 days postoperatively. The points on the funnel diagram 
+were scattered and not completely symmetrical, suggesting that 
+there was a certain publication bias (Figure 14A–E).
+4. Discussion
+POCD, the frequent complication after general anesthesia and 
+major surgery, has the typical features of difficulty in memory 
+and recall, mental decline, being unable to accomplish tasks, 
+inattention, language understanding impairment and social 
+integration problems.[3] The course of POCD ranges from short 
+to lasting and permanent. Because of the unobvious early symp­
+toms, POCD can hardly be found by clinicians and family mem­
+bers and is thereby neglected. According to Bedford research in 
+1955,[56] about 10% of surgical cases suffered from long-time or 
+persistent neurocognitive function decline after general anesthe­
+sia and surgery. However, their work was limited at that time 
+since the decline of cognitive function was determined only by 
+the self-expression of patients and the description of their fam­
+ilies, not by neuropsychological test results. After research for 
+decades, cognitive decline after general anesthesia and major 
+surgery, selection of general anesthesia and its relationship with 
+POCD are still controversial.
+Sevoflurane and propofol represent 2 frequently applied 
+general anesthesia agents, and their anesthesia methods and 
+mechanisms are different.[57] Sevoflurane exerts its anesthetic 
+effect mainly by inhibiting N-methyl-D aspartate (NMDA) 
+receptor. NMDA serves as the natural amino acid deriva­
+tive in animals and a critical excitatory neurotransmitter l-
+glutamic acid homologue within the mammalian central 
+nervous system. After inhibiting the activity of NMDA, the 
+synaptic transmission of cholinergic neurons and synaptic 
+enhancement in hippocampus are inhibited.[58,59] Propofol is a 
+short-acting intravenous anesthetic of alkyl acids, which takes 
+effect quickly, can achieve the ideal anesthetic effect within 
+40 seconds, and its efficacy is relatively stable. This anesthetic 
+mainly exerts its anesthetic effect by enhancing the function 
+of γ-aminobutyric acid (GABA) receptor, thus inhibiting the 
+increased expression of hippocampal synapses.[60] When deal­
+ing with the body internal and external environments, synaptic 
+plasticity lays the basis for synapses to cope with the external 
+environment.[61] Enhancement and inhibition are both normal 
+neural responses of synapses to external environment, and 
+their coordination together establishes the basis of learning 
+and memory.[62] Obviously, both anesthetics affect the neu­
+rological function of patients and play an anesthetic role. As 
+reported in several clinical trials,[63,64] the selection of general 
+anesthesia agents does not negatively affect the early postoper­
+ative recovery quality, but these trials are limited by the small 
+sample size and/or minor surgical research. Guo research[44] 
+found that sevoflurane and propofol anesthesia had negative 
+effects on early postoperative cognitive dysfunction among 
+the old cancer patients, but there was no significant difference 
+Figure 10.  MMSE scores in patients 3 d after operation. MMSE = Mini-Mental State Examination.
+
+
+12
+Quan et al.  •  Medicine (2025) 104:35
+Medicine
+Figure 11.  MMSE scores in patients 5 d after operation. MMSE = Mini-Mental State Examination.
+Figure 12.  MMSE scores in patients 7 d after operation. MMSE = Mini-Mental State Examination.
+
+
+13
+Quan et al.  •  Medicine (2025) 104:35
+www.md-journal.com
+between them, and there was no negative impact on patient 
+life quality or prognostic outcome 3 months postoperatively. 
+Egawa research[47] also found that the POCD incidence was 
+not significantly different between sevoflurane and propofol 
+anesthesia after lung surgery. Tang research[46] discovered that 
+patients with rectal cancer achieved good neurological recov­
+ery after sevoflurane or propofol anesthesia, but it seemed that 
+patients who received propofol anesthesia had better cogni­
+tion, yet the difference did not reach statistical significance. 
+Qiao[45] suggested that the esophageal cancer patients who 
+received major surgery with sevoflurane inhalation anesthesia 
+had the increased POCD incidence relative to those undergoing 
+intravenous propofol anesthesia. Ishii research[48] also found 
+that the POCD incidence after propofol anesthesia (6.9%) 
+markedly decreased relative to that after sevoflurane anesthe­
+sia (26.7%). According to Zhang research,[49] compared with 
+sevoflurane general anesthesia, propofol general anesthesia 
+might reduce the postponed neurocognitive recovery among 
+the elderly following large cancer surgery.
+The 41 studies selected in the present work were all 
+RCTs, with high meta-analysis quality and reliable results. 
+Publication bias was assessed by Egger test for outcome indi­
+cators, which revealed the absence of obvious publication bias 
+in outcome indicators, such as the POCD incidence 1, 3, 12 
+hours, and 1, 2, 3, 5 and 7 days postoperatively. In addition, 
+we used visual funnel chart for evaluating publication bias for 
+outcome indicators. The points on the funnel chart were scat­
+tered and showed incomplete symmetry, revealing the presence 
+of some publication bias. Our enrolled studies included sevo­
+flurane/ether inhalation anesthesia for lung, esophageal, gas­
+tric, colorectal, prostate, cervical and unclassified cancers, and 
+the neurological status after propofol intravenous anesthesia. 
+The results showed that sevoflurane/ether inhalation anesthe­
+sia and propofol intravenous anesthesia reduced the postop­
+erative cognitive function of patients with malignant tumors 
+to varying degrees. Moreover, several studies[22,42,45,50,52] show 
+that severe MMSE scores can be moderately reduced and the 
+effect of sevoflurane is more obvious, but the MMSE scores are 
+basically evaluated within 3 days after operation, and can basi­
+cally return to normal levels after 5 days. A study[44] reported 
+that the patients still had a slight decrease in MMSE scores 
+3 months after operation, but the hospital stay of patients in 
+this study was not prolonged and patients were not hospital­
+ized again because of neurological adverse events, meanwhile, 
+the neurological function status was not evaluated 3 months 
+postoperatively. Generally speaking, these 2 anesthetics are 
+not significantly different. According to our results, the POCD 
+incidence was not significantly different between 2 groups. As 
+revealed by subgroup analysis, the functions of sevoflurane/
+ether inhalation anesthesia and propofol intravenous anesthe­
+sia in postoperative cognitive function of cancer patients were 
+not significantly related to the cancer types.
+Certain limitations should be noted in this meta-analysis: 
+firstly, MMSE score is simple and convenient to operate, and 
+the score result is recognized by neurology and psychiatry, but 
+there are subjective differences. Affected by age and education, 
+patients receiving higher education probably have false nega­
+tives, while patients receiving lower education can have false 
+positives, and there are many items measured by this score, 
+which is mainly sensitive to left hemisphere lesions-induced 
+cognitive impairment, rather than to frontal lobe and right 
+hemisphere lesions-induced one. Additionally, its effective­
+ness on evaluating cognitive function of frontotemporal lobe 
+is weak, and the score is poor in identifying mild cognitive 
+impairment. Therefore, there may be some information bias in 
+the results included in the study, which affects the reliability 
+of the results in this meta-analysis to some extent. Secondly, 
+in the process of anesthesia operation, different medical insti­
+tutions and different doctors will use different doses of nar­
+cotic drugs, and there are also differences in the use methods. 
+For example, propofol can be administered through ordinary 
+intravenous pumping and target-controlled infusion, besides, 
+the anesthesia operation time of patients is different, and the 
+postoperative recovery of patients is also different. Moreover, 
+epidural anesthesia/peripheral nerve blocks is most probably 
+added to general anesthesia in some cases. These factors will 
+affect postoperative clinical outcome of patients to varying 
+degrees.
+To sum up, sevoflurane/ether inhalation anesthesia and 
+propofol intravenous anesthesia may have different degrees 
+Figure 13.  MMSE scores in patients 3 mo after operation. MMSE = Mini-Mental State Examination.
+
+
+14
+Quan et al.  •  Medicine (2025) 104:35
+Medicine
+of negative effects on postoperative cognitive function among 
+cancer patients, but there is no obvious long-term effect, and 
+there is no obvious difference between the 2 anesthetics in 
+their effects on postoperative cognitive function. However, our 
+results should be further validated through large-scale, multi­
+center RCTs.
+Author contributions
+Data curation: Min Zhao.
+Formal analysis: Zhiyong Lv.
+Methodology: Yuhang Quan, Mingxiong Zhang, Guangshun 
+Liu.
+Resources: Mengqiu Zheng.
+Validation: Guangshun Liu.
+Writing – original draft: Yuhang Quan.
+Writing – review & editing: Mingxiong Zhang.
+References
+	 [1]	 Sekandarzad MW, van Zundert AAJ, Lirk PB, Doornebal CW, 
+Hollmann MW. Perioperative anesthesia care and tumor progression. 
+Anesth Analg. 2017;124:1697–708.
+Figure 14.  Publication bias. (A–E) The funnel diagram of outcome indicators such as preoperative MMSE score, MMSE scores 6 hours, 1, 3, and 7 days post­
+operatively. MMSE = Mini-Mental State Examination, SMD = standardized mean difference. 
+
+
+15
+Quan et al.  •  Medicine (2025) 104:35
+www.md-journal.com
+	 [2]	 Kim R. Anesthetic technique and cancer recurrence in oncologic sur­
+gery: unraveling the puzzle. Cancer Metastasis Rev. 2017;36:159–77.
+	 [3]	 Steinmetz J, Christensen KB, Lund T, Lohse N, Rasmussen LS; ISPOCD 
+Group. Long-term consequences of postoperative cognitive dysfunc­
+tion. Anesthesiology. 2009;110:548–55.
+	 [4]	 Modolo NSP, Modolo MP, Marton MA, et al. Intravenous versus inha­
+lation anaesthesia for one-lung ventilation. Cochrane Database Syst 
+Rev. 2013;7:CD006313.
+	 [5]	 Fang F, Lin W, Ling X, et al. The hippocampal cyclin D1 expression is 
+involved in postoperative cognitive dysfunction after sevoflurane expo­
+sure in aged mice. Life Sci. 2016;160:34–40.
+	 [6]	 Liu Y, Pan N, Ma Y, et al. Inhaled sevoflurane may promote progression 
+of amnestic mild cognitive impairment: a prospective, randomized par­
+allelgroup study. Am J Med Sci. 2013;345:355–60.
+	 [7]	 Ramos VR, Suarez PM, Santotoribio JD, et al. Neuroprotective 
+effect of sevoflurane in general anaesthesia. Med Clin (Barc). 
+2017;148:158–60.
+	 [8]	 Huang L, Huang K, Ning H. Autophagy induction by hispidulin pro­
+vides protection against sevoflurane-induced neuronal apoptosis in 
+aged rats. Biomed Pharmacother. 2018;98:460–8.
+	 [9]	 Zhang X, Zhou Y, Xu M, Chen G. Autophagy is involved in the sevoflu­
+rane anesthesia-induced cognitive dysfunction of aged rats. PLoS One. 
+2016;11:e0153505.
+	[10]	 Lv JM, Zhang LM, Wang JX, et al. Abdominal surgery plus sevoflurane 
+exposure induces abnormal emotional changes and cognitive dysfunc­
+tion in aged rats. Behav Brain Res. 2023;442:114328.
+	[11]	 Callaway JK, Jones NC, Royse AG, Royse CF. Sevoflurane anesthesia 
+does not impair acquisition learning or memory in the Morris water 
+maze in young adult and aged rats. Anesthesiology. 2012;117:1091–101.
+	[12]	 Geng YJ, Wu QH, Zhang RQ. Effect of propofol, sevoflurane, and iso­
+flurane on postoperative cognitive dysfunction following laparoscopic 
+cholecystectomy in elderly patients: a randomized controlled trial. J 
+Clin Anesth. 2017;38:165–71.
+	[13]	 Fan S, Li S. Application effect of sevoflurane combined with nerve 
+block anesthesia in surgical anesthesia in patients with uterine fibroids. 
+Contrast Media Mol Imaging. 2022;2022:9983851.
+	[14]	 Jadad AR, Moore RA, Carroll D, et al. Assessing the quality ofreports 
+of randomized clinical trials:is blinding necessary? Control Clin Trials. 
+1996;17:1–12.
+	[15]	 Qiu S, Dong YJ, Duan LF, et al. Effects of sevoflurane and propofol 
+on regional cerebral oxygen saturation and early postoperative cog­
+nitive function in elderly patients with lung cancer. J China Med Univ. 
+2016;45:797–800,817.
+	[16]	 Huang MH, Li YC. Effect of target-controlled infusion of propofol on 
+hemodynamics and cognitive function in elderly patients with gastric 
+cancer. Jiangxi Med. 2021;56:1981–3.
+	[17]	 Yang XL, Wu Y, Ni K, et al. Observation on the effect of propofol 
+target-controlled infusion anesthesia in robot-assisted radical prosta­
+tectomy. J Clin Military Med. 2021;49:294–295,298.
+	[18]	 Shang YW. Effect of target-controlled infusion anesthesia with propo­
+fol on patients undergoing radical gastrectomy. Henan Med Res. 
+2020;29:6241–3.
+	[19]	 Zhang L. Effect of propofol target-controlled infusion anesthe­
+sia on hemorheology and postoperative cognitive function of 
+patients undergoing radical gastrectomy. Modern Diagnosis Treat. 
+2021;32:2786–8.
+	[20]	 Wang W. Effect of target-controlled infusion anesthesia with propofol 
+in radical gastrectomy. Henan Med Res. 2020;29:4910–2.
+	[21]	 Zhu TF, Wang N. Effects of propofol and sevoflurane on the quality 
+of recovery, hemodynamics and cognitive function of postoperative 
+patients with esophageal cancer. Hainan Med. 2021;32:2652–5.
+	[22]	 Jiang XY. Clinical effect of propofol and sevoflurane on elderly 
+patients undergoing gastric cancer surgery. Guide China Med. 2019;17:
+190–1.
+	[23]	 Chai H, Jin XY, Zhu ZQ, et al. Comparison of the effects of propo­
+fol and sevoflurane combined with epidural anesthesia on the rapid 
+rehabilitation of laparoscopic colon cancer. Guangdong Med. 
+2021;42:735–737,741.
+	[24]	 Xiao YR, Zeng K, Lin CZ. Effects of different anesthetics on postop­
+erative cognitive function of elderly patients with lung cancer. J Pract 
+Cancer. 2014;8:933–935,938.
+	[25]	 Tang CJ, Xu SY. Comparison of the effects of sevoflurane and propofol 
+anesthesia on cognitive function after radical resection of lung cancer 
+in the elderly. China J Gerontol. 2014;13:3566–8.
+	[26]	 Liu W. Effect of sevoflurane combined with propofol intravenous anes­
+thesia on cognitive function and immune function of elderly patients. 
+China Commun Physician. 2018;34:51–2.
+	[27]	 Le SY. Study on the influence of sevoflurane and propofol anesthe­
+sia on elderly patients with gastric cancer. Chin Foreign Med Res. 
+2019;17:137–8.
+	[28]	 Ma GX, Wenyong P, Zhijian L, et al. Effects of sevoflurane and propo­
+fol anesthesia on lung function, MMP-9, E-selectin and postoperative 
+cognitive function in patients undergoing lung cancer resection. China 
+J Clin Pharmacy. 2021;30:241–6.
+	[29]	 Li YA. Effects of sevoflurane and propofol anesthesia on immune and 
+cognitive function in elderly patients undergoing gastric cancer surgery. 
+Northern Pharmacy. 2017;14:75–6.
+	[30]	 Wang W, Cui CY, Xin KR, et al. Effect of sevoflurane inhalation anes­
+thesia on cognitive function of elderly patients with esophageal cancer. 
+Int J Geriatr. 2020;41:150–3.
+	[31]	 Wang YH, Cui XG, Li B, et al. Effect of sevoflurane and propofol com­
+bined anesthesia on early postoperative cognitive function in elderly 
+patients with gastric cancer. Modern J Integr Tradit Chin Western Med. 
+2015;11:1230–2.
+	[32]	 Zhang SL, Li QJ. Effect of sevoflurane continuous inhalation anesthesia 
+on cognitive function of patients with lung cancer after radical surgery. 
+Modern J Integr Tradit Chin Western Med. 2016;25:1576–8.
+	[33]	 Wang Y, Chen Y. Comparison of clinical effect and cognitive function 
+of sevoflurane and propofol anesthesia after radical gastrectomy in the 
+elderly. Northern Pharmacy. 2018;15:139138.
+	[34]	 Lu JH, Wei Y, Lin Y, et al. Study on the effect of sevoflurane continuous 
+inhalation anesthesia on cognitive function of patients after radical lung 
+cancer surgery. Modern J Integr Tradit Chin Western Med. 2017;26:
+1232–4.
+	[35]	 Hou HJ, Fu Q, Hu NG, et al. Effects of sevoflurane on cognitive func­
+tion, anxiety and depression in elderly patients with lung cancer after 
+radical surgery. Int J Psychiatry. 2021;48:503–6.
+	[36]	 Su J, Liu Y, Chen Y, et al. Comparison of the effects of sevoflurane and 
+propofol on postoperative cognitive function in elderly patients with 
+lung cancer. China Pharm. 2015;17:106–107,108.
+	[37]	 Zhang AC, Yin H, Zhang CH. Effects of sevoflurane and propo­
+fol anesthesia on elderly patients with lung cancer. Modern Oncol. 
+2015;18:2684–6.
+	[38]	 Huang DH, Han Q, Liu CY, et al. Effects of sevoflurane and propo­
+fol anesthesia on elderly patients with lung cancer. China J Gerontol. 
+2015;14:3961–3.
+	[39]	 Cao L, Li CH. Effects of sevoflurane and propofol anesthesia on cog­
+nitive function in elderly patients with colorectal cancer. Hainan Med 
+College. 2013;24:834–6.
+	[40]	 Luo D, Yu JZ. Effects of sevoflurane and propofol anesthesia on cogni­
+tive function after radical resection of esophageal cancer in the elderly. 
+J Pract Cancer. 2015;30:726–728,743.
+	[41]	 Yu XC, Wang YG, Gao LB, et al. Effects of sevoflurane or propofol 
+anesthesia on postoperative cognitive function in elderly patients with 
+lung cancer. J Tianjin Med Univ. 2012;18:102–5.
+	[42]	 Liao WN. Effect of sevoflurane anesthesia on postoperative cog­
+nitive function of elderly patients with lung cancer. China Pharm. 
+2018;27:70–2.
+	[43]	 Chen HM, Zhang HY, Zhang Q. Effects of sevoflurane and propofol on 
+postoperative cognitive function in elderly patients undergoing radical 
+lung cancer surgery. PLA Med J. 2018;30:5–8.
+	[44]	 Guo L, Lin F, Dai H, et al. Impact of sevoflurane versus propofol 
+anesthesia on post-operative cognitive dysfunction in elderly cancer 
+patients: a double-blinded randomized controlled trial. Med Sci Monit. 
+2020;26:e919293.
+	[45]	 Qiao Y, Feng H, Zhao T, Yan H, Zhang H, Zhao X. Postoperative 
+cognitive dysfunction after inhalational anesthesia in elderly patients 
+undergoing major surgery: the influence of anesthetic technique, 
+cerebral injury and systemic inflammation. BMC Anesthesiol. 
+2015;15:154.
+	[46]	 Tang N, Ou C, Liu Y, Zuo Y, Bai Y. Effect of inhalational anaesthetic 
+on postoperative cognitive dysfunction following radical rectal resec­
+tion in elderly patients with mild cognitive impairment. J Int Med Res. 
+2014;42:1252–61.
+	[47]	 Egawa J, Inoue S, Nishiwada T, et al. Effects of anesthetics on early 
+postoperative cognitive outcome and intraoperative cerebral oxygen 
+balance in patients undergoing lung surgery: a randomized clinical 
+trial. Can J Anaesth. 2016;63:1161–9.
+	[48]	 Ishii K, Makita T, Yamashita H, et al. Total intravenous anesthesia 
+with propofol is associated with a lower rate of postoperative delirium 
+in comparison with sevoflurane anesthesia in elderly patients. J Clin 
+Anesth. 2016;33:428–31.
+	[49]	 Zhang Y, Shan GJ, Zhang YX, et al; First Study of Perioperative Organ 
+Protection (SPOP1) investigators. Propofol compared with sevoflurane 
+
+
+16
+Quan et al.  •  Medicine (2025) 104:35
+Medicine
+general anaesthesia is associated with decreased delayed neurocognitive 
+recovery in older adults. Br J Anaesth. 2018;121:595–604.
+	[50]	 Yi D, Tan XH, Duan H, et al. Effects of sevoflurane and propofol on 
+cognitive function, T lymphocytes and liver function in patients under­
+going laparoscopic radical resection of rectal cancer. Progress Modern 
+Biomed. 2018;18:3264–8.
+	[51]	 Gan Y. Effect of propofol on early postoperative cognitive function and 
+inflammatory factors in patients with open stomach cancer. J Cell Mol 
+Immunol. 2011;27:95–6.
+	[52]	 Han J, Zhao YL, Zhao L, et al. Comparison of the effects of sevoflurane 
+and propofol general anesthesia on perioperative immune and cogni­
+tive function in elderly patients with gastric cancer. China Med Clinic. 
+2019;19:3123–4.
+	[53]	 Guo LL, Jiang YH, Cao XZ. Effects of sevoflurane and propofol anes­
+thesia on immune and cognitive function in elderly patients undergoing 
+gastric cancer surgery. Chin Med Guides. 2016;13:69–72.
+	[54]	 Li HJ, Yu YM, Chen YY, et al. Effects of sevoflurane combined intrave­
+nous anesthesia on hemodynamics, cognitive function and serum NGF 
+and BDNF levels in patients undergoing laparoscopic radical hysterec­
+tomy for cervical cancer. J Clin Exp Med. 2020;19:1980–4.
+	[55]	 Cai MS, Tang QX. Effect of sevoflurane inhalation anesthesia on 
+postoperative cognitive function and quality of recovery in elderly 
+patients with non-small cell lung cancer. J Clin Pulmonary Med. 
+2015;7:1189–92.
+	[56]	 Bedford PD. Adverse cerebral effects of anaesthesia on old people. 
+Lancet. 1955;269:259–63.
+	[57]	 Sun X, Wang J, Guo ZY, et al. Research progress of peripheral cells in 
+central nervous system. J Neuroanatomy. 2019;35:217–20.
+	[58]	 Yu DH. Postoperative cognitive dysfunction in the elderly and the 
+role of dexmedetomidine in its treatment. Chinese Med Guides. 
+2015;12:164–8.
+	[59]	 Xu LM, He HF, Zhang LC, et al. Effect of low-flow sevoflurane 
+anesthesia on early postoperative renal function. Chin J Anesthesiol. 
+2018;38:1426–9.
+	[60]	 Chen JH, Sun XF, Wang ZY, et al. Study on the effect and mechanism 
+of propofol combined with sufentanil anesthesia on cognitive function 
+of elderly patients undergoing surgery. J Preven Med PLA. 2019;37:
+123–4.
+	[61]	 Zhang XF, Liu JY. Pain research and clinical transformation based on 
+synaptic plasticity. Int J Anesthesiol Resuscitation. 2019;40:160–4.
+	[62]	 Yu WJ, Zhu M, Wo Y, et al. Effects of propofol sedation on BDNF-
+TrkB/p75 signal and cognitive function in rat hippocampus. J Shanghai 
+Jiaotong Univ (Med Ed). 2018;38:594–7.
+	[63]	 De Oliveira GS, Jr, Bialek J, Rodes ME, Kendall MC, McCarthy RJ. 
+The effect of sevoflurane compared to propofol maintenance on post-
+surgical quality of recovery in patients undergoing an ambulatory 
+gynecological surgery: a prospective, randomized, double-blinded, con­
+trolled, clinical trial. J Clin Anesth. 2017;43:70–4.
+	[64]	 Moro ET, Leme FC, Noronha BR, Saraiva GFP, de Matos Leite NV, 
+Navarro LHC. Quality of recovery from anesthesia of patients under­
+going balanced or total intravenous general anesthesia. Prospective 
+randomized clinical trial. J Clin Anesth. 2016;35:369–75.
