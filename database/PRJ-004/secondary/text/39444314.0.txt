@@ -1,0 +1,1697 @@
+EDITED BY
+Oliver Burgert,
+Reutlingen University, Germany
+REVIEWED BY
+Antonio D. Gómez-Centeno,
+Hospital de Sabadell, Spain
+Fiﬁn Ayu Mufarroha,
+Trunojoyo University, Indonesia
+*CORRESPONDENCE
+Okan Yilmaz
+yilmaz@hia.rwth-aachen.de
+RECEIVED 31 October 2024
+ACCEPTED 07 July 2025
+PUBLISHED 21 July 2025
+CITATION
+Yilmaz O, Stegemann D, Radermacher K,
+Lange M and Janß A (2025) Integrating
+machine-readable user interface requirements
+into open networked operating rooms.
+Front. Digit. Health 7:1520584.
+doi: 10.3389/fdgth.2025.1520584
+COPYRIGHT
+© 2025 Yilmaz, Stegemann, Radermacher,
+Lange and Janß. This is an open-access article
+distributed under the terms of the Creative
+Commons Attribution License (CC BY). The
+use, distribution or reproduction in other
+forums is permitted, provided the original
+author(s) and the copyright owner(s) are
+credited and that the original publication in
+this journal is cited, in accordance with
+accepted academic practice. No use,
+distribution or reproduction is permitted
+which does not comply with these terms.
+Integrating machine-readable
+user interface requirements into
+open networked operating rooms
+Okan Yilmaz
+1*, Dominik Stegemann
+2, Klaus Radermacher
+1,
+Miriam Lange
+1 and Armin Janß
+1
+1Chair of Medical Engineering, Helmholtz-Institute for Biomedical Engineering, RWTH Aachen
+University, Aachen, Germany, 2SurgiTAIX AG, Herzogenrath, Germany
+Comprehensive risk management (RM) and usability engineering (UE) must be
+performed to enable safe and usable interoperable medical device systems
+(according to IEEE 11073 SDC). This has to be fulﬁlled by applying recognized
+standards such as ISO 14971 (RM) and IEC 62366-1 (UE). Addressing the
+complexity of use cases with multiple network participants requires deﬁning
+use
+context,
+hazardous
+situations,
+user
+proﬁles,
+user
+interfaces,
+system
+function contributions, limitations, conﬁgurations, and required conditions for
+safe use. We propose extending the categories mentioned in IEEE 11073-
+10700 with standardized user interface requirements provided by medical
+device manufacturers. A consumer of networked services can consider those
+UI Proﬁles containing design-, risk-, and process-related UI requirements
+during its design phase, usability engineering process, and risk management.
+This
+allows
+a
+systematic
+deﬁciency
+analysis
+prior
+to
+device
+usage,
+encompassing human-induced risks and thereby enhancing usability, patient
+safety, and ﬁnally operational efﬁciency. Using benchmarked, veriﬁed, and
+tested UI controls to create user interfaces that fulﬁll those requirements
+automatically might also be a solution for the future. This work presents an
+architectural
+overview
+incorporating
+ISO
+IEEE
+11073-10700
+standard
+requirements.
+Signiﬁcantly,
+it
+extends
+these
+standards
+by
+introducing
+categories that
+enhance
+support
+for
+the
+usability engineering
+and
+risk
+management process, emphasizing the role of UI Proﬁles in achieving safe
+and usable operating room environments with more ﬂexibility regarding
+interoperability and enabling a human-induced risk analysis prior to device
+usage. The number of surveyed manufacturers (8) and the need for real-world
+validation are limitations of this work, which should be validated by future work.
+KEYWORDS
+usability engineering, UI Proﬁle, user interface proﬁle, user interface requirements, IEEE
+11073, basePKP, participant key purpose, SDC
+1 Introduction
+A medical device’s user interface must be designed according to previously speciﬁed
+User Interface (UI) requirements, veriﬁed, and validated during the conformity
+assessment. The situation becomes more complex when open interoperability, according
+to the IEEE 11073 SDC (Service-oriented Device Connectivity) standard family, is
+introduced
+within
+the
+operating
+room
+(OR)
+or
+the
+clinic.
+SDC
+deﬁnes
+a
+communication protocol that enables medical devices to communicate with each other
+over the network by providing technical device descriptions and functionalities. In open
+networks, multiple types of participants are involved, where one provides device
+TYPE Original Research
+PUBLISHED 21 July 2025
+DOI 10.3389/fdgth.2025.1520584
+Frontiers in Digital Health
+01
+frontiersin.org
+
+
+functionalities (SDC Provider), and the other consumes/uses such
+services (SDC Consumer). Typical use cases are remote data
+display or remote device control. Usability-related errors remain
+a leading contributor to adverse events in healthcare (1–3).
+The technical documentation becomes a challenge if the SDC
+Consumer doesn’t have enough information from the SDC
+Provider. Providing private, sensitive information to third parties
+is not in the interest of the SDC Provider since it contains
+internally valuable and critical information. Nevertheless, the
+SDC Consumer has to develop some kind of user interface based
+on the provided information and their own understanding of the
+device. The SDC Provider has a very deep insight into its own
+device. Performing risk assessments and applying and providing
+UI Proﬁles can substantially harness the expertise of the Provider
+and mitigate potential risks for the Consumer. With this method,
+foreseeable risks can already be considered during the design
+phase and be tested against in the veriﬁcation phase. This
+information could be provided using different methods, but so
+far, no standardized, machine-readable language exists to do this.
+Both SDC and UI Proﬁle usage can signiﬁcantly impact patient
+safety and clinical workﬂow in the operating room. While
+interoperable medical device systems create use-cases, such as
+remote
+control
+or remote monitoring,
+they also
+introduce
+additional risks: Inconsistent user interfaces, mismatch between
+remotely displayed and device information (e.g., different units),
+unintuitive interfaces, or just missing essential information for
+safe device operation. The controls used for critical tasks need to
+be designed in a way to prevent accidental activation, for
+instance, by requiring the user to conﬁrm critical adjustments (1)
+or implementing design modiﬁcations (2).
+These risks can interrupt clinical workﬂows, increase a user’s
+mental workload, and overall increase the risk of human error.
+By embedding UI Proﬁles into the development and evaluation
+process, foreseeable device-related risks can be identiﬁed and
+mitigated,
+thereby
+increasing
+patient
+safety
+and
+improving
+clinical workﬂows.
+Finally, a Health Delivery Organization needs testing tools and
+processes to operate such interoperable systems. Without those,
+having
+open
+SDC
+interoperability
+will
+still
+be
+limited
+to
+manufacturer-to-manufacturer collaborations and solutions.
+2 SDC—service-oriented device
+connectivity
+The BMBF (German Federal Ministry of Education and
+Research)
+lighthouse
+research
+project
+“OR.NET—Secure
+Dynamic Networking in the Operating Room and Clinic” (2012–
+2016, funding no. 16KT1238) aimed to develop the technical
+basis for safe and dynamic networking of components in the
+operating room and clinic. An architecture and communication
+language were developed, and novel approaches for trust and
+distribution of responsibilities in open networked systems. The
+SDC Standard family consists of three parts, which will be
+explained in detail in the following subchapters (4, 5).
+2.1 SDC core standards
+The SDC core standards make technological interoperability
+possible. By providing a foundation, structure, and semantics,
+devices can communicate, discover each other, and interpret
+messages in a standardized way.
+ISO/IEEE 11073-20702: “Medical Devices Communication
+Proﬁle for Web Services,” also known as MDPWS, enables the
+foundation
+for
+interoperability
+by
+providing
+the
+ability
+to
+exchange data safely and discover network participants in a
+distributed network via web services. It can be viewed as an
+extension of DPWS for medical purposes (6).
+ISO/IEEE 11073-10207: “Domain Information and Service
+Model
+for
+Service-Oriented
+Point-of-Care
+Medical
+Device
+Communication,” also known as BICEPS (Basic Integrated
+Clinical Environment Protocol Speciﬁcation), provides a semantic
+description of medical device capabilities and state information
+using a participant model (MDIB) and communication/message
+model. It establishes a common language and structure to
+exchange health-related information (7).
+ISO/IEEE 11073-10101: Nomenclature and other coding
+systems
+deﬁne
+how
+medical
+information
+is
+coded
+and
+categorized. This helps different healthcare devices and systems
+understand
+and
+exchange
+information
+accurately.
+This
+nomenclature supports both the domain information model and
+service model components and the semantic content exchanged
+with medical devices (8).
+ISO/IEEE
+11073-20701:
+“Point-of-care
+medical
+device
+communication-Service
+oriented
+medical
+device
+exchange
+architecture and protocol binding” deﬁnes the service-oriented
+architecture and speciﬁes bindings toward other standards such
+as NTP, Differentiated Services, QoS Requirements, −20702, and
+−10207. Due to its binding nature, it is often referred to as “SDC
+Glue.” (9).
+2.2 Safety, trust & participants’
+responsibilities
+The Participant Key Purpose (PKP) is a set of requirements
+that support manufacturers in making valid assumptions about
+other network participants. This allows them to perform risk
+management, veriﬁcation, and usability engineering for the safe
+use of device functions. It also speciﬁes requirements for the
+allocation of responsibilities. It is split into four parts, two of
+which are in the proposal state and two of which are already
+ﬁnished standards.
+IEEE 11073-10700: “Standard for Base Requirements for
+Participants
+in
+a
+SDC
+System”
+speciﬁes
+requirements
+for
+allocating responsibilities to SDC participants. Those enable
+manufacturers
+to
+perform
+risk
+management,
+usability
+engineering, as well as veriﬁcation and validation (10).
+IEEE 11073-10701: “Metric Provisioning by Participants in a
+SDC System” deﬁnes requirements for SDC participants to
+enable safe and secure contribution to clinical functions based on
+Yilmaz et al.
+10.3389/fdgth.2025.1520584
+Frontiers in Digital Health
+02
+frontiersin.org
+
+
+the exchange of metric information; this includes remote display,
+partial automation of diagnosis and therapy, and changing settings
+based on received metric information (11).
+IEEE P11073-10702: “Standard for Alert Provisioning by
+Participants in a SDC System” deﬁnes requirements to “[…] to
+exchange alarm data and related remote control in a manner that
+improves
+safe,
+secure
+and
+effective
+contribution
+to
+the
+functionality of a distributed system.” (12).
+IEEE P11073-10703: “Standard for External Control by
+Participants in a SDC System,” will deﬁne the rules, methods,
+and requirements for external control.
+2.3 Device specializations
+IEEE P11073-10720: “Module Speciﬁcations for a Service-
+Oriented Medical Device Exchange Architecture” speciﬁes how to
+represent device components in a network, deﬁnes the device-type
+independent use of term codes, and outlines communication rules,
+while it doesn’t provide detailed rules for speciﬁc devices (13).
+The 11073-1072X standards deﬁne the scope, structure, and
+semantics of information and functionalities offered by a speciﬁc
+class of devices. These encompass parameters like dependencies,
+remote
+control
+commands,
+technical
+device
+descriptions,
+behavior in various states, and networking requirements. The
+standards provide a framework to adhere to, enabling devices to
+assume roles in networked systems (14). The research project
+PoCSpec (Modular Specialisations for Point-of-Care Medical
+Devices) developed standards for devices in the ﬁeld of high-
+frequency
+surgery
+and
+endoscopy.
+By
+conducting
+regular
+meetings with those vendors, consent was found between the
+manufacturers for a standardized device standard (15).
+3 User interface proﬁle
+The device specializations (IEEE 11073-107XX) describe how
+medical devices present themselves (their available functions) in
+an SDC network and the technical requirements other network
+participants must comply with to interact with them in a safe
+way.
+So
+far,
+those
+device
+proﬁles
+do
+not
+include
+HMI
+characteristics, which are necessary for remote display and device
+control and especially for safe and usable interfaces. Previous
+work
+identiﬁed
+and
+addressed
+a
+need
+for
+user
+interface
+requirements (16–22).
+A device-speciﬁc user interface proﬁle was proposed, and
+different but very similar deﬁnitions exist to date:
+• 2016 from Thorn et al. (23): The UI proﬁle describes devices’
+requirements for displaying their features and functions on
+other devices. These are guidelines for visualizing metrics and
+triggering actions based on information from ISO 24752
+(Universal Remote Console). However, it does not prescribe
+the
+speciﬁc
+design
+of
+the
+user
+interface
+but
+provides
+limitations and suggestions for designing the interface.
+• 2018 from Janß et al. (20): “Characteristics of input and output
+devices as well as GUI interaction elements (size, position, etc.)
+and their dependencies, criticalities of functions, grouping and
+positioning information regarding interaction elements, etc.,
+scenario-speciﬁc deﬁned performance shaping factors (PSFs),
+e.g., environmental factors”
+• 2022 from Yilmaz (author of this document) et al. (16): “A
+device-speciﬁc set of requirements and speciﬁcations regarding
+Human Machine Interactions a network subscriber must
+fulﬁll, in order to operate medical device functions or to
+display medical device properties.”
+In earlier versions, the User Interface Proﬁle was based on ISO
+24752, VDI 3850, Hölscher, Preim, Fellbaum, DIN EN ISO 7731,
+DIN 894-1, DIN 894-2, DIN EN 60073, and ISO 9241 family
+(such as −400, −420, −410, −303,). Figure 1 illustrates an earlier
+version of the UI Proﬁle, outlining a more rigid categorization of
+interface
+elements
+and
+technical
+requirements.
+This
+legacy
+approach places strong emphasis on grouping, positioning, and
+specifying ﬁxed dimensions and solutions
+The approach from Janß et al. focused heavily on grouping,
+positioning items, and the technical speciﬁcations of input and
+output devices. This increases the chances of developing usable
+interfaces but may limit the design freedom of a potential user. It
+also
+contains
+technical
+restraints
+and
+proposes
+concrete
+dimensions for visual elements. This version has been overhauled
+to develop the current version of the UI Proﬁle (See Figure 2
+and Table 1). It now doesn’t specify user interface controls or
+control
+mechanisms
+but
+focuses
+additionally
+further
+requirements directly derived from risk management and (e.g.,
+SDC-) standards (control speed, feedback mechanism, user task,
+update frequency, labeling, display precision, etc.) in addition to
+the
+already
+considered
+usability
+engineering
+requirements
+(effectiveness,
+efﬁciency,
+feedback,
+labeling)
+(16).
+We
+used
+clinical use-cases to identify device-speciﬁc UI-requirements. The
+use-cases included tele-supervision (24), ventilator development
+(25),
+common
+neurosurgery
+(26),
+and
+dorsal
+cervical
+decompression and spinal fusion for myelopathy treatment
+employing surgical navigation. The categories of the UI Proﬁles
+were iteratively presented and discussed with medical device
+manufacturers, designers, and software developers. Requirements
+from particular device standards such as the IEC 60601-2-2 for
+high frequency devices were also included as far as applicable.
+The goal was to systematically consider requirements from the
+different stakeholders involved. They were also applied several
+times by different users on medical devices (e.g., endoscopy,
+high-frequency device, OR-light, infusion pump, and OR-table),
+and some interfaces have already been evaluated by clinical users.
+The formative evaluation of a user interface developed based on
+using UI Proﬁles will be part of an upcoming publication.
+Usability evaluations of SDC Workstations have already taken
+place in smaller studies (24, 27, 28).
+UI Proﬁles speciﬁcations can be included in an early design
+phase
+and
+used
+to
+design
+a
+user
+interface
+that
+meets
+speciﬁcations determined by an SDC Consumer. In addition to
+HMI-related risks, the technical speciﬁcations of input and
+Yilmaz et al.
+10.3389/fdgth.2025.1520584
+Frontiers in Digital Health
+03
+frontiersin.org
+
+
+FIGURE 1
+Previous UI proﬁle emphasizing detailed grouping and dimension speciﬁcations, with stronger focus on rigid technical requirements.
+FIGURE 2
+Current UI proﬁle—an updated framework that integrates additional risk management attributes and user interaction requirements, offering
+greater ﬂexibility.
+Yilmaz et al.
+10.3389/fdgth.2025.1520584
+Frontiers in Digital Health
+04
+frontiersin.org
+
+
+output devices also play a vital role. Wickel et al. proposed
+technical
+attributes
+(idle
+state,
+actuation
+force
+threshold,
+actuation area ratio, manual precision, etc.) for input devices to
+be included in the ISO IEEE 11073-10207 (17).
+4 Benchmarking of GUI elements
+While developing a graphical user interface (GUI), a designer
+has to consider the user’s knowledge, expertise, goal, experience,
+environment, internal and external shaping factors, as well as
+their
+mental
+workload
+and
+other
+upcoming
+performing
+shaping factors.
+In addition, a medical device’s GUI has to meet regulatory
+requirements regarding risk and usability engineering, including
+safety, efﬁciency, effectiveness, learnability, and user satisfaction,
+according to IEC 62366-1. The chosen UI elements heavily
+inﬂuence those categories. A radio button might be faster when
+selecting one of two options, while a dropdown might be faster
+for numerous options (29).
+Almost all modern design guidelines have addressed the usage
+of GUI elements and their characteristics; examples are shown in
+(30–36). Those guidelines consider the number of options, the
+type of task, the input device, size, and additional task-related
+factors to create selection tables and matrices over the years,
+containing partly HMI-related criteria (1, 37–39).
+In previous work, UI elements from those guidelines have been
+collected for mutually exclusive, non-mutually exclusive, and
+numeric selections (40). Those UI Elements have different
+efﬁciency, accuracy, and error rate characteristics while having
+different labels and sizes. Different studies determined some of
+those characteristics in 1995 (37) and 1999 (38). Since those
+studies were performed more than 25 years ago, a lot has
+changed. Tablets have higher resolutions, are more responsive,
+and allow for faster interaction. UI elements have simple
+animations during interactions, and their design has changed
+(e.g., rounded corners, bigger interaction ﬁelds, more compact
+and animated). More UI elements have been developed since
+then [e.g., animated toggle buttons (31), chips (33)], and some
+actions stemming from hardware buttons have been transferred
+to touchscreens (e.g., swipe, rotate, tap and hold).
+Some studies use “expert knowledge” or see the rendering task
+as an optimization problem to determine the right UI elements,
+their positioning, and their grouping (41). A study to determine
+objective criteria to deﬁne UI elements’ efﬁciency, effectiveness,
+and error rate is currently being conducted and could, therefore,
+in the future, serve as a ﬁlter when choosing appropriate UI
+elements using the UI Proﬁle.
+5 SDC entities and their responsibilities
+SDC Communication uses a service-oriented medical device
+architecture (SOMDA), which has been standardized as part of
+the IEEE 11073 SDC Standard (42). In this chapter, we will focus
+on
+tasks,
+responsibilities,
+and
+requirements
+of
+different
+participants in the SDC Architecture. The results of several
+research projects and manufacturers’ efforts have been written
+into the SDC standards. The PKP deﬁnes a set of requirements
+that support manufacturers in making valid assumptions about
+other
+network
+participants.
+This
+enables
+performing
+risk
+management, veriﬁcation, validation, and, therefore, risk analysis
+and usability engineering for the safe use of device functions. It
+also speciﬁes requirements for the allocation of responsibilities
+(10–12).
+Several meetings were conducted with the IG-NB (alliance of
+notiﬁed bodies for medical devices in Germany), during which
+concepts for risk management in open networked solutions were
+presented and discussed. In the latest Gemini SDPi Ecosystem
+Pathway Summit 03/2024, a broad set of stakeholders, including
+the FDA, IG-NB, 13 medical device manufacturers, and two
+research
+institutes,
+discussed
+ongoing
+challenges
+in
+SDC,
+including the regulatory pathway for market approval (43).
+Figure 3 provides a high-level overview of SDC actors, their
+responsibilities, tasks, and where a UI Proﬁle could be included.
+TABLE 1 User interface proﬁle categories.
+Title
+Aspect
+Description
+Visibility
+Perception
+The visibility level describes at what
+time a UI control should be
+perceivable.
+Control Speed
+Perception,
+Cognition,
+Motoric
+This describes the required time to
+change an option, whether numerical
+or non-numeric or to activate an
+option. The number of interaction
+steps correlates with the time it takes.
+Option Display
+Perception
+This category describes whether the
+available options of a selection should
+always be fully visible (e.g., Radio
+Buttons) or could be hidden and be
+shown after an interaction step (e.g.,
+Dropdown)
+Residual probability
+of error
+Safety
+This category addresses the chance of
+wrong perception, cognition, or
+motoric actions while interacting with
+a UI.
+Depending on the use case, this
+probability should be very low for
+critical use cases (drug overdose) or
+can be medium-high, where no harm
+is possible (changing screen
+brightness).
+User task
+User Model/ User
+Interaction
+This category differentiates the
+purpose of the option/value/task.
+Safety Classiﬁcation
+SDC
+This classiﬁes the Safety of a metric
+according to IEEE 11073-10207 (7)
+Labeling
+Cognition,
+Perception
+This category describes if an UI
+Element needs an additional
+description next to its value
+Feedback
+mechanisms
+Perception,
+Cognition,
+Motoric
+This category describes how and when
+visual, auditory, or haptic feedback
+should be given
+Contextual Help
+Cognition,
+Perception
+This category describes whether help
+information should be accessible and
+what it should contain. Useful in rarely
+used or critical situations.
+Grouping/Relative/
+Absolute Positioning
+Perception
+This category describes which metrics
+should be displayed together.
+Yilmaz et al.
+10.3389/fdgth.2025.1520584
+Frontiers in Digital Health
+05
+frontiersin.org
+
+
+FIGURE 3
+SDC actor graph—a simpliﬁed overview showing all stakeholders in the SDC ecosystem and how UI proﬁles could be integrated.
+Yilmaz et al.
+10.3389/fdgth.2025.1520584
+Frontiers in Digital Health
+06
+frontiersin.org
+
+
+It shows their respective roles and their relations with each other.
+Directly affected participants in such a system are
+• Responsible Organization (Also called Healthcare Delivery
+Organization)
+• Medical IT Network (Often part of the Healthcare Delivery
+Organization)
+• System Integrator [“Organizations that place SDC Systems on
+the market” (44])
+• Medical Device Manufacturer
+• Users (Including clinical and non-clinical staff)
+Indirectly affected participants are
+• SDC Software Stack Supplier
+• The Governance Body (Notiﬁed Bodies)
+• Integrating Healthcare Enterprise (IHE)
+While Figure 3 looks overwhelming, it might be noted that it is an
+attempt to simplify 20 years of interoperability research into one
+simple model without leaving out any stakeholders.
+5.1 Accompanying information
+A medical device manufacturer has to provide information
+accompanying a medical device. The DIN EN ISO 20417 deﬁnes
+Accompanying Information as information for the medical
+device’s installation, use, decommissioning, and disposal (45). In
+SDC Systems, the accompanying information is necessary for
+outlining system functions, user requirements, conditions, and
+use context that must be met for system functions to be
+available.
+Such
+conditions
+can
+include
+functional
+tests,
+redundancy
+of
+resources
+and
+networks,
+and
+labeling
+requirements (10).
+The
+instruction
+for
+use
+is
+part
+of
+the
+accompanying
+information. It contains user-directed information essential for
+the safe and effective use of a medical device or accessory (10, 45).
+5.2 Risk management in SDC networks
+Risk Management is still a challenge in open networked
+solutions. There is an ongoing working group in the OR.NET
+association
+(“Conformity
+assessment
+and
+regulatory
+requirements”), which coordinates with the interest group of
+notiﬁed bodies in Germany (IG-NB) to establish a strategy for
+the approval of open networked medical devices (46). We will
+give a short overview of challenges, the current approach, and
+ongoing work.
+5.2.1 Current challenges
+When an SDC Provider provides its functionalities to SDC
+Consumers, the Use Speciﬁcation of the SDC Consumer, ﬁrst of
+all, is, in general, unknown to the SDC Provider. The SDC
+Provider is responsible for providing his functionalities in the
+way he documented them and by showing conformity to SDC
+PKP standards. An SDC Consumer performs Risk Management
+using this information and its Use Speciﬁcation.
+Use Speciﬁcation is deﬁned in IEC 62366-1 as a “summary of
+the important characteristics related to the context of the use of the
+medical device.” This includes the intended medical indication,
+patient population, intended part of the body to be interacted
+with, the intended user proﬁle, the use environment, and the
+operating principle (47).
+In addition, external performing shaping factors also inﬂuence
+device usage. Examples are situational characteristics (lighting,
+noise, temperature), task and equipment characteristics (nature of
+task, ergonomic, complex or poor interfaces), and job and task
+instructions
+(clear/unclear
+or
+poorly
+written
+instructions,
+comprehensive/missing training) (48). The setup of the operating
+room, frequency of use, and the positioning of the system might
+also inﬂuence the user when interacting with medical devices
+and need to be considered during risk management (47).
+When using shared resources such as screens, network
+bandwidth, or input devices, a proper allocation is mandatory.
+This is part of the stated conditions for safe use and needs to be
+fulﬁlled. The system owner is responsible for verifying this and
+performing functional tests before device usage. Network issues
+such as insufﬁcient bandwidth, loss of connection, malicious data
+(cybersecurity), wrong patient/location association, wrong device
+pairing, and use errors contribute to new causes and hazards and
+must be considered during a risk analysis (10).
+Security-related issues need to be addressed by a shared threat
+modeling and analysis from device manufacturers, healthcare
+providers, and the library supplier, as mitigations to cybersecurity
+risk will fall under the responsibility of all involved parties. An
+IEC 62304 documented library, which analyzed potential threats,
+could support risk management (such as sdcX from SurgiTAIX).
+Another
+important
+challenge
+is
+creating,
+distributing,
+and
+managing SSL certiﬁcates for SDC devices. Currently, there are
+no established processes for manufacturer-independent certiﬁcate
+management. This will be addressed in the research project
+Medi.NET (2024–2027).
+5.2.2 Usability challenges
+The Usability Engineering process and risk management of an
+SDC Consumer must ensure that the use-related risks are identiﬁed
+and mitigated, and that risk control measures are effective. This
+presupposes that all causes of hazards are identiﬁed in the risk
+analysis of the SDC Consumer.
+While an SDC Provider can specify which requirements need
+to be fulﬁlled by an SDC Consumer, this list of requirements is,
+by all means, not complete because the SDC Provider does not
+know in which use context and from which SDC Consumer their
+device
+will
+be
+controlled.
+The
+responsibility
+to
+state
+an
+interoperable use speciﬁcation (Use Environment, User Proﬁle)
+lies with the SDC Consumer. It is the basis for risk management
+and usability engineering.
+We propose that the SDC Provider add standardized, machine-
+readable user interface information to its device proﬁle. This has
+already been proposed, but no machine-readable schema (e.g.,
+XSD) has been deﬁned in SDC yet (19, 20, 22).
+Yilmaz et al.
+10.3389/fdgth.2025.1520584
+Frontiers in Digital Health
+07
+frontiersin.org
+
+
+5.2.3 Feasibility of integration into existing
+regulatory frameworks
+UI Proﬁles, as proposed in this paper, can become a method to
+systematically support regulatory requirements stated by the MDR
+and FDA. Manufacturers can integrate UI Proﬁles into their design
+dossier (supporting development, risk management, veriﬁcation,
+and validation) to demonstrate that SDC Consumers have
+systematically considered the new use context and other network
+participants, as stated in the Base PKP Standard.
+For instance, referencing UI Proﬁles through GUI development
+and evaluation could illustrate how following standardized labels
+and
+symbols,
+requirements
+for
+input
+controls,
+positioning,
+grouping,
+and
+feedback
+mechanisms
+meet
+other
+SDC
+Participants’ requirements for safe and usable interfaces.
+While the approach will require further alignment, the UI
+Proﬁle concept offers a structured format that could streamline
+regulatory submissions by clarifying how user interface design
+decisions address or mitigate relevant use errors.
+6 Questionnaire: integrating user
+interface proﬁles into the SDC
+architecture
+The primary goal of this chapter is to determine if UI Proﬁles
+are necessary, beneﬁcial during the design and veriﬁcation phase,
+capable of mitigating risks prior to device usage, and feasible for
+use in developmental stages.
+To evaluate the effectiveness and practicality of UI Proﬁles, a
+questionnaire
+was
+ﬁlled
+out
+by
+eight
+medical
+device
+manufacturers
+who
+participated
+in
+the
+“SDPi
+Developer
+Workshop 2024” (49). The workshop was chosen since medical
+device
+manufacturers
+participated
+with
+experience
+in
+risk
+management, SDC interoperability, and usability engineering.
+The participation was voluntary. The questionnaire was designed
+to gather feedback in four key areas: the necessity of UI Proﬁles,
+their usefulness during the design process, their ability to
+preemptively address risks, and their feasibility for usage by the
+manufacturers.
+Pre-testing
+was
+performed
+with
+associated
+research assistants with experience in SDC, usability engineering,
+and risk management.
+Each participant was asked to rate 20 statements on a Likert
+Scale from 1 (Strongly Disagree) to 5 (Strongly Agree). The
+results are displayed in Figure 4 (Need Assessment), Figure 5
+(Development and Testing Phase), Figure 6 (Risk Analysis
+Support), and Figure 7 (UI Proﬁle Creation Process) and
+provide insight into manufacturers’ views toward UI Proﬁles.
+6.1 Data analysis
+The following subchapter discusses the rated statements in the
+questionnaire as part of a descriptive and statistical analysis. We
+performed a One-Sample Wilcoxon Test to determine if the
+participants’ answers are signiﬁcantly tilted toward agreement or
+disagreement rather than remaining near the midpoint (Neutral).
+The results can be found in the attachment as well as behind
+every
+statement
+in
+the
+descriptive
+part
+(*
+for
+statistically
+signiﬁcant) (50).
+6.2 Need assessment
+Statement 1: A signiﬁcant number (75%) agree that the current
+SDC standard lacks effective methods to share HMI requirements.
+This highlights a gap in the SDC standards to ensure the
+interoperability and usability of open integrated systems through
+standardized HMI speciﬁcations.
+Statement 2: Most respondents (62.5%) favor the creation of
+device-speciﬁc
+HMI
+requirements
+to
+support
+modular
+risk
+management.
+It
+indicates
+a
+need
+for
+developing
+more
+comprehensive guidelines within the SDC framework to facilitate
+sharing HMI requirements.
+FIGURE 4
+Need assessment—survey responses from medical device manufacturers about the necessity of standardized user interface proﬁles.
+Yilmaz et al.
+10.3389/fdgth.2025.1520584
+Frontiers in Digital Health
+08
+frontiersin.org
+
+
+Statement 3*: There is a strong consensus among manufacturers
+(87.5%) not to share their own risk management ﬁles with unknown
+SDC network participants. This reﬂects concerns about the
+conﬁdentiality of sensitive information. It underscores the need for
+safe and trusted mechanisms within the SDC framework to
+transfer risk-related requirements for safe device use.
+Statement 4: Most respondents (62.5%) want to deﬁne and
+limit how their device is being used in an SDC network. That
+FIGURE 5
+Development and testing phase—survey responses from medical device manufacturers about UI proﬁles support and needs during the design,
+development and testing phase.
+FIGURE 6
+Risk analysis support—survey responses from medical device manufacturers about their perception in the areas of identifying or mitigate human-
+induced risks.
+Yilmaz et al.
+10.3389/fdgth.2025.1520584
+Frontiers in Digital Health
+09
+frontiersin.org
+
+
+means that there is a need to transfer requirements about device
+usage to potential network partners.
+6.3 Development and testing phase
+Statements 5*, 6* and 7*: Most participants (87.5%) (strongly)
+agree that UI Proﬁles could serve as input for the design phase and
+that UI Proﬁles can specify those HMI requirements. All
+participants
+unanimously
+agree
+that
+UI
+proﬁles
+support
+consistency and standardization.
+Statements 8 and
+9: While some respondents (37.5%)
+(strongly) agree that UI proﬁles can accelerate the design process,
+a signiﬁcant portion (62.5%) remains neutral. The idea that the
+number of formative tests would be reduced shows a mixed
+reaction, where 50% stay neutral, 25% agree, and 25% disagree.
+Statement 10: Most participants (62.5%) agree that UI proﬁles
+are able to ensure that users receive adequate and correct
+information during device operation. A UI Proﬁle delivered by a
+medical device manufacturer supports this by providing clear and
+standardized labels, units, and icons. However, 37.5% of neutral
+responses suggest that some participants may have reservations
+about the ﬂexibility of UI proﬁles in addressing all information
+needed during device operation.
+In a subsequent conversation, a manufacturer commented that
+ﬂexibility is important for his medical device, where a conﬁrmation
+window could be conditional. Certain numeric values might lead to
+unsafe/dangerous states when changing a property. This is
+inﬂuenced by multiple parameters, not just the metric itself.
+Multiple formulas are used, and requirements are checked to
+determine
+whether
+a
+conﬁrmation
+window
+should
+appear.
+Currently, modeling such scenarios using the existing capabilities
+of the UI Proﬁle or SDC is impossible. Whether such technical,
+calculated, or simulated information used for risk mitigation
+should be part of the MDIB or the UI Proﬁle is debatable. This
+decision should be up to manufacturers working on a ventilator
+device specialization.
+Statement 11*: A signiﬁcant number of respondents (75%)
+(strongly) agree that UI proﬁles support safe, effective, efﬁcient,
+and learnable control of medical devices. This suggests a
+strong belief in the value of UI proﬁles in improving medical
+devices’ overall quality and usability. 25% of neutral responses
+might indicate questions about their practical application in
+all areas.
+6.4 Risk analysis support
+Statements 12 and 13: While 50% of participants (strongly)
+agree that UI Proﬁles could preemptively identify human-
+induced risks, the other half either remains neutral (37.5%) or
+disagrees (12.5%). This suggests a need for more evidence
+regarding the effectiveness of risk identiﬁcation.
+Half of the participants (strongly) agree that UI Proﬁles can
+systematically analyze and reduce UI deﬁciencies, while the other
+half remains neutral. This neutrality reﬂects the identiﬁed need
+for more evidence.
+Statement 14: A majority (50%) (strongly) agree that UI
+proﬁles could reduce the frequency of use errors, indicating a
+belief in their potential to improve user interaction and reduce
+errors. However, 37.5% of participants remain neutral, and 12.5%
+disagree. This further highlights the need to demonstrate how UI
+Proﬁles can effectively reduce errors.
+Statement 15: The majority of respondents (62.5%) agree that
+UI proﬁles can reduce cognitive load through standardization,
+which is a positive indicator of their potential to enhance user
+experience and operational efﬁciency.
+Statement 16: A majority (62.5%) agree that UI proﬁles can
+support compliance with SDC standard requirements, indicating
+conﬁdence in UI Proﬁles’ ability to help meet regulatory and
+standardization needs. Currently, only a few SDC medical devices
+are on the market, and those are either from one manufacturer
+or B2B solutions. This allows comprehensive risk management
+on
+the
+basis
+of
+shared
+documents.
+Open
+modular
+risk
+management cannot yet be conducted because the SDC-PKP has
+not been ﬁnalized. The idea of providing requirements for safe
+use
+in
+a
+standardized
+way
+is
+not
+yet
+in
+the
+minds
+of
+manufacturers, but it will be essential in the future.
+FIGURE 7
+UI proﬁle creation process—survey responses from medical device manufacturers about their ability and readiness to use UI proﬁles.
+Yilmaz et al.
+10.3389/fdgth.2025.1520584
+Frontiers in Digital Health
+10
+frontiersin.org
+
+
+Statement 17: The majority of participants (62.5%) have
+expressed neutrality towards the idea that UI proﬁles support
+systematic and effective risk management, while 37.5% (strongly)
+agree with this statement. The lack of disagreement highlights
+that there is no opposition to the concept, indicating a generally
+positive attitude toward the potential beneﬁts of UI Proﬁles in
+this area. The high neutrality suggests that practical examples are
+needed to illustrate how UI Proﬁles contribute to a more
+effective risk management process.
+6.5 UI proﬁle creation process
+Statements 18* and 19: The last three statements focus on the
+process of UI Proﬁle creation. 87.5% of the participants (strongly)
+agree that they could develop UI Proﬁles for their own devices with
+in-house resources. Only 12.5% would prefer to get external
+expertise to develop UI proﬁles. This emphasizes conﬁdence in
+the manufacturers’ internal capabilities and in-house usability
+and risk management knowledge.
+Statement
+20:
+An
+overwhelming
+majority
+(87.5%)
+of
+participants (strongly) agree that sharing process-related risks
+using UI Proﬁles is a viable option for them. This is a positive
+outlook and suggests that there is value in leveraging UI proﬁles
+to facilitate transparent and effective sharing of risks among SDC
+stakeholders. This broad acceptance and optimism indicate a
+strong belief in the potential of UI proﬁles to enhance modular
+and interoperable risk management processes.
+6.6 Reﬂection on neutral responses
+Across all answers, there has been a substantial number of
+neutral responses in the Likert Scale. On one hand, this could
+indicate limited familiarity with the concept of machine-readable
+UI Proﬁles. On the other
+hand, it could show that the
+participants hesitated to answer before seeing a validation of the
+evaluated user interfaces. Future studies should identify the
+actual reason for the neutral responses by performing interviews
+or adding text ﬁelds to gather more feedback.
+6.7 Limitations and response bias
+The participants of the survey had heard of the concept of UI
+Proﬁles and had varying knowledge of the topic prior to the
+workshop. Those with experience in UI Proﬁles might be biased
+to give more positive or negative ratings. Additionally, the small
+sample size limits the power of the statistical analysis and the
+generalizability of the ﬁndings. While we performed a One-
+Sample
+Wilcoxon
+Test
+to
+see
+whether
+each
+statement
+signiﬁcantly
+differed
+from
+the
+scale’s
+neutral
+point,
+these
+exploratory results must be interpreted with caution. With a
+larger sample, the statistical signiﬁcance and effect sizes could be
+more robustly estimated. We acknowledge this as a major
+limitation of our current study.
+The questionnaire was developed by drawing on established
+risk-management
+categories
+derived
+from
+ISO
+14971
+and
+usability categories from IEC 62366-1 and DIN 9241 standards,
+combined
+with
+preliminary
+expert
+reviews
+from
+associated
+researcher. However, the questionnaire has not undergone formal
+validation. Future work should apply deeper validation methods
+to strengthen the reliability and validity of our survey. Lastly, the
+absence of formative real-world evaluations of user interfaces
+developed based on UI Proﬁles is a limitation of this work and
+should be performed in future work.
+6.8 Ethical considerations
+This study did not involve patient data or patient contact. All
+participating medical device manufacturers were informed about
+the scope and the purpose of the study. All responses were
+treated conﬁdentially. No personal data (name, age, gender) has
+been recorded. No formal ethics committee approval was needed.
+7 Conclusion
+The integration of User Interface Proﬁles into the existing SDC
+architecture and standardization presents a pivotal advancement in
+medical device interoperability within the clinic and the OR. Our
+ﬁndings, supported by comprehensive feedback from medical
+device manufacturers through a questionnaire, highlight the
+critical need and beneﬁts of standardized UI Proﬁles.
+Statements regarding the “development and testing phase”
+received particularly positive and statistically signiﬁcant ratings,
+suggesting that medical device manufacturers ﬁnd UI Proﬁles
+especially valuable for guiding design and validation processes.
+By contrast, most other statements showed weaker (p < 0.10) or
+no statistical signiﬁcance—outcomes likely inﬂuenced by a small
+pool of respondents rather than an absence of meaningful effects.
+Consequently,
+while
+these
+results
+underscore
+the
+potential
+beneﬁts of UI Proﬁles, they also highlight the need for broader
+participation to solidify the statistical power and generalizability
+of the ﬁndings.
+A majority of respondents agreed that current SDC standards
+lack effective methods for sharing risk-related requirements for
+safe device usage, highlighting the existing gap that the UI Proﬁle
+aims to ﬁll. Despite a signiﬁcant reluctance to share sensitive risk
+management ﬁles with third parties, manufacturers still wish to
+limit how other SDC participants use their devices, indicating a
+clear need for UI Proﬁles.
+Responses indicated high agreement that UI Proﬁles can serve
+as input for the design phase, supporting consistency and
+standardization. Additionally, feedback showed that UI Proﬁles
+has the potential to support risk management through the
+identiﬁcation and mitigation of human-induced risks. However,
+the high percentage of neutrality (37.5%–62.5%) in the risk
+analysis part suggests a need for concrete and practical examples
+to demonstrate the beneﬁts of UI Proﬁles. The participants also
+had reservations regarding a potential design process speed-up
+Yilmaz et al.
+10.3389/fdgth.2025.1520584
+Frontiers in Digital Health
+11
+frontiersin.org
+
+
+and
+the
+question
+of
+whether
+fewer
+formative tests would
+be necessary.
+From a clinical standpoint, ensuring a consistent and risk-aware
+user interface across multiple medical devices can signiﬁcantly
+enhance patient safety by reducing the likelihood of use errors,
+especially
+in
+high-stress
+OR
+environments.
+Standardized
+UI
+Proﬁles have the potential to minimize confusion arising from
+inconsistent labeling or UI design, and thus decrease human error
+rates. Furthermore, designing, verifying, and using GUI elements
+in line with these standardized proﬁles can foster the development
+of user-friendly, device-speciﬁc GUIs, improve efﬁciency, and
+ultimately improve patient outcomes.
+By embedding such requirements into the development
+lifecycle, organizations can more conﬁdently navigate regulatory
+pathways, demonstrating alignment with recognized international
+standards
+and
+focusing
+on
+patient-centered,
+safe
+device interoperability.
+While our results show promise, the real-world validation of UI
+Proﬁles remains to be conﬁrmed. We have yet to demonstrate the
+direct clinical impact of UI Proﬁles. A validation study, including
+user
+testing
+with
+actual
+medical
+personnel
+in
+a
+hospital
+environment, is currently underway and will provide empirical
+data on user performance, error rates, and efﬁciency.
+By encapsulating design, risk management, and usability
+engineering
+aspects
+into
+machine-readable
+UI
+Proﬁles,
+this
+approach has the potential to signiﬁcantly enhance the safety and
+usability of medical device interactions in open networks. It
+helps to fulﬁll regulatory requirements stated by the FDA,
+Notiﬁed Bodies for Medical Devices in Europe, and medical
+device manufacturers (43). This work addresses a critical gap in
+current interoperability standards by providing a standardized
+method for communicating UI requirements across medical
+devices, ensuring that interfaces are consistent and optimized for
+user needs and safety requirements.
+In actual clinical applications, the use of UI Proﬁles prior to
+operation could enable device-to-device tests and provide testable
+and objective criteria to prevent resource conﬂicts, such as not
+having enough or suitable input, and output controls/devices (22),
+conﬁrmations of critical functions prior to releasing (C-Ray, HF
+power) or to fulﬁll requirements by particular device standards
+(e.g., DIN EN 60601-2-2). Without those or similar UI Proﬁles,
+providing
+“real”
+interoperability
+becomes
+a
+challenge,
+since
+exchanging risk management and usability ﬁles are necessary to
+develop an MDR and FDA-compliant, safe, and usable solution.
+The proposal of a concrete schema for UI Proﬁles marks a
+signiﬁcant
+step
+toward
+achieving
+automated
+UI
+generation
+processes, supporting future dynamic creation of user interfaces
+that fulﬁll the speciﬁc requirements of various medical devices,
+potentially revolutionizing the way interfaces are designed and
+implemented in networked operating rooms.
+As the UI Proﬁle language evolves, it will be crucial to continue
+reﬁning
+the
+XML-Schema
+to
+remain
+adaptable
+to
+the
+ever-changing landscape of medical technology and user needs.
+The
+collaborative
+efforts
+of
+medical
+device
+manufacturers,
+healthcare professionals, and regulatory bodies will be key in
+advancing this initiative, aiming for a future where medical
+devices not only communicate seamlessly but also contribute to
+safer and more effective medical device control and, therefore,
+better patient care.
+In conclusion, the introduction of UI Proﬁles into the SDC
+architecture represents an advancement in open, interoperable,
+and user-centered medical device control systems. Using a
+standardized approach to deﬁne UI requirements, this initiative
+paves
+the
+way
+for
+fulﬁlling
+SDC
+standard
+requirements,
+mitigating risks already at the design phase, and creating safe,
+effective, efﬁcient, and intuitive medical device interfaces.
+Data availability statement
+The original contributions presented in the study are included
+in the article/Supplementary Material, further inquiries can be
+directed to the corresponding author.
+Author contributions
+OY: Writing – original draft, Writing – review & editing. DS:
+Investigation, Writing – review & editing. KR: Writing – review
+& editing. ML: Writing – review & editing. AJ: Writing – review
+& editing.
+Funding
+The author(s) declare that ﬁnancial support was received for
+the research and/or publication of this article. The Medi.NET
+project (Medical device platform for openly networked central
+workstations in operating theaters and clinics) is funded by the
+BMBF (Federal Ministry of Education and Research in Germany)
+as part of the RUBIN (Regional Entrepreneurial Alliances for
+Innovation)
+program
+line.
+Grant
+no:
+03RU3U02C
+(Project
+duration: 03/2024–02/2027).
+Conﬂict of interest
+The authors declare that the research was conducted in the
+absence of any commercial or ﬁnancial relationships that could
+be construed as a potential conﬂict of interest.
+Generative AI statement
+The author(s) declare that no Generative AI was used in the
+creation of this manuscript.
+Publisher’s note
+All claims expressed in this article are solely those of
+the
+authors
+and
+do
+not
+necessarily
+represent
+those
+of
+Yilmaz et al.
+10.3389/fdgth.2025.1520584
+Frontiers in Digital Health
+12
+frontiersin.org
+
+
+their afﬁliated organizations, or those of the publisher, the
+editors
+and
+the
+reviewers.
+Any
+product
+that
+may
+be
+evaluated
+in
+this
+article,
+or
+claim
+that
+may
+be
+made
+by
+its
+manufacturer,
+is
+not
+guaranteed
+or
+endorsed
+by
+the publisher.
+Supplementary material
+The Supplementary Material for this article can be found
+online at: https://www.frontiersin.org/articles/10.3389/fdgth.2025.
+1520584/full#supplementary-material
+References
+1. AAMI. Human factors engineering—Design of Medical Devices. (2007).
+2. FDA. Applying Human Factors and Usability Engineering to Medical Devices.
+(2016).
+3. Sameera V, Bindra A, Rath GP. Human errors and their prevention in healthcare.
+J Anaesthesiol Clin Pharmacol. (2021) 37:328–35. doi: 10.4103/joacp.JOACP_364_19
+4. mediTEC. OR.NET—Sichere dynamische Vernetzung in Operationssaal und
+Klinik.
+(2022).
+Available online
+at:
+https://www.meditec.hia.rwth-aachen.de/en/
+project-ornet/ (Accessed July 12, 2025).
+5. OR.NET e.V. SDC Standards Family. (2023). Available online at: https://ornet.
+org/?page_id=5940&lang=en (Accessed July 12, 2025).
+6. IEEE 11073TM Standards Committee of the IEEE Engineering in Medicine and
+Biology Society. IEEE Std 11073TM-20702-2016, Health informatics—Point-of-care
+medical device communication—Part 20702: Medical Devices Communication
+Proﬁle for Web Services.
+7. IEEE 11073TM Standards Committee of the IEEE Engineering in Medicine and
+Biology Society. 11073-10207-2017—IEEE Health informatics–Point-of-care medical
+device communication Part 10207: Domain Information and Service Model for
+Service-Oriented Point-of-Care Medical Device Communication. S.l.: IEEE (2018).
+8. IEEE Standards Association. ISO/IEC/IEEE 11073-10101-2019: IEEE (2019).
+9. IEEE 11073 Standards Committee of the IEEE Engineering in Medicine and
+Biology
+Society.
+11073-20701-2018—Health
+informatics–Point-of-care
+medical
+device communication—Part 20701: Service-Oriented Medical Device Exchange
+Architecture and Protocol Binding. S.l.: IEEE (2019).
+10. IEEE Standards Association. 11073-10700-2022—IEEE Standard—Health
+Informatics–Device Interoperability Part 10700: Point-of-Care Medical Device
+Communication–Standard for Base Requirements for Participants in a Service-
+Oriented Device Connectivity (SDC) System: IEEE (2023).
+11. IEEE 11073 Standards Committee of the IEEE Engineering in Medicine and
+Biology Society. 11073-10701-2022—IEEE Standard for Health Informatics—Device
+Interoperability—Part
+10701:
+Point-of-Care
+Medical
+Device
+Communication—
+Metric Provisioning by Participants in a Service-Oriented Device Connectivity
+(SDC) System. Erscheinungsort nicht ermittelbar: IEEE (2023).
+12. IEEE Standards Association. P11073-10702. (2023).
+13. IEEE Standards Association. P11073-10720: Module Speciﬁcations for a Service-
+Oriented Medical Device Exchange Architecture. (2019). Available online at: https://
+standards.ieee.org/ieee/11073-10720/7541/ (Accessed January 23, 2024).
+14.
+OR.NET
+Draft
+Document.
+P11073-10721—Device
+Specialization—High
+Frequency (200 kHz to <5 MHz) Surgical Equipment.
+15. PoCSpec. Modular Specialisations for Point-of-Care Medical Devices. (2019).
+Available online at: https://pocspec.de/?page_id=31&lang=en (Accessed March 8,
+2024).
+16. Yilmaz O, Janß A, Radermacher K. Applying user interface proﬁles to ensure
+safe remote control within the open networked operating room in accordance with
+ISO IEEE 11073 SDC. In: 13th International Conference on Applied Human Factors
+and Ergonomics (AHFE 2022), 2022 July 24–28. AHFE International (2022). doi: 10.
+54941/ahfe1002094
+17. Wickel N, Yilmaz O, Radermacher K, Janß A. Dynamic control assignment and
+automated risk assessment for external control interfaces in the operating room based
+on ISO IEEE 11073 SDC. In: 14th International Conference on Applied Human Factors
+and Ergonomics (AHFE 2023), 2023 July 20–24, AHFE International (2023). doi: 10.
+54941/ahfe1003943
+18. Janß A, Benzko J, Merz P, Dell’Anna J, Strake M, Rademacher K. Development
+of medical device UI-proﬁles for reliable and safe human-machine-interaction in the
+integrated operating room of the future. In: Proceedings of the 5th Conference on
+Applied Human Factors and Ergonomics (2014). p. 1855–60.
+19. Janß A, Merz P, Dell’Anna-Pudlik J, Strake M, Rademacher K. Application of
+medical device user interface proﬁles for human-risk analysis of open integrated
+OR systems. Proceedings of the 49th DGBMT Annual Conference, Lübeck (2015).
+20. Janß A, Thorn J, Schmitz M, Mildner A, Dell’Anna-Pudlik J, Leucker M, et al.
+Extended device proﬁles and testing procedures for the approval process of integrated
+medical devices using the IEEE 11073 communication standard. Biomed Tech. (2018)
+63:95–103. doi: 10.1515/bmt-2017-0055
+21. Mildner A, Janß A, Dell’Anna-Pudlik J, Merz P, Leucker M, Radermacher K.
+Device- and service proﬁles for integrated or systems based on open standards.
+Curr Dir Biomed Eng. (2015) 1:538–42. doi: 10.1515/cdbme-2015-0128
+22.
+DellAnna-Pudlik
+J.
+Modellbasiertes
+Risikomanagement
+offen
+vernetzter
+Chirurgie-Systeme für eine zentrale konﬁgurierbare Fußbedieneinheit. (2022):118.
+23. Thorn J, Schmitz M, Dell’Anna-Pudlik J, Mildner A, Janß A. Whitepaper—
+Erweiterung des Lebenszyklus von Medizingeräten um offene Vernetzungsfähigkeit.
+(2016).
+24. Roth J, Voigt V, Yilmaz O, Schauwinhold M, Czaplik M, Follmann A, et al.
+Concept and development of a telemedical supervision system for anesthesiology in
+operating rooms using the interoperable communication standard ISO/IEEE 11073
+SDC. Biomed Tech. (2024) 70:91. doi: 10.1515/bmt-2024-0378
+25. Goldermann L, Rakel S, Buglowski M, Mokhtarian A, Kampmann A, Janß A,
+et al. Designing the user interface of a ventilator under the constraints of a
+pandemic. at—Automatisierungstechnik. (2024) 72:484–95. doi: 10.1515/auto-2023-
+0205
+26. Beger F, Janß A, Yilmaz O. Prozessoptimierung im offen vernetzten
+Krankenhaus der Zukunft. Medit J. (2022) 5:132–5.
+27. Yilmaz O, Wieschebrock D, Heibeyn J, Rademacher K, Janß A. Development
+and evaluation of a platform-independent surgical workstation for an open
+networked operating theatre using the IEEE 11073 SDC communication standard.
+In: Duffy VG, editor. Digital Human Modeling and Applications in Health, Safety,
+Ergonomics and Risk Management. Posture, Motion and Health. Cham: Springer
+International Publishing (2020), p. 79–92. doi: 10.1007/978-3-030-49904-4_6
+28. Yilmaz O, Radermacher K, Beger F, Roth J, Janß A. Usability evaluation of
+a process optimized integrated workstation based on the IEEE 11073 SDC
+standard. In: 14th International Conference on Applied Human Factors and
+Ergonomics (AHFE 2023), 2023 July 20–24, AHFE International (2023). doi: 10.
+54941/ahfe1003481
+29. NN/g. Nielsen Norman Group Listboxes vs. Dropdown Lists. (2020). Available
+online at: https://www.nngroup.com/articles/listbox-dropdown/ (Accessed May 26,
+2023).
+30. Microsoft. Build desktop apps for Windows: This documentation provides the
+latest guidance about building desktop apps for Windows 11 and Windows 10.
+23.05.2023. Available online at: https://learn.microsoft.com/pdf?url=https%3A%2F%
+2Flearn.microsoft.com%2Fen-us%2Fwindows%2Fapps%2Ftoc.json
+(Accessed
+May
+23, 2023).
+31.
+Apple.
+Apple
+Developer
+Documentation—Human
+Interface
+Guidelines.
+23.05.2023. Available online at: https://developer.apple.com/design/human-interface-
+guidelines/ (Accessed May 23, 2023).
+32. balsamiq. UI Control Guidelines—Wireframing Academy. (2023). Available
+online at: https://balsamiq.com/learn/ui-control-guidelines/ (Accessed May 23, 2023).
+33. Google LLC. Material Design. (2023). Available online at: https://m3.material.io/
+(Accessed May 25, 2023).
+34.
+IBM.
+Carbon
+Design
+System.
+(2023).
+Available
+online
+at:
+https://
+carbondesignsystem.com/components/overview/ (Accessed May 24, 2023).
+35. Galitz WO. The Essential Guide to User Interface Design: An Introduction to GUI
+Design Principles and Techniques. 3rd ed Indianapolis IN: Wiley Pub (2007).
+36. NN/g. Nielsen Norman Group - OK-Cancel or Cancel-OK? The Trouble With
+Buttons. (2008) Available online at: https://www.nngroup.com/articles/ok-cancel-or-
+cancel-ok/ (Accessed May 25, 2023).
+37. Johnsgard TJ, Page SR, Wilson RD, Zeno RJ. A comparison of graphical user
+interface widgets for various tasks. In: Proceedings of the Human Factors and
+Ergonomics Society Annual Meeting. (1995), Vol. 39, p. 287–91. doi: 10.1177/
+154193129503900414
+38. Vanderdonckt J. Advice-giving systems for selecting interaction objects. In:
+Proceedings User Interfaces to Data Intensive Systems; 06.09.1999–06.09.1999. Los
+Alamitos, CA, USA: IEEE (1999). p. 152–7. doi: 10.1109/UIDIS.1999.791471
+39. Ben Ammar L. Towards a uniform model transformation process for abstract
+user interfaces generation. In: 14th International Conference on Evaluation of Novel
+Approaches
+to
+Software
+Engineering;
+04.05.2019–05.05.2019.
+Heraklion,
+Crete,
+Yilmaz et al.
+10.3389/fdgth.2025.1520584
+Frontiers in Digital Health
+13
+frontiersin.org
+
+
+Greece: SCITEPRESS—Science and Technology Publications (2019). p. 533–8. doi: 10.
+5220/0007763905330538
+40. Yilmaz O, Radermacher K, Wickel N, Nitsch V, Janß A. Risk-Based selection of
+GUI elements for different input devices. In: AHFE 2023 Hawaii Edition, 2023
+December 4–6. AHFE International (2023). doi: 10.54941/ahfe1004275
+41. Gajos K, Weld DS. Supple. In: Nunes NJ, editor. IUI 04: 2004 International
+Conference on Intelligent User Interfaces; Funchal, Madeira, Portugal, 2004 January
+13–16. New York, NY: ACM Press (2004). p. 93–100. doi: 10.1145/964442.964461
+42. Kasparick M, Schmitz M, Andersen B, Rockstroh M, Franke S, Schlichting S,
+et al. OR.NET: a service-oriented architecture for safe and dynamic medical device
+interoperability. Biomed Tech. (2018) 63:11–30. doi: 10.1515/bmt-2017-0020
+43. Integrating the Healthcare Enterprise. Gemini SDPi Ecosystem Pathway Summit
+2024. (2024). Available online at: https://conﬂuence.hl7.org/display/GP/Gemini+SDPi
++Ecosystem+Pathway+Summit+2024 (Accessed July 08, 2024).
+44. Merkel M, Schlichting S. OR.NET e.V.—SDC Conformance Principles. (2019).
+45. DIN EN ISO 20417: Medical Devices—Information to be provided by the
+manufacturer. (2019). doi: 10.31030/3041285
+46. OR.NET e.V. Conformity assessment and regulatory requirements. (2024).
+Available online at: https://ornet.org/?page_id=5914 (Accessed July 12, 2025).
+47. IEC 62366-1. IEC 62366-1 2015—Part 1 Application. (2015).
+48. Swain AD, Guttmann HE. Handbook of Human Reliability Analysis with
+Emphasis on Nuclear Power Plant Applications: Final Report. Albuquerque, N.M.:
+Sandia National Laboratories (1983).
+49. HL7 Devices Working Group & IHE Devices Technical Committee. 2024.06.04
+to 07 SDPi Developers Workshop #3—Gemini Public—Conﬂuence. (2024). Available
+online
+at:
+https://conﬂuence.hl7.org/pages/viewpage.action?pageId=227218976
+(Accessed June 7, 2024).
+50. The SciPy community. Statistical functions wilcoxon. (2025). Available online at:
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.wilcoxon.html
+(Accessed July 12, 2025).
+Yilmaz et al.
+10.3389/fdgth.2025.1520584
+Frontiers in Digital Health
+14
+frontiersin.org

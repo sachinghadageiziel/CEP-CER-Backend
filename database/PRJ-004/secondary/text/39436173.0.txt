@@ -1,0 +1,990 @@
+© 2024 MEDICAL GAS RESEARCH | Published by Wolters Kluwer - Medknow｜101
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+Anesthesia and its environmental impact: approaches 
+to minimize exposure to anesthetic gases and reduce 
+waste
+Abstract  
+In today’s era of modern healthcare, the intersection between medical practices and 
+environmental responsibility has gained significant attention. One such area of focus is the 
+practice of anesthesia, which plays a crucial role in various surgical procedures. Anesthetics 
+such as nitrous oxide and volatile halogenated ethers (desflurane, isoflurane, sevoflurane) are 
+examples of medical gases that are strong greenhouse gases that contribute to global warming. 
+During medical procedures, most of these anesthetic agents are released into the atmosphere, 
+which exacerbates their influence on the environment. Also anesthesia delivery systems have 
+traditionally utilized high flow rates of gases, leading to not only excessive consumption but 
+also a considerable environmental impact in terms of greenhouse gas emissions. However, the 
+emergence of low-flow anesthesia (LFA) presents a promising solution for achieving emission 
+reduction and cost savings, thereby aligning healthcare practices with sustainability goals. 
+Understanding LFA involves the administration of anesthetic gases to patients at reduced 
+flow rates compared to conventional high-flow methods. This practice requires precision in 
+gas delivery, often incorporating advanced monitoring and control systems. By optimizing gas 
+flow to match the patient’s requirements, LFA minimizes wastage and excessive gas release 
+into the environment, subsequently curbing the carbon footprint associated with healthcare 
+operations. Decreasing volatile anesthetic delivery provides safe and effective strategies for 
+anesthesia providers to decrease costs and reduce environmental pollution. Current literature 
+support in favor of LFA represents an area of cost containment and an opportunity to lessen the 
+environmental impact of anesthesia. This article will cover the concept of LFA, the distinctions 
+between low flow and minimal flow, and the potential advantages of LFA, such as those related 
+to patient safety, the environment, and the economy.
+Key Words: anesthesia; anesthetic inhalational agents; automated control; climate change; 
+environmental cost; global warming; green anesthesia; low flow anesthesia; rebreathing; 
+sustainable anesthesia
+https://doi.org/10.4103/mgr.MEDGASRES-D-23-00059
+Date of submission: December 21, 2023 
+Date of decision: May 9, 2024
+Date of acceptance: May 31, 2024
+Date of web publication: June 26, 2024
+Department of Anaesthesiology, Aga Khan University Hospital, Karachi, Pakistan
+*Correspondence to: Muhammad Saad Yousuf, FCPS, saad.yousuf@aku.edu.
+https://orcid.org/0000-0001-7565-869X (Muhammad Saad Yousuf) 
+How to cite this article: Samad K, Yousuf MS, Ullah H, Ahmed SS, Siddiqui KM, Latif A. Anesthesia and its environmental impact: approaches to minimize 
+exposure to anesthetic gases and reduce waste. Med Gas Res. 2025;15(1):101-109. 
+Khalid Samad, Muhammad Saad Yousuf*, Hameed Ullah, Syed Shabbir Ahmed, Khalid Maudood Siddiqui, Asad Latif
+Introduction 
+Acute care settings rank as the second most energy-
+intensive industry, following food service facilities, making 
+healthcare a carbon-intensive service. In the United States, 
+it accounts for 8% of all greenhouse gas (GHG) emissions.1 
+During perioperative activities, which are especially resource-
+intensive, operating rooms consume 3 to 6 times more energy 
+than hospitals overall.2 Numerous scientific studies have 
+demonstrated that all vapors and agents that can currently 
+be inhaled are GHGs that contribute to global warming. 
+However, many anesthesia providers are only vaguely aware 
+of how our field contributes to GHGs and how each gas 
+affects the environment differently. Limiting unnecessary 
+GHG emissions can significantly lessen the detrimental effects 
+on our environment given the prevalence of using inhaled 
+anesthetics.3 Anesthesia providers must extensively utilize 
+available resources to practice low-flow anesthesia (LFA), as 
+anesthetic gases contribute significantly to environmental 
+pollution. 
+The goal of LFA is to minimize the waste of inhaled anesthetics 
+that are harmful to the environment.4 Aside from the economic 
+and ecological advantages, it also offers physiological benefits 
+including maintained heat and humidity, enhanced mucociliary 
+function, and maybe lessened oxidative damage. This is 
+achieved by providing anesthetic gases at lower flow rates.5 
+Despite its benefits, anesthesiologists continue to disagree 
+over the use of LFA due to concerns about renal damage and 
+compound A exposure.6 Studies demonstrating decreased 
+oxidative damage and comparable hemodynamic parameters 
+and recovery durations in obese individuals following 
+laparoscopic surgery7 support the notion that LFA with 
+sevoflurane can be safe and beneficial. LFA, when combined 
+with patient safety, cost-effectiveness, and environmental 
+factors, offers a promising approach to anesthesiology practice 
+overall.
+By learning about each inhaled agent’s atmospheric lifespan 
+and global warming potential (GWP) and using these agents 
+responsibly, anesthetists may significantly contribute to the 
+
+
+102  ｜MEDICAL GAS RESEARCH｜Vol 15｜No.1｜March 2025
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+reduction of emissions. The aim of this narrative review is 
+to summarize the current knowledge on global warming, 
+anesthesia’s impact on the environment, ways to minimize 
+anesthetic gas exposure and waste, alternative options to 
+inhalational anesthesia, and the financial and environmental 
+outcomes of manual versus automated end-tidal gas 
+concentration management.
+Search Strategy 
+A systematic search was conducted on PubMed to locate 
+English-language articles published between January 1, 2000 
+and July 30, 2023, using the search terms “anesthesia” and 
+“greenhouse gas,” ensuring the inclusion of recent literature. 
+Of the 48 articles retrieved, 9 were excluded for the lack 
+of relevance to environmental or occupational exposure to 
+inhaled anesthetic gases or their mitigation. The remaining 
+pertinent articles were collected and reviewed, along with an 
+examination of the references cited within them.
+Global Warming Theories
+The explanation of important terms pertaining to the 
+impact of GHG emissions on global warming will help 
+anesthesiologists comprehend these mechanisms and become 
+knowledgeable about the availability of more environmentally 
+friendly anesthetic alternatives.
+GWP is a scale that compares a gas’s effect to that of the 
+same mass of carbon dioxide (CO2) by measuring how much 
+heat it traps in the atmosphere. It is a measurement of the 
+amount of energy that 1 tons of gas emissions will absorb 
+over a specific period, which is typically 100 years, and is 
+denoted by the abbreviation GWP100. This measurement is 
+made in comparison to 1 tonne of CO2 emissions. Because it is 
+the gas used as the reference, CO2 by definition has a GWP of 
+1, regardless of the period used. Consequently, GWP reflects 
+both the length of time a gas spends in the atmosphere and 
+the intensity of its energy absorption.8
+The term “global warming” describes a sustained rise in the 
+planet’s surface temperature.9 The amount of CO2 released 
+is known as the “carbon footprint” and is used as a baseline 
+when assessing the GWP of other substances.9 Radiative 
+forcing is the ratio of the amount of infrared energy radiated 
+back to space to the amount of sunlight (radiation) absorbed 
+into the Earth’s internal climate. Since half of the Earth’s 
+surface receives sunlight every day, energy is constantly 
+entering the atmosphere. 30% of this sunlight is reflected 
+into space, leaving the remaining 70% for the planet to 
+absorb.10 When sunlight enters the atmosphere, it causes a 
+phenomenon known as the greenhouse effect, or greenhouse 
+gases (GHGs). Instead of being released back into space, heat 
+is absorbed by GHGs and raises the temperature within the 
+atmosphere.10 GHGs that trap infrared heat raise temperatures 
+over time by altering the Earth’s radiative equilibrium. The 
+greenhouse effect is a naturally occurring phenomenon on our 
+planet and is responsible for regulating the temperature on 
+the Earth. GHGs such as CO2, methane (CH4), and water vapor 
+retain some of the radiation that is emitted by the sun on the 
+Earth’s surface in the form of heat. The greenhouse effect is 
+fundamental for the maintenance of the ideal temperature 
+for life on the Earth; without the presence of this effect, the 
+average temperature of the planet would be very low and 
+difficult for the survival of many species. 
+The environmental impact of anesthesia practice is a topic 
+of growing concern, and the GWP of inhalation anesthetics 
+is a term connected to this concern. Each anesthetic has a 
+different infrared absorption spectrum, and this, along with its 
+atmospheric lifetime, determines how much of a GHG it will 
+be. Until that gas breaks down in the atmosphere, it continues 
+to have an impact on the environment. The imbalance is most 
+effectively assessed near the border between the troposphere, 
+the lowest layer of the atmosphere, and the stratosphere, the 
+region with the highest concentration of ozone.8
+Effects of Ozone on Global Warming
+The ozone layer, which is a component of the atmosphere 
+and is situated at a height of 25 km, serves as a solar filter, 
+keeping most ultraviolet (UV) rays from reaching the Earth’s 
+surface.11 When UV radiation interacts with GHGs, it releases 
+free radicals that attack the ozone molecules in the ozone 
+layer. This rarefaction of the gas results in what is known as 
+a “hole in the ozone layer,” which exposes the Earth to more 
+UV radiation.12 In order to prevent permanent harm to the 
+environment and human health, greenhouse gas emissions 
+must be severely curtailed.13 This decline is concerning 
+consequences on human health. Since it can cause or 
+exacerbate a number of illnesses, the impacts of this decline 
+on human health are concerning and have been the focus of 
+investigations by researchers worldwide.14
+These findings show serious implications for human health. 
+The quantity of ozone present in the atmosphere directly 
+affects the amount of UV radiation that reaches the Earth’s 
+surface. According to Juchem et al.,15 there is a 2.7% rise in 
+the incidence of nonmelanoma skin malignancies for every 
+1% decrease in atmospheric ozone, indicating that even little 
+fluctuations in this layer might provide a serious health risk. 
+The actions on ecosystems affect human health, disease, and 
+well-being. New diseases may emerge, infectious diseases 
+worsen, and chronic non-communicable diseases increase. 
+Current food system may deteriorate leading to more hunger 
+and malnutrition, along with hyper-urbanization, microbial 
+resistance, climate migrations, and conflicts over natural 
+resources.16
+Anesthesia and Global Impact on Climate or 
+Environment
+Climate change is the biggest threat to public health, and 
+minimizing the environmental impact of inhaled anesthetics 
+is crucial. Strategies include avoiding nitrous oxide (N2O) and 
+desflurane, using intravenous or local-regional anesthesia, 
+and investing in new scavenging technologies. Occupational 
+risks for healthcare professionals from long-term exposure 
+to inhaled anesthetics remain a concern, necessitating 
+
+
+MEDICAL GAS RESEARCH｜Vol 15｜No.1｜March 2025｜103
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+regulatory guidelines and improved safety measures. 
+Anesthesia types have an impact on postoperative outcomes, 
+with total intravenous anesthesia showing fewer side effects 
+and growing in preference, especially in pediatric surgery. 
+Ultimately, reducing the use of inhaled anesthetics, particularly 
+desflurane, is essential for mitigating their environmental and 
+health impacts.17 The ideal anesthesia decision should balance 
+environmental impact, clinical indications, and occupational 
+risk, as illustrated in the accompanying diagram (Figure 1).
+CO2 and other GHGs such as N2O, methane, fossil fuels 
+synthetic GHGs (fluorinated gases), and water vapor, both 
+natural and man-made, contribute to global warming.10,18 
+Although the GWP of water vapor has not been properly 
+calculated in the literature, it is the most abundant and potent 
+GHG generated from the natural water cycle (evaporation, 
+condensation, and precipitation). Earth’s temperature is 
+regulated by water vapor, which contributes about 60% of 
+the warming effect.8 The US Global Change Research Program 
+estimates that since pre-industrial times, the atmospheric 
+concentrations of CO2, methane, and N2O have increased by 
+about 40%, 150% and 20%, respectively. More than half of the 
+CO2 rise has happened since 1970.19
+Halogenated inhalation anesthetics such as isoflurane, 
+desflurane, and sevoflurane have been found in the global 
+atmosphere; in 2014, their mean mole fractions were 0.097 
+ppt, 0.30 ppt, and 0.13 ppt.20 In 2014, anesthetics emitted 3.1 
+± 0.6 million tons CO2 equivalent, with desflurane accounting 
+for about 80%.21 Furthermore, the UK National Health Service 
+was responsible for 2.5% of the greenhouse gas emissions 
+caused by anesthetic inhalation, contributing to the estimated 
+3.1 million metric tons of CO2 equivalents of volatile anesthetic 
+gases emitted globally in 2014.17 Volatile anesthetics exhibit 
+varying GWPs, therefore it is crucial to evaluate and limit their 
+environmental impact. 
+Recent investigations indicate that the United States 
+healthcare sector contributes to nearly 10% of the total GHG 
+emissions, with hospitals being the primary source. Over the 
+decade spanning 2006 to 2016, GHG emissions associated 
+with healthcare demonstrated a notable increase of 30%.22 
+Notably, operating rooms generate 20% to 30% of the entire 
+waste output of hospitals, establishing perioperative services 
+as one of the healthcare sectors with the most substantial 
+environmental impact.23
+One of the main causes of climate change is the production 
+of GHGs,24 which includes the discharge of waste anesthetic 
+gases into the atmosphere during surgical operations (Figure 
+2).25 Although anesthesia gases account for a relatively 
+small proportion of GHGs, a substantial body of research 
+demonstrates the importance of reducing waste anesthetic 
+gas release into the environment to reduce global climate 
+change contributions and associated health risks, as well as 
+personal occupational exposure and risk of adverse effects. 
+According to a 2019 study of global surgery metrics, 266 
+million surgeries were carried out globally in 2015, with a 
+global median of 4171 operations per 100,000 people.26 
+This substantial volume of surgery exposes a variety of 
+healthcare professionals to volatile anesthetics, including 
+anesthesiologists, dentists/dental staff, nurse anesthetists, 
+operating room nurses, operating room technicians/staff, 
+recovery room nurses/staff, and surgeons.27
+Figure 1｜Schematic view of the three different perspectives in choosing an anesthesia technique. 
+Reprinted from Gaya da Costa et al.17 N2O: Nitrous oxide; TIVA: total intravenous anesthesia; WAG: waste anesthetic gas.
+surgery
+surgery
+
+
+104  ｜MEDICAL GAS RESEARCH｜Vol 15｜No.1｜March 2025
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+Impact of Anesthetic Gases and Climate Change
+GHGs like volatile anesthetics, trap energy in the atmosphere 
+by absorbing infrared radiation.28 Given that the use of these 
+gases is regarded as a medical necessity, volatile anesthetic 
+emissions are not subject to regulation like many other GHGs. 
+They do contribute to global warming, though, and we should 
+not disregard that. The patient only processes less than 5% 
+of the administered volatile anesthetics; the majority are 
+instead released into the atmosphere.29 Healthcare activities 
+are considered to be responsible for 10% of the nation’s GHG 
+emissions in the United States.30
+The most frequently used volatile anesthetics are N2O and 
+the highly fluorinated gases sevoflurane, desflurane, and 
+isoflurane, all of which have been linked to climate change 
+in the past decade due to their effects on the photophysical 
+characteristics of the atmosphere.28 N2O and halogenated 
+gases with chlorine or bromine, like isoflurane and the 
+Table 1｜A comparative analysis of commonly employed volatile anesthetics
+Gas
+Chemical formula
+Lifetime in 
+atmosphere 
+(yr)
+100-yr 
+GWP
+CO2 equivalent (kg) for agent 
+in container, correlated with 
+container size 
+Driving equivalent 
+(km/h)
+Ozone depletion 
+potential
+Greenhouse 
+warming potential
+Isoflurane
+CHF2OCHClCF3
+2.6–5.9
+350
+191 (250 mL)
+32–64
+√
+√
+Sevoflurane
+CH2FOCH(CF3)2
+1.1–5.2
+575
+48 (250 mL)
+29
+√
+Desflurane
+CHF2OCHFCF3
+8.9–21.0
+1526
+893 (240 mL)
+377–756
+√
+Nitrous oxide
+N2O
+114
+296
+1013 (Size E)
+95
+√
+√
+Data were derived from Varughese and Ahmed25 and Gadani and Vyas.29 “Driving Equivalent” refers to the potency of volatile anesthetics at 1 minimum alveolar 
+concentration-hour (0.6 for nitrous oxide), considering a fresh gas flow rate of 0.5–2.0 L/min. A common industry standard for a size E cylinder of nitrous oxide 
+is approximately 1590 L. CO2: Carbon dioxide; GWP: global warming potential.
+Figure 2｜Composition and contributions to total U.S. greenhouse 
+gas emissions.
+The 2012 breakdown of U.S. greenhouse gas emissions, including 
+4.3% N2O and 3% fluorinated gases. Inhaled anesthetics (nitrous oxide, 
+desflurane, isoflurane, and sevoflurane) contribute approximately 1% 
+to healthcare sector emissions and 0.1% to total U.S. greenhouse gas 
+emissions (2011–2013). Reprinted from Varughese and Ahmed.25 N2O: 
+Nitrous oxide.
+outdated drug halothane, can deplete ozone and lessen the 
+ozone layer’s ability to shield against UV radiation. Sevoflurane 
+and desflurane are two examples of halogenated gases 
+that harm the climate even though they do not catalytically 
+destroy ozone. Instead, trace amounts of these gases in the 
+atmosphere absorb and reduce outgoing infrared thermal 
+energy, warming the planet.31
+The majority of volatile anesthetics are eliminated from the 
+body through exhalation while they are being used in clinical 
+settings.28 N2O, desflurane, isoflurane, and sevoflurane, for 
+instance, are exhaled unchanged in about 95% of cases.32 
+In operating rooms, these substances are usually scavenged 
+from patient breath to minimize occupational exposure. 
+However, these medical waste gases are discharged into the 
+environment as GHGs with little to no additional processing.3
+Assessing the radiative and atmospheric attributes of 
+specific substances, the GWP provides a measure to 
+quantify how various agents, including GHGs, contribute to 
+climate change.33,34 A gas’s capacity to absorb heat from the 
+atmosphere is measured by its GWP.35 Regardless of the time 
+period used, CO2 has a GWP of 1 by definition. The term 
+“CO2 equivalent” refers to the mass of CO2 that possesses 
+an equivalent GWP as a given mass of a specific agent.36 This 
+concept facilitates the comparison of the global warming 
+impact of different gases. The 100-year time frame (100-
+year GWP) is frequently used to calculate GWP. The chemical 
+formula, 100-year GWP, CO2 equivalent, and lifetime in the 
+atmosphere of frequently used volatile anesthetics are shown 
+in Table 1.17,31,37
+In contrast to sevoflurane, isoflurane manifests a protracted 
+atmospheric persistence of 3.2 years. Its possession of a 
+chlorine atom renders isoflurane proficient in ozone layer 
+attenuation. Relative to other volatile anesthetics, sevoflurane 
+distinguishes itself with the briefest atmospheric longevity 
+at 1.1 years and a 100-year GWP of 575. However, among all 
+volatile anesthetics, desflurane has the highest 100-year GWP. 
+When compared to sevoflurane and isoflurane, it is also used 
+at higher doses, requiring 3 to 6 times as much to achieve the 
+same level of anesthesia.38 Desflurane should not be used, 
+given its 14-year atmospheric lifetime, in order to reduce 
+environmental harm.
+
+
+MEDICAL GAS RESEARCH｜Vol 15｜No.1｜March 2025｜105
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+N2O, owing to its anesthetic properties, minimal alveolar 
+concentration-sparing capability, and analgesic effects, finds 
+widespread application in various medical procedures. Its 
+extensive use has resulted in a notable contribution, ranging 
+from 1% to 3%, to the global emissions of N2O.39 It is crucial to 
+recognize that N2O not only functions as a GHG but also exerts 
+ozone-depleting effects, compromising the ozone layer’s 
+protection against harmful UV rays from the sun.40 Despite 
+possessing a substantially lower 100-year GWP compared 
+to desflurane (296 vs. 1526), N2O exhibits a significant 
+atmospheric lifetime of 114 years. Moreover, in contrast 
+to alternative anesthetics administered at concentrations 
+ranging from 1% to 6%, it is commonly employed at elevated 
+doses, typically ranging between 40% and 60%.41 This is due 
+to its relatively weak anesthetic potency. Nitric oxide and 
+CO2, which are GHGs, are also contaminants created during 
+the synthesis of N2O.42 This data illustrates that relative to 
+alternative volatile anesthetics, desflurane, and N2O exhibit 
+notably adverse environmental impacts.
+It is imperative to consider the enduring, cumulative influence 
+of inhaled anesthetics on climate change and to actively 
+pursue strategies aimed at mitigating the introduction of these 
+agents into the environment. This remains paramount despite 
+the relatively modest contribution of volatile anesthetics to 
+total GHG emissions (0.1%), especially when juxtaposed with 
+CO2 (82.2%), as depicted in Figure 2.10,31
+Strategies to Minimize Exposure and Waste of 
+Anesthetic Gases
+The practice of anesthesia is a critical aspect of modern 
+medical procedures; ensuring patients undergo surgeries 
+and interventions comfortably and safely. However, the 
+administration of anesthetic gases, while essential, presents 
+challenges in terms of both healthcare worker exposure 
+and environmental impact due to gas wastage. To tackle 
+these issues, a range of strategies have been developed to 
+minimize exposure and reduce the waste of anesthetic gases. 
+These strategies not only prioritize the well-being of medical 
+personnel but also contribute to a more sustainable and 
+environmentally conscious healthcare system (Figure 3).
+Limited use of volatile anesthetics with high 100-year GWP
+The GWP of halogenated anesthetics can reach exceptionally 
+high levels, up to 2000 times that of CO2. N2O, isoflurane, 
+sevoflurane, and desflurane all possess higher GWP factors 
+than N2O, with desflurane exhibiting a GWP factor five times 
+greater than that of N2O. Despite this, N2O contributes the 
+most to increased climate impact (99.97%), mainly due to its 
+significantly higher consumption volumes compared to other 
+anesthetic gases.29
+Exploring the substitution of N2O with alternative anesthetic 
+gases holds potential benefits, potentially achieving equivalent 
+anesthetic effects with lower usage volumes, although this area 
+remains unexplored. To mitigate the environmental impact of 
+inhaled anesthetics, it is advisable to refrain from using N2O 
+and minimize unnecessarily high fresh gas flow (FGF) rates.
+Desflurane stands out with a significantly longer atmospheric 
+“lifetime” of 10 years compared to 1.2 years for sevoflurane 
+and 3.6 years for isoflurane. Considering the administered flow 
+rates, desflurane demonstrates approximately 26 times the 
+GWP of sevoflurane and 13 times the impact of isoflurane.29
+Low-flow anesthesia technique
+LFA techniques are gaining traction as an effective way to 
+minimize gas exposure and waste. By delivering anesthetic gases 
+at lower flow rates than conventional methods, healthcare 
+providers can significantly reduce consumption. These 
+techniques necessitate careful monitoring and adjustment to 
+maintain patient comfort and safety while conserving valuable 
+resources and minimizing environmental impact.
+Low-flow anesthesia can refer to any technique that uses an 
+FG flow that is lower than the alveolar ventilation (Table 2).43 
+LFA is defined as an inhalation anesthetic technique with total 
+FGFs of less than 2 L/min and at least 50% of expired gases 
+(including unabsorbed inhaled anesthetics and unconsumed 
+oxygen) returning to the lungs after CO2 is removed from the 
+circle by the CO2 absorbent in a closed circle system. So less 
+gas is released because more gases are recirculated around 
+a circle system when the FGF is low. This is the only way to 
+achieve the lowest possible emission of scavenged gases.44
+Figure 3｜  Greening the operating 
+room: sustainable anesthesia practices.
+Created with Microsoft PowerPoint 
+Version 2405. GWP: Global warming 
+potential.
+Minimizing Anesthetic Gas Exposure and Waste strategies
+Limit the Use 
+of Volatile
+Anesthetics
+with High 
+100-year
+GWP
+
+
+106  ｜MEDICAL GAS RESEARCH｜Vol 15｜No.1｜March 2025
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+As the uptake and metabolism are time-sensitive and 
+numerous factors affect the consumption and production 
+of gaseous components, it is difficult to control the dynamic 
+equilibrium of FG composition. This can only be accomplished 
+by frequently adjusting the gas flow controls. To calculate the 
+uptake of substances like oxygen, N2O, and volatile agents, 
+complicated equations are used. For the safe conduct of LFA, 
+monitoring inspired and end-tidal concentrations with a gas 
+analyzer is a more accurate and practical method.
+Use of volatile agents in low-flow anesthesia
+To optimize both financial and environmental benefits 
+associated with the utilization of volatile anesthetics, 
+Edmonds et al.38 propose maintaining an FGF rate of 0.5 L/min 
+for desflurane and keeping it below 1 L/min when isoflurane 
+is employed. Due to the possibility of compound A-induced 
+kidney injury, they also recommend using sevoflurane at an 
+FGF rate of 1 L/min when the required minimum alveolar 
+concentration hours are less than 2. However, it is important 
+to keep in mind that no evidence of compound A-induced 
+kidney damage that is clinically significant has been found in 
+humans.
+Advantages of low-flow anesthesia
+LFA offers a range of advantages, encompassing cost savings, 
+the prevention of environmental pollution, and substantial 
+physiological benefits. These physiological advantages 
+include improvements in the flow dynamics of inhaled gases, 
+enhanced mucociliary clearance, preservation of the structural 
+and functional integrity of respiratory tract epithelial cells, 
+augmentation of the heat and humidity of rebreathed gases, 
+retention of moisture in CO2 absorbent, and preservation of 
+body temperature.44
+Disadvantages of low-flow anesthesia
+Due to a longer time constant of the inhaled agents, a higher 
+consumption of CO2 absorbent, and a higher risk of hypercarbia 
+and CO2 rebreathing with frequent exhaustion of absorbers, 
+lower FGF causes a slower induction and emergence.44,45
+To prevent hypoxic mixtures and anesthetic agent under- 
+or over-dosage, constant attention and frequent flow 
+adjustments are necessary. Sevoflurane should not be used in 
+LFA and should be administered at > 1 L/min flows, according 
+to the U.S. Food and Drug Administration.
+To address the potential buildup of unfavorable gases like 
+carbon monoxide, methane, acetone, hydrogen, ethanol, 
+Compound A, argon, and nitrogen during anesthesia, it is 
+recommended to flush the circuit with high fresh gas flows 
+(FGFs) periodically.
+The following situations do not lend themselves to LFA 
+techniques46:
+a) LFA is not well-known to anesthesiologists.
+b) With a face mask, short-term anesthesia.
+c) Procedures involving gas leakage (such as bronchoscopies-
+laryngoscopies using a rigid bronchoscope).
+d) Patients experiencing intoxication should be administered 
+a total FGF exceeding 1 L/min to ensure a consistent washout 
+effect of alcohol.
+e) In order to prevent an unfavorable buildup of acetone in the 
+breathing system, patients in ketoacidosis may experience an 
+increase in their blood levels of acetone during anesthesia.
+Automated low-flow anesthesia
+Automated LFA techniques, employing devices that restrict 
+FGF and recirculate gases within closed systems, have 
+demonstrated efficacy in reducing volatile anesthetic 
+consumption, minimizing exposure to waste anesthetic gases, 
+and mitigating environmental pollution.44,47 These techniques 
+utilize proprietary software algorithms to regulate the 
+concentrations of end-tidal anesthetics and inspired oxygen. 
+In a comparative study of manual versus automated control, 
+the automated system significantly reduced GHG emissions 
+by 44%.48 A study further reveals a notable reduction in 
+desflurane consumption with these automated systems 
+compared to traditional LFA.49 Additionally, closed filling 
+systems for anesthetic vaporizers maintain waste gas exposure 
+below recommended levels. Anesthetic machines equipped 
+with end-tidal-controlled anesthesia autonomously adjust 
+target concentrations, diminishing the necessity for manual 
+interventions and enhancing overall anesthetic delivery 
+efficiency. In conclusion, automated LFA techniques offer 
+substantial benefits, including significant reductions in waste 
+gas and improved delivery efficiency.
+Several automated LFA machines presently available include 
+the Zeus® (Dräger, Lubeck, Germany), the Aisys® (GE, Madison, 
+WI, USA), and the Flow-i® (Maquet, Solna, Sweden).50 The 
+Zeus employs closed-circuit anesthesia, while the Aisys utilizes 
+Table 2｜Classification of fresh gas flows
+Category
+Fresh gas flow
+Remark
+High flow
+> 2 L/min
+For basic oxygen consumption, a total fresh gas flow of > 1–2 L/min is more than sufficient; however, this causes 
+unmetabolized gases to be released unfiltered into the atmosphere. There is no gas rebreathing.
+Medium flow
+1–2 L/min
+Low flow
+500–1000 mL/min
+The oxygen flow must be increased by 10% of total fresh gas flow if the inspiratory oxygen concentration falls 
+below 30% (and must be decreased by the same amount if N2O is administered).
+Minimal flow
+250–500 mL/min
+The oxygen flow must be increased by 50 mL of total fresh gas flow if the inspiratory oxygen concentration falls 
+below 30% (and decreased by the same amount if N2O is administered).
+Metabolic flow
+About 250 mL/min
+Since the absolute minimum amount of oxygen required per minute is 250 mL, oxygen should be the only carrier gas.
+Data were derived from Baker43 and Brattwall et al.45 N2O: Nitrous oxide.
+
+
+MEDICAL GAS RESEARCH｜Vol 15｜No.1｜March 2025｜107
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+minimal flow anesthesia with an FGF of 500 mL/min.
+The anesthesiologist first chooses a target O2%, either inspired 
+(Zeus) or end-expired (Aisys), as well as a target alveolar 
+concentration of inhaled anesthetic. Our automated low flow 
+armamentarium now includes this automated gas control, 
+which helps to reduce anesthetic waste, cost, and pollution 
+while lowering the ergonomic liability of LFA.50,51 Ventilators 
+without these built-in algorithms can still use LFA techniques.44
+Advanced scavenging systems
+These systems safely interface the anesthesia breathing 
+system with the hospital vacuum or other gas disposal 
+system.52 Adsorptive separation using various materials, such 
+as activated carbons, zeolites, and metal-organic frameworks, 
+has been identified as a potential solution for removing volatile 
+anesthetics from waste gas streams.53 Studies comparing 
+operating rooms with and without central scavenging systems 
+have shown that the use of these systems can decrease the 
+concentrations of anesthetics in the air, although they may not 
+always meet internationally recommended exposure limits.54 
+Overall, the implementation of central scavenging systems 
+and the development of innovative purification systems are 
+important steps toward reducing occupational exposure to 
+anesthetic gases in operating rooms.
+Vaporizer efficiency and modern technology
+Modern vaporizers such as the Aladin cassette vaporizer, 
+injection vaporizers, and Anesthetic Converting Device, 
+“AnaConDa” (Sedana Medical, Danderyd Sweden) are designed 
+to minimize waste anesthetic gases in the operating room.55
+The Aladin cassette vaporizer, integrated with DatexOhmeda 
+S/5 ADU (GE Healthcare, Chicago, IL, USA) and GE Aisys 
+(GE Healthcare) anesthesia machines, delivers set agent 
+concentrations accurately with low FGFs and possesses 
+enhanced safety features. Vaporization systems such as those 
+employed by Maquet and DIVA™ present a capability to rapidly 
+achieve the predetermined end-tidal agent concentration, 
+ensuring minimal wastage and theater pollution. AnaConDa™ 
+represents an integration of a vaporizer with a humidity and 
+moisture exchange filter designed for incorporation into the 
+ventilatory circuit. This system facilitates the administration 
+of a safe sedative dose, either isoflurane or sevoflurane, to 
+patients using existing critical care ventilators. This approach 
+not only reduces the overall quantity of anesthetic required 
+but also safeguards the care environment and healthcare 
+workers from undue exposure to these substances.
+These contemporary vaporization technologies offer efficient 
+and cost-effective means for delivering anesthetic gases, 
+concurrently minimizing waste within the operating room. In 
+the evolving landscape of healthcare data analytics, several 
+companies are now offer advanced software solutions for 
+perioperative care and anesthesia data analytics on a breath-
+by-breath basis, storing it in the Cloud, and analyzing it using 
+advanced algorithms for customer access through a web-
+based dashboard. This innovative approach aligns with the 
+broader trend of leveraging data analytics to enhance patient 
+care, streamline operations, and drive better outcomes in 
+healthcare settings. 
+Closed-loop anesthesia delivery systems
+This represents an innovative strategy for optimizing 
+gas administration. The approach encompasses the 
+measurement of diverse physiological parameters, including 
+the electrocardiogram waveform, pulse rate, blood pressure, 
+and body temperature, through various sensors placed on 
+the patient’s body. These measured parameters play a pivotal 
+role in governing the administration of anesthesia during 
+major surgical procedures, guaranteeing the maintenance of 
+the desired output level.56 In essence, these advancements 
+in anesthesia delivery systems, coupled with waste gas 
+treatment devices, collectively contribute to waste reduction 
+and enhanced cost savings within the confines of the 
+operating room.
+Comprehensive training and education
+It is imperative to educate and offer guidance to healthcare 
+practitioners on the critical significance of limiting exposure to 
+and managing anesthetic gases. Their education and training 
+can be effectively conducted by imparting knowledge on 
+waste segregation, providing customized propofol preparation 
+charts, and administering human factors training sessions. 
+Waste segregation education for anesthesia staff has been 
+shown to improve waste segregation compliance in the 
+operating room, increase waste management knowledge, 
+improve sharps waste bin compliance, and produce cost 
+savings.57 Customized propofol preparation charts can aid 
+anesthesia professionals in determining the approximate 
+requirement for the duration of a procedure, leading to waste 
+reduction and cost savings for healthcare organizations.58 
+Human factors training in the operative environment can 
+teach skills such as behaviors and attitudes, teamwork, 
+communication, situation awareness, and leadership, which 
+can help to improve patient safety in the operating room.59
+Routine maintenance and calibration
+It includes implementing scavenging systems and 
+administrative controls to minimize exposure to waste 
+anesthetic gases.60 Proper maintenance plans for heating, 
+ventilating, and air-conditioning systems also play a significant 
+role in creating favorable indoor environmental conditions 
+and controlling nosocomial infections.61 By applying condition-
+based maintenance techniques, hospitals can improve the 
+working practices of heating, ventilating, and air-conditioning 
+maintenance departments, optimize maintenance plans based 
+on equipment’s remaining useful life and associated costs, and 
+make informed decisions regarding equipment investment.62 
+Implementing these maintenance practices and controls 
+can help ensure the safe and efficient use of anesthesia 
+equipment, protecting the health and well-being of healthcare 
+personnel in the operating room.
+Waste gas monitoring and safety protocols
+Incorporating waste gas monitoring protocols enhances 
+
+
+108  ｜MEDICAL GAS RESEARCH｜Vol 15｜No.1｜March 2025
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+the ability to detect deviations from safe exposure limits. 
+Monitoring helps healthcare facilities promptly identify and 
+rectify any issues that may arise, ensuring the safety of both 
+patients and medical staff. Monitoring systems, such as 
+operating room monitoring systems, can be used to collect 
+data from sensor arrays placed around the operating room. 
+Analyzed data can help identify protocol violations and trigger 
+appropriate responses, such as adjusting heating, ventilating, 
+and air-conditioning equipment or providing visual or audible 
+alerts. Best practices, administrative controls, and engineering 
+controls should be implemented to prevent exposure to waste 
+anesthetic gases.63
+Institutional environmental responsibility
+This involves the implementation of sustainable anesthetic 
+strategies, conducting risk assessments, and conducting 
+technical controls.64 Sustainable anesthetic strategies 
+involve using LFA regimes and more sustainable alternatives 
+to halogen gases. Risk assessments help in predicting the 
+possible risk to personnel’s health and can guide decision-
+making regarding exposure to anesthetic gases. Technical 
+controls, such as regular inspection of ventilation systems, the 
+use of advanced ventilation systems, and continuous control 
+of anesthesia devices, can help minimize exposure to waste 
+anesthetic gases. Additionally, implementing the 5 R’s of waste 
+minimization (Reduce, Reuse, Recycle, Rethink, and Research) 
+in the operating room can reduce the environmental impact 
+of anesthesiology practice and decrease costs.65
+Research
+To lessen the environmental impact of the tools and 
+medications we use, research on green anesthesia is currently 
+being conducted. This involves evaluating the effectiveness of 
+waste segregation education for anesthesia staff in improving 
+waste management practices,66 rearranging patient care 
+pathways to lessen their carbon footprint,67 investigating the 
+use of total intravenous anesthesia and its effects on the 
+environment,65 comparing the environmental and financial 
+impact of disposable versus reusable medical devices in 
+terms of carbon footprint, energy and water consumption, 
+and waste generation,39 and so on. An understanding of more 
+sustainable anesthetic practices may be gained by initiating 
+or participating in these studies.
+Conclusion
+The strategies to minimize exposure and waste of anesthetic 
+gases represent a vital step towards creating a safer, more 
+efficient, and environmentally conscious healthcare system. 
+By integrating advanced technologies, emphasizing education 
+and training, and fostering a culture of responsibility, 
+healthcare facilities can achieve significant reductions 
+in both exposure risks for healthcare providers and the 
+environmental footprint of medical procedures. These 
+strategies underscore the potential for positive change within 
+the healthcare industry and its commitment to ensuring the 
+well-being of patients, medical personnel, and the planet. 
+As anesthesiologists, we should play a proactive role both at 
+work and outside of it to support environmental sustainability 
+and improve the world for the coming generations. The 
+review is primarily concerned with the environmental effect of 
+anesthesia, specifically the contribution of anesthetic gases to 
+greenhouse gas emissions. While this is a significant concern, 
+other environmental aspects of anesthesia practice, including 
+as waste management, energy consumption, and resource 
+exploitation, are still not well addressed in the literature.
+Acknowledgements: I would like to express my sincere gratitude to Ms. Asma 
+Hasnain (Aga Khan University Hospital) for their invaluable contributions and 
+support in the development of this article.
+Author contributions: Design, conception, acquisition, analysis of data, and 
+critical review: KS; drafting, acquisition, analysis of data and critical review: 
+MSY; acquisition of data and critical review: HU, SSA, KMS, and AL. All authors 
+critically reviewed and approved the final version of the manuscript for 
+publication. 
+Conflicts of interest: The authors declare no conflict of interest.
+Data availability statement: All relevant data are within the paper.
+Open access statement: This is an open access journal, and articles 
+are distributed under the terms of the Creative Commons Attribution-
+NonCommercial-ShareAlike 4.0 License, which allows others to remix, tweak, 
+and build upon the work non-commercially, as long as appropriate credit is 
+given and the new creations are licensed under the identical terms.
+References
+1.	
+Eckelman MJ, Sherman J. Environmental impacts of the U.S. Health Care 
+System and Effects on Public Health. PLoS One. 2016;11:e0157014.
+2.	
+Roa L, Velin L, Tudravu J, McClain CD, Bernstein A, Meara JG. Climate 
+change: challenges and opportunities to scale up surgical, obstetric, and 
+anaesthesia care globally. Lancet Planet Health. 2020;4:e538-e543.
+3.	
+Sherman JD, Ryan S. Ecological responsibility in anesthesia practice. Int 
+Anesthesiol Clin. 2010;48:139-151.
+4.	
+Hendrickx JFA, Jouwena J, De Hert S, De Wolf AM. Low flow anesthesia – 
+mission impossible? Acta Anaesthesiol Belg. 2023;74:35-41.
+5.	
+Ramalingam H, Vinayagam S, Manivannan K. A hidden danger of 
+delivering hypoxic gas mixture during low flow anaesthesia in modern 
+anaesthesia machine. Indian J Anaesth. 2022;66:677-678.
+6.	
+Kaşıkara H, Dumanlı Özcan AT, Biçer CK, et al. The effect of low flow 
+anesthesia with sevoflurane on oxidative status: A prospective, 
+randomized study. Saudi Med J. 2022;43:227-235.
+7.	
+Öterkuş M, Dönmez İ, Nadir AH, Rencüzoğulları İ, Karabağ Y, Binnetoğlu 
+K. The effect of low flow anesthesia on hemodynamic and peripheral 
+oxygenation parameters in obesity surgery. Saudi Med J. 2021;42:264-269.
+8.	
+Worthy DEJ, Rauh MK, Huang L, et al. Results of a long-term international 
+comparison of greenhouse gas and isotope measurements at the Global 
+Atmosphere Watch (GAW) Observatory in Alert, Nunavut, Canada. 
+Atmos Meas Tech. 2023;16:5909-5935.
+9.	
+Intergovernmental Panel on Climate Change (IPCC). Climate Change 
+2013 – The Physical Science Basis: Working Group I Contribution to the 
+Fifth Assessment Report of the Intergovernmental Panel on Climate 
+Change. Cambridge University Press. 2014.
+10.	 Ryan SM, Nielsen CJ. Global warming potential of inhaled anesthetics: 
+application to clinical use. Anesth Analg. 2010;111:92-98.
+11.	 Madronich S. UV radiation in the natural and perturbed atmosphere. In: 
+Tevini M, ed. Environmental effects of UV (ultraviolet) radiation. Boca 
+Raton: Lewis; 1993:17-69.
+12.	 Molina MJ, Rowland FS. Stratospheric sink for chlorofluoromethanes: 
+chlorine atom-catalysed destruction of ozone. Nature. 1974;249:810-812.
+13.	 Intergovernmental Panel on Climate Change. Global warming of 1.5 ºC. 
+https://www.ipcc.ch/sr15/. Accessed April 15, 2024.
+14.	 World Health Organization. Climate Change and Health: Key Facts. 
+https://www.who.int/news-room/fact-sheets/detail/climate-change-
+and-health. Accessed October 12, 2023.
+15.	 Juchem PP, Hochberg J, Winogron A, Ardenghy M, English R. Health risks 
+of ultraviolet radiation. Braz J Plast Surg. 1998;13:31-60.
+16.	 Chinedu AC, Amere LT, Jeminat S, Ololade F, Dandam KN. Anthropogenically 
+induced ecosystem dysfunction and human health. Afr J Environ Nat Sci Res. 
+2021;4:48-58.
+
+
+MEDICAL GAS RESEARCH｜Vol 15｜No.1｜March 2025｜109
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+17.	 Gaya da Costa M, Kalmar AF, Struys M. Inhaled anesthetics: environmental 
+role, occupational risk, and clinical use. J Clin Med. 2021;10:1306.
+18.	 U.S. Global Change Research Program. Fourth national climate 
+assessment. chapter 14: human health. https://nca2018.globalchange.
+gov/chapter/14/. Accessed November 23, 2018.
+19.	 Global Change Research Program. Atmospheric carbon dioxide. https://
+www.globalchange.gov/browse/indicators/atmospheric-carbon-dioxide. 
+Accessed October 7, 2022.
+20.	 Vollmer MK, Rhee TS, Rigby M, et al. Modern inhalation anesthetics: 
+Potent greenhouse gases in the global atmosphere. Geophys Res Lett. 
+2015;42:1606-1611.
+21.	 Pearson F, Sheridan N, Pierce JMT. Estimate of the total carbon footprint 
+and component carbon sources of different modes of labour analgesia. 
+Anaesthesia. 2022;77:486-488.
+22.	 Eckelman MJ, Sherman JD. Estimated Global Disease Burden From US 
+Health Care Sector Greenhouse Gas Emissions. Am J Public Health. 
+2018;108:S120-S122.
+23.	 Chung JW, Meltzer DO. Estimate of the carbon footprint of the US health 
+care sector. JAMA. 2009;302:1970-1972.
+24.	 World Resources Institute. World greenhouse gas emissions: 2016. 
+https://www.wri.org/data/world-greenhouse-gas-emissions-2016. 
+Accessed September 6, 2023.
+25.	 Varughese S, Ahmed R. Environmental and occupational considerations 
+of anesthesia: a narrative review and update. Anesth Analg. 
+2021;133:826-835.
+26.	 Holmer H, Bekele A, Hagander L, et al. Evaluating the collection, 
+comparability and findings of six global surgery indicators. Br J Surg. 
+2019;106:e138-e150.
+27.	 National Institute for Occupational Safety and Health. Waste anesthetic 
+gases–occupational hazards in hospitals. https://www.cdc.gov/niosh/
+docs/2007-151/default.html. Accessed September 6, 2023.
+28.	 Ishizawa Y. Special article: general anesthetic gases and the global 
+environment. Anesth Analg. 2011;112:213-217.
+29.	 Gadani H, Vyas A. Anesthetic gases and global warming: potentials, 
+prevention and future of anesthesia. Anesth Essays Res. 2011;5:5-10.
+30.	 Eckelman MJ, Sherman JD. Estimated global disease burden from US 
+Health Care Sector Greenhouse Gas Emissions. Am J Public Health. 
+2018;108:S120-S122.
+31.	 Sulbaek Andersen MP, Nielsen OJ, Wallington TJ, Karpichev B, Sander SP. 
+Medical intelligence article: assessing the impact on global climate from 
+general anesthetic gases. Anesth Analg. 2012;114:1081-1085.
+32.	 Yasny JS, White J. Environmental implications of anesthetic gases. Anesth 
+Prog. 2012;59:154-158.
+33.	 Pachauri RK, Meyer LA. Intergovernmental panel on climate change; 
+core writing team; climate change 2014: synthesis report. contribution 
+of working groups I, II and III to the Fifth Assessment Report of the 
+Intergovernmental Panel on Climate Change. 2015. https://www.ipcc.ch/
+report/ar5/syr/. Accessed October 5, 2022.
+34.	 Van Norman GA, Jackson S. The anesthesiologist and global climate 
+change: an ethical obligation to act. Curr Opin Anaesthesiol. 
+2020;33:577-583.
+35.	 United States Environmental Protection Agency. Understanding global 
+warming potentials. https://www.epa.gov/ghgemissions/understanding-
+global-warming-potentials. Accessed October 26, 2022.
+36.	 Self J. Calculating the carbon dioxide equivalent produced by vaporising 
+a bottle of desflurane. Anaesthesia. 2019;74:1479.
+37.	 Hanna M, Bryson GL. A long way to go: minimizing the carbon footprint 
+from anesthetic gases. Can J Anaesth. 2019;66:838-839.
+38.	 Edmonds A, Stambaugh H, Pettey S, Daratha KB. Evidence-based project: 
+cost savings and reduction in environmental release with low-flow 
+anesthesia. AANA J. 2021;89:27-33.
+39.	 McGain F, Muret J, Lawson C, Sherman JD. Environmental sustainability 
+in anaesthesia and critical care. Br J Anaesth. 2020;125:680-692.
+40.	 Lew V, McKay E, Maze M. Past, present, and future of nitrous oxide. Br 
+Med Bull. 2018;125:103-119.
+41.	 Margulies MSNCJ, Bahoravitch MSNCD, Collins PDNPCS, Hewer MSNCI. 
+Environment impact of inhaled anesthetics: A literature review. Anesth 
+Ejournal. 2017;5:1-4.
+42.	 Ravishankara AR, Daniel JS, Portmann RW. Nitrous oxide (N2O): the 
+dominant ozone-depleting substance emitted in the 21st century. 
+Science. 2009;326:123-125.
+43.	 Baker AB. Back to basics--a simplified non-mathematical approach to low 
+flow techniques in anaesthesia. Anaesth Intensive Care. 1994;22:394-
+395.
+44.	 Upadya M, Saneesh PJ. Low-flow anaesthesia - underused mode towards 
+“sustainable anaesthesia”. Indian J Anaesth. 2018;62:166-172.
+45.	 Brattwall M, Warrén-Stomberg M, Hesselvik F, Jakobsson J. Brief review: 
+theory and practice of minimal fresh gas flow anesthesia. Can J Anaesth. 
+2012;59:785-797.
+46.	 Hönemann C, Hagemann O, Doll D. Inhalational anaesthesia with low 
+fresh gas flow. Indian J Anaesth. 2013;57:345-350.
+47.	 Mostad D, Klepstad P, Follestad T, Pleym H. Desflurane consumption 
+with automated vapour control systems in two different anaesthesia 
+machines. A randomized controlled study. Acta Anaesthesiol Scand. 
+2021;65:895-901.
+48.	 Tay S, Weinberg L, Peyton P, Story D, Briedis J. Financial and 
+environmental costs of manual versus automated control of end-tidal 
+gas concentrations. Anaesth Intensive Care. 2013;41:95-101.
+49.	 Lucangelo U, Garufi G, Marras E, et al. End-tidal versus manually-
+controlled low-flow anaesthesia. J Clin Monit Comput. 2014;28:117-121.
+50.	 Meyer JU, Kullik G, Wruck N, Kück K, Manigel J. Advanced technologies 
+and devices for inhalational anesthetic drug dosing. Handb Exp 
+Pharmacol. 2008:451-470.
+51.	 Dehouwer A, Carette R, De Ridder S, De Wolf AM, Hendrickx JF. Accuracy 
+of inhaled agent usage displays of automated target control anesthesia 
+machines. J Clin Monit Comput. 2016;30:539-543.
+52.	 Eisenkraft JB, Loftus KM. 5 - Waste anesthetic gases and scavenging 
+systems. In: Ehrenwerth J, Eisenkraft JB, Berry JM, eds. Anesthesia 
+equipment (third edition). Philadelphia: W.B. Saunders; 2021:125-148.
+53.	 McGlothlin JD, Moenning JE, Cole SS. Evaluation and control of waste 
+anesthetic gases in the postanesthesia care unit. J Perianesth Nurs. 
+2014;29:298-312.
+54.	 Herzog-Niescery J, Vogelsang H, Gude P, et al. Environmental safety: Air 
+pollution while using MIRUS™ for short-term sedation in the ICU. Acta 
+Anaesthesiol Scand. 2019;63:86-92.
+55.	 Kundra P, Goswami S, Parameswari A. Advances in vaporisation: a 
+narrative review. Indian J Anaesth. 2020;64:171-180.
+56.	 Ghita M, Neckebroek M, Muresan C, Copot D. Closed-loop control of 
+anesthesia: survey on actual trends, challenges and perspectives. IEEE 
+Access. 2020;8:206264-206279.
+57.	 Plezia D, Sabol VK, Nelson C, Simmons VC. Improving waste segregation 
+in the operating room to decrease overhead cost. Qual Manag Health 
+Care. 2024;33:44-51.
+58.	 Chambers E, Fitzhenry J, Lincul D. Propofol waste reduction in the 
+operating room. AANA J. 2022;90:411-416.
+59.	 Lee A, Finstad A, Tipney B, et al. Exploring human factors in the operating 
+room: scoping review of training offerings for healthcare professionals. 
+BJS Open. 2022;6:zrac011.
+60.	 Chaminda JLP. Hospital equipment management system for a poor 
+resource setting. IJSRP. 2021;11:667-669.
+61.	 Siha MS, Farahat SA, Rashed LA, Helmy NM. Study of some health 
+hazards among operating theater personnel due to exposure to 
+anesthetic gases (Part I). Egypt J Occup Med. 2018;42:303-326.
+62.	 Sánchez-Barroso G, Sanz-Calcedo JG. Application of predictive 
+maintenance in hospital heating, ventilation and air conditioning 
+facilities. Emerg Sci J. 2019;3:337-343.
+63.	 Block JAW, Greeley DG. Monitoring and enforcing infection safety 
+procedures in operating rooms. United States Patent US 17/776,951.
+64.	 Kallio H, Pietilä AM, Johnson M, Kangasniemi M. Environmental 
+responsibility in hospital care: Findings from a qualitative study. J Hosp 
+Adm. 2018;7:56-69.
+65.	 Beloeil H, Albaladejo P. Initiatives to broaden safety concerns in 
+anaesthetic practice: The green operating room. Best Pract Res Clin 
+Anaesthesiol. 2021;35:83-91.
+66.	 White SM, Shelton CL, Gelb AW, et al. Principles of environmentally-
+sustainable anaesthesia: a global consensus statement from the World 
+Federation of Societies of Anaesthesiologists. Anaesthesia. 2022;77:201-
+212.
+67.	 Reynier T, Berahou M, Albaladejo P, Beloeil H. Moving towards green 
+anaesthesia: Are patient safety and environmentally friendly practices 
+compatible? A focus on single-use devices. Anaesth Crit Care Pain Med. 
+2021;40:100907.

@@ -64,3 +64,65 @@ def get_existing_primary(project_id: str):
         "masterSheet": df.to_dict(orient="records"),
         "excelFile": base64.b64encode(excel_bytes).decode(),
     }
+
+
+
+#MyChanges KB
+
+@router.get("/article")
+def get_primary_article(project_id: str, pmid: str):
+    path = f"database/{project_id}/primary/screening_results.xlsx"
+    if not os.path.exists(path):
+        return {"found": False}
+
+    df = pd.read_excel(path).fillna("")
+    row = df[df["PMID"].astype(str) == str(pmid)]
+
+    if row.empty:
+        return {"found": False}
+
+    return {
+        "found": True,
+        "article": row.iloc[0].to_dict()
+    }
+
+
+@router.post("/decision")
+def update_decision(
+    project_id: str = Form(...),
+    pmid: str = Form(...),
+    decision: str = Form(...),
+    reason: str = Form("")
+):
+    path = f"database/{project_id}/primary/screening_results.xlsx"
+    df = pd.read_excel(path).fillna("")
+
+    idx = df[df["PMID"].astype(str) == str(pmid)].index
+    if len(idx) == 0:
+        return {"updated": False}
+
+    df.loc[idx, "Decision"] = decision
+    df.loc[idx, "OverrideReason"] = reason
+
+    df.to_excel(path, index=False)
+    return {"updated": True}
+
+
+@router.get("/page")
+def get_primary_page(
+    project_id: str,
+    page: int = 1,
+    size: int = 20
+):
+    path = f"database/{project_id}/primary/screening_results.xlsx"
+    df = pd.read_excel(path).fillna("")
+
+    start = (page - 1) * size
+    end = start + size
+
+    return {
+        "total": len(df),
+        "page": page,
+        "size": size,
+        "rows": df.iloc[start:end].to_dict(orient="records")
+    }
