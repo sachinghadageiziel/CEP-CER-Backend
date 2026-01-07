@@ -1,79 +1,134 @@
-from fastapi import APIRouter, UploadFile, File, Form
-import os
-import base64
+from fastapi import APIRouter, UploadFile, File, Form, Depends, HTTPException
+from sqlalchemy.orm import Session
+from io import BytesIO
 import pandas as pd
 
-from services.project_paths import ensure_project_folders
+from db.database import get_db
+from db.models import LiteratureKeyword  #  UPDATED IMPORT
 from literature.pubmed_runner import run_pubmed_pipeline
+from db.models.literature_results_model import LiteratureResult
 
-router = APIRouter(prefix="/api/literature", tags=["Literature Screening"])
+
+router = APIRouter(
+    prefix="/api/literature",
+    tags=["Literature Screening"]
+)
 
 
-@router.post("/run")
-async def run_pipeline(
+@router.post("/upload-keywords")
+async def upload_keywords(
     project_id: str = Form(...),
     keywordsFile: UploadFile = File(...),
-    applyDateFilter: str = Form("false"),
-    fromDate: str = Form(""),
-    toDate: str = Form(""),
-    abstract: str = Form("false"),
-    freeFullText: str = Form("false"),
-    fullText: str = Form("false"),
+    db: Session = Depends(get_db)
 ):
+    #  ALWAYS read file as bytes first
+    file_bytes = await keywordsFile.read()
 
-    paths = ensure_project_folders(project_id)
-    literature_folder = paths["literature"]
+    if not file_bytes:
+        raise HTTPException(status_code=400, detail="Empty file uploaded")
 
-    # Save uploaded keywords file inside correct folder
-    keywords_path = os.path.join(literature_folder, "keywords.xlsx")
-    with open(keywords_path, "wb") as f:
-        f.write(await keywordsFile.read())
+    #  Read Excel safely
+    try:
+        df = pd.read_excel(BytesIO(file_bytes))
+    except Exception as e:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Invalid Excel file: {str(e)}"
+        )
 
-    # Convert string to boolean
-    def to_bool(v):
-        return v.lower() == "true"
+    # Normalize column names
+    df.columns = [c.strip() for c in df.columns]
 
-    params = {
-        "applyDateFilter": to_bool(applyDateFilter),
-        "fromDate": fromDate,
-        "toDate": toDate,
-        "abstract": to_bool(abstract),
-        "freeFullText": to_bool(freeFullText),
-        "fullText": to_bool(fullText),
-    }
+    # Required columns
+    required_cols = ["Keyword No.", "Keywords"]
+    for col in required_cols:
+        if col not in df.columns:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Missing required column: {col}"
+            )
 
-    # Run pipeline and save Excel inside literature/
-    excel_path = run_pubmed_pipeline(
-        keywords_path,
-        literature_folder,
-        params,
-        project_id
-    )
+    inserted = 0
 
-    # Return as base64
-    with open(excel_path, "rb") as f:
-        excel_bytes = f.read()
+    # Optional: remove old keywords for same project
+    db.query(LiteratureKeyword).filter(
+        LiteratureKeyword.project_id == project_id
+    ).delete()
+
+    # Insert rows
+    for _, row in df.iterrows():
+        keyword = LiteratureKeyword(
+            project_id=project_id,
+            keyword_no=str(row.get("Keyword No.", "")).strip(),
+            keyword=str(row.get("Keywords", "")).strip(),
+            filters=str(row.get("Filters", "")).strip(),
+            date_range=str(row.get("Date Range", "")).strip(),
+        )
+        db.add(keyword)
+        inserted += 1
+
+    db.commit()
 
     return {
         "status": "success",
-        "excelFile": base64.b64encode(excel_bytes).decode()
+        "project_id": project_id,
+        "keywords_inserted": inserted
     }
 
 
+@router.post("/screen")
+def run_literature_screening(
+    project_id: str,
+    db: Session = Depends(get_db)
+):
+    try:
+        inserted = run_pubmed_pipeline(project_id, db)
+
+        return {
+            "status": "success",
+            "project_id": project_id,
+            "records_saved": inserted
+        }
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
 @router.get("/existing")
-def get_existing(project_id: str):
-    master_path = f"database/{project_id}/literature/All-Merged.xlsx"
+def get_existing_literature(
+    project_id: str,
+    db: Session = Depends(get_db)
+):
+    results = (
+        db.query(LiteratureResult)
+        .filter(LiteratureResult.project_id == project_id)
+        .all()
+    )
 
-    if not os.path.exists(master_path):
-        return {"exists": False}
+    if not results:
+        return {
+            "exists": False,
+            "project_id": project_id,
+            "masterSheet": []
+        }
 
-    df = pd.read_excel(master_path).fillna("")
-
-    with open(master_path, "rb") as f:
-        excel_bytes = f.read()
+    df = pd.DataFrame([
+        {
+            "PMID": r.pmid,
+            "Title": r.title,
+            "Abstract": r.abstract,
+            "Journal": r.journal,
+            "Publication Year": r.publication_year,  # ✅ FIXED
+            "Authors": r.authors,
+            "Source": r.source,
+            "Keyword ID": r.keyword_id,
+        }
+        for r in results
+    ])
 
     return {
         "exists": True,
-        "masterSheet": df.to_dict(orient="records"),
-        "excelFile": base64.b64encode(excel_bytes).decode(),
+        "project_id": project_id,
+        "total_records": len(df),
+        "masterSheet": df.fillna("").to_dict(orient="records")
     }
+

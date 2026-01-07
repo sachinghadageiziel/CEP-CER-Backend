@@ -1,10 +1,21 @@
-from fastapi import APIRouter, Form
-import os
-import json
-from pathlib import Path
-from services.project_paths import ensure_base_structure, ensure_project_folders, PROJECTS_FILE, BASE_DIR
+from fastapi import APIRouter, Form, Depends
+from sqlalchemy.orm import Session
+
+from db.database import SessionLocal
+from db.models.project_model import Project
 
 router = APIRouter(prefix="/api/projects", tags=["Projects"])
+
+
+# =====================================================
+# DB SESSION DEPENDENCY
+# =====================================================
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
 
 
 # =====================================================
@@ -15,41 +26,38 @@ def create_project(
     title: str = Form(...),
     duration: str = Form(""),
     description: str = Form(""),
-    owner: str = Form("")
+    owner: str = Form(""),
+    db: Session = Depends(get_db)
 ):
-    ensure_base_structure()
+    # Count existing projects
+    count = db.query(Project).count()
 
-    # Load existing list
-    data = json.loads(Path(PROJECTS_FILE).read_text())
-    existing = data["projects"]
+    # Generate project ID → PRJ-001, PRJ-002 ...
+    project_id = f"PRJ-{count + 1:03d}"
 
-    # Generate next project ID: PRJ-001, PRJ-002 ...
-    next_num = len(existing) + 1
-    project_id = f"PRJ-{next_num:03d}"
+    project = Project(
+        id=project_id,
+        title=title,
+        duration=duration,
+        description=description,
+        owner=owner,
+        status="Active"
+    )
 
-    # Create project folder structure
-    paths = ensure_project_folders(project_id)
-
-    # Save meta.json
-    meta = {
-        "id": project_id,
-        "title": title,
-        "duration": duration,
-        "description": description,
-        "owner": owner,
-        "status": "Active"
-    }
-
-    with open(os.path.join(paths["root"], "meta.json"), "w") as f:
-        json.dump(meta, f, indent=4)
-
-    # Append to projects.json
-    existing.append(meta)
-    Path(PROJECTS_FILE).write_text(json.dumps({"projects": existing}, indent=4))
+    db.add(project)
+    db.commit()
+    db.refresh(project)
 
     return {
         "status": "success",
-        "project": meta
+        "project": {
+            "id": project.id,
+            "title": project.title,
+            "duration": project.duration,
+            "description": project.description,
+            "owner": project.owner,
+            "status": project.status
+        }
     }
 
 
@@ -57,11 +65,19 @@ def create_project(
 # GET LIST OF PROJECTS
 # =====================================================
 @router.get("/list")
-def list_projects():
-    ensure_base_structure()
+def list_projects(db: Session = Depends(get_db)):
+    projects = db.query(Project).all()
 
-    if not PROJECTS_FILE.exists():
-        return {"projects": []}
-
-    data = json.loads(Path(PROJECTS_FILE).read_text())
-    return data
+    return {
+        "projects": [
+            {
+                "id": p.id,
+                "title": p.title,
+                "duration": p.duration,
+                "description": p.description,
+                "owner": p.owner,
+                "status": p.status
+            }
+            for p in projects
+        ]
+    }
