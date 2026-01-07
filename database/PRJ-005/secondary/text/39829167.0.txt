@@ -1,0 +1,1034 @@
+318  ｜© 2025 MEDICAL GAS RESEARCH | Published by Wolters Kluwer - Medknow
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+Recent advances in medical gas sensing with artificial 
+intelligence–enabled technology
+Abstract  
+Recent advancements in artificial intelligence–enabled medical gas sensing have led to enhanced 
+accuracy, safety, and efficiency in healthcare. Medical gases, including oxygen, nitrous oxide, and 
+carbon dioxide, are essential for various treatments but pose health risks if improperly managed. 
+This review highlights the integration of artificial intelligence in medical gas sensing, enhancing 
+traditional sensors through advanced data processing, pattern recognition, and real-time 
+monitoring capabilities. Artificial intelligence improves the ability to detect harmful gas levels, 
+enabling immediate intervention to prevent adverse health effects. Moreover, developments in 
+nanotechnology have resulted in advanced materials, such as metal oxides and carbon-based 
+nanomaterials, which increase sensitivity and selectivity. These innovations, combined with 
+artificial intelligence, support continuous patient monitoring and predictive diagnostics, paving 
+the way for future breakthroughs in medical care.
+Key Words: artificial intelligence; healthcare diagnostics; medical gas sensing; nanotechnology
+https://doi.org/10.4103/mgr.MEDGASRES-D-24-00113
+Date of submission: November 4, 2024
+Date of decision: November 23, 2024
+Date of acceptance: December 6, 2024
+Date of web publication: January 18, 2025 
+Paris Saclay Institute of Neuroscience, Saclay, France
+*Correspondence to: Chitaranjan Mahapatra, PhD, cmahapatra@ieee.org.
+https://orcid.org/0000-0002-1769-5828 (Chitaranjan Mahapatra) 
+How to cite this article: Mahapatra C. Recent advances in medical gas sensing with artificial intelligence–enabled technology. Med Gas Res. 2025;15(2):318-
+326. 
+Chitaranjan Mahapatra*
+Introduction
+Medical gases are fundamental in healthcare, supporting 
+a range of treatments from respiratory assistance to 
+anesthesia and diagnostics. Oxygen (O₂) is crucial for 
+patients needing supplemental O₂ due to low blood oxygen 
+levels, while nitrous oxide (N₂O) is a common anesthetic 
+and analgesic in both dental and surgical settings. Carbon 
+dioxide (CO₂) is used in minimally invasive surgeries to 
+expand body cavities, allowing better visualization, while 
+helium mixed with O₂ can help alleviate airflow resistance in 
+patients with obstructed breathing conditions. Medical air 
+is administered to aid breathing without causing hypoxia, 
+and nitrogen is often applied to power medical devices or; 
+preserve biological samples through freezing. Despite their 
+benefits, these gases pose significant health risks when 
+misused or overexposed. Medical gases, when improperly 
+used or overexposed, can lead to a range of serious health 
+issues. Neurological disorders may arise from exposure to 
+N₂O, which can cause neurological deficits and cognitive 
+impairments with prolonged use.1 Cardiovascular disorders 
+are linked to air pollutants and particulate matter, which 
+exacerbate ischemic heart disease and increase the risk of 
+heart attacks.2 Furthermore, certain gases can contribute to 
+inflammation and cancer development, particularly when 
+they introduce harmful substances like heavy metals into 
+the body.3 Gastrointestinal issues may also occur as a result 
+of exposure to toxic gases, affecting digestion and organ 
+function.4 Additionally, medical gases have been implicated in 
+nephrological disorders and complications during pregnancy, 
+as toxic exposures can adversely affect kidney function and 
+fetal development.5 High O₂ levels can cause O₂ toxicity, 
+leading to lung damage and oxidative stress, especially under 
+hyperbaric conditions. Prolonged exposure to N₂O can lead 
+to neurological damage and anemia, while excess CO₂ can 
+result in respiratory acidosis and consciousness loss. Helium, 
+although inert, can cause suffocation if inhaled in confined 
+spaces without O₂, and nitrogen poses similar risks in closed 
+environments by displacing O₂. The health risks associated 
+with medical gas exposure underline the need for careful 
+management and strict adherence to safety protocols in 
+healthcare settings to ensure the well-being of both patients 
+and medical professionals. Although specific global data on 
+deaths solely from medical gas exposure is limited, general 
+cases of toxic gas exposure (including gases like CO₂ is used in 
+minimally invasive surgeries to expand body cavities, allowing 
+better visualization) are significant. For example, unintentional 
+carbon monoxide poisoning alone had a global mortality rate 
+of approximately 0.366 per 100,000 in 2021.6 Long-term air 
+pollution exposure, including medical and industrial gases, 
+is linked to millions of premature deaths worldwide due to 
+respiratory and cardiovascular conditions.7
+Accurate sensing of medical gases is critical in healthcare 
+to prevent gas-related pathological conditions and ensure 
+patient and staff safety. Monitoring systems detect and 
+measure gas concentrations, preventing excessive exposure 
+to gases which can lead to serious health complications. 
+Advanced gas detection systems also reduce the risk of 
+accidental leaks or accumulation of gases in confined areas, 
+which could otherwise cause suffocation or explosive hazards. 
+By enabling real-time data on gas levels, these sensors 
+ensure that gases are administered within safe limits and 
+help healthcare facilities maintain regulatory compliance and 
+effective risk management protocols for patient care and 
+environmental safety.8 Medical gas sensors also play a critical 
+
+
+MEDICAL GAS RESEARCH｜Vol 15｜No.2｜June 2025｜319
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+role in monitoring specific biomarkers in the human body, 
+particularly volatile organic compounds (VOCs) that can signal 
+various diseases.9 Traditionally, gas sensing relied on detecting 
+concentration levels through chemical reactions or resistance 
+changes. However, recent advancements have seen artificial 
+intelligence (AI) integration in these sensors, enhancing their 
+capabilities by introducing complex data processing and 
+pattern recognition. AI enables sensors to discern complex 
+gas patterns that would otherwise go undetected, making 
+it a valuable asset in healthcare diagnostics AI significantly 
+enhances sensor capabilities by improving data processing, 
+enabling sophisticated pattern recognition, and facilitating 
+real-time diagnostics. Through advanced algorithms, 
+AI empowers sensors to analyze large volumes of data 
+quickly and accurately, which allows for the detection of 
+subtle changes that may indicate underlying issues.10 This 
+capability is crucial in various fields, particularly healthcare, 
+where timely insights can lead to better patient outcomes. 
+Moreover, the  ability of AI to recognize patterns in sensor 
+data can help identify anomalies and trends, thus enhancing 
+predictive maintenance and operational efficiency.11 Real-
+time diagnostics are further bolstered by AI, as it can process 
+incoming data instantaneously, providing immediate feedback 
+that aids in swift decision-making and intervention.12 Despite 
+the rapid advancements AI applications within the field 
+of medical gas sensing, there remains a significant gap in 
+comprehensive literature reviews that systematically address 
+this intersection. Current studies primarily focus on the 
+technical aspects of gas sensing and AI independently, rather 
+than exploring their combined applications in healthcare 
+settings. This lack of thorough review creates a barrier to 
+understanding the full potential and challenges of integrating 
+AI into medical gas monitoring systems. We aim to conduct 
+a detailed literature study that synthesizes existing research, 
+highlights successful implementations, and identifies areas 
+needing further exploration. By filling this gap, we hope to 
+provide valuable insights that can guide future research and 
+enhance the development of AI-enabled medical gas sensors.
+Data and Methods
+We conducted an extensive review of the MEDLINE database 
+via PubMed, focusing on English-language publications of 
+any date. Our primary aim was to examine the behavior 
+and interactions of key medical gases, including oxygen, 
+nitric oxide, nitrous oxide, carbon dioxide, and xenon. We 
+explored both conventional and advanced methodologies 
+for measuring these gases and included research on AI and 
+machine learning (ML)–enhanced methods for sensing 
+biological and medical gases. Studies were rigorously screened 
+to exclude duplicates and non-English texts, with preference 
+given to the most current and detailed articles where overlaps 
+occurred. For inclusion, studies needed to be original research 
+or clinical trials, both randomized and non-randomized, 
+as well as experimental studies, prospective observational 
+and retrospective cohort studies, case-control studies, and 
+review articles on medical gas sensing. Each qualifying study 
+underwent detailed analysis, and supplementary references 
+were consulted to ensure a thorough understanding of the 
+topic.
+Technological Innovations in Medical Gas 
+Sensing Materials
+Recent advancements in nanostructured materials and 
+polymers have significantly enhanced medical gas sensing 
+technologies, leading to improved sensitivity and selectivity. 
+Researchers are increasingly utilizing nanomaterials such as 
+nanowires, nanorods, and carbon-based structures due to 
+their high surface area-to-volume ratio, which facilitates better 
+gas adsorption and detection capabilities.13 These materials 
+often exhibit unique electrical, thermal, and optical properties 
+that can be fine-tuned for specific gas-sensing applications. 
+Moreover, the integration of conductive polymers with 
+nanostructures is proving beneficial, as these composites can 
+enhance the overall performance of gas sensors by improving 
+response times and stability under varying environmental 
+conditions.14 Collectively, these developments pave the way 
+for the creation of more efficient, miniaturized, and cost-
+effective gas-sensing devices that are essential for various 
+applications, including environmental monitoring and 
+healthcare.15 Advances in nanotechnology have enabled the 
+development of highly effective materials for gas sensing 
+applications, particularly metal oxides and carbon-based 
+nanomaterials. 
+Sensitivity and surface reactivity of metal oxides
+Metal oxides, including tin oxide, zinc oxide, and titanium 
+oxide, are widely used in gas sensors due to their high 
+sensitivity. Their large surface-to-volume ratio enhances 
+interactions with gas molecules, making it possible to detect 
+low concentrations of gases. When a target gas interacts with 
+the metal oxide surface, a change in conductivity occurs, 
+which the sensor measures. This makes metal oxides highly 
+responsive to toxic gases such as carbon monoxide, ammonia, 
+and nitrogen dioxide, even at trace levels. Moreover, these 
+materials can be tailored to respond selectively to specific 
+gases by modifying their surface properties, doping with other 
+metals, or using catalysts, thus improving detection accuracy 
+for particular applications, such as environmental monitoring 
+or health diagnostics.16 
+Carbon-based nanomaterials for volatile organic compound 
+detection
+Carbon-based nanomaterials, including carbon nanotubes 
+and graphene, exhibit exceptional electrical and thermal 
+properties, which are ideal for gas sensing. The molecular 
+structure of carbon nanotubes and graphene provides an 
+expansive surface area for gas adsorption, and their electrical 
+conductivity changes upon gas molecule interaction. These 
+nanomaterials can detect VOCs, which are biomarkers for 
+diseases like asthma and other respiratory conditions, by 
+identifying unique compounds in exhaled breath. Additionally, 
+they are effective in detecting VOCs related to environmental 
+pollution, offering a powerful tool for maintaining air 
+quality.17 
+High selectivity through functionalization
+Both metal oxides and carbon–based nanomaterials can 
+be functionalized to improve selectivity, which is critical 
+for distinguishing between similar gases. Functionalization 
+
+
+320  ｜MEDICAL GAS RESEARCH｜Vol 15｜No.2｜June 2025
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+involves attaching specific chemical groups or nanostructures 
+to the sensor material, enhancing its selectivity for a 
+particular target gas. This characteristic is crucial in medical 
+diagnostics, where detecting specific VOCs in the breath can 
+signal the presence of disease. Metal oxides can be selectively 
+modified to respond to individual gases, while carbon-based 
+nanomaterials can be tailored to enhance detection of VOCs 
+linked to metabolic or infection-related biomarkers.18
+Stability and longevity
+Metal oxides and carbon nanomaterials exhibit excellent 
+stability, which is beneficial for sensors requiring long-term 
+use in harsh conditions. Metal oxides, are durable under 
+various environmental conditions, allowing for continuous 
+monitoring of toxic gases without significant degradation. 
+Similarly, carbon-based nanomaterials resist oxidation 
+and maintain performance over extended periods, which 
+is advantageous for medical diagnostics and industrial 
+applications.19
+Potential in data analysis and predictive modeling
+Sensors based on metal oxides and carbon nanomaterials 
+contribute data that, when analyzed with predictive modeling, 
+can indicate trends or predict hazardous events.20 For 
+instance, in healthcare, continuous monitoring of VOCs can 
+provide data for predictive models to assess patient health 
+status over time. In industrial settings, real-time data from 
+sensors can predict toxic gas leaks, enhancing safety and 
+preventative measures.21
+Artificial Intelligence, Machine Learning, and 
+Neural Networks for Medical Gas Sensing
+AI encompasses a broad range of technologies aimed at 
+enabling machines to perform tasks that requires human-
+like intelligence. Key areas in AI include natural language 
+processing, computer vision, and decision-making, all of 
+which depend on complex algorithms and large data sets. AI 
+seeks to automate processes, make predictions, and perform 
+cognitive tasks, with applications spanning healthcare, 
+finance, manufacturing, and beyond. In recent years, 
+advancements in AI have led to the development of systems 
+that can analyze vast amounts of data, find patterns, and 
+make informed decisions faster and often more accurately 
+than humans can.22 In an AI system, knowledge, algorithms, 
+and goals are essential inputs that guide the agent’s actions. 
+Knowledge provides the agent with background information 
+and rules, algorithms enable it to process inputs and make 
+decisions, and goals define the desired outcomes. The 
+agent interacts within an environment where it perceives 
+observations, like data from sensors or external stimuli, to 
+determine appropriate actions. Forward feedback occurs 
+as the agent’s actions influence the environment, while 
+backward feedback provides information about the success 
+of its actions, helping to adjust future decisions. In a block 
+diagram (Figure 1), this flow can be visualized with nodes for 
+input (knowledge, algorithm, goals), processing (decision-
+making of agent), and output (actions and feedback loop 
+from the environment). Table 1 outlines various applications 
+of AI within the healthcare system.
+Figure 1 ｜Basic block diagram of an AI system
+The flow diagram is visualized with nodes for input (knowledge, 
+algorithm, goals), processing (decision-making of agent), and output 
+(actions and feedback loop from the environment). AI: Artificial 
+intelligence.
+Table 1 ｜AI applications in healthcare
+Healthcare 
+applications
+Detailed description
+1
+Drug discovery 
+Speed up drug discovery and repurposing by 
+using large-scale compound databases to screen 
+chemicals and forecast their potential effects and 
+interactions.
+2
+AI-assisted 
+robotic surgery
+Enable surgical robots to deliver real-time 
+feedback to surgeons, enhancing precision and 
+minimizing invasiveness in procedures.
+3
+Virtual nursing 
+assistants
+Track patients' health status, respond to their 
+questions, send medication reminders, and notify 
+medical staff when necessary.
+4
+Imaging analysis
+Detect abnormalities, lower radiation exposure, 
+and enhance image clarity across CT, MRI, and 
+ultrasound imaging techniques.
+5
+Forecasting 
+kidney disease 
+Assess the likelihood of chronic kidney disease or 
+kidney failure using indicators like blood pressure, 
+glucose levels, and demographic factors.
+6
+Connected 
+medical devices
+Gather and evaluate data from wearable devices, 
+such as smartwatches, that monitor vital signs, 
+physical activity, and various health metrics.
+7
+Preliminary 
+diagnosis
+Evaluate symptoms, medical history, and test 
+results to determine a potential diagnosis or 
+create a list of differential diagnoses for patients.
+8
+Prescription error 
+recognition
+Identify and prevent medication prescribing 
+and dispensing errors, including potential drug 
+interactions, allergies, and dosage miscalculations.
+9
+Researching and 
+treating cancer
+Examine genomic information, detect mutations, 
+categorize tumors, suggest tailored therapies, and 
+track patient responses in cancer care.
+AI: Artificial intelligence; CT: computed tomography; MRI: magnetic resonance 
+imaging.
+ML is a subset of AI focused on developing algorithms 
+that enable systems to learn from data and improve their 
+performance over time without explicit programming. 
+ML algorithms analyze data, detect patterns, and make 
+predictions by adjusting parameters based on feedback from 
+their performance. These algorithms are categorized into 
+supervised, unsupervised, and reinforcement learning, each 
+used for different types of tasks and data structures. ML is 
+widely applied in areas such as recommendation systems, 
+fraud detection, and medical diagnosis, helping systems adapt 
+and evolve in response to new data.22 Figure 2 illustrates a 
+structured process for data generation, processing, model 
+training, evaluation, and system control, divided into three 
+
+
+MEDICAL GAS RESEARCH｜Vol 15｜No.2｜June 2025｜321
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+phases: data processing, training, and testing. Initially, 
+the system generates raw data, which is then processed 
+by extracting relevant features and targets, followed by 
+data cleaning, and the application of feature importance 
+techniques to enhance the data quality. In the training phase, 
+models are developed to estimate specific targets, such 
+as output power, coupling coefficient, and load resistance. 
+These models are evaluated based on accuracy. In the testing 
+phase, the system uses these trained models to process test 
+data, identify the on and off regions, and decide whether the 
+system should be turned on or off. If conditions are met, the 
+system activates; otherwise, it shuts down, forming a feedback 
+loop for continuous operation and decision-making.
+layer (red node) combines the outputs of the hidden layer 
+using another set of weights, known as linear weights, to 
+produce a final output. This structure allows networks to 
+approximate complex functions and patterns by leveraging 
+localized responses in the hidden layer, making them suitable 
+for tasks like function approximation, pattern recognition, and 
+time-series prediction.
+Neural networks, inspired by the structure of the human 
+brain, are a crucial aspect of deep learning within ML. They 
+consist of layers of interconnected nodes (or “neurons”) that 
+process input data in ways that mimic how neurons process 
+signals. Through multiple layers and adjustments based 
+on training data, neural networks can recognize complex 
+patterns and perform sophisticated tasks, such as image and 
+speech recognition. By using backpropagation and gradient 
+descent, neural networks fine-tune their internal parameters 
+to reduce error rates, becoming more accurate over time. 
+These networks have led to significant advances in fields 
+like autonomous vehicles and medical imaging.23 Figure 3 
+illustrates a simple neural network, which consists of three 
+main layers: the input layer, the hidden layer, and the output 
+layer. The input layer receives multiple input signals (orange 
+nodes), which are then processed through a set of weight-
+based functions in the hidden layer (blue nodes). The output 
+In AI-enabled medical gas sensing, commonly used advanced 
+ML algorithms techniques include convolutional neural 
+networks (CNNs), recurrent neural networks, and support 
+vector machines (SVMs).24 CNNs excel at recognizing spatial 
+patterns and gas distributions, while recurrent neural 
+networks are well-suited for analyzing temporal data, enabling 
+real-time monitoring of gas concentration changes.24,25 
+SVMs are particularly effective for classification tasks, such 
+as differentiating various gas types or diagnosing medical 
+conditions based on sensor readings.26 These advanced 
+methods address the limitations of traditional approaches, 
+which are often constrained by linear modeling, noise 
+interference, and poor accuracy in dynamic or multi-gas 
+settings. By leveraging capabilities such as noise reduction, 
+complex pattern recognition, and predictive analysis, these 
+algorithms enable more precise, adaptable, and efficient 
+detection. For instance, ML models trained on extensive 
+datasets can discern subtle gas concentration variations linked 
+to specific health conditions.27 This adaptability and accuracy 
+provide a significant advantage in medical applications where 
+sensitivity and reliability are critical. AI is also revolutionizing 
+the field of medical gas sensing by enhancing signal 
+transduction techniques and data interpretation capabilities. 
+This development is leading to significant improvements in 
+sensitivity, specificity, and real-time data processing. These 
+advancements are critical in fields such as medical diagnostics, 
+environmental monitoring, and biochemical sensing, where 
+precise and timely detection of target molecules or biomarkers 
+is essential.
+Figure 2 ｜Block diagram of the machine learning process.
+It illustrates a structured process for data generation, processing, 
+model training, evaluation, and system control, which is divided 
+into three phases: data processing, training, and testing. A detailed 
+description is mentioned in the previous paragraph.
+Figure 3 ｜Block diagram of artificial neural network.
+It consists of three main layers: the input layer, the hidden layer, 
+and the output layer. The input layer receives multiple input signals 
+(orange nodes), which are then processed through a set of weight-
+based functions in the hidden layer (blue nodes). The output layer 
+(red node) combines the outputs of the hidden layer using another 
+set of weights, known as linear weights, to produce a final output.
+
+
+322  ｜MEDICAL GAS RESEARCH｜Vol 15｜No.2｜June 2025
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+Artificial intelligence–powered signal transduction
+AI algorithms enable more efficient data processing from 
+gas sensors, devices that convert biological responses into 
+electrical signals. AI-based models, such as neural networks 
+and ML algorithms, can interpret complex signal data patterns, 
+improving detection systems' accuracy. For instance, AI can 
+continuously monitor and analyze medical gas sensor data 
+streams to detect minute changes in analyte concentrations, 
+allowing for more rapid and sensitive detection of target 
+substances, even in background noise.28 This continuous real-
+time monitoring is especially beneficial in clinical diagnostics, 
+where detecting early signs of disease can improve patient 
+outcomes.
+Enhancing sensitivity and specificity
+Sensitivity and specificity are two critical metrics in medical 
+gas sensing. Sensitivity refers to the ability of a sensor 
+to correctly identify true positive cases, while specificity 
+refers to the ability to accurately identify true negatives.29 
+AI enhances these metrics by reducing errors in signal 
+interpretation. For example, deep learning algorithms 
+can distinguish between similar medical gas-converted 
+biochemical signals, enhancing both sensitivity and 
+specificity. This precision is especially valuable in fields like 
+cancer detection, where high sensitivity and specificity are 
+crucial to avoid false positives and negatives. By filtering 
+and processing data with ML models, gas sensors can 
+provide highly accurate and reliable results. The microscopic 
+mechanism of advanced materials such as metal oxides 
+and carbon-based nanomaterials in medical gas sensing 
+lies in their specialized surface characteristics and ability 
+to interact electronically with gas molecules.30 Metal 
+oxides such as ZnO and SnO₂ offer specific sites for gas 
+adsorption and chemisorption.31 These interactions result 
+in measurable changes in electrical properties, such as 
+resistance, facilitating gas detection. Similarly, carbon-based 
+nanomaterials, including graphene and carbon nanotubes, 
+exhibit exceptional conductivity, large surface areas, and 
+tunable functionalization, which enhance their sensitivity 
+and selectivity for specific gas molecules.32 When integrated 
+with AI, the sensor outputs of these materials are optimized 
+through advanced ML techniques. AI algorithms, such as 
+CNNs and SVMs, analyze intricate data patterns to identify 
+gases more accurately. CNNs are adept at processing spatial 
+variations in sensor signals, while SVMs excel at classifying 
+sensor responses based on specific gas characteristics. 
+This synergy enhances sensitivity, improves selectivity, and 
+ensures greater resistance to environmental noise and 
+interference, addressing the limitations of traditional gas 
+sensing methods.
+Real-time processing and decision-making
+One of the most impactful contributions of AI in signal 
+transduction is real-time data processing. AI algorithms can 
+rapidly interpret large amounts of data from gas sensors, 
+enabling immediate feedback and decision-making. This is 
+achieved through techniques like real-time signal processing 
+and predictive modeling, which allow gas sensors to provide 
+continuous updates on analyte concentrations or the presence 
+of specific biomarkers.33 In healthcare, such real-time analysis 
+can aid in critical monitoring scenarios, such as intensive care 
+units or during surgeries where instant detection of abnormal 
+biochemical changes is essential.
+To ensure accurate and reliable AI-based real-time monitoring 
+in medical scenarios, particularly under challenging conditions 
+like high humidity or electromagnetic interference, the 
+following approaches are essential34:
+Durable sensor design: Developing sensors with materials and 
+coatings that resist humidity and electromagnetic interference 
+can enhance performance. Protective encapsulation and 
+designs that reduce noise are effective solutions.
+AI-powered noise reduction: Machine learning models can 
+effectively filter out noise caused by environmental factors. 
+These algorithms help differentiate genuine signals from 
+disruptions created by electromagnetic interference or 
+humidity fluctuations.
+Dynamic calibration: Integrating real-time calibration systems 
+allows the sensor to adjust its baseline automatically in 
+response to environmental changes, ensuring consistent 
+accuracy.
+Secure data transmission: Utilizing reliable Internet of Things 
+(IoT) protocols and blockchain technology ensures that data 
+shared between sensors and medical systems remains secure 
+and precise during transmission.
+Robust testing: Conducting thorough testing under simulated 
+harsh conditions before deployment ensures the system 
+performs reliably in real-world environments.
+These strategies together enhance the robustness, precision, 
+and dependability of AI-based medical monitoring systems, 
+even in demanding conditions.
+Pattern recognition by artificial intelligence models
+AI models rely on several characteristic parameters for 
+identifying and distinguishing different types of medical gases 
+such as O₂, N₂O, and CO₂. The primary parameters include:
+Spectroscopic signatures: Gases exhibit unique absorption 
+or emission spectra at specific wavelengths, allowing AI to 
+distinguish them based on spectroscopic patterns.35 For 
+example, infrared absorption characteristics are commonly 
+used for CO₂ detection, while ultraviolet-visible spectroscopy 
+may aid in identifying O₂ and N₂O.
+Concentration levels: AI systems analyze gas concentration 
+patterns in the medical environment, measured in parts 
+per million (ppm) or other units.36,37 Thresholds for safe or 
+expected concentrations serve as baselines for recognition.
+Electrical properties: Changes in resistance, capacitance, or 
+voltage across sensor materials can vary with different gas 
+interactions, enabling pattern differentiation by AI models. 
+For instance, interdigitated electrodes detect variances in gas-
+specific conductivity changes.38,39
+Chemical reactivity: AI evaluates gas-specific reactions with 
+sensor coatings or catalysts, producing distinct chemical 
+byproducts or signals for identification.40
+
+
+MEDICAL GAS RESEARCH｜Vol 15｜No.2｜June 2025｜323
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+Environmental interactions: Factors like pressure, temperature, 
+and humidity influence gas behavior. AI integrates these 
+contextual data points to refine gas identification and minimize 
+errors.41
+These parameters are chosen based on their ability to provide 
+clear, reproducible signals that differentiate gases effectively, 
+while ensuring compatibility with the sensor’s material and 
+medical application context.
+Self-Powered Gas Sensors for Continuous 
+Monitoring
+Self-powered gas sensors are innovative devices that generate 
+their energy, eliminating the need for batteries or external 
+power sources. These sensors typically harness energy from 
+ambient sources such as kinetic, thermal, or electromagnetic 
+energy, making them suitable for continuous, long-term 
+monitoring applications. This capability is particularly 
+beneficial in health care, where sensors can continuously 
+monitor physiological conditions and environmental 
+factors, providing doctors and biomedical engineers with 
+precise, real-time data to optimize health management 
+without frequent maintenance or power replacement. 
+Additionally, advancements in wireless communication, such 
+as 5G technology, can support these sensors by supplying 
+power through wireless transmission, further enhancing 
+their autonomy and reliability for remote or hard-to-reach 
+locations.42 The development of wearable, self-powered 
+devices for medical gas sensing represents a significant 
+advancement in continuous health monitoring. These devices 
+use flexible gas sensors to detect biomarkers in breath or 
+skin emissions, enabling real-time, non-invasive assessment 
+of health conditions. Powered by energy harvested from 
+the body or environment, such as body heat or motion, 
+they eliminate the need for frequent battery replacements, 
+increasing their practicality for long-term use. Continuous 
+monitoring through these sensors allows for early detection 
+of potential health issues, such as respiratory or metabolic 
+disorders, by identifying abnormal levels of gases like O₂, CO₂, 
+or VOCs.8 This capability enhances disease management and 
+preventive healthcare, helping individuals and healthcare 
+providers monitor health dynamically and respond swiftly to 
+changes in physiological states.43 Innovative materials and 
+energy-harvesting technologies are revolutionizing the way gas 
+sensors operate by enabling them to function autonomously 
+with minimal intervention. These advancements leverage 
+ambient energy sources, such as solar, thermal, and 
+vibrational energy, allowing gas sensors to generate 
+power from their surroundings without needing external 
+power sources or frequent maintenance.44 By integrating 
+such technologies, systems can achieve greater longevity 
+and reliability, ultimately leading to smarter and more 
+sustainable environments. AI and ML significantly enhance 
+self-powered sensors by enabling continuous monitoring of 
+various parameters without the need for external power or 
+frequent maintenance. These technologies allow sensors 
+to autonomously analyze data in real-time, improving 
+accuracy and responsiveness. For instance, AI algorithms can 
+process complex data streams from biosensors, facilitating 
+rapid detection of changes in conditions, which is crucial in 
+applications such as health monitoring and environmental 
+sensing.45 Furthermore, the integration of ML with energy 
+harvesting technologies enhances the functionality of sensors, 
+enabling multifunctional capabilities that support advanced 
+applications in smart systems. 
+Development of a Real-Time Learning System 
+for Medical Gas Sensing
+The development of real-time learning systems for medical 
+gas sensing is an innovative approach that combines 
+advanced sensor technology with AI to enhance healthcare 
+monitoring. These systems are designed to continuously 
+track the concentration of gases used in medical 
+environments, such as O₂ and N₂O, ensuring patient safety 
+and optimal treatment conditions. By utilizing flexible 
+gas sensors, researchers have made significant strides in 
+improving the sensitivity and accuracy of these devices.8 A 
+recent study highlights the implementation of deep learning 
+algorithms to facilitate real-time monitoring and leak 
+detection in compressed medical gas systems.46 These AI-
+driven systems analyze data streams from the gas sensors, 
+allowing for immediate identification of anomalies and 
+reducing the risk of hazardous situations.46 Moreover, the 
+integration of IoT technologies enhances the capabilities of 
+these systems, enabling remote monitoring and automated 
+responses to changing gas levels.47 Additionally, research 
+into AI-enhanced sensors focuses on improving the materials 
+and structures of these devices to increase their efficiency 
+and longevity.12 By leveraging real-time learning, healthcare 
+providers can ensure a safe and responsive environment, 
+ultimately contributing to better patient outcomes. The 
+block diagram represents a comprehensive system for 
+data collection, processing, and analysis, leveraging IoT 
+networks, AI, and ML to enable predictive maintenance 
+and performance optimization. Starting with the System 
+and Sensors component, data is gathered through an 
+IoT network using industrial bus, wireless link, or fiber 
+optics connections. This network (illustrated in Figure 
+4) integrates with various hardware interfaces, such as 
+controllers, communicators, and screens on tablets or 
+personal computers (labeled printed circuit board designed 
+and human machine interface), allowing user interaction 
+and monitoring. Data collected is sent to a Cloud server via 
+4G or 5G networks, where it is stored in the Data storage 
+component. The data undergoes Signal conditioning 
+processes—cleaning, synchronization, and segmentation—
+to prepare it for further analysis. Following conditioning, 
+a Signal profile is created and processed through Feature 
+extraction in time, frequency, and time-frequency domains. 
+Extracted features are stored in the Feature library, which 
+works in conjunction with a Model library and an Analytics 
+engine. This analytics engine provides insights, including 
+health assessments, performance optimizations, and 
+predictive maintenance recommendations. Additionally, Web 
+services connect the Analytics database to user devices over 
+4G/5G/Wi-Fi, allowing remote access and real-time updates 
+via the internet protocol network, thus enabling continuous 
+monitoring and decision-making.
+
+
+324  ｜MEDICAL GAS RESEARCH｜Vol 15｜No.2｜June 2025
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+Case Studies: Artificial Intelligence–Enabled Gain 
+Disease Detection
+AI-enabled disease detection has made significant 
+advancements, particularly in the use of breath analysis 
+to identify respiratory diseases, early signs of cancer, and 
+metabolic disorders. These technologies employ gas sensors 
+that can detect specific gas biomarkers in exhaled breath, 
+offering a non-invasive diagnostic method. For instance, 
+breath analysis has been successfully used to diagnose 
+conditions like asthma and chronic obstructive pulmonary 
+disease by identifying VOCs associated with inflammation 
+in the lungs. In the realm of cancer detection, AI-powered 
+gas sensors are capable of distinguishing between healthy 
+and malignant tissues by analyzing breath samples. Studies 
+have demonstrated that these gas sensors can detect unique 
+patterns of gases released by tumors, allowing for the early 
+identification of diseases such as lung and colorectal cancer. 
+By integrating ML algorithms, these systems enhance their 
+diagnostic accuracy by learning from large datasets of 
+breathomics, improving the identification of subtle biomarkers 
+that indicate disease.48 Moreover, AI systems can differentiate 
+various metabolic disorders by analyzing changes in breath 
+composition. For example, patients with diabetes often exhibit 
+increased levels of acetone in their breath. AI models can 
+monitor these fluctuations in real time, providing continuous 
+health insights and enabling timely interventions.49 This 
+innovative approach not only facilitates earlier diagnosis but 
+also promotes personalized medicine by tailoring treatment 
+plans based on individual biomarker profiles. Overall, AI-
+enabled breath analysis systems represent a promising 
+frontier in medical diagnostics, combining cutting-edge 
+technology with practical healthcare applications to improve 
+patient outcomes.
+Several other pilot projects and clinical cases have explored 
+the integration of AI with medical gas-sensing technology for 
+continuous monitoring and predictive diagnosis. Key examples 
+include:
+Remote patient monitoring: AI-enhanced sensors integrated 
+into the Internet of Medical Things systems have been used 
+to continuously track patients’ O₂ levels and respiratory 
+gases, enabling early detection of hypoxia or hypercapnia. 
+These systems utilize real-time AI algorithms to process data 
+and alert healthcare providers when abnormalities occur, 
+improving patient outcomes and reducing hospitalization 
+rates.50
+Predictive analytics for respiratory conditions: Pilot studies 
+have leveraged AI models to analyze CO₂ and O₂ patterns in 
+patients with chronic obstructive pulmonary disease or sleep 
+apnea. These models predict exacerbations, allowing timely 
+interventions.51
+Achievements
+Early intervention: Enhanced detection of respiratory distress 
+before symptoms become severe, preventing complications.
+Personalized care: Continuous monitoring tailor treatment 
+plans to individual needs, improving healthcare outcomes.
+Operational efficiency: AI integration reduces the burden on 
+healthcare providers by automating data analysis and alerts.
+Challenges
+Data security: Safeguarding sensitive patient data in Internet 
+of Medical Things networks remains a significant concern.
+Environmental interference: Variability in temperature or 
+humidity affects sensor accuracy.
+Figure 4 ｜Real-time machine learning system for medical gas sensing.
+It integrates with various hardware interfaces, such as controllers, communicators, and screens on tablets or PCs, allowing user interaction 
+and monitoring. A detailed description is mentioned in the previous paragraph. AI: Artificial intelligence; IoT: Internet of Things; IP: internet 
+protocol; ML: machine learning; PC: personal computers; PCB: printed circuit board.
+
+
+MEDICAL GAS RESEARCH｜Vol 15｜No.2｜June 2025｜325
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+Integration barriers: Ensuring seamless compatibility with 
+existing healthcare systems requires substantial effort.
+Future Directions and Emerging Trends
+The future of telemedicine is poised for significant 
+transformation through IoT technologies and advancements 
+in AI. This synergy enhances remote patient monitoring, 
+facilitates real-time data collection, and enables personalized 
+healthcare solutions. IoT devices can continuously gather 
+health metrics from patients, transmitting this information 
+to healthcare providers who can use AI algorithms to 
+analyze medical gas sensing patterns and detect anomalies. 
+Emerging trends also indicate a shift towards greater 
+personalization in healthcare, driven by AI methodologies. 
+These systems can adapt treatments based on individual 
+patient data, preferences, and responses, leading to more 
+tailored healthcare experiences. Additionally, AI can enhance 
+preventive healthcare applications by identifying risk factors 
+by medical gas overdoses early through predictive analytics, 
+potentially preventing the onset of chronic diseases. Material 
+innovations are also critical, particularly in the development 
+of more sophisticated gas sensors and wearable devices 
+that improve data accuracy and reliability. This includes 
+advancements in flexible electronics and biocompatible 
+materials that allow for more comfortable and effective 
+monitoring solutions. In conclusion, the integration of IoT with 
+telemedicine, combined with innovative AI approaches and 
+material technologies, holds the potential to revolutionize 
+healthcare delivery, making it more efficient, personalized, 
+and preventive.
+Challenges and Limitations in Artificial 
+Intelligence–Enhanced Medical Gas Sensing
+The integration of AI in medical gas sensing technologies 
+presents several challenges and limitations that impact 
+their effectiveness and reliability. One significant issue is 
+gas sensor accuracy, which can be compromised by factors 
+such as calibration drift and environmental conditions. For 
+instance, variations in temperature and humidity can lead to 
+inconsistent sensor readings, making it difficult for AI models 
+to deliver precise predictions.12 Moreover, the robustness of 
+AI models is critical for their application in gas sensing. Many 
+AI algorithms operate effectively in controlled environments 
+but struggle to generalize in real-world scenarios where 
+data is noisy and varied. This “black-box” nature of AI can 
+also lead to challenges in interpretability, making it hard to 
+understand the model’s decision-making process.52 To address 
+these issues, there is a pressing need for standardized data 
+collection protocols. Consistent and reliable data gathering 
+can enhance the quality of the datasets used for training 
+AI models, ultimately leading to improved performance in 
+medical gas sensing applications.53 Additionally, minimizing 
+sensor noise and interference—through better sensor design 
+and signal processing techniques—is essential for achieving 
+accurate and actionable insights in real-world applications.54 In 
+summary, while AI-enhanced gas sensing holds great promise, 
+overcoming the limitations related to sensor accuracy, model 
+robustness, and environmental influences is crucial for 
+realizing its full potential.
+Limitations
+Incomplete integration of artificial intelligence and medical 
+gas sensing
+While AI applications have advanced, the integration of AI 
+with medical gas sensing remains underexplored, with many 
+studies focusing on either domain independently. This limits 
+a comprehensive understanding of their combined potential 
+and challenges.
+Variability in environmental factors
+Medical gas sensing technologies often struggle with 
+consistency due to environmental factors such as temperature 
+and humidity. These variables can distort sensor readings and 
+affect AI model accuracy.
+Data quality and availability
+A lack of standardized protocols for collecting and managing 
+data compromises the reliability of datasets used to train 
+AI models, thereby reducing their generalizability and 
+robustness.
+Technical and interpretative challenges in artificial intelligence
+Many AI models operate as “black boxes,” where decision-
+making processes are not easily interpretable. This makes it 
+difficult to validate the reliability of AI-enhanced medical gas 
+sensing systems.
+Scalability issues
+While promising, these systems are not yet scalable for 
+widespread clinical application due to high costs, limited 
+compatibility with existing infrastructures, and regulatory 
+hurdles.
+Conclusions
+The review underscores the transformative potential of 
+integrating AI into medical gas sensing for enhanced accuracy, 
+real-time monitoring, and improved healthcare outcomes. 
+Advancements in sensor materials, such as nanostructures, 
+combined with AI, present significant opportunities for 
+detecting subtle gas patterns linked to health conditions. 
+However, overcoming challenges like data quality, environmental 
+variability, and interpretability is critical for future development. 
+Addressing these limitations will pave the way for more reliable, 
+scalable, and cost-effective solutions in healthcare diagnostics.
+Author contributions: CM was responsible for literature retrieval, data 
+collection, manuscript editing, drafting, and revision, as well as approval of 
+final version of this manuscript.
+Conflicts of interest: The author declares that the research was conducted 
+in the absence of any commercial or financial relationships that could be 
+construed as a potential conflict of interest.
+Data availability statement: All relevant data are within the paper.
+Open access statement: This is an open access journal, and articles 
+are distributed under the terms of the Creative Commons Attribution-
+NonCommercial-ShareAlike 4.0 License, which allows others to remix, tweak, 
+and build upon the work non-commercially, as long as appropriate credit is 
+given and the new creations are licensed under the identical terms.
+References
+1.	
+Zhang J, Xie D, Zou Y, et al. Key characteristics of nitrous oxide-induced 
+neurological disorders and differences between populations. Front 
+Neurol. 2021;12:627183.
+
+
+326  ｜MEDICAL GAS RESEARCH｜Vol 15｜No.2｜June 2025
+MEDICAL GAS RESEARCH
+www.medgasres.com
+Review
+2.	
+Fiordelisi A, Piscitelli P, Trimarco B, Coscioni E, Iaccarino G, Sorriento D. 
+The mechanisms of air pollution and particulate matter in cardiovascular 
+diseases. Heart Fail Rev. 2017;22:337-347.
+3.	
+Briffa J, Sinagra E, Blundell R. Heavy metal pollution in the environment 
+and their toxicological effects on humans. Heliyon. 2020;6:e04691.
+4.	
+Mohammadi MJ, Baratifar M, Asban P, Kiani F, Hormati M, Kazemi 
+Bareh Bichast R. The effect of air pollutants on chronic gastrointestinal 
+diseases: a comprehensive review. J Hum Environ Health Promot. 
+2024;10:1-10.
+5.	
+Xu X, Nie S, Ding H, Hou FF. Environmental pollution and kidney diseases. 
+Nat Rev Nephrol. 2018;14:313-324.
+6.	
+Global, regional, and national mortality due to unintentional carbon 
+monoxide poisoning, 2000-2021: results from the Global Burden of 
+Disease Study 2021. Lancet Public Health. 2023;8:e839-e849.
+7.	
+Lelieveld J, Haines A, Burnett R, et al. Air pollution deaths attributable to 
+fossil fuels: observational and modelling study. BMJ. 2023;383:e077784.
+8.	
+Zheng F, Jiang HY, Yang XT, et al. Reviews of wearable healthcare systems 
+based on flexible gas sensors. Chem Eng J. 2024;490:151874.
+9.	
+Khatib M, Haick H. Sensors for volatile organic compounds. ACS Nano. 
+2022;16:7080-7115.
+10.	 Zhou Z, Xu T, Zhang X. Empowerment of AI algorithms in biochemical 
+sensors. TrAC Trends Anal Chem. 2024;173:117613.
+11.	 Elahi M, Afolaranmi SO, Martinez Lastra JL, Perez Garcia JA. A 
+comprehensive literature review of the applications of AI techniques 
+through the lifecycle of industrial equipment. Discov Artif Intell. 
+2023;3:43.
+12.	 Wang C, He T, Zhou H, Zhang Z, Lee C. Artificial intelligence enhanced 
+sensors - enabling technologies to next-generation healthcare and 
+biomedical platform. Bioelectron Med. 2023;9:17.
+13.	 Venkatesan S, Egan D, V K, et al. Carbon nanorods, nanowires, and 
+nanotubes. In: Barhoum A, Deshmukh K, eds. Handbook of functionalized 
+carbon nanostructures: from synthesis methods to applications. Cham: 
+Springer International Publishing; 2024:229-270.
+14.	 Nascimento EP, Firmino HCT, Neves GA, Menezes RR. A review of recent 
+developments in tin dioxide nanostructured materials for gas sensors. 
+Ceram Int. 2022;48:7405-7440.
+15.	 Ding J, Zheng Z, Song Z, et al. Recent progress in chemiresistive gas 
+sensors with 1D nanostructured sensing materials: Insights into 
+the structure-morphology-performance relationship. Mater Des. 
+2023;234:112360.
+16.	 Hejazi MA, Eksik O, Taşdelen-Yücedağ Ç, Ünlü C, Trabzon L. Carbon-based 
+nanomaterials in gas sensing applications. Emergent Mater. 2023;6:45-
+77.
+17.	 Tuantranont A. Nanomaterials for sensing applications: introduction 
+and perspective. In: Tuantranont A, ed. Applications of nanomaterials in 
+sensors and diagnostics. Berlin, Heidelberg: Springer Berlin Heidelberg; 
+2013:1-16.
+18.	 Shahbazi Khamas S, Alizadeh Bahmani AH, Vijverberg SJH, Brinkman P, 
+Maitland-van der Zee AH. Exhaled volatile organic compounds associated 
+with risk factors for obstructive pulmonary diseases: a systematic review. 
+ERJ Open Res. 2023;9:00143-02023.
+19.	 Hooker SA. Nanotechnology advantages applied to gas sensor 
+development. The Nanoparticles 2002 Conference Proceedings. 2002. 
+Norwalk.
+20.	 Bajo-Fernández M, Souza-Silva É A, Barbas C, Rey-Stolle MF, García A. 
+GC-MS-based metabolomics of volatile organic compounds in exhaled 
+breath: applications in health and disease. A review. Front Mol Biosci. 
+2023;10:1295955.
+21.	 Zhu J, Ren Z, Lee C. Toward healthcare diagnoses by machine-
+learning-enabled volatile organic compound identification. ACS Nano. 
+2021;15:894-903.
+22.	 Choi RY, Coyner AS, Kalpathy-Cramer J, Chiang MF, Campbell JP. 
+Introduction to Machine Learning, Neural Networks, and Deep Learning. 
+Transl Vis Sci Technol. 2020;9:14.
+23.	 Schmidhuber J. Deep learning in neural networks: an overview. Neural 
+Netw. 2015;61:85-117.
+24.	 Chen M, Cui D, Haick H, Tang N. Artificial intelligence-based medical 
+sensors for healthcare system. Adv Sens Res. 2024;3:2300009.
+25.	 Wang Y, Karimi HA. Advanced deep learning models and algorithms 
+for spatial-temporal data. In: Karimi HA, ed. Big data: techniques and 
+technologies in geoinformatics. 2nd ed. Boca Raton: CRC Press; 2024:27.
+26.	 Yaqoob U, Younis MI. Chemical gas sensors: recent developments, 
+challenges, and the potential of machine learning-a review. Sensors 
+(Basel). 2021;21:2877.
+27.	 Li M, Jiang Y, Zhang Y, Zhu H. Medical image analysis using deep learning 
+algorithms. Front Public Health. 2023;11:1273253.
+28.	 Nashruddin S, Salleh FHM, Yunus RM, Zaman HB. Artificial intelligence-
+powered electrochemical sensor: Recent advances, challenges, and 
+prospects. Heliyon. 2024;10:e37964.
+29.	 Plevris V. Addressing the pitfalls of image-based structural health 
+monitoring: a focus on false positives, false negatives, and base rate bias. 
+arXiv. 2024:2410.20384 
+30.	 Ayanda OS, Mmuoegbulam AO, Okezie O, et al. Recent progress 
+in carbon-based nanomaterials: critical review. J Nanopart Res. 
+2024;26:106.
+31.	 Hunter GW, Akbar S, Bhansali S, et al. Editors’ choice—Critical 
+review—A critical review of solid state gas sensors. J Electrochem Soc. 
+2020;167:037570.
+32.	 Yin F, Yue W, Li Y, et al. Carbon-based nanomaterials for the detection of 
+volatile organic compounds: A review. Carbon. 2021;180:274-297.
+33.	 Ackovska N, Bozinovski S, Jovancevski G. Real-time systems - biologically 
+inspired future. J Comput 2008;3:56-63.
+34.	 Mei H, Peng J, Wang T, et al. Overcoming the limits of cross-sensitivity: 
+pattern recognition methods for chemiresistive gas sensor array. 
+Nanomicro Lett. 2024;16:269.
+35.	 Raychaudhuri B. Spectroscopic techniques conceptualized with the 
+remote sensing of atmospheric carbon dioxide and other greenhouse 
+gases. Appl Spectrosc Rev. 2024;59:1344-1372.
+36.	 Mun E, Cho J. Review of internet of things-based artificial intelligence 
+analysis method through real-time indoor air quality and health effect 
+monitoring: focusing on indoor air pollution that are harmful to the 
+respiratory organ. Tuberc Respir Dis (Seoul). 2023;86:23-32.
+37.	 Chen X, Leishman M, Bagnall D, Nasiri N. Nanostructured gas sensors: 
+from air quality and environmental monitoring to healthcare and 
+medical applications. Nanomaterials (Basel). 2021;11:1927.
+38.	 Nasri A, Boujnah A, Boubaker A, Kalboussi A. A smart gas sensor using 
+machine learning algorithms: sensor types based on IED configurations, 
+fabrication techniques, algorithmic approaches, challenges, progress, 
+and limitations: a review. IEEE Sens J. 2023;23:11336-11355.
+39.	 Abideen ZU, Arifeen WU, Bandara Y. Emerging trends in metal oxide-
+based electronic noses for healthcare applications: a review. Nanoscale. 
+2024;16:9259-9283.
+40.	 Park SY, Kim Y, Kim T, Eom TH, Kim SY, Jang HW. Chemoresistive materials 
+for electronic nose: Progress, perspectives, and challenges. InfoMat. 
+2019;1:289-316.
+41.	 Hoseinzadeh S, Garcia DA. Can AI predict the impact of its 
+implementation in greenhouse farming? Renew Sustain Energy Rev. 
+2024;197:114423.
+42.	 Zheng Y, Cao LX, Lv JR, et al. Self-powered flexible sensor network for 
+continuous monitoring of crop micro-environment and growth states. 
+Measurement. 2025;242:116002.
+43.	 Song Y, Mukasa D, Zhang H, Gao W. Self-powered wearable biosensors. 
+Acc Mater Res. 2021;2:184-197.
+44.	 Naifar S, Kanoun O, Trigona C. Energy harvesting technologies and 
+applications for the internet of things and wireless sensor networks. 
+Sensors (Basel). 2024;24:4688.
+45.	 Tian Z, Li J, Liu L, et al. Machine learning-assisted self-powered 
+intelligent sensing systems based on triboelectricity. Nano Energy. 
+2023;113:108559.
+46.	 Luo GY, Luo HW, Zhang J, Luo YQ. Real-time deep learning for leaks 
+detection and demands prediction of compressed medical gas systems. 
+Cham: Intelligent Systems and Applications. 2024.
+47.	 Erişen S. IoT-Based Real-Time updating multi-layered learning system 
+applied for a special care context during COVID-19. Cogent Eng. 
+2022;9:2044588.
+48.	 Gallos IK, Tryfonopoulos D, Shani G, Amditis A, Haick H, Dionysiou DD. 
+Advancing colorectal cancer diagnosis with AI-powered breathomics: 
+navigating challenges and future directions. Diagnostics (Basel). 
+2023;13:3673.
+49.	 Kaloumenou M, Skotadis E, Lagopati N, Efstathopoulos E, Tsoukalas 
+D. Breath analysis: a promising tool for disease diagnosis-the role of 
+sensors. Sensors (Basel). 2022;22:1238.
+50.	 Manickam P, Mariappan SA, Murugesan SM, et al. Artificial intelligence 
+(AI) and Internet of Medical Things (IoMT) assisted biomedical systems 
+for intelligent healthcare. Biosensors (Basel). 2022;12:562.
+51.	 Tsvetanov F. Integrating AI technologies into remote monitoring patient 
+systems. Eng Proc. 2024;70:54.
+52.	 Zhao T, Wang S, Ouyang C, et al. Artificial intelligence for geoscience: 
+progress, challenges, and perspectives. Innovation (Camb). 
+2024;5:100691.
+53.	 Chen L, Xia C, Zhao Z, Fu H, Chen Y. AI-driven sensing technology: review. 
+Sensors (Basel). 2024;24:2958.
+54.	 Li H, Xu H, Li Y, Li X. Application of artificial intelligence (AI)-enhanced 
+biochemical sensing in molecular diagnosis and imaging analysis: 
+Advancing and challenges. TrAC Trends Anal Chem. 2024;174:117700.
