@@ -1,3 +1,4 @@
+from db.models.user_model import User
 from db.models.project_model import Project
-from db.models.literature_keywords_model import LiteratureKeyword
-from db.models.literature_results_model import LiteratureResult
+from db.models.project_user_model import ProjectUser
+from db.models.literature_model import Literature

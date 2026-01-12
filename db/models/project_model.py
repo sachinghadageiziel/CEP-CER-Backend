@@ -1,13 +1,35 @@
-from sqlalchemy import Column, String, Text
+from sqlalchemy import Column, Integer, String, Date, Text
+from sqlalchemy.orm import relationship
 from db.database import Base
 
 
 class Project(Base):
     __tablename__ = "projects"
 
-    id = Column(String, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True, index=True)
     title = Column(String, nullable=False)
-    duration = Column(String)
-    description = Column(Text)
-    owner = Column(String)
+
+    start_date = Column(Date)
+    end_date = Column(Date)
+
     status = Column(String, default="Active")
+
+    primary_criteria = Column(Text)
+    secondary_criteria = Column(Text)
+
+    #  ORM relationships
+    literature = relationship(
+        "Literature",
+        back_populates="project",
+        cascade="all, delete-orphan"
+    )
+
+    # primary_screenings = relationship(
+    #     "PrimaryScreening",
+    #     cascade="all, delete-orphan"
+    # )
+
+    # secondary_screenings = relationship(
+    #     "SecondaryScreening",
+    #     cascade="all, delete-orphan"
+    # )

@@ -1,14 +1,18 @@
-from fastapi import APIRouter, Form, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from db.database import SessionLocal
 from db.models.project_model import Project
+from db.schemas.project_schema import ProjectCreate
 
-router = APIRouter(prefix="/api/projects", tags=["Projects"])
+router = APIRouter(
+    prefix="/api/projects",
+    tags=["Projects"]
+)
 
 
 # =====================================================
-# DB SESSION DEPENDENCY
+# DB SESSION
 # =====================================================
 def get_db():
     db = SessionLocal()
@@ -19,28 +23,20 @@ def get_db():
 
 
 # =====================================================
-# CREATE NEW PROJECT
+# CREATE PROJECT (POST)
 # =====================================================
-@router.post("/create")
+@router.post("")
 def create_project(
-    title: str = Form(...),
-    duration: str = Form(""),
-    description: str = Form(""),
-    owner: str = Form(""),
+    payload: ProjectCreate,
     db: Session = Depends(get_db)
 ):
-    # Count existing projects
-    count = db.query(Project).count()
-
-    # Generate project ID → PRJ-001, PRJ-002 ...
-    project_id = f"PRJ-{count + 1:03d}"
+    if not payload.title.strip():
+        raise HTTPException(status_code=400, detail="Title is required")
 
     project = Project(
-        id=project_id,
-        title=title,
-        duration=duration,
-        description=description,
-        owner=owner,
+        title=payload.title,
+        start_date=payload.start_date,
+        end_date=payload.end_date,
         status="Active"
     )
 
@@ -49,35 +45,28 @@ def create_project(
     db.refresh(project)
 
     return {
-        "status": "success",
-        "project": {
-            "id": project.id,
-            "title": project.title,
-            "duration": project.duration,
-            "description": project.description,
-            "owner": project.owner,
-            "status": project.status
+        "id": project.id,
+        "title": project.title,
+        "start_date": project.start_date,
+        "end_date": project.end_date,
+        "status": project.status
+    }
+
+
+# =====================================================
+# GET ALL PROJECTS (GET)
+# =====================================================
+@router.get("")
+def get_projects(db: Session = Depends(get_db)):
+    projects = db.query(Project).order_by(Project.id.desc()).all()
+
+    return [
+        {
+            "id": p.id,
+            "title": p.title,
+            "start_date": p.start_date,
+            "end_date": p.end_date,
+            "status": p.status
         }
-    }
-
-
-# =====================================================
-# GET LIST OF PROJECTS
-# =====================================================
-@router.get("/list")
-def list_projects(db: Session = Depends(get_db)):
-    projects = db.query(Project).all()
-
-    return {
-        "projects": [
-            {
-                "id": p.id,
-                "title": p.title,
-                "duration": p.duration,
-                "description": p.description,
-                "owner": p.owner,
-                "status": p.status
-            }
-            for p in projects
-        ]
-    }
+        for p in projects
+    ]
