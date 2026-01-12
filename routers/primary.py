@@ -1,66 +1,69 @@
-from fastapi import APIRouter, UploadFile, File, Form
+from fastapi import APIRouter, UploadFile, File, Form, Depends
+from sqlalchemy.orm import Session
 import os
-import base64
-import pandas as pd
 
-from primary.primary_runner import run_primary_screening
+from db.database import get_db
+from db.models.primary_screening_model import PrimaryScreening
+from services.primary_screening_service import run_primary_screening_for_project
 
 router = APIRouter(prefix="/api/primary", tags=["Primary Screening"])
 
 
 @router.post("/run")
-async def primary_screening(
-    project_id: str = Form(...),
-    all_merged: UploadFile = File(...),
+async def run_primary(
+    project_id: int = Form(...),
     ifu_pdf: UploadFile = File(...),
+    db: Session = Depends(get_db)
 ):
     """
-    Upload All-Merged.xlsx and IFU.pdf for a project.
-    Saves files in database/{project_id}/primary/
-    Returns base64 encoded Excel results.
+    Runs primary screening ONCE per unique literature article
     """
 
-    project_folder = os.path.join("database", project_id, "primary")
+    project_folder = f"database/{project_id}/primary"
     os.makedirs(project_folder, exist_ok=True)
 
-    excel_path = os.path.join(project_folder, "All-Merged.xlsx")
-    with open(excel_path, "wb") as f:
-        f.write(await all_merged.read())
-
-    ifu_path = os.path.join(project_folder, "IFU.pdf")
+    ifu_path = f"{project_folder}/IFU.pdf"
     with open(ifu_path, "wb") as f:
         f.write(await ifu_pdf.read())
 
-    output_excel = run_primary_screening(excel_path, ifu_path, project_folder)
-
-    with open(output_excel, "rb") as f:
-        encoded = base64.b64encode(f.read()).decode()
+    screened = run_primary_screening_for_project(
+        db=db,
+        project_id=project_id,
+        ifu_pdf_path=ifu_path
+    )
 
     return {
         "status": "success",
-        "excelFile": encoded
+        "project_id": project_id,
+        "screened_articles": screened
     }
 
 
 @router.get("/existing")
-def get_existing_primary(project_id: str):
+def get_existing_primary(
+    project_id: int,
+    db: Session = Depends(get_db)
+):
     """
-    Check if primary screening result already exists.
-    Returns parsed Excel + base64 file.
+    Fetch already completed primary screening results from DB
     """
 
-    output_path = f"database/{project_id}/primary/screening_results.xlsx"
-
-    if not os.path.exists(output_path):
-        return {"exists": False}
-
-    df = pd.read_excel(output_path).fillna("")
-
-    with open(output_path, "rb") as f:
-        excel_bytes = f.read()
+    results = (
+        db.query(PrimaryScreening)
+        .filter(PrimaryScreening.project_id == project_id)
+        .all()
+    )
 
     return {
-        "exists": True,
-        "masterSheet": df.to_dict(orient="records"),
-        "excelFile": base64.b64encode(excel_bytes).decode(),
+        "exists": bool(results),
+        "total": len(results),
+        "data": [
+            {
+                "literature_id": r.literature_id,
+                "decision": r.decision,
+                "exclusion_criteria": r.exclusion_criteria,
+                "rationale": r.rationale,
+            }
+            for r in results
+        ]
     }
