@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Date, Text
+from sqlalchemy import Column, Integer, String, Date, Text, LargeBinary
 from sqlalchemy.orm import relationship
 from db.database import Base
 
@@ -18,8 +18,9 @@ class Project(Base):
     secondary_criteria = Column(Text)
 
     # IFU (single source of truth)
-    ifu_file_path = Column(String, nullable=True)
+    ifu_file_data = Column(LargeBinary, nullable=True)
     ifu_file_name = Column(String, nullable=True)
+    ifu_content_type = Column(String, nullable=True)
 
     #  ORM relationships
     literature = relationship(

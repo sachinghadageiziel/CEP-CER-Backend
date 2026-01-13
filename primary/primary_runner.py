@@ -6,18 +6,19 @@ import ast
 import re
 from PyPDF2 import PdfReader
 from dotenv import load_dotenv
+from io import BytesIO
+from PyPDF2 import PdfReader
 
 load_dotenv()
 API_URL = os.getenv("PRIMARY_API_URL", "http://localhost:7860/api/v1/run/primaryscreen-1-1-1")
 API_KEY = os.getenv("PRIMARY_API_KEY")
 
 
-def read_ifu_from_pdf(pdf_path: str) -> str:
-    if not os.path.exists(pdf_path):
-        raise FileNotFoundError(f"IFU PDF not found: {pdf_path}")
-    reader = PdfReader(pdf_path)
+def read_ifu_from_bytes(pdf_bytes: bytes) -> str:
+    reader = PdfReader(BytesIO(pdf_bytes))
     text = [page.extract_text() or "" for page in reader.pages]
     return "\n".join(text).strip()
+    
 
 
 def clean_json_text(text: str) -> str:

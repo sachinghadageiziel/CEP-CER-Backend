@@ -20,7 +20,7 @@ router = APIRouter(
 )
 
 
-@router.post("/upload-keywords")
+@router.post("/keywords")
 async def upload_keywords(
     project_id: str = Form(...),
     keywordsFile: UploadFile = File(...)
@@ -78,7 +78,7 @@ async def upload_keywords(
     }
 
 
-@router.post("/screen")
+@router.post("/literature-screen")
 def run_literature_screening(
     project_id: str = Form(...),
     db: Session = Depends(get_db)
@@ -97,7 +97,7 @@ def run_literature_screening(
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@router.get("/existing")
+@router.get("/literature-screen")
 def get_existing_literature(
     project_id: int,
     unique_only: bool = True,
@@ -144,7 +144,7 @@ def get_existing_literature(
 
 
 
-@router.get("/export")
+@router.get("/export-literature-screen")
 def export_literature_results(
     project_id: int,
     export_type: str = "unique",  # unique | all | duplicates
@@ -195,3 +195,92 @@ def export_literature_results(
         media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         headers={"Content-Disposition": f'attachment; filename="{filename}"'}
     )
+
+
+# =====================================================
+# UPDATE LITERATURE RECORD
+# =====================================================
+@router.put("/{project_id}/{pmid}")
+def update_literature(
+    project_id: int,
+    pmid: str,
+    title: str | None = Form(None),
+    abstract: str | None = Form(None),
+    journal: str | None = Form(None),
+    publication_year: int | None = Form(None),
+    authors: str | None = Form(None),
+    is_unique: bool | None = Form(None),
+    db: Session = Depends(get_db)
+):
+    literature = (
+        db.query(Literature)
+        .filter(
+            Literature.project_id == project_id,
+            Literature.article_id == pmid
+        )
+        .first()
+    )
+
+    if not literature:
+        raise HTTPException(status_code=404, detail="Literature record not found")
+
+    # Update fields only if provided
+    if title is not None:
+        literature.title = title
+
+    if abstract is not None:
+        literature.abstract = abstract
+
+    if journal is not None:
+        literature.journal = journal
+
+    if publication_year is not None:
+        literature.publication_year = publication_year
+
+    if authors is not None:
+        literature.author = authors
+
+    if is_unique is not None:
+        literature.is_unique = is_unique
+
+    db.commit()
+    db.refresh(literature)
+
+    return {
+        "status": "success",
+        "project_id": project_id,
+        "pmid": pmid,
+        "message": "Literature record updated successfully"
+    }
+
+
+# =====================================================
+# DELETE LITERATURE RECORD
+# =====================================================
+@router.delete("/{project_id}/{pmid}")
+def delete_literature(
+    project_id: int,
+    pmid: str,
+    db: Session = Depends(get_db)
+):
+    literature = (
+        db.query(Literature)
+        .filter(
+            Literature.project_id == project_id,
+            Literature.article_id == pmid
+        )
+        .first()
+    )
+
+    if not literature:
+        raise HTTPException(status_code=404, detail="Literature record not found")
+
+    db.delete(literature)
+    db.commit()
+
+    return {
+        "status": "success",
+        "project_id": project_id,
+        "pmid": pmid,
+        "message": "Literature record deleted successfully"
+    }

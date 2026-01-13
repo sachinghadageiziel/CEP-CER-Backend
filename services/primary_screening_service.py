@@ -3,16 +3,13 @@ from db.models.literature_model import Literature
 from db.models.primary_screening_model import PrimaryScreening
 from primary.primary_runner import (
     call_langflow,
-    read_ifu_from_pdf,
+    read_ifu_from_bytes,
     clean_json_text,
     safe_parse_json,
 )
 
 import logging
 
-# ------------------------------------------------------------------
-# Logger setup
-# ------------------------------------------------------------------
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
@@ -20,10 +17,16 @@ logging.basicConfig(level=logging.INFO)
 def run_primary_screening_for_project(
     db: Session,
     project_id: int,
-    ifu_pdf_path: str
+    ifu_bytes: bytes
 ):
-    ifu_text = read_ifu_from_pdf(ifu_pdf_path)
+    # -------------------------------------------------
+    # 1. Read IFU text from DB bytes
+    # -------------------------------------------------
+    ifu_text = read_ifu_from_bytes(ifu_bytes)
 
+    # -------------------------------------------------
+    # 2. Fetch unscreened articles
+    # -------------------------------------------------
     articles = (
         db.query(Literature)
         .filter(
@@ -50,7 +53,6 @@ def run_primary_screening_for_project(
                 msg = result["outputs"][0]["outputs"][0]["results"]["message"]
                 text_out = msg.get("data", {}).get("text") or msg.get("text", "")
 
-                # ---------------- LOG RAW OUTPUT ----------------
                 logger.info(
                     "RAW LLM OUTPUT | project_id=%s | literature_id=%s | text=%s",
                     project_id,
@@ -61,7 +63,6 @@ def run_primary_screening_for_project(
                 clean_text = clean_json_text(text_out)
                 parsed = safe_parse_json(clean_text)
 
-                # ---------------- LOG PARSED OUTPUT ----------------
                 logger.info(
                     "PARSED LLM OUTPUT | project_id=%s | literature_id=%s | parsed=%s",
                     project_id,
@@ -69,10 +70,9 @@ def run_primary_screening_for_project(
                     parsed
                 )
 
-                # Robust key handling
                 decision = (
-                    parsed.get("Decision") 
-                    or parsed.get("decision") 
+                    parsed.get("Decision")
+                    or parsed.get("decision")
                     or ""
                 )
                 exclusion = (
@@ -87,9 +87,8 @@ def run_primary_screening_for_project(
                     or ""
                 )
 
-                # Guard against silent empty outputs
                 if not decision:
-                    rationale = "LLM response parsed but 'Decision' missing"
+                    rationale = "LLM response parsed but Decision missing"
 
             except Exception as e:
                 logger.exception(

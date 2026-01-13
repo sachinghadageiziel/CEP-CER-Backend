@@ -6,6 +6,8 @@ from db.models.project_model import Project
 from db.schemas.project_schema import ProjectCreate
 from datetime import date
 import os
+from fastapi.responses import StreamingResponse
+import io
 
 router = APIRouter(
     prefix="/api/projects",
@@ -27,7 +29,7 @@ def get_db():
 # =====================================================
 # CREATE PROJECT (POST)
 # =====================================================
-@router.post("/addProject")
+@router.post("/project")
 def create_project(
     title: str = Form(...),
     start_date: date | None = Form(None),
@@ -38,7 +40,6 @@ def create_project(
     if not title.strip():
         raise HTTPException(status_code=400, detail="Title is required")
 
-    # 1️ Create project FIRST
     project = Project(
         title=title,
         start_date=start_date,
@@ -46,41 +47,31 @@ def create_project(
         status="Active"
     )
 
-    db.add(project)
-    db.commit()
-    db.refresh(project)  # project.id is now available
-
-    # 2️ Save IFU under database/projects/{project_id}/IFU.pdf
     if ifu_pdf:
         if not ifu_pdf.filename.lower().endswith(".pdf"):
             raise HTTPException(status_code=400, detail="IFU must be a PDF")
 
-        project_folder = f"database/projects/{project.id}"
-        os.makedirs(project_folder, exist_ok=True)
+        pdf_bytes = ifu_pdf.file.read()
 
-        ifu_path = f"{project_folder}/IFU.pdf"
+        project.ifu_file_data = pdf_bytes
+        project.ifu_file_name = ifu_pdf.filename
+        project.ifu_content_type = ifu_pdf.content_type
 
-        with open(ifu_path, "wb") as f:
-            f.write(ifu_pdf.file.read())
-
-        # 3️ Update project with IFU info
-        project.ifu_file_path = ifu_path
-        project.ifu_file_name = "IFU.pdf"
-
-        db.commit()
-        db.refresh(project)
+    db.add(project)
+    db.commit()
+    db.refresh(project)
 
     return {
         "id": project.id,
         "title": project.title,
-        "ifu_file": project.ifu_file_name,
+        "ifu_uploaded": bool(project.ifu_file_data),
         "status": project.status
     }
 
 # =====================================================
 # GET ALL PROJECTS (GET)
 # =====================================================
-@router.get("/existing")
+@router.get("/projects")
 def get_projects(db: Session = Depends(get_db)):
     projects = db.query(Project).order_by(Project.id.desc()).all()
 
@@ -94,3 +85,94 @@ def get_projects(db: Session = Depends(get_db)):
         }
         for p in projects
     ]
+
+
+@router.get("/{project_id}/ifu")
+def download_ifu(project_id: int, db: Session = Depends(get_db)):
+    project = db.query(Project).filter(Project.id == project_id).first()
+
+    if not project or not project.ifu_file_data:
+        raise HTTPException(404, "IFU not found")
+
+    return StreamingResponse(
+        io.BytesIO(project.ifu_file_data),
+        media_type=project.ifu_content_type,
+        headers={
+            "Content-Disposition": f"attachment; filename={project.ifu_file_name}"
+        }
+    )
+
+# =====================================================
+# UPDATE PROJECT (PUT)
+# =====================================================
+@router.put("/{project_id}")
+def update_project(
+    project_id: int,
+    title: str | None = Form(None),
+    start_date: date | None = Form(None),
+    end_date: date | None = Form(None),
+    status: str | None = Form(None),
+    ifu_pdf: UploadFile | None = File(None),
+    db: Session = Depends(get_db)
+):
+    project = db.query(Project).filter(Project.id == project_id).first()
+
+    if not project:
+        raise HTTPException(status_code=404, detail="Project not found")
+
+    # Update simple fields
+    if title is not None:
+        if not title.strip():
+            raise HTTPException(status_code=400, detail="Title cannot be empty")
+        project.title = title
+
+    if start_date is not None:
+        project.start_date = start_date
+
+    if end_date is not None:
+        project.end_date = end_date
+
+    if status is not None:
+        project.status = status
+
+    # Update IFU if provided
+    if ifu_pdf:
+        if not ifu_pdf.filename.lower().endswith(".pdf"):
+            raise HTTPException(status_code=400, detail="IFU must be a PDF")
+
+        pdf_bytes = ifu_pdf.file.read()
+        project.ifu_file_data = pdf_bytes
+        project.ifu_file_name = ifu_pdf.filename
+        project.ifu_content_type = ifu_pdf.content_type
+
+    db.commit()
+    db.refresh(project)
+
+    return {
+        "status": "success",
+        "project_id": project.id,
+        "title": project.title,
+        "ifu_uploaded": bool(project.ifu_file_data),
+        "project_status": project.status
+    }
+# =====================================================
+# DELETE PROJECT (DELETE)
+# =====================================================
+@router.delete("/{project_id}")
+def delete_project(
+    project_id: int,
+    db: Session = Depends(get_db)
+):
+    project = db.query(Project).filter(Project.id == project_id).first()
+
+    if not project:
+        raise HTTPException(status_code=404, detail="Project not found")
+
+    db.delete(project)
+    db.commit()
+
+    return {
+        "status": "success",
+        "message": "Project deleted successfully",
+        "project_id": project_id
+    }
