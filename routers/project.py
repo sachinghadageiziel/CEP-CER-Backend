@@ -25,7 +25,7 @@ def get_db():
 # =====================================================
 # CREATE PROJECT (POST)
 # =====================================================
-@router.post("")
+@router.post("/addProject")
 def create_project(
     payload: ProjectCreate,
     db: Session = Depends(get_db)
@@ -56,7 +56,7 @@ def create_project(
 # =====================================================
 # GET ALL PROJECTS (GET)
 # =====================================================
-@router.get("")
+@router.get("/existing")
 def get_projects(db: Session = Depends(get_db)):
     projects = db.query(Project).order_by(Project.id.desc()).all()
 
