@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 import os
 
 from db.database import get_db
+from db.models.project_model import Project
 from db.models.primary_screening_model import PrimaryScreening
 from services.primary_screening_service import run_primary_screening_for_project
 
@@ -10,22 +11,35 @@ router = APIRouter(prefix="/api/primary", tags=["Primary Screening"])
 
 
 @router.post("/run")
-async def run_primary(
+def run_primary(
     project_id: int = Form(...),
-    ifu_pdf: UploadFile = File(...),
     db: Session = Depends(get_db)
 ):
     """
-    Runs primary screening ONCE per unique literature article
+    Runs primary screening using the IFU stored at project level
     """
 
-    project_folder = f"database/{project_id}/primary"
-    os.makedirs(project_folder, exist_ok=True)
+    # -------------------------------------------------
+    # 1. Validate project
+    # -------------------------------------------------
+    project = db.query(Project).filter(Project.id == project_id).first()
+    if not project:
+        raise HTTPException(status_code=404, detail="Project not found")
 
-    ifu_path = f"{project_folder}/IFU.pdf"
-    with open(ifu_path, "wb") as f:
-        f.write(await ifu_pdf.read())
+    # -------------------------------------------------
+    # 2. Load IFU from project folder
+    # -------------------------------------------------
+    ifu_path = f"database/projects/{project_id}/IFU.pdf"
 
+    if not os.path.exists(ifu_path):
+        raise HTTPException(
+            status_code=400,
+            detail="IFU not found for this project. Upload IFU while creating project."
+        )
+
+    # -------------------------------------------------
+    # 3. Run primary screening
+    # -------------------------------------------------
     screened = run_primary_screening_for_project(
         db=db,
         project_id=project_id,

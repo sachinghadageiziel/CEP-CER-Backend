@@ -17,6 +17,10 @@ class Project(Base):
     primary_criteria = Column(Text)
     secondary_criteria = Column(Text)
 
+    # IFU (single source of truth)
+    ifu_file_path = Column(String, nullable=True)
+    ifu_file_name = Column(String, nullable=True)
+
     #  ORM relationships
     literature = relationship(
         "Literature",
