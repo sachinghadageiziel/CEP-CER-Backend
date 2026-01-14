@@ -5,7 +5,8 @@ from db.models.project_model import Project
 from db.models.project_user_model import ProjectUser
 from db.models.literature_model import Literature
 from db.models.primary_screening_model import PrimaryScreening
-from db.models.secondary_screening_model import SecondaryScreening  # ✅ ADD THIS
+from db.models.secondary_screening_model import SecondaryScreening 
+from db.models.pdf_download_status_model import PdfDownloadStatus
 
 
 def create_tables():
