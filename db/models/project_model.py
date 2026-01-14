@@ -9,6 +9,8 @@ class Project(Base):
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String, nullable=False)
 
+    owner = Column(String, nullable=False) 
+
     start_date = Column(Date)
     end_date = Column(Date)
 

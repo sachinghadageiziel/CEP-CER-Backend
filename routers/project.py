@@ -32,6 +32,7 @@ def get_db():
 @router.post("/project")
 def create_project(
     title: str = Form(...),
+    owner: str = Form(...),               
     start_date: date | None = Form(None),
     end_date: date | None = Form(None),
     ifu_pdf: UploadFile | None = File(None),
@@ -40,8 +41,12 @@ def create_project(
     if not title.strip():
         raise HTTPException(status_code=400, detail="Title is required")
 
+    if not owner.strip():
+        raise HTTPException(status_code=400, detail="Owner is required")
+
     project = Project(
         title=title,
+        owner=owner,                 
         start_date=start_date,
         end_date=end_date,
         status="Active"
@@ -52,7 +57,6 @@ def create_project(
             raise HTTPException(status_code=400, detail="IFU must be a PDF")
 
         pdf_bytes = ifu_pdf.file.read()
-
         project.ifu_file_data = pdf_bytes
         project.ifu_file_name = ifu_pdf.filename
         project.ifu_content_type = ifu_pdf.content_type
@@ -64,9 +68,11 @@ def create_project(
     return {
         "id": project.id,
         "title": project.title,
+        "owner": project.owner,               
         "ifu_uploaded": bool(project.ifu_file_data),
         "status": project.status
     }
+
 
 # =====================================================
 # GET ALL PROJECTS (GET)
@@ -79,6 +85,7 @@ def get_projects(db: Session = Depends(get_db)):
         {
             "id": p.id,
             "title": p.title,
+            "owner": p.owner,             
             "start_date": p.start_date,
             "end_date": p.end_date,
             "status": p.status
