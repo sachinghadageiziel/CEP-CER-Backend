@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 # DATABASE CONFIG
 # --------------------------------------
 # Update password if different
-DATABASE_URL = "postgresql+psycopg2://postgres:root@localhost:5432/cepcer"
+DATABASE_URL = "postgresql+psycopg2://postgres:postgres@localhost:5432/cepcer"
 
 # Engine
 engine = create_engine(

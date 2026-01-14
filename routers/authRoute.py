@@ -56,7 +56,7 @@ async def microsoft_login(
         if access_token != request.accessToken:
             raise HTTPException(status_code=401, detail="Token mismatch")
         
-        print(f"🔍 Verifying token with Microsoft Graph API...")
+        print(f" Verifying token with Microsoft Graph API...")
         graph_response = requests.get(
             "https://graph.microsoft.com/v1.0/me",
             headers={"Authorization": f"Bearer {access_token}"},
@@ -64,14 +64,14 @@ async def microsoft_login(
         )
         
         if graph_response.status_code != 200:
-            print(f"❌ Microsoft Graph API error: {graph_response.status_code}")
+            print(f" Microsoft Graph API error: {graph_response.status_code}")
             raise HTTPException(
                 status_code=401, 
                 detail=f"Invalid access token: {graph_response.status_code}"
             )
         
         user_data = graph_response.json()
-        print(f"✅ Microsoft Graph API response: {user_data}")
+        print(f" Microsoft Graph API response: {user_data}")
         
         email = user_data.get("mail") or user_data.get("userPrincipalName")
         name = user_data.get("displayName") or request.account.name
@@ -80,12 +80,12 @@ async def microsoft_login(
         if not email:
             raise HTTPException(status_code=400, detail="Could not retrieve email from Microsoft")
         
-        print(f"📧 User info - Email: {email}, Name: {name}, MS ID: {microsoft_id}")
+        print(f" User info - Email: {email}, Name: {name}, MS ID: {microsoft_id}")
         
         user = db.query(User).filter(User.email == email).first()
         
         if not user:
-            print(f"✨ Creating new user...")
+            print(f" Creating new user...")
             new_user = User(
                 email=email,
                 name=name,
@@ -96,7 +96,7 @@ async def microsoft_login(
             db.commit()
             db.refresh(new_user)
             
-            print(f"✅ New user registered: {name} ({email})")
+            print(f" New user registered: {name} ({email})")
             
             return {
                 "status": "success",
@@ -118,7 +118,7 @@ async def microsoft_login(
                 user.microsoft_id = microsoft_id
                 db.commit()
             
-            print(f"✅ User logged in: {name} ({email})")
+            print(f" User logged in: {name} ({email})")
             
             return {
                 "status": "success",
@@ -135,12 +135,12 @@ async def microsoft_login(
             }
     
     except requests.RequestException as e:
-        print(f"❌ Microsoft Graph API error: {e}")
+        print(f" Microsoft Graph API error: {e}")
         raise HTTPException(status_code=500, detail="Failed to verify Microsoft token")
     except HTTPException:
         raise
     except Exception as e:
-        print(f"❌ Authentication error: {str(e)}")
+        print(f" Authentication error: {str(e)}")
         import traceback
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=f"Authentication failed: {str(e)}")
@@ -184,12 +184,12 @@ async def get_current_user(
             }
         }
     except requests.RequestException as e:
-        print(f"❌ Error fetching user: {e}")
+        print(f" Error fetching user: {e}")
         raise HTTPException(status_code=500, detail="Failed to fetch user information")
     except HTTPException:
         raise
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f" Error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @router.post("/logout")
