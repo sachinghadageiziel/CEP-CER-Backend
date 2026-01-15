@@ -1,17 +1,19 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Form
 from sqlalchemy.orm import Session
 from fastapi.responses import StreamingResponse
+import os
 import pandas as pd
 from io import BytesIO
-from fastapi import Form
-
 
 from db.database import get_db
-from secondary.pdf_download_runner import run_pdf_download
-
-from secondary.secondary_runner import run_secondary_screening_db
-from db.models.secondary_screening_model import SecondaryScreening
 from db.models.literature_model import Literature
+from db.models.pdf_download_status_model import PdfDownloadStatus
+from db.models.secondary_screening_model import SecondaryScreening
+
+from secondary.pdf_download_runner import run_pdf_download, get_system_downloads_dir
+from secondary.pdf_to_text_runner import run_pdf_to_text
+from secondary.secondary_runner import run_secondary_screening_db
+
 
 
 router = APIRouter(
@@ -51,10 +53,15 @@ def get_pdf_status(
 ):
     """
     Returns download status of all literature PDFs
+    including article_id
     """
 
     rows = (
-        db.query(PdfDownloadStatus)
+        db.query(PdfDownloadStatus, Literature)
+        .join(
+            Literature,
+            PdfDownloadStatus.literature_id == Literature.id
+        )
         .filter(PdfDownloadStatus.project_id == project_id)
         .all()
     )
@@ -64,16 +71,92 @@ def get_pdf_status(
         "total": len(rows),
         "data": [
             {
-                "literature_id": r.literature_id,
-                "status": r.status,          # pending | downloaded | not_found | failed
-                "pmcid": r.pmcid,
-                "pdf_url": r.pdf_url,
-                "file_path": r.file_path,
-                "error": r.error_message
+                "literature_id": pdf.literature_id,
+                "article_id": lit.article_id,  
+                "status": pdf.status,
+                "pmcid": pdf.pmcid,
+                "pdf_url": pdf.pdf_url,
+                "file_path": pdf.file_path,
+                "error": pdf.error_message
             }
-            for r in rows
+            for pdf, lit in rows
         ]
     }
+
+@router.post("/upload-pdf/{project_id}/{literature_id}")
+def upload_pdf(
+    project_id: int,
+    literature_id: int,
+    file: UploadFile = File(...),
+    db: Session = Depends(get_db)
+):
+    """
+    Manually upload PDF for a literature entry.
+    - Always replaces the existing PDF (if any) and regenerates the text file.
+    - Saves file as <article_id>.pdf
+    """
+
+    # ------------------------
+    # 1️ Fetch PDF status
+    # ------------------------
+    pdf_status = (
+        db.query(PdfDownloadStatus)
+        .filter_by(project_id=project_id, literature_id=literature_id)
+        .first()
+    )
+    if not pdf_status:
+        raise HTTPException(status_code=404, detail="PDF status record not found.")
+
+    # ------------------------
+    # 2️ Fetch article_id
+    # ------------------------
+    literature = db.query(Literature).filter(Literature.id == literature_id).first()
+    if not literature:
+        raise HTTPException(status_code=404, detail="Literature record not found.")
+    article_id = literature.article_id
+
+    # ------------------------
+    # 3️ Prepare folders
+    # ------------------------
+    project_folder = os.path.join(get_system_downloads_dir(), f"CEP-CER_Project_{project_id}")
+    os.makedirs(project_folder, exist_ok=True)
+
+    text_dir = os.path.join(project_folder, "text")
+    os.makedirs(text_dir, exist_ok=True)
+
+    # ------------------------
+    # 4️ Save PDF (overwrite if exists)
+    # ------------------------
+    file_path = os.path.join(project_folder, f"{article_id}.pdf")
+    with open(file_path, "wb") as f:
+        f.write(file.file.read())
+
+    # ------------------------
+    # 5️ Delete old text file if exists
+    # ------------------------
+    txt_path = os.path.join(text_dir, f"{article_id}.txt")
+    if os.path.exists(txt_path):
+        os.remove(txt_path)
+
+    # ------------------------
+    # 6️ Update DB
+    # ------------------------
+    pdf_status.file_path = file_path
+    pdf_status.status = "Manually downloaded"
+    pdf_status.error_message = None
+    db.commit()
+
+    # ------------------------
+    # 7️ Convert PDF to text
+    # ------------------------
+    run_pdf_to_text(pdf_dir=project_folder, text_dir=text_dir)
+
+    return {
+        "status": "uploaded",
+        "file_path": file_path,
+        "text_dir": text_dir
+    }
+
 
 
 # =====================================================
