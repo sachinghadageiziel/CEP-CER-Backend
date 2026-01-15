@@ -11,7 +11,7 @@ from secondary.pdf_download_runner import run_pdf_download
 
 from secondary.secondary_runner import run_secondary_screening_db
 from db.models.secondary_screening_model import SecondaryScreening
-
+from db.models.literature_model import Literature
 
 
 router = APIRouter(
@@ -110,7 +110,7 @@ def run_secondary_screening(
         raise HTTPException(status_code=500, detail=str(e))
 
 # =====================================================
-# 4️ GET SECONDARY SCREENING RESULTS
+# 4️ GET SECONDARY SCREENING RESULTS (with article_id)
 # =====================================================
 @router.get("/secondary-screen/{project_id}")
 def get_secondary_results(
@@ -119,10 +119,15 @@ def get_secondary_results(
 ):
     """
     Fetch secondary screening results for a project
+    and include the article_id from Literature table
     """
 
     rows = (
-        db.query(SecondaryScreening)
+        db.query(SecondaryScreening, Literature)
+        .join(
+            Literature,
+            SecondaryScreening.literature_id == Literature.id
+        )
         .filter(SecondaryScreening.project_id == project_id)
         .all()
     )
@@ -142,6 +147,7 @@ def get_secondary_results(
         "data": [
             {
                 "literature_id": r.literature_id,
+                "article_id": lit.article_id,  # Now accessible
                 "summary": r.summary,
                 "study_type": r.study_type,
                 "device": r.device,
@@ -168,9 +174,10 @@ def get_secondary_results(
                 "result": r.result,
                 "rationale": r.rationale,
             }
-            for r in rows
+            for r, lit in rows  # Unpack tuple from join
         ]
     }
+
 
 
 # =====================================================
