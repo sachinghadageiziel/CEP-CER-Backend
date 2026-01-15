@@ -8,7 +8,7 @@ from db.database import get_db
 from db.models.project_model import Project
 from db.models.primary_screening_model import PrimaryScreening
 from services.primary_screening_service import run_primary_screening_for_project
-
+from db.models.literature_model import Literature
 
 router = APIRouter(prefix="/api/primary", tags=["Primary Screening"])
 
@@ -60,12 +60,18 @@ def get_existing_primary(
     db: Session = Depends(get_db)
 ):
     """
-    Fetch already completed primary screening results from DB
+    Fetch primary screening results along with literature details
     """
 
     results = (
-        db.query(PrimaryScreening)
-        .filter(PrimaryScreening.project_id == project_id)
+        db.query(PrimaryScreening, Literature)
+        .join(
+            Literature,
+            PrimaryScreening.literature_id == Literature.id
+        )
+        .filter(
+            PrimaryScreening.project_id == project_id
+        )
         .all()
     )
 
@@ -74,12 +80,18 @@ def get_existing_primary(
         "total": len(results),
         "data": [
             {
-                "literature_id": r.literature_id,
-                "decision": r.decision,
-                "exclusion_criteria": r.exclusion_criteria,
-                "rationale": r.rationale,
+                #  Literature identifiers
+                "literature_id": ps.literature_id,
+                "article_id": lit.article_id,   # PMID / Article ID
+                "title": lit.title,
+                "abstract": lit.abstract,
+
+                #  Primary screening
+                "decision": ps.decision,
+                "exclusion_criteria": ps.exclusion_criteria,
+                "rationale": ps.rationale,
             }
-            for r in results
+            for ps, lit in results
         ]
     }
 
