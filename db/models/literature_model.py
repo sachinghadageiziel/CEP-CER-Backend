@@ -49,9 +49,9 @@ class Literature(Base):
         cascade="all, delete-orphan"
     )
 
-    # secondary_screening = relationship(
-    #     "SecondaryScreening",
-    #     uselist=False,
-    #     back_populates="literature",
-    #     cascade="all, delete-orphan"
-    # )
+    secondary_screening = relationship(
+        "SecondaryScreening",
+        uselist=False,
+        back_populates="literature",
+        cascade="all, delete-orphan"
+    )
