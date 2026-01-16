@@ -104,7 +104,7 @@ def run_secondary_screening_db(
         db.query(PrimaryScreening)
         .filter(
             PrimaryScreening.project_id == project_id,
-            PrimaryScreening.decision == "INCLUDE"
+            PrimaryScreening.decision.ilike("include")
         )
         .all()
     )

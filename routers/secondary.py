@@ -412,3 +412,198 @@ def delete_secondary_screening(
         "literature_id": literature_id,
         "message": "Secondary screening record deleted successfully"
     }
+
+
+# =====================================================
+# MODULE 1.1: GET EXISTING PDF DOWNLOAD (DB-BASED)
+# =====================================================
+@router.get("/pdf-download/existing")
+def get_existing_pdf_download(project_id: int, db: Session = Depends(get_db)):
+    """
+    Check if PDF download status exists in database.
+    Returns parsed data from pdf_download_status table.
+    """
+    # Query database for PDF download status
+    rows = (
+        db.query(PdfDownloadStatus, Literature)
+        .join(
+            Literature,
+            PdfDownloadStatus.literature_id == Literature.id
+        )
+        .filter(PdfDownloadStatus.project_id == project_id)
+        .all()
+    )
+   
+    if not rows:
+        return {"exists": False}
+   
+    # Format data for frontend
+    screening_data = [
+        {
+            "PMID": lit.article_id,  # Using article_id as PMID
+            "PMCID": pdf.pmcid or "",
+            "PDF_Link": pdf.pdf_url or "",
+            "Status": pdf.status or "Pending"
+        }
+        for pdf, lit in rows
+    ]
+   
+    return {
+        "exists": True,
+        "screening": screening_data,
+    }
+ 
+ 
+ 
+ 
+# =====================================================
+# MODULE 1.2: LIST DOWNLOADED PDFs (DB-BASED)
+# =====================================================
+@router.get("/pdf-list")
+def list_downloaded_pdfs(project_id: int, db: Session = Depends(get_db)):
+    """
+    List all downloaded PDFs from database.
+    Returns list of PDFs with their metadata.
+    """
+    rows = (
+        db.query(PdfDownloadStatus, Literature)
+        .join(
+            Literature,
+            PdfDownloadStatus.literature_id == Literature.id
+        )
+        .filter(
+            PdfDownloadStatus.project_id == project_id,
+            PdfDownloadStatus.status.in_([
+                "Downloaded",
+                "Manually downloaded",
+                "Successfully downloaded"
+            ])
+        )
+        .all()
+    )
+   
+    if not rows:
+        return {"pdfs": []}
+   
+    pdfs = [
+        {
+            "filename": f"{lit.article_id}.pdf",
+            "pmid": lit.article_id,
+            "literature_id": lit.id,
+            "file_path": pdf.file_path
+        }
+        for pdf, lit in rows
+        if pdf.file_path and os.path.exists(pdf.file_path)
+    ]
+   
+    return {"pdfs": pdfs}
+ 
+ 
+# =====================================================
+# MODULE 1.3: OPEN PDF (DB-BASED)
+# =====================================================
+@router.get("/open-pdf")
+def open_pdf(
+    project_id: int,
+    filename: str,
+    db: Session = Depends(get_db)
+):
+    """
+    Open PDF by filename from database record.
+    Returns PDF file from stored file_path.
+    """
+    # Extract PMID (article_id) from filename
+    pmid = filename.replace(".pdf", "")
+   
+    # Find the literature record
+    literature = (
+        db.query(Literature)
+        .filter(Literature.article_id == pmid)
+        .first()
+    )
+   
+    if not literature:
+        raise HTTPException(status_code=404, detail="Literature record not found")
+   
+    # Get PDF download status
+    pdf_status = (
+        db.query(PdfDownloadStatus)
+        .filter(
+            PdfDownloadStatus.project_id == project_id,
+            PdfDownloadStatus.literature_id == literature.id
+        )
+        .first()
+    )
+   
+    if not pdf_status or not pdf_status.file_path:
+        raise HTTPException(status_code=404, detail="PDF not found in database")
+   
+    pdf_path = pdf_status.file_path
+   
+    if not os.path.exists(pdf_path):
+        raise HTTPException(status_code=404, detail="PDF file not found on disk")
+   
+    from fastapi.responses import FileResponse
+    return FileResponse(
+        pdf_path,
+        media_type="application/pdf",
+        filename=filename
+    )
+ 
+# =====================================================
+# MODULE 2: PDF → TEXT (DB-BASED)
+# =====================================================
+@router.post("/pdf-to-text")
+async def pdf_to_text(
+    project_id: int = Form(...),
+    db: Session = Depends(get_db)
+):
+    """
+    Convert all downloaded PDFs to text files.
+    Uses database records to find PDF locations.
+    """
+    # Get all downloaded PDFs from database
+    pdf_records = (
+        db.query(PdfDownloadStatus)
+        .filter(
+            PdfDownloadStatus.project_id == project_id,
+            PdfDownloadStatus.status.in_([
+                "Downloaded",
+                "Manually downloaded",
+                "Successfully downloaded"
+            ]),
+            PdfDownloadStatus.file_path.isnot(None)
+        )
+        .all()
+    )
+   
+    if not pdf_records:
+        return {
+            "status": "error",
+            "message": "No downloaded PDFs found in database"
+        }
+   
+    # Setup directories
+    project_folder = os.path.join(
+        get_system_downloads_dir(),
+        f"CEP-CER_Project_{project_id}"
+    )
+    text_folder = os.path.join(project_folder, "text")
+    os.makedirs(text_folder, exist_ok=True)
+   
+    # Get all PDF file paths
+    pdf_files = [
+        pdf.file_path for pdf in pdf_records
+        if pdf.file_path and os.path.exists(pdf.file_path)
+    ]
+   
+    if not pdf_files:
+        return {
+            "status": "error",
+            "message": "No valid PDF files found on disk"
+        }
+   
+    # Use the directory where PDFs are stored
+    pdf_dir = os.path.dirname(pdf_files[0])
+   
+    return run_pdf_to_text(pdf_dir=pdf_dir, text_dir=text_folder)
