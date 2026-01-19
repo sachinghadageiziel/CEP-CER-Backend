@@ -16,7 +16,7 @@ from db.models.secondary_screening_model import SecondaryScreening
 from secondary.pdf_download_runner import run_pdf_download, get_system_downloads_dir
 from secondary.pdf_to_text_runner import run_pdf_to_text
 from secondary.secondary_runner import run_secondary_screening_db
-
+from secondary.secondary_runner import run_secondary_screening_selected_db
 
 
 router = APIRouter(
@@ -187,6 +187,37 @@ def run_secondary_screening(
             "status": "success",
             "project_id": project_id,
             "processed_articles": processed
+        }
+
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.post("/secondary-screen/selected/{project_id}")
+def run_secondary_screening_selected(
+    project_id: int,
+    literature_ids: list[int] = Form(...),
+    db: Session = Depends(get_db)
+):
+    """
+    Run secondary screening ONLY for selected articles
+    """
+
+    try:
+        processed = run_secondary_screening_selected_db(
+            db=db,
+            project_id=project_id,
+            literature_ids=literature_ids
+        )
+
+        return {
+            "status": "success",
+            "project_id": project_id,
+            "processed_articles": processed,
+            "selected_articles": literature_ids
         }
 
     except ValueError as e:

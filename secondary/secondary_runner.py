@@ -6,11 +6,15 @@ from io import BytesIO
 from PyPDF2 import PdfReader
 from dotenv import load_dotenv
 from sqlalchemy.orm import Session
+from sqlalchemy import or_
+
 
 from db.models.project_model import Project
 from db.models.primary_screening_model import PrimaryScreening
 from db.models.secondary_screening_model import SecondaryScreening
 from db.models.literature_model import Literature
+from db.models.pdf_download_status_model import PdfDownloadStatus
+
 
 load_dotenv()
 
@@ -100,14 +104,36 @@ def run_secondary_screening_db(
     ifu_text = read_ifu_from_bytes(project.ifu_file_data)
 
     # 2️ Included primary screenings
+    # Get all literature_ids with PDF downloaded or manually uploaded
+    selected_literature_ids = (
+        db.query(PdfDownloadStatus.literature_id)
+        .filter(
+            PdfDownloadStatus.project_id == project_id,
+            # or_(
+            #     PdfDownloadStatus.status == "downloaded",
+            #     PdfDownloadStatus.status == "Manually downloaded"
+            # )
+        )
+        .all()
+    )
+
+    # Convert to plain list
+    selected_literature_ids = [row[0] for row in selected_literature_ids]
+
+    if not selected_literature_ids:
+        return 0  # Nothing to process
+
+    # Now fetch primary screenings for ONLY these selected literature IDs
     primaries = (
         db.query(PrimaryScreening)
         .filter(
             PrimaryScreening.project_id == project_id,
-            PrimaryScreening.decision.ilike("include")
+            PrimaryScreening.decision.ilike("include"),
+            PrimaryScreening.literature_id.in_(selected_literature_ids)
         )
         .all()
-    )
+)
+
 
     if not primaries:
         return 0
@@ -259,3 +285,156 @@ def run_secondary_screening_db(
 
     db.commit()
     return processed
+
+
+def run_secondary_screening_selected_db(
+    db: Session,
+    project_id: int,
+    literature_ids: list[int]
+) -> int:
+    """
+    Run secondary screening ONLY for selected literature IDs
+    """
+
+    if not literature_ids:
+        return 0
+
+    # 1️ Project & IFU
+    project = db.query(Project).filter(Project.id == project_id).first()
+    if not project or not project.ifu_file_data:
+        raise ValueError("IFU not found for project")
+
+    ifu_text = read_ifu_from_bytes(project.ifu_file_data)
+
+    # 2️ Primary screenings (included + selected)
+    primaries = (
+        db.query(PrimaryScreening)
+        .filter(
+            PrimaryScreening.project_id == project_id,
+            PrimaryScreening.decision.ilike("include"),
+            PrimaryScreening.literature_id.in_(literature_ids)
+        )
+        .all()
+    )
+
+    if not primaries:
+        return 0
+
+    text_dir = os.path.join(
+        os.path.expanduser("~"),
+        "Downloads",
+        f"CEP-CER_Project_{project_id}",
+        "text"
+    )
+
+    processed = 0
+
+    for p in primaries:
+        literature = db.query(Literature).filter(
+            Literature.id == p.literature_id
+        ).first()
+
+        if not literature:
+            continue
+
+        #  Skip if already screened
+        exists = db.query(SecondaryScreening).filter(
+            SecondaryScreening.project_id == project_id,
+            SecondaryScreening.literature_id == literature.id
+        ).first()
+        if exists:
+            continue
+
+        txt_path = os.path.join(text_dir, f"{literature.article_id}.txt")
+
+        # ---------- CASE 1: TXT missing ----------
+        if not os.path.exists(txt_path):
+            db.add(
+                SecondaryScreening(
+                    project_id=project_id,
+                    literature_id=literature.id,
+                    summary="PDF not available",
+                    study_type="NA",
+                    device="NA",
+                    sample_size="NA",
+                    appropriate_device="NA",
+                    appropriate_device_application="NA",
+                    appropriate_patient_group="NA",
+                    acceptable_report="NA",
+                    suitability_score=0,
+                    data_contribution_score=0,
+                    data_source_type="NA",
+                    outcome_measures="NA",
+                    follow_up="NA",
+                    statistical_significance="NA",
+                    clinical_significance="NA",
+                    result="EXCLUDE",
+                    rationale="Full-text PDF not available"
+                )
+            )
+            processed += 1
+            continue
+
+        # ---------- CASE 2: FULL TEXT ----------
+        with open(txt_path, "r", encoding="utf-8") as f:
+            article_text = f.read().strip() or ""
+
+        try:
+            response = call_langflow(ifu_text, article_text)
+            msg = (
+                response["outputs"][0]["outputs"][0]
+                .get("results", {})
+                .get("message", {})
+                .get("text", "")
+            )
+            parsed = json.loads(clean_json_text(msg))
+        except Exception as e:
+            parsed = {"Summary": f"LangFlow error: {e}", "Rationale": str(e)}
+
+        ad = parsed.get("Appropriate Device", "")
+        aa = parsed.get("Appropriate Device Application", "")
+        ap = parsed.get("Appropriate Patient Group", "")
+        ar = parsed.get("Acceptable Report/Data Collation", "")
+
+        suitability = sum(map(extract_score, [ad, aa, ap, ar]))
+
+        t, o, f, s, c = detect_secondary_parameters(
+            article_text,
+            parsed.get("Study type", "")
+        )
+        dc_score = sum(map(extract_score, [t, o, f, s, c]))
+
+        result = "INCLUDE" if suitability <= 8 and dc_score <= 8 else "EXCLUDE"
+
+        db.add(
+            SecondaryScreening(
+                project_id=project_id,
+                literature_id=literature.id,
+                summary=parsed.get("Summary"),
+                study_type=parsed.get("Study type"),
+                device=parsed.get("Device"),
+                sample_size=parsed.get("Sample size / No. of patients"),
+                appropriate_device=ad,
+                appropriate_device_application=aa,
+                appropriate_patient_group=ap,
+                acceptable_report=ar,
+                suitability_score=suitability,
+                data_contribution_score=dc_score,
+                data_source_type=t,
+                outcome_measures=o,
+                follow_up=f,
+                statistical_significance=s,
+                clinical_significance=c,
+                number_of_males=parsed.get("No. of males"),
+                number_of_females=parsed.get("No. of females"),
+                mean_age=parsed.get("Mean age"),
+                result=result,
+                rationale=parsed.get("Rationale")
+            )
+        )
+
+        processed += 1
+
+    db.commit()
+    return processed
+
