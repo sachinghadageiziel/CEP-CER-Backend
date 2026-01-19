@@ -14,3 +14,6 @@ class ProjectUser(Base):
 
     project = relationship("Project")
     user = relationship("User")
+
+
+    project = relationship("Project", passive_deletes=True)

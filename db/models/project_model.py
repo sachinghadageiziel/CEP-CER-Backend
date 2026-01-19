@@ -1,6 +1,8 @@
 from sqlalchemy import Column, Integer, String, Date, Text, LargeBinary
 from sqlalchemy.orm import relationship
 from db.database import Base
+from db.models.project_user_model import ProjectUser
+
 
 
 class Project(Base):
@@ -28,9 +30,15 @@ class Project(Base):
     literature = relationship(
         "Literature",
         back_populates="project",
-        cascade="all, delete-orphan"
+        cascade="all, delete-orphan",
+        passive_deletes=True
     )
 
+    project_users = relationship(
+        "ProjectUser",
+        cascade="all, delete-orphan",
+        passive_deletes=True
+    )
     # primary_screenings = relationship(
     #     "PrimaryScreening",
     #     cascade="all, delete-orphan"

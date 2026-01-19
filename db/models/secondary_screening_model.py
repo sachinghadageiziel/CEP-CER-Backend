@@ -47,5 +47,6 @@ class SecondaryScreening(Base):
     #  ORM relationship
     literature = relationship(
         "Literature",
-        back_populates="secondary_screening"
+        back_populates="secondary_screening",
+        passive_deletes=True
     )

@@ -38,20 +38,24 @@ class Literature(Base):
 
     #  ORM relationships
     project = relationship(
-        "Project",
-        back_populates="literature"
-    )
+    "Project",
+    back_populates="literature",
+    passive_deletes=True
+)
 
     primary_screening = relationship(
         "PrimaryScreening",
         uselist=False,
         back_populates="literature",
-        cascade="all, delete-orphan"
+        cascade="all, delete-orphan",
+        passive_deletes=True
     )
 
     secondary_screening = relationship(
         "SecondaryScreening",
         uselist=False,
         back_populates="literature",
-        cascade="all, delete-orphan"
+        cascade="all, delete-orphan",
+        passive_deletes=True
     )
+

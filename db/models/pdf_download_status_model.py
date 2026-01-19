@@ -43,6 +43,5 @@ class PdfDownloadStatus(Base):
 
     literature = relationship(
         "Literature",
-        backref="pdf_download_status",
-        lazy="joined"
+        passive_deletes=True
     )
