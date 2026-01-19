@@ -4,6 +4,9 @@ from fastapi.responses import StreamingResponse
 import os
 import pandas as pd
 from io import BytesIO
+from pathlib import Path
+from fastapi.responses import FileResponse
+import os
 
 from db.database import get_db
 from db.models.literature_model import Literature
@@ -500,7 +503,7 @@ def list_downloaded_pdfs(project_id: int, db: Session = Depends(get_db)):
  
  
 # =====================================================
-# MODULE 1.3: OPEN PDF (DB-BASED)
+# MODULE 1.3: OPEN PDF (FROM DOWNLOADS)
 # =====================================================
 @router.get("/open-pdf")
 def open_pdf(
@@ -509,23 +512,27 @@ def open_pdf(
     db: Session = Depends(get_db)
 ):
     """
-    Open PDF by filename from database record.
-    Returns PDF file from stored file_path.
+    Open PDF by filename from system Downloads directory
+    using DB metadata.
     """
-    # Extract PMID (article_id) from filename
-    pmid = filename.replace(".pdf", "")
-   
-    # Find the literature record
+
+    # 1️ Extract article_id safely
+    article_id = Path(filename).stem
+
+    # 2️ Fetch literature for this project
     literature = (
         db.query(Literature)
-        .filter(Literature.article_id == pmid)
+        .filter(
+            Literature.article_id == article_id,
+            Literature.project_id == project_id
+        )
         .first()
     )
-   
+
     if not literature:
         raise HTTPException(status_code=404, detail="Literature record not found")
-   
-    # Get PDF download status
+
+    # 3️ Fetch PDF status (matches your DB design)
     pdf_status = (
         db.query(PdfDownloadStatus)
         .filter(
@@ -534,21 +541,24 @@ def open_pdf(
         )
         .first()
     )
-   
+
     if not pdf_status or not pdf_status.file_path:
         raise HTTPException(status_code=404, detail="PDF not found in database")
-   
-    pdf_path = pdf_status.file_path
-   
-    if not os.path.exists(pdf_path):
-        raise HTTPException(status_code=404, detail="PDF file not found on disk")
-   
-    from fastapi.responses import FileResponse
+
+    # 4️ Validate file exists on disk
+    if not os.path.exists(pdf_status.file_path):
+        raise HTTPException(
+            status_code=404,
+            detail="PDF file not found in Downloads folder"
+        )
+
+    # 5️ Stream PDF
     return FileResponse(
-        pdf_path,
+        path=pdf_status.file_path,
         media_type="application/pdf",
         filename=filename
     )
+
  
 # =====================================================
 # MODULE 2: PDF → TEXT (DB-BASED)
