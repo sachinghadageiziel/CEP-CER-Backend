@@ -9,6 +9,7 @@ from db.models.project_model import Project
 from db.models.primary_screening_model import PrimaryScreening
 from services.primary_screening_service import run_primary_screening_for_project
 from db.models.literature_model import Literature
+from sqlalchemy import func
 
 router = APIRouter(prefix="/api/primary", tags=["Primary Screening"])
 

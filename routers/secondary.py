@@ -7,6 +7,7 @@ from io import BytesIO
 from pathlib import Path
 from fastapi.responses import FileResponse
 import os
+from sqlalchemy import func
 
 from db.database import get_db
 from db.models.literature_model import Literature
@@ -477,7 +478,8 @@ def get_existing_pdf_download(project_id: int, db: Session = Depends(get_db)):
             "PMID": lit.article_id,  # Using article_id as PMID
             "PMCID": pdf.pmcid or "",
             "PDF_Link": pdf.pdf_url or "",
-            "Status": pdf.status or "Pending"
+            "Status": pdf.status or "Pending",
+            "Secondary_Screened": bool(pdf.secondary_screened)
         }
         for pdf, lit in rows
     ]

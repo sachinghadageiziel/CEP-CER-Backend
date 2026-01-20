@@ -8,6 +8,7 @@ from datetime import datetime
 from db.database import get_db
 from literature.pubmed_runner import run_pubmed_pipeline
 from db.models.literature_model import Literature
+from sqlalchemy import func
 
 # -------------------------------
 # In-memory store for uploaded keywords (per project)
