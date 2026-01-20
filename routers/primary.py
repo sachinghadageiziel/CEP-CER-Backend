@@ -219,3 +219,53 @@ def delete_primary_screening(
         "literature_id": literature_id,
         "message": "Primary screening record deleted successfully"
     }
+
+
+#Count
+@router.get("/project-count")
+def get_primary_screening_count_for_project(
+    project_id: int,
+    db: Session = Depends(get_db)
+):
+    total_count = (
+        db.query(func.count(PrimaryScreening.literature_id))
+        .filter(PrimaryScreening.project_id == project_id)
+        .scalar()
+    )
+
+    return {
+        "project_id": project_id,
+        "total_primary_screening_count": total_count
+    }
+
+
+
+
+# Primary Count Dicision Vise
+@router.get("/project-decision-count")
+def get_primary_screening_decision_count(
+    project_id: int,
+    db: Session = Depends(get_db)
+):
+    results = (
+        db.query(
+            PrimaryScreening.decision,
+            func.count(PrimaryScreening.literature_id)
+        )
+        .filter(PrimaryScreening.project_id == project_id)
+        .group_by(PrimaryScreening.decision)
+        .all()
+    )
+
+    decision_counts = {
+        decision: count
+        for decision, count in results
+    }
+
+    return {
+        "project_id": project_id,
+        "decision_counts": decision_counts,
+        "total": sum(decision_counts.values())
+    }
+
+

@@ -284,3 +284,30 @@ def delete_literature(
         "pmid": pmid,
         "message": "Literature record deleted successfully"
     }
+
+
+#count of litreture Record
+@router.get("/project-counts")
+def get_literature_count(
+    project_id: int | None = None,
+    db: Session = Depends(get_db)
+):
+    query = db.query(
+        Literature.project_id,
+        func.count(Literature.id).label("total_count")
+    )
+
+    if project_id is not None:
+        query = query.filter(Literature.project_id == project_id)
+
+    query = query.group_by(Literature.project_id)
+
+    results = query.all()
+
+    return [
+        {
+            "project_id": pid,
+            "total_literature_count": count
+        }
+        for pid, count in results
+    ]

@@ -648,3 +648,20 @@ async def pdf_to_text(
     pdf_dir = os.path.dirname(pdf_files[0])
    
     return run_pdf_to_text(pdf_dir=pdf_dir, text_dir=text_folder)
+
+#COUNT SS
+@router.get("/project-count")
+def get_secondary_screening_count_for_project(
+    project_id: int,
+    db: Session = Depends(get_db)
+):
+    total_count = (
+        db.query(func.count(SecondaryScreening.literature_id))
+        .filter(SecondaryScreening.project_id == project_id)
+        .scalar()
+    )
+
+    return {
+        "project_id": project_id,
+        "total_secondary_screening_count": total_count
+    }
