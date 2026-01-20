@@ -4,7 +4,8 @@ from sqlalchemy import (
     String,
     Text,
     ForeignKey,
-    DateTime
+    DateTime,
+    Boolean
 )
 from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
@@ -33,6 +34,12 @@ class PdfDownloadStatus(Base):
         String,
         nullable=False,
         default="pending"  # pending | downloaded | not_found | failed
+    )
+    secondary_screened = Column(
+        Boolean,
+        nullable=False,
+        default=False,
+        index=True
     )
 
     file_path = Column(Text)

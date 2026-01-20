@@ -24,6 +24,17 @@ SECONDARY_API_URL = os.getenv(
 )
 SECONDARY_API_KEY = os.getenv("SECONDARY_API_KEY")
 
+def mark_secondary_screened(
+    db: Session,
+    project_id: int,
+    literature_id: int
+):
+    db.query(PdfDownloadStatus).filter(
+        PdfDownloadStatus.project_id == project_id,
+        PdfDownloadStatus.literature_id == literature_id
+    ).update(
+        {"secondary_screened": True}
+    )
 
 # -------------------------------------------------
 # IFU FROM DB
@@ -203,6 +214,11 @@ def run_secondary_screening_db(
             )
 
             db.add(record)
+            mark_secondary_screened(
+                db,
+                project_id=project_id,
+                literature_id=literature.id
+            )
             processed += 1
             continue
 
@@ -281,6 +297,11 @@ def run_secondary_screening_db(
         )
 
         db.add(record)
+        mark_secondary_screened(
+            db,
+            project_id=project_id,
+            literature_id=literature.id
+        )
         processed += 1
 
     db.commit()
@@ -372,6 +393,11 @@ def run_secondary_screening_selected_db(
                     rationale="Full-text PDF not available"
                 )
             )
+            mark_secondary_screened(
+                db,
+                project_id=project_id,
+                literature_id=literature.id
+            )
             processed += 1
             continue
 
@@ -432,7 +458,11 @@ def run_secondary_screening_selected_db(
                 rationale=parsed.get("Rationale")
             )
         )
-
+        mark_secondary_screened(
+            db,
+            project_id=project_id,
+            literature_id=literature.id
+        )
         processed += 1
 
     db.commit()
