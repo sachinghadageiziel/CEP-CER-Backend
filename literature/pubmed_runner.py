@@ -158,7 +158,7 @@ def run_pubmed_pipeline(
     apply_free=False,
     apply_full=False,
     project_start_date="2025-01-01",
-    project_end_date="2025-06-30"
+    project_end_date="2025-12-31"
 ):
     """
     Runtime keyword-based literature screening

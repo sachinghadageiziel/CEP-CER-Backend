@@ -10,7 +10,7 @@ from io import BytesIO
 from PyPDF2 import PdfReader
 
 load_dotenv()
-API_URL = os.getenv("PRIMARY_API_URL", "http://localhost:7860/api/v1/run/primaryscreen-1-1-1")
+API_URL = os.getenv("PRIMARY_API_URL", "http://localhost:7860/api/v1/run/primaryscreen-1-1-1-1")
 API_KEY = os.getenv("PRIMARY_API_KEY")
 
 

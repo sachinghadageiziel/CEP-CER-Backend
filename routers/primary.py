@@ -107,10 +107,15 @@ def export_primary_screen(
     """
 
     results = (
-        db.query(PrimaryScreening)
-        .filter(PrimaryScreening.project_id == project_id)
-        .all()
+    db.query(PrimaryScreening, Literature)
+    .join(
+        Literature,
+        PrimaryScreening.literature_id == Literature.id
     )
+    .filter(PrimaryScreening.project_id == project_id)
+    .all()
+)
+
 
     if not results:
         raise HTTPException(
@@ -118,16 +123,16 @@ def export_primary_screen(
             detail="No primary screening results found"
         )
 
-    # Create DataFrame
     df = pd.DataFrame([
-        {
-            "Literature ID (PMID)": r.literature_id,
-            "Decision": r.decision,
-            "Exclusion Criteria": r.exclusion_criteria,
-            "Rationale": r.rationale
-        }
-        for r in results
-    ])
+    {
+        "PMID": lit.article_id,   
+        "Decision": ps.decision,
+        "Exclusion Criteria": ps.exclusion_criteria,
+        "Rationale": ps.rationale
+    }
+    for ps, lit in results
+])
+
 
     # Write to Excel
     output = BytesIO()

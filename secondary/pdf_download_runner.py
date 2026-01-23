@@ -51,10 +51,16 @@ def run_pdf_download(db: Session, project_id: int):
     # 2️ Ensure PdfDownloadStatus rows exist
     # ------------------------
     all_literature = (
-        db.query(Literature)
-        .filter(Literature.project_id == project_id)
-        .all()
+    db.query(Literature)
+    .join(PrimaryScreening)
+    .filter(
+        Literature.project_id == project_id,
+        Literature.source == "PubMed",
+        PrimaryScreening.decision == "INCLUDE"
     )
+    .all()
+)
+
 
     for lit in all_literature:
         exists = (

@@ -161,7 +161,35 @@ def upload_pdf(
         "text_dir": text_dir
     }
 
+@router.post("/secondary-screen/selected/{project_id}")
+def run_secondary_screening_selected(
+    project_id: int,
+    literature_ids: list[int] = Form(...),
+    db: Session = Depends(get_db)
+):
+    """
+    Run secondary screening ONLY for selected articles
+    """
 
+    try:
+        processed = run_secondary_screening_selected_db(
+            db=db,
+            project_id=project_id,
+            literature_ids=literature_ids
+        )
+
+        return {
+            "status": "success",
+            "project_id": project_id,
+            "processed_articles": processed,
+            "selected_articles": literature_ids
+        }
+
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 # =====================================================
 # 3️ RUN SECONDARY SCREENING (DB → DB)
@@ -197,35 +225,7 @@ def run_secondary_screening(
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@router.post("/secondary-screen/selected/{project_id}")
-def run_secondary_screening_selected(
-    project_id: int,
-    literature_ids: list[int] = Form(...),
-    db: Session = Depends(get_db)
-):
-    """
-    Run secondary screening ONLY for selected articles
-    """
 
-    try:
-        processed = run_secondary_screening_selected_db(
-            db=db,
-            project_id=project_id,
-            literature_ids=literature_ids
-        )
-
-        return {
-            "status": "success",
-            "project_id": project_id,
-            "processed_articles": processed,
-            "selected_articles": literature_ids
-        }
-
-    except ValueError as e:
-        raise HTTPException(status_code=400, detail=str(e))
-
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
 
 # =====================================================
 # 4️ GET SECONDARY SCREENING RESULTS (with article_id)
@@ -475,6 +475,7 @@ def get_existing_pdf_download(project_id: int, db: Session = Depends(get_db)):
     # Format data for frontend
     screening_data = [
         {
+            "Literature_ID": pdf.literature_id,
             "PMID": lit.article_id,  # Using article_id as PMID
             "PMCID": pdf.pmcid or "",
             "PDF_Link": pdf.pdf_url or "",

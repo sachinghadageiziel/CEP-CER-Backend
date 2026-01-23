@@ -195,3 +195,19 @@ def delete_project(
         "message": "Project deleted successfully",
         "project_id": project_id
     }
+
+
+@router.get("/{project_id}/ifu")
+def download_ifu(project_id: int, db: Session = Depends(get_db)):
+    project = db.query(Project).filter(Project.id == project_id).first()
+
+    if not project or not project.ifu_file_data:
+        raise HTTPException(404, "IFU not found")
+
+    return StreamingResponse(
+        io.BytesIO(project.ifu_file_data),
+        media_type=project.ifu_content_type,
+        headers={
+            "Content-Disposition": f"attachment; filename={project.ifu_file_name}"
+        }
+    )
